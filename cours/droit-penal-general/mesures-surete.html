@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Les mesures de surete - Droit penal general</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', sans-serif; line-height: 1.8; }
+h1, h2, h3 { font-family: 'Playfair Display', serif; }
+.prose h2 { font-size: 2rem; font-weight: 700; margin-top: 3rem; margin-bottom: 1.5rem; color: #1e3a8a; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; }
+.prose h3 { font-size: 1.5rem; font-weight: 600; margin-top: 2rem; margin-bottom: 1rem; color: #1e40af; }
+.prose p { margin-bottom: 1.5rem; color: #334155; text-align: justify; }
+.sidebar-link.active { color: #1d4ed8; font-weight: 600; border-left: 3px solid #1d4ed8; }
+.focus-box { background-color: #f8fafc; border-left: 4px solid #3b82f6; padding: 1.5rem; border-radius: 0.5rem; margin: 2rem 0; }
+.citation { font-style: italic; color: #475569; border-left: 2px solid #cbd5e1; padding-left: 1.5rem; margin: 2rem 0; }
+</style>
+</head>
+<body class="bg-white dark:bg-slate-900">
+<script>tailwind.config={darkMode:'class'}</script>
+<script>
+(function(){
+const stored = localStorage.getItem('jm.theme');
+if(stored === 'dark' || (!stored && matchMedia('(prefers-color-scheme: dark)').matches)){
+document.documentElement.classList.add('dark');
+}
+})();
+</script>
+
+<nav class="sticky top-0 z-50 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-6 py-3 flex justify-between items-center">
+<a href="../../index.html" class="text-xl font-bold tracking-tight">JURIS<span class="text-blue-700">MASTER</span></a>
+<div class="flex items-center space-x-4">
+<button id="dark-toggle" aria-label="Basculer mode sombre" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800">🌓</button>
+<span class="text-sm text-slate-500">Progression : <span data-progress>0</span>%</span>
+<div class="w-32 h-2 bg-slate-100 rounded-full overflow-hidden">
+<div class="bg-blue-600 h-full" data-progress-bar style="width:0%"></div>
+</div>
+</div>
+</nav>
+
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row">
+<aside class="w-full lg:w-72 bg-slate-50 dark:bg-slate-800 border-r border-slate-200 dark:border-slate-700 p-6 lg:sticky lg:top-14 lg:h-[calc(100vh-3.5rem)] lg:overflow-y-auto">
+<div class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-3">Droit pénal général</div>
+<a href="../droit-penal-general.html" class="block text-sm text-blue-700 hover:underline mb-6">← Sommaire</a>
+<ul class="space-y-2 text-sm">
+<li><a href="introduction-droit-penal.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C1. Introduction au droit pénal</a></li>
+<li><a href="loi-penal-legalite-temps-espace.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C2. La loi pénale</a></li>
+<li><a href="infraction-penale-classification.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C3. L'infraction pénale</a></li>
+<li><a href="auteur-infraction-coaction-complicite.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C4. L'auteur de l'infraction</a></li>
+<li><a href="victime-action-publique.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C5. La victime et l'action publique</a></li>
+<li><a href="irresponsabilite-extinction-punissabilite.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C6. Causes d'irresponsabilité</a></li>
+<li><a href="peines-principes-types.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C7. Les peines</a></li>
+<li><a href="mesures-surete.html" class="sidebar-link active block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C8. Les mesures de sûreté</a></li>
+<li><a href="recidivite-contrainte-penale.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C9. Récidive et contrainte pénale</a></li>
+<li><a href="prescription-justice-penale-mineur.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C10. Prescription et justice pénale du mineur</a></li>
+</ul>
+</aside>
+
+<main class="flex-1 p-6 lg:p-12 prose dark:prose-invert max-w-none">
+<article>
+<div class="flex items-center space-x-2 text-sm text-slate-500 mb-4">
+<a href="../../index.html" class="hover:underline">Accueil</a>
+<span>/</span>
+<a href="../droit-penal-general.html" class="hover:underline">Droit pénal général</a>
+<span>/</span>
+<span class="text-slate-800 dark:text-slate-200">C8</span>
+</div>
+<h1 class="text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white mb-4">Les mesures de sûreté</h1>
+<p class="text-lg text-slate-600 dark:text-slate-300 mb-8">Sûreté judiciaires, défense de séjour et interdiction de paraître : les mesures de protection de la société.</p>
+
+<h2>1. Notion et fondement des mesures de sûreté</h2>
+<p>Les mesures de sûreté sont des sanctions de nature préventive qui visent à protéger la société contre la dangerosité de l'auteur d'une infraction. Elles se distinguent des peines qui visent à punir. Les mesures de sûreté peuvent être prononcées à titre principal (lorsque l'auteur est irresponsable) ou à titre complémentaire (en sus d'une peine). Elles sont régies par les articles 131-6 et suivants du Code pénal et par les articles 706-41-1 et suivants du Code de procédure pénale.</p>
+
+<div class="focus-box">
+<strong>À retenir :</strong> Les mesures de sûreté ne visent pas à punir mais à prévenir. Elles peuvent s'appliquer même en l'absence de condamnation pénale (cas d'irresponsabilité pour folie) ou en complément d'une peine. Leur durée peut être indéterminée, notamment pour les mesures de sûreté de sûreté.
+</div>
+
+<h2>2. Les mesures de sûreté non privatives de liberté</h2>
+<h3>2.1 L'interdiction de séjour</h3>
+<p>L'interdiction de séjour (art. 131-31 CP) interdit au condamné de paraître dans certains lieux ou certaines zones géographiques. Elle peut être prononcée pour les délits et les crimes. Sa durée ne peut excéder 10 ans pour les crimes et 5 ans pour les délits. Le juge détermine le périmètre de l'interdiction et les conditions de sa mise en œuvre. La violation de l'interdiction de séjour constitue un délit (art. 433-15 CP).</p>
+
+<h3>2.2 L'interdiction de paraître dans certains lieux</h3>
+<p>L'interdiction de paraître dans certains lieux (art. 131-33 CP) est une mesure de sûreté qui interdit au condamné de se rendre dans des lieux déterminés (bar, stade, lieu de vente d'alcool, etc.). Elle est souvent prononcée dans les affaires de violences, de troubles à l'ordre public, ou de délinquance liée à l'alcool. Sa durée ne peut excéder 3 ans.</p>
+
+<h3>2.3 Le suivi socio-judiciaire</h3>
+<p>Le suivi socio-judiciaire (art. 131-36-1 et s. CP, art. 723-29 et s. CPP) est une mesure de sûreté qui impose au condamné un suivi par un service pénitentiaire d'insertion et de probation (SPIP). Il comprend des entretiens, des obligations de soins, de travail, de formation, et d'interdiction de rencontrer certaines personnes. Le suivi socio-judiciaire peut être prononcé pour une durée de 5 à 10 ans, voire 20 ans ou à perpétuité pour certaines infractions sexuelles.</p>
+
+<h2>3. Les mesures de sûreté privatives de liberté</h2>
+<h3>3.1 La rétention de sûreté</h3>
+<p>La rétention de sûreté, instaurée par la loi du 17 juin 1998 et réformée par la loi du 25 février 2008, est une mesure de sûreté qui permet de maintenir en détention un condamné ayant purgé sa peine mais présentant une dangerosité très élevée. Elle concerne les auteurs de crimes sexuels ou de meurtres avec circonstances aggravantes. La rétention de sûreté est prononcée par le tribunal de l'application des peines pour une durée d'un an renouvelable. Elle a été déclarée conforme à la Convention européenne des droits de l'homme par la Cour européenne (affaire H. v. France).</p>
+
+<h3>3.2 L'hospitalisation d'office</h3>
+<p>L'hospitalisation d'office (art. 706-135 et s. CPP) est une mesure de sûreté qui concerne les personnes déclarées irresponsables pénalement en raison d'un trouble mental. Le juge pénal peut ordonner leur placement dans un établissement psychiatrique pour une durée d'un an renouvelable. Cette mesure vise à soigner le malade et à protéger la société. Elle est distincte de l'hospitalisation sous contrainte de droit civil.</p>
+
+<h2>4. Les mesures de sûreté applicables aux personnes morales</h2>
+<p>Les personnes morales peuvent faire l'objet de mesures de sûreté spécifiques : dissolution (art. 131-39 CP), interdiction d'exercer une activité (art. 131-39-2 CP), placement sous surveillance judiciaire (art. 131-39-1 CP), et confiscation des biens (art. 131-21 CP). Ces mesures visent à empêcher la personne morale de recommencer ou de continuer une activité illicite.</p>
+
+<div class="citation">
+"Les mesures de sûreté sont destinées à prévenir le renouvellement des infractions." — Article 130-2 du Code pénal
+</div>
+
+<h2>5. Quiz</h2>
+<div class="quiz-question" data-correct="1">
+<p class="font-semibold mb-2">1. Quelle est la finalité des mesures de sûreté ?</p>
+<div class="space-y-2">
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Punir l'auteur de l'infraction</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Prévenir le renouvellement des infractions et protéger la société</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Réparer le préjudice de la victime</button>
+</div>
+<p class="quiz-feedback hidden mt-2 text-sm"></p>
+</div>
+
+<div class="quiz-question mt-6" data-correct="0">
+<p class="font-semibold mb-2">2. La rétention de sûreté peut-elle être prononcée pour les auteurs de délits mineurs ?</p>
+<div class="space-y-2">
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Non, elle est réservée aux crimes sexuels ou aux meurtres avec circonstances aggravantes</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Oui, pour tout délit puni d'au moins 5 ans d'emprisonnement</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Oui, pour toute récidive</button>
+</div>
+<p class="quiz-feedback hidden mt-2 text-sm"></p>
+</div>
+
+<div class="quiz-question mt-6" data-correct="2">
+<p class="font-semibold mb-2">3. Quelle durée maximale pour l'interdiction de séjour pour un crime ?</p>
+<div class="space-y-2">
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">5 ans</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">15 ans</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">10 ans</button>
+</div>
+<p class="quiz-feedback hidden mt-2 text-sm"></p>
+</div>
+
+<h2>Boîte à outils</h2>
+<div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg space-y-4">
+<div>
+<h4 class="font-semibold mb-1">Citation à retenir</h4>
+<p id="citation-box" class="text-sm text-slate-600 dark:text-slate-300">L'article 130-2 du Code pénal dispose que les mesures de sûreté sont destinées à prévenir le renouvellement des infractions, ce qui les distingue fondamentalement des peines qui visent à sanctionner.</p>
+</div>
+<div class="flex space-x-3">
+<button onclick="navigator.clipboard.writeText(document.getElementById('citation-box').textContent)" class="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm hover:bg-blue-700">Copier la citation</button>
+<button onclick="window.print()" class="px-4 py-2 bg-slate-200 text-slate-800 rounded-lg text-sm hover:bg-slate-300">Imprimer la leçon</button>
+</div>
+</div>
+</article>
+</main>
+</div>
+
+<footer class="border-t border-slate-200 dark:border-slate-800 mt-12 bg-slate-50 dark:bg-slate-900">
+<div class="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center">
+<div class="text-sm text-slate-500 mb-4 md:mb-0">JurisMaster 2025 — Formation au droit français</div>
+<div class="flex space-x-6 text-sm text-slate-500">
+<a href="#" class="hover:text-blue-700">Mentions légales</a>
+<a href="#" class="hover:text-blue-700">Contact</a>
+</div>
+</div>
+</footer>
+
+<script>
+document.getElementById('dark-toggle').addEventListener('click', () => {
+document.documentElement.classList.toggle('dark');
+localStorage.setItem('jm.theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+});
+
+const JM = {
+get(){ try { return JSON.parse(localStorage.getItem('jurismaster.v1')) || {}; } catch { return {}; } },
+set(s){ localStorage.setItem('jurismaster.v1', JSON.stringify(s)); },
+addXP(n){ const s=JM.get(); s.xp=(s.xp||0)+n; JM.set(s); window.dispatchEvent(new CustomEvent('jm:xp',{detail:n})); },
+completeLesson(slug, xp=50){ const s=JM.get(); s.lessonsCompleted=[...new Set([...(s.lessonsCompleted||[]),slug])]; s.xp=(s.xp||0)+xp; JM.set(s); },
+touchStreak(){ const s=JM.get(); const today=new Date().toISOString().slice(0,10); const last=s.streak?.lastVisit; if(last&&last!==today){const d=new Date(today)-new Date(last); if(d===86400000){s.streak.count=(s.streak.count||0)+1;} else if(d>86400000){s.streak.count=1;} s.streak.lastVisit=today;} else if(!last){s.streak={count:1,lastVisit:today};} JM.set(s); }
+};
+JM.touchStreak();
+JM.completeLesson('droit-penal/mesures-surete', 50);
+
+const s = JM.get();
+const progress = Math.min(100, Math.round(((s.lessonsCompleted||[]).length / 32) * 100));
+document.querySelectorAll('[data-progress]').forEach(el => el.textContent = progress);
+document.querySelectorAll('[data-progress-bar]').forEach(el => el.style.width = progress + '%');
+
+document.querySelectorAll('.quiz-question').forEach((q, qi) => {
+const correct = parseInt(q.dataset.correct);
+const feedback = q.querySelector('.quiz-feedback');
+const explanations = [
+["Punir est la finalité des peines, pas des mesures de sûreté.","Exact ! L'article 130-2 CP dispose que les mesures de sûreté sont destinées à prévenir le renouvellement des infractions et à protéger la société.","Réparer le préjudice est l'objet de l'action civile, pas des mesures de sûreté."],
+["Exact ! La rétention de sûreté est réservée aux crimes sexuels ou aux meurtres avec circonstances aggravantes, conformément à la loi du 25 février 2008.","La rétention de sûreté ne s'applique pas à tous les délits punis de 5 ans.","La rétention de sûreté ne concerne pas toute récidive mais des infractions spécifiques."],
+["5 ans est la durée maximale pour les délits, pas pour les crimes.","15 ans n'est pas la durée maximale prévue par la loi.","Exact ! L'article 131-31 CP dispose que l'interdiction de séjour ne peut excéder 10 ans pour les crimes et 5 ans pour les délits."]
+];
+q.querySelectorAll('.quiz-btn').forEach((btn, bi) => {
+btn.addEventListener('click', () => {
+if(q.classList.contains('answered')) return;
+q.classList.add('answered');
+if(bi === correct){
+btn.classList.add('bg-green-100', 'border-green-500', 'text-green-800');
+feedback.textContent = explanations[qi][bi];
+feedback.className = 'quiz-feedback mt-2 text-sm text-green-700';
+} else {
+btn.classList.add('bg-red-100', 'border-red-500', 'text-red-800');
+q.querySelectorAll('.quiz-btn')[correct].classList.add('bg-green-100', 'border-green-500');
+feedback.textContent = explanations[qi][bi];
+feedback.className = 'quiz-feedback mt-2 text-sm text-red-700';
+}
+feedback.classList.remove('hidden');
+});
+});
+});
+</script>
+</body>
+</html>
