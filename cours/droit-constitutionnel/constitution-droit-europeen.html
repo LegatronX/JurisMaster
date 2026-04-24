@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constitution et droit européen - Droit constitutionnel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; line-height: 1.8; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .prose h2 { font-size: 2rem; font-weight: 700; margin-top: 3rem; margin-bottom: 1.5rem; color: #1e3a8a; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; }
+        .prose h3 { font-size: 1.5rem; font-weight: 600; margin-top: 2rem; margin-bottom: 1rem; color: #1e40af; }
+        .prose p { margin-bottom: 1.5rem; color: #334155; text-align: justify; }
+        .sidebar-link.active { color: #1d4ed8; font-weight: 600; border-left: 3px solid #1d4ed8; }
+        .focus-box { background-color: #f8fafc; border-left: 4px solid #3b82f6; padding: 1.5rem; border-radius: 0.5rem; margin: 2rem 0; }
+        .citation { font-style: italic; color: #475569; border-left: 2px solid #cbd5e1; padding-left: 1.5rem; margin: 2rem 0; }
+    </style>
+</head>
+<body class="bg-white dark:bg-slate-900">
+    <script>tailwind.config={darkMode:'class'}</script>
+    <script>
+    (function(){
+      const stored = localStorage.getItem('jm.theme');
+      if(stored === 'dark' || (!stored && matchMedia('(prefers-color-scheme: dark)').matches)){
+        document.documentElement.classList.add('dark');
+      }
+    })();
+    </script>
+
+    <nav class="sticky top-0 z-50 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-6 py-3 flex justify-between items-center">
+      <a href="../../index.html" class="text-xl font-bold tracking-tight">JURIS<span class="text-blue-700">MASTER</span></a>
+      <div class="flex items-center space-x-4">
+        <button id="dark-toggle" aria-label="Basculer mode sombre" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800">🌓</button>
+        <span class="text-sm text-slate-500">Progression : <span data-progress>0</span>%</span>
+        <div class="w-32 h-2 bg-slate-100 rounded-full overflow-hidden">
+          <div class="bg-blue-600 h-full" data-progress-bar style="width:0%"></div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row">
+        <aside class="w-full md:w-80 border-r border-slate-100 dark:border-slate-800 p-8 h-screen sticky top-14 overflow-y-auto bg-slate-50/50 dark:bg-slate-900/50">
+            <h4 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-6">Droit constitutionnel</h4>
+            <div class="space-y-8 text-sm text-left">
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">I. L'État et la souveraineté</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="notion-etat-elements-constitutifs.html" class="sidebar-link pl-4 block text-slate-500">A1. La notion d'État</a></li>
+                        <li><a href="souverainete-modes-exercice.html" class="sidebar-link pl-4 block text-slate-500">A2. La souveraineté</a></li>
+                        <li><a href="constitution-notion-types-fonctions.html" class="sidebar-link pl-4 block text-slate-500">A3. La Constitution</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">II. Le bloc de constitutionnalité</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="bloc-constitutionnalite-hierarchie-normes.html" class="sidebar-link pl-4 block text-slate-500">A4. Bloc et hiérarchie</a></li>
+                        <li><a href="histoire-constitutionnelle-francaise.html" class="sidebar-link pl-4 block text-slate-500">A5. Histoire (1789–1958)</a></li>
+                        <li><a href="typologie-regimes-politiques.html" class="sidebar-link pl-4 block text-slate-500">A6. Régimes politiques</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">III. La Ve République</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="constitution-1958-genese-principes.html" class="sidebar-link pl-4 block text-slate-500">A7. Constitution de 1958</a></li>
+                        <li><a href="president-republique.html" class="sidebar-link pl-4 block text-slate-500">A8. Président</a></li>
+                        <li><a href="gouvernement-parlement-rapports-force.html" class="sidebar-link pl-4 block text-slate-500">A9. Gouvernement et Parlement</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">IV. Le juge et les droits</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="conseil-constitutionnel.html" class="sidebar-link pl-4 block text-slate-500">A10. Conseil constitutionnel</a></li>
+                        <li><a href="droits-libertes-constitutionnellement-garantis.html" class="sidebar-link pl-4 block text-slate-500">A11. Droits et libertés</a></li>
+                        <li><a href="constitution-droit-europeen.html" class="sidebar-link active pl-4 block">A12. Droit européen</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <main class="flex-1 py-16 px-6 md:px-20 max-w-5xl">
+            <article class="prose prose-slate lg:prose-lg mx-auto text-left">
+                <nav class="text-sm text-blue-600 font-semibold mb-8 uppercase tracking-wide">Chapitre IV — Le juge et les droits</nav>
+                <h1 class="text-4xl md:text-6xl font-bold mb-10 leading-tight">Constitution et droit européen</h1>
+                
+                <p class="text-xl text-slate-500 italic mb-12 border-l-4 border-blue-100 pl-6 py-2">
+                    "La construction européenne est une chance pour la France et un impératif pour le monde."
+                </p>
+                <p class="text-sm text-slate-400 mb-8">— Charles de Gaulle, discours, 1962</p>
+
+                <h2 id="exorde">Exorde — De la CECA à l'Union européenne</h2>
+                <p>
+                    L'intégration européenne a transformé profondément le droit constitutionnel français. Depuis le traité de Paris (1951, CECA) jusqu'au traité de Lisbonne (2007), la France a transféré des compétences souveraines à des institutions supranationales. L'art. 88-1 de la Constitution, introduit par la révision de 1992, consacre cette participation : "La République participe aux Communautés européennes et à l'Union européenne, élaborées sur le fondement des valeurs dont elles se réclament."
+                </p>
+                <p>
+                    Enjeu contemporain : la tension entre souveraineté nationale et intégration européenne. Le "non" au référendum sur le traité constitutionnel européen (29 mai 2005, 54,7% de non) a révélé une fracture entre l'élite politique et le peuple. La crise des migrations, la pandémie de COVID-19, et la guerre en Ukraine ont relancé le débat sur l'autonomie stratégique de l'Europe. La doctrine s'interroge sur la limite constitutionnelle des transferts de compétences (noyau dur de souveraineté).
+                </p>
+
+                <h2 id="partie1">Partie I — Les traités européens dans l'ordre juridique français</h2>
+
+                <h3>A. L'art. 55 de la Constitution et la primauté du droit européen</h3>
+                <p>
+                    L'art. 55 de la Constitution dispose que "les traités ou accords régulièrement ratifiés ou approuvés ont, dès leur publication, une autorité supérieure à celle des lois, sous réserve, pour chaque accord ou traité, de son application par l'autre partie". Cette disposition, héritée de la Constitution de 1946 (art. 26), consacre la <strong>primauté des traités internationaux</strong> sur les lois internes.
+                </p>
+                <p>
+                    La primauté du <strong>droit de l'Union européenne</strong> a été affirmée par la Cour de justice des Communautés européennes (CJCE, aujourd'hui CJUE) dès l'arrêt <em>Van Gend en Loos</em> (1963) : le droit communautaire crée des obligations directes pour les particuliers et les États membres. L'arrêt <em>Costa v. ENEL</em> (1964) a consacré la primauté absolue du droit communautaire sur les lois nationales, même postérieures. En France, la Cour de cassation (Cass. ch. mixte, 24 mai 1975, <em>Société des cafés Jacques Vabre</em>) puis le Conseil d'État (CE, ass., 20 oct. 1989, <em>Nicolo</em>) ont admis cette primauté.
+                </p>
+                <p>
+                    Le Conseil constitutionnel, longtemps réticent, a fini par admettre la primauté du droit de l'Union dans sa décision n° 2006-540 DC du 27 juillet 2006 (loi relative au droit d'auteur). Il a reconnu que "le droit de l'Union européenne, qui a vocation à s'appliquer dans l'ordre juridique interne, prime les dispositions des lois nationales qui lui seraient contraires". Cependant, il a maintenu la possibilité d'un contrôle de constitutionnalité des lois de transposition des directives européennes.
+                </p>
+
+                <h3>B. L'art. 88-1 et la limitation de souveraineté</h3>
+                <p>
+                    L'art. 88-1, introduit par la loi constitutionnelle n° 92-554 du 25 juin 1992 (ratification du traité de Maastricht), dispose que "la République participe aux Communautés européennes et à l'Union européenne". Le Conseil constitutionnel, dans sa décision n° 2004-496 DC du 10 juin 2004 (traité établissant une Constitution pour l'Europe), a admis que cette participation impliquait une "limitation temporaire et limitée de la souveraineté nationale", pour autant qu'elle ne porte pas atteinte aux "conditions essentielles d'exercice de la souveraineté nationale".
+                </p>
+                <p>
+                    Ces "conditions essentielles" constituent le <strong>noyau dur</strong> de la souveraineté, que le Conseil constitutionnel refuse de voir transférer : l'organisation des pouvoirs publics (séparation des pouvoirs, indépendance de la justice), les droits et libertés fondamentaux, l'identité constitutionnelle (laïcité, indivisibilité de la République). La décision n° 2007-560 DC du 20 décembre 2007 (traité de Lisbonne) a validé ce traité en jugeant que les compétences transférées n'atteignaient pas ce noyau dur.
+                </p>
+
+                <div class="citation">
+                    "La primauté du droit de l'Union européenne prime les dispositions des lois nationales qui lui seraient contraires."
+                    <br><span class="text-sm text-slate-400 not-italic">— Cons. const., déc. n° 2006-540 DC, 27 juill. 2006</span>
+                </div>
+
+                <h2 id="partie2">Partie II — Les mécanismes de contrôle</h2>
+
+                <h3>A. Le contrôle de constitutionnalité des traités (art. 54)</h3>
+                <p>
+                    L'art. 54 de la Constitution, introduit par la révision de 1992, prévoit que "si la Constitution impose une révision pour la ratification d'un traité, celui-ci ne peut être ratifié qu'après la révision de la Constitution". Le Conseil constitutionnel est saisi avant la ratification pour vérifier si le traité est compatible avec la Constitution. Si une disposition traité est incompatible avec la Constitution, il faut procéder à une révision constitutionnelle avant la ratification.
+                </p>
+                <p>
+                    Ce mécanisme a été utilisé pour les traités de Maastricht (décision n° 92-308 DC, 9 avril 1992 : révision nécessaire pour la nouvelle organisation des pouvoirs publics), d'Amsterdam (décision n° 97-394 DC, 31 décembre 1997), de Nice (décision n° 2000-431 DC, 6 janvier 2000), et de Lisbonne (décision n° 2007-560 DC, 20 décembre 2007). Le Conseil constitutionnel a refusé de censurer ces traités, estimant que les transferts de compétences restaient dans les limites de l'art. 88-1.
+                </p>
+
+                <h3>B. Le dialogue des juges</h3>
+                <p>
+                    La France connaît un <strong>dialogue des juges</strong> complexe entre juridictions nationales et européennes. La Cour de cassation et le Conseil d'État appliquent directement le droit de l'Union (direct effect) et priment les lois nationales contraires (primauté). La CJUE, saisie par les juridictions nationales (question préjudicielle, art. 267 TFUE), interprète le droit de l'Union et impose cette interprétation aux juridictions nationales.
+                </p>
+                <p>
+                    Le Conseil constitutionnel, pour sa part, maintient un contrôle de constitutionnalité résiduel. Dans sa décision n° 2006-540 DC, il a affirmé que "le respect des engagements internationaux de la France ne saurait avoir pour effet de priver de son objet une disposition constitutionnelle". Il peut donc censurer une loi de transposition d'une directive si cette transposition viole le bloc de constitutionnalité. Ce contrôle résiduel, théoriquement possible, n'a encore jamais conduit à une censure.
+                </p>
+
+                <h3>C. La Charte des droits fondamentaux de l'Union européenne</h3>
+                <p>
+                    La <strong>Charte des droits fondamentaux de l'Union européenne</strong>, proclamée en 2000 à Nice et rendue contraignante par le traité de Lisbonne (art. 6 TUE), protège les droits fondamentaux dans le champ d'application du droit de l'Union. Elle comprend six titres : dignité, libertés, égalité, solidarité, citoyenneté, justice. Elle est interprétée par la CJUE, qui en fait une application extensive.
+                </p>
+                <p>
+                    La Charte s'applique aux États membres "uniquement lorsqu'ils mettent en œuvre le droit de l'Union" (art. 51). Elle ne crée pas de compétences nouvelles pour l'Union. Elle doit être interprétée en harmonie avec les traditions constitutionnelles communes aux États membres et les engagements internationaux (CEDH). Le Conseil constitutionnel, dans sa décision n° 2013-314P QPC du 14 juin 2013, a admis que la Charte était intégrée au bloc de constitutionnalité par l'intermédiaire de l'art. 88-1.
+                </p>
+
+                <div class="focus-box">
+                    <h4 class="font-bold text-blue-900 dark:text-blue-300 mb-2">Appareil critique — Bibliographie</h4>
+                    <p class="text-sm mb-0">
+                        <strong>Doctrinale :</strong> Dominique Rousseau, <em>Droit du contentieux constitutionnel</em> (14e éd., 2023) ; Louis Favoreu, <em>Le Droit communautaire et la Constitution</em> (A. Pedone, 1975) ; Jacques Ziller, <em>Droit constitutionnel de l'Union européenne</em> (2e éd., 2020).<br><br>
+                        <strong>Arrêts de principe :</strong> CJUE, <em>Van Gend en Loos</em>, 5 févr. 1963 ; <em>Costa v. ENEL</em>, 15 juill. 1964 ; Cons. const., déc. n° 2004-496 DC, 10 juin 2004 ; déc. n° 2006-540 DC, 27 juill. 2006.<br><br>
+                        <strong>Essais :</strong> Joseph Weiler, <em>The Constitution of Europe</em> (CUP, 1999) ; Jürgen Habermas, <em>La Constitution de l'Europe</em> (Gallimard, 2012).
+                    </p>
+                </div>
+
+                <!-- QUIZ -->
+                <section class="mt-16 p-8 bg-slate-50 dark:bg-slate-800 rounded-2xl">
+                    <h3 class="text-2xl font-bold mb-6">Quiz — Constitution et droit européen</h3>
+                    <div id="quiz-container" class="space-y-6">
+                        <div class="quiz-question" data-correct="1">
+                            <p class="font-semibold mb-3">1. Quel arrêt de la CJUE a consacré la primauté du droit communautaire sur les lois nationales ?</p>
+                            <div class="space-y-2">
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. Van Gend en Loos</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. Costa v. ENEL</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. Cassis de Dijon</button>
+                            </div>
+                            <p class="quiz-feedback hidden mt-2 text-sm"></p>
+                        </div>
+                        <div class="quiz-question" data-correct="0">
+                            <p class="font-semibold mb-3">2. Quel article de la Constitution prévoit la primauté des traités sur les lois ?</p>
+                            <div class="space-y-2">
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. Art. 55</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. Art. 88-1</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. Art. 54</button>
+                            </div>
+                            <p class="quiz-feedback hidden mt-2 text-sm"></p>
+                        </div>
+                        <div class="quiz-question" data-correct="2">
+                            <p class="font-semibold mb-3">3. La Charte des droits fondamentaux de l'UE est devenue contraignante par :</p>
+                            <div class="space-y-2">
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. Le traité de Nice (2001)</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. Le traité constitutionnel (2004)</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. Le traité de Lisbonne (2007)</button>
+                            </div>
+                            <p class="quiz-feedback hidden mt-2 text-sm"></p>
+                        </div>
+                        <div class="quiz-question" data-correct="1">
+                            <p class="font-semibold mb-3">4. L'art. 54 de la Constitution concerne :</p>
+                            <div class="space-y-2">
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. La ratification des traités sans révision</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. La nécessité d'une révision constitutionnelle avant la ratification de certains traités</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. La primauté du droit européen</button>
+                            </div>
+                            <p class="quiz-feedback hidden mt-2 text-sm"></p>
+                        </div>
+                    </div>
+                    <div id="quiz-result" class="mt-6 hidden p-4 rounded-xl font-bold text-center"></div>
+                </section>
+
+                <section class="mt-24 p-12 bg-slate-900 text-white rounded-[3rem] overflow-hidden relative">
+                  <div class="relative z-10 text-left">
+                    <h3 class="text-2xl font-bold mb-6">Prêt pour l'examen ?</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                      <div>
+                        <h4 class="text-blue-400 font-bold text-xs uppercase mb-4 tracking-widest">Citation à retenir</h4>
+                        <p class="text-slate-300 italic mb-4">"La primauté du droit de l'Union européenne prime les dispositions des lois nationales qui lui seraient contraires."</p>
+                        <p class="text-xs text-slate-500">— Cons. const., déc. n° 2006-540 DC</p>
+                      </div>
+                      <div class="space-y-4">
+                        <button onclick="copyCitation()" class="w-full py-3 px-6 bg-white/10 hover:bg-white/20 rounded-xl border border-white/10 text-sm font-bold transition flex justify-between items-center">
+                          Citer cette leçon (APA) <span>📋</span>
+                        </button>
+                        <button onclick="window.print()" class="w-full py-3 px-6 bg-blue-600 hover:bg-blue-700 rounded-xl text-sm font-bold transition flex justify-between items-center">
+                          Version PDF / Imprimer <span>🖨️</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="absolute right-[-30px] bottom-[-30px] text-[12rem] opacity-5">⚖️</div>
+                </section>
+                <script>
+                function copyCitation(){
+                  const c = `ROLANDO C., « Constitution et droit européen », JurisMaster, ${new Date().getFullYear()}. URL : ${location.href}`;
+                  navigator.clipboard.writeText(c);
+                  alert("Citation copiée.");
+                }
+                </script>
+
+                <p class="text-xs text-slate-400 mt-8 text-center">
+                  Contenu à visée pédagogique. Ne constitue pas un conseil juridique personnalisé.
+                </p>
+            </article>
+        </main>
+    </div>
+
+    <script>
+    document.addEventListener('click', e => {
+      if(e.target.closest('#dark-toggle')){
+        document.documentElement.classList.toggle('dark');
+        localStorage.setItem('jm.theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+      }
+    });
+
+    const JM = {
+      get(){ return JSON.parse(localStorage.getItem('jurismaster.v1') || '{"xp":0,"streak":{"count":0,"lastVisit":""},"lessonsCompleted":[],"badges":[],"quizScores":{}}'); },
+      set(s){ localStorage.setItem('jurismaster.v1', JSON.stringify(s)); },
+      addXP(n){ const s=JM.get(); s.xp=(s.xp||0)+n; JM.set(s); window.dispatchEvent(new CustomEvent('jm:xp',{detail:n})); },
+      completeLesson(slug, xp=50){ const s=JM.get(); s.lessonsCompleted=[...new Set([...(s.lessonsCompleted||[]),slug])]; s.xp=(s.xp||0)+xp; JM.set(s); },
+      touchStreak(){ const s=JM.get(); const today=new Date().toISOString().slice(0,10); const last=s.streak?.lastVisit; if(last&&last!==today){const d=new Date(today)-new Date(last); if(d===86400000){s.streak.count=(s.streak.count||0)+1;} else if(d>86400000){s.streak.count=1;} s.streak.lastVisit=today;} else if(!last){s.streak={count:1,lastVisit:today};} JM.set(s); }
+    };
+    JM.touchStreak();
+    JM.completeLesson('droit-constitutionnel/droit-europeen', 50);
+
+    const s = JM.get();
+    const progress = Math.min(100, Math.round(((s.lessonsCompleted||[]).length / 32) * 100));
+    document.querySelectorAll('[data-progress]').forEach(el => el.textContent = progress);
+    document.querySelectorAll('[data-progress-bar]').forEach(el => el.style.width = progress + '%');
+
+    document.querySelectorAll('.quiz-question').forEach((q, qi) => {
+      const correct = parseInt(q.dataset.correct);
+      const feedback = q.querySelector('.quiz-feedback');
+      const explanations = [
+        ["Van Gend en Loos (1963) a consacré l'effet direct du droit communautaire, pas sa primauté.", "Exact ! L'arrêt Costa v. ENEL (1964) a consacré la primauté du droit communautaire sur les lois nationales, même postérieures.", "Cassis de Dijon (1979) a développé le principe de reconnaissance mutuelle dans le marché intérieur."],
+        ["Exact ! L'art. 55 de la Constitution dispose que les traités régulièrement ratifiés ont une autorité supérieure à celle des lois.", "L'art. 88-1 concerne la participation de la République à l'Union européenne.", "L'art. 54 concerne la nécessité d'une révision constitutionnelle pour la ratification de certains traités."],
+        ["Le traité de Nice a proclamé la Charte mais sans valeur contraignante.", "Le traité constitutionnel de 2004 a été rejeté par référendum en France et aux Pays-Bas.", "Exact ! Le traité de Lisbonne (2007) a donné à la Charte des droits fondamentaux une valeur juridique contraignante (art. 6 TUE)."],
+        ["L'art. 55 concerne la primauté des traités, pas la révision constitutionnelle.", "Exact ! L'art. 54 dispose que si la Constitution impose une révision pour la ratification d'un traité, celui-ci ne peut être ratifié qu'après la révision.", "L'art. 88-1 concerne la participation de la République à l'Union européenne."]
+      ];
+      q.querySelectorAll('.quiz-btn').forEach((btn, bi) => {
+        btn.addEventListener('click', () => {
+          if(q.classList.contains('answered')) return;
+          q.classList.add('answered');
+          if(bi === correct){
+            btn.classList.add('bg-green-100', 'border-green-500', 'text-green-800');
+            feedback.textContent = explanations[qi][bi];
+            feedback.className = 'quiz-feedback mt-2 text-sm text-green-700';
+          } else {
+            btn.classList.add('bg-red-100', 'border-red-500', 'text-red-800');
+            q.querySelectorAll('.quiz-btn')[correct].classList.add('bg-green-100', 'border-green-500');
+            feedback.textContent = explanations[qi][bi];
+            feedback.className = 'quiz-feedback mt-2 text-sm text-red-700';
+          }
+          feedback.classList.remove('hidden');
+        });
+      });
+    });
+    </script>
+</body>
+</html>

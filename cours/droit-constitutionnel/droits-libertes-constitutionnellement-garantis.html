@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Droits et libertés constitutionnellement garantis - Droit constitutionnel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; line-height: 1.8; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .prose h2 { font-size: 2rem; font-weight: 700; margin-top: 3rem; margin-bottom: 1.5rem; color: #1e3a8a; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; }
+        .prose h3 { font-size: 1.5rem; font-weight: 600; margin-top: 2rem; margin-bottom: 1rem; color: #1e40af; }
+        .prose p { margin-bottom: 1.5rem; color: #334155; text-align: justify; }
+        .sidebar-link.active { color: #1d4ed8; font-weight: 600; border-left: 3px solid #1d4ed8; }
+        .focus-box { background-color: #f8fafc; border-left: 4px solid #3b82f6; padding: 1.5rem; border-radius: 0.5rem; margin: 2rem 0; }
+        .citation { font-style: italic; color: #475569; border-left: 2px solid #cbd5e1; padding-left: 1.5rem; margin: 2rem 0; }
+    </style>
+</head>
+<body class="bg-white dark:bg-slate-900">
+    <script>tailwind.config={darkMode:'class'}</script>
+    <script>
+    (function(){
+      const stored = localStorage.getItem('jm.theme');
+      if(stored === 'dark' || (!stored && matchMedia('(prefers-color-scheme: dark)').matches)){
+        document.documentElement.classList.add('dark');
+      }
+    })();
+    </script>
+
+    <nav class="sticky top-0 z-50 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-6 py-3 flex justify-between items-center">
+      <a href="../../index.html" class="text-xl font-bold tracking-tight">JURIS<span class="text-blue-700">MASTER</span></a>
+      <div class="flex items-center space-x-4">
+        <button id="dark-toggle" aria-label="Basculer mode sombre" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800">🌓</button>
+        <span class="text-sm text-slate-500">Progression : <span data-progress>0</span>%</span>
+        <div class="w-32 h-2 bg-slate-100 rounded-full overflow-hidden">
+          <div class="bg-blue-600 h-full" data-progress-bar style="width:0%"></div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row">
+        <aside class="w-full md:w-80 border-r border-slate-100 dark:border-slate-800 p-8 h-screen sticky top-14 overflow-y-auto bg-slate-50/50 dark:bg-slate-900/50">
+            <h4 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-6">Droit constitutionnel</h4>
+            <div class="space-y-8 text-sm text-left">
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">I. L'État et la souveraineté</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="notion-etat-elements-constitutifs.html" class="sidebar-link pl-4 block text-slate-500">A1. La notion d'État</a></li>
+                        <li><a href="souverainete-modes-exercice.html" class="sidebar-link pl-4 block text-slate-500">A2. La souveraineté</a></li>
+                        <li><a href="constitution-notion-types-fonctions.html" class="sidebar-link pl-4 block text-slate-500">A3. La Constitution</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">II. Le bloc de constitutionnalité</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="bloc-constitutionnalite-hierarchie-normes.html" class="sidebar-link pl-4 block text-slate-500">A4. Bloc et hiérarchie</a></li>
+                        <li><a href="histoire-constitutionnelle-francaise.html" class="sidebar-link pl-4 block text-slate-500">A5. Histoire (1789–1958)</a></li>
+                        <li><a href="typologie-regimes-politiques.html" class="sidebar-link pl-4 block text-slate-500">A6. Régimes politiques</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">III. La Ve République</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="constitution-1958-genese-principes.html" class="sidebar-link pl-4 block text-slate-500">A7. Constitution de 1958</a></li>
+                        <li><a href="president-republique.html" class="sidebar-link pl-4 block text-slate-500">A8. Président</a></li>
+                        <li><a href="gouvernement-parlement-rapports-force.html" class="sidebar-link pl-4 block text-slate-500">A9. Gouvernement et Parlement</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">IV. Le juge et les droits</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="conseil-constitutionnel.html" class="sidebar-link pl-4 block text-slate-500">A10. Conseil constitutionnel</a></li>
+                        <li><a href="droits-libertes-constitutionnellement-garantis.html" class="sidebar-link active pl-4 block">A11. Droits et libertés</a></li>
+                        <li><a href="constitution-droit-europeen.html" class="sidebar-link pl-4 block text-slate-500">A12. Droit européen</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <main class="flex-1 py-16 px-6 md:px-20 max-w-5xl">
+            <article class="prose prose-slate lg:prose-lg mx-auto text-left">
+                <nav class="text-sm text-blue-600 font-semibold mb-8 uppercase tracking-wide">Chapitre IV — Le juge et les droits</nav>
+                <h1 class="text-4xl md:text-6xl font-bold mb-10 leading-tight">Droits et libertés constitutionnellement garantis</h1>
+                
+                <p class="text-xl text-slate-500 italic mb-12 border-l-4 border-blue-100 pl-6 py-2">
+                    "Les droits de l'homme sont des droits naturels, inaliénables et sacrés."
+                </p>
+                <p class="text-sm text-slate-400 mb-8">— Déclaration des droits de l'homme et du citoyen, 1789, art. 2</p>
+
+                <h2 id="exorde">Exorde — De 1789 à la Charte de l'environnement</h2>
+                <p>
+                    La protection des droits fondamentaux constitue l'une des fonctions essentielles de la Constitution. En France, cette protection repose sur plusieurs strates normatives : la Déclaration de 1789 (droits civils et politiques), le Préambule de 1946 (droits économiques et sociaux), la Constitution de 1958 (principes structurants), et la Charte de l'environnement de 2004 (droits environnementaux). Le Conseil constitutionnel, à travers sa jurisprudence, a progressivement construit un "catalogue" de droits et libertés qui s'enrichit sans cesse.
+                </p>
+                <p>
+                    Enjeu contemporain : la hiérarchisation des droits (absolus vs. relatifs), la concurrence entre libertés (liberté d'expression vs. respect de la vie privée), et l'effet des instruments internationaux (CEDH, Pacte international relatif aux droits civils et politiques, Charte des droits fondamentaux de l'UE) sur le bloc de constitutionnalité français. La QPC a multiplié les contentieux relatifs aux droits fondamentaux.
+                </p>
+
+                <h2 id="partie1">Partie I — Les sources des droits fondamentaux</h2>
+
+                <h3>A. La Déclaration de 1789 : les droits-libertés</h3>
+                <p>
+                    La <strong>Déclaration des droits de l'homme et du citoyen de 1789</strong>, intégrée au bloc de constitutionnalité par la décision 71-44 DC, énonce les droits fondamentaux de la personne. L'art. 1er proclame que "les hommes naissent et demeurent libres et égaux en droits". L'art. 2 définit les droits naturels : "la conservation des droits naturels et imprescriptibles de l'homme. Ces droits sont la liberté, la propriété, la sûreté, et la résistance à l'oppression."
+                </p>
+                <p>
+                    Les droits de la Déclaration de 1789 sont des <strong>droits-libertés</strong>, c'est-à-dire des prérogatives individuelles opposables à l'État. Ils concernent la liberté personnelle (art. 7 : nul ne peut être accusé, arrêté ou détenu que dans les cas déterminés par la loi), la liberté d'expression (art. 11 : "la libre communication des pensées et des opinions est un des droits les plus précieux de l'homme"), la liberté religieuse (art. 10 : "nul ne doit être inquiété pour ses opinions, même religieuses"), et la propriété (art. 17 : "la propriété étant un droit inviolable et sacré").
+                </p>
+
+                <h3>B. Le Préambule de 1946 : les droits-creances</h3>
+                <p>
+                    Le <strong>Préambule de la Constitution de 1946</strong> complète le catalogue de 1789 par des <strong>droits-creances</strong>, c'est-à-dire des droits qui exigent une action positive de l'État pour être effectifs. Il proclame : le droit au travail (alinéa 5), le droit de grève (alinéa 6), la liberté syndicale (alinéa 6), la participation des travailleurs à la gestion des entreprises (alinéa 6), la sécurité sociale (alinéa 8), le droit à l'éducation (alinéa 9), et le droit à la culture (alinéa 10).
+                </p>
+                <p>
+                    Ces droits, contrairement aux droits-libertés, ne sont pas opposables directement à des particuliers : ils imposent à l'État une obligation de moyens, pas de résultat. Le Conseil constitutionnel a admis que le droit au travail ne pouvait garantir un emploi à chacun, mais que le législateur devait prendre des mesures pour lutter contre le chômage (décision n° 94-359 DC, 19 janvier 1995). De même, le droit de grève est protégé mais peut être limité dans certains secteurs (services publics essentiels).
+                </p>
+
+                <h3>C. Les principes fondamentaux reconnus par les lois de la République (PFRLR)</h3>
+                <p>
+                    L'alinéa 5 du Préambule de 1946 renvoie aux "principes fondamentaux reconnus par les lois de la République". Le Conseil constitutionnel a dégagé plusieurs principes à partir de cette formule : la <strong>liberté d'association</strong> (71-44 DC), la <strong>liberté d'enseignement</strong> (77-87 DC), la <strong>liberté de communication</strong> (84-181 DC), l'<strong>inviolabilité du domicile</strong> (95-360 DC), la <strong>neutralité du service public</strong> (2012-658 DC), la <strong>liberté d'aller et venir</strong> (95-360 DC), et le <strong>principe d'interdiction de l'arbitraire</strong> (77-87 DC).
+                </p>
+                <p>
+                    Le critère pour qu'un principe soit reconnu comme PFRLR est qu'il doive être "fondamental" (protéger une liberté essentielle) et "reconnu par les lois de la République" (avoir une assise législative antérieure à 1946 ou confirmée depuis). Le Conseil constitutionnel refuse de reconnaître des principes trop vagues ou récents comme PFRLR. Ainsi, le "droit à l'oubli numérique" ou la "liberté de création" ne sont pas encore reconnus comme PFRLR.
+                </p>
+
+                <h2 id="partie2">Partie II — La hiérarchie et les limites des droits</h2>
+
+                <h3>A. La hiérarchie des normes de protection</h3>
+                <p>
+                    Les droits fondamentaux bénéficient d'une triple protection. Au niveau <strong>interne</strong>, le Conseil constitutionnel les protège par le contrôle de constitutionnalité (a priori et a posteriori). Au niveau <strong>international</strong>, la Cour européenne des droits de l'homme (CEDH) les protège par le contrôle de conventionnalité (art. 34 CEDH : requête individuelle). Au niveau <strong>européen</strong>, la Cour de justice de l'Union européenne (CJUE) les protège par l'application de la Charte des droits fondamentaux de l'UE (art. 6 TUE, reconnaissance par le traité de Lisbonne de 2007).
+                </p>
+                <p>
+                    Le Conseil constitutionnel a admis que les traités internationaux relatifs aux droits de l'homme (CEDH, PIDCP) avaient une autorité supérieure à celle des lois (art. 55 de la Constitution), mais inférieure à celle de la Constitution. Dans sa décision n° 75-56 DC du 11 janvier 1975 (IVG), il a refusé de censurer la loi Veil au nom de la CEDH, estimant que le contrôle de conventionnalité relevait des juridictions ordinaires. Cette jurisprudence a évolué : le Conseil constitutionnel prend désormais en compte la CEDH dans son analyse (décision n° 99-419 DC, 15 mars 2000).
+                </p>
+
+                <h3>B. Les limites aux droits fondamentaux</h3>
+                <p>
+                    Aucun droit fondamental n'est absolu. La Déclaration de 1789 elle-même prévoit des limites : l'art. 4 dispose que "la liberté consiste à faire tout ce qui ne nuit pas à autrui". Le Conseil constitutionnel a développé une technique de <strong>proportionnalité</strong> pour apprécier la limitation des droits : la mesure doit poursuivre un but légitime, être nécessaire (pas de moyen moins restrictif), et être proportionnée au but poursuivi (décision n° 2001-445 DC, 19 juin 2001, loi sur la présomption d'innocence).
+                </p>
+                <p>
+                    Certains droits sont "absolus" dans leur principe mais peuvent faire l'objet de dérogations exceptionnelles : l'interdiction de la torture (art. 3 CEDH), l'interdiction de l'esclavage, la protection de la vie humaine. D'autres droits sont "relatifs" et peuvent être limités par la loi dans l'intérêt général : la liberté d'expression (lois sur la diffamation, l'incitation à la haine), la liberté de réunion (interdiction des rassemblements armés), la liberté d'aller et venir (assignation à résidence, contrôle d'identité).
+                </p>
+
+                <div class="focus-box">
+                    <h4 class="font-bold text-blue-900 dark:text-blue-300 mb-2">Appareil critique — Bibliographie</h4>
+                    <p class="text-sm mb-0">
+                        <strong>Doctrinale :</strong> Dominique Rousseau, <em>Droit du contentieux constitutionnel</em> (14e éd., 2023) ; Louis Favoreu, <em>Les Droits fondamentaux</em> (PUF, 1991) ; Conseil d'État, <em>Le Droit international de l'environnement et les droits fondamentaux</em> (La Documentation française, 2021).<br><br>
+                        <strong>Arrêts de principe :</strong> Cons. const., déc. n° 71-44 DC (liberté d'association) ; déc. n° 94-359 DC (droit au travail) ; déc. n° 2012-658 DC (neutralité du service public) ; CEDH, <em>Handyside v. Royaume-Uni</em>, 7 déc. 1976 (liberté d'expression).
+                    </p>
+                </div>
+
+                <!-- QUIZ -->
+                <section class="mt-16 p-8 bg-slate-50 dark:bg-slate-800 rounded-2xl">
+                    <h3 class="text-2xl font-bold mb-6">Quiz — Droits et libertés</h3>
+                    <div id="quiz-container" class="space-y-6">
+                        <div class="quiz-question" data-correct="1">
+                            <p class="font-semibold mb-3">1. Le droit au travail est un droit :</p>
+                            <div class="space-y-2">
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. Liberté</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. Créance</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. Absolu</button>
+                            </div>
+                            <p class="quiz-feedback hidden mt-2 text-sm"></p>
+                        </div>
+                        <div class="quiz-question" data-correct="0">
+                            <p class="font-semibold mb-3">2. Quel principe a été dégagé par le Conseil constitutionnel dans la décision 77-87 DC ?</p>
+                            <div class="space-y-2">
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. Interdiction de l'arbitraire</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. Neutralité du service public</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. Liberté de communication</button>
+                            </div>
+                            <p class="quiz-feedback hidden mt-2 text-sm"></p>
+                        </div>
+                        <div class="quiz-question" data-correct="2">
+                            <p class="font-semibold mb-3">3. La Charte des droits fondamentaux de l'UE a été reconnue par :</p>
+                            <div class="space-y-2">
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. Le traité de Maastricht (1992)</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. Le traité de Nice (2001)</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. Le traité de Lisbonne (2007)</button>
+                            </div>
+                            <p class="quiz-feedback hidden mt-2 text-sm"></p>
+                        </div>
+                        <div class="quiz-question" data-correct="0">
+                            <p class="font-semibold mb-3">4. L'art. 4 de la DDHC 1789 définit la liberté comme :</p>
+                            <div class="space-y-2">
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. Le droit de faire tout ce qui ne nuit pas à autrui</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. L'absence de toute contrainte</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. La soumission à la loi seule</button>
+                            </div>
+                            <p class="quiz-feedback hidden mt-2 text-sm"></p>
+                        </div>
+                    </div>
+                    <div id="quiz-result" class="mt-6 hidden p-4 rounded-xl font-bold text-center"></div>
+                </section>
+
+                <section class="mt-24 p-12 bg-slate-900 text-white rounded-[3rem] overflow-hidden relative">
+                  <div class="relative z-10 text-left">
+                    <h3 class="text-2xl font-bold mb-6">Prêt pour l'examen ?</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                      <div>
+                        <h4 class="text-blue-400 font-bold text-xs uppercase mb-4 tracking-widest">Citation à retenir</h4>
+                        <p class="text-slate-300 italic mb-4">"Les droits de l'homme sont des droits naturels, inaliénables et sacrés."</p>
+                        <p class="text-xs text-slate-500">— DDHC 1789, art. 2</p>
+                      </div>
+                      <div class="space-y-4">
+                        <button onclick="copyCitation()" class="w-full py-3 px-6 bg-white/10 hover:bg-white/20 rounded-xl border border-white/10 text-sm font-bold transition flex justify-between items-center">
+                          Citer cette leçon (APA) <span>📋</span>
+                        </button>
+                        <button onclick="window.print()" class="w-full py-3 px-6 bg-blue-600 hover:bg-blue-700 rounded-xl text-sm font-bold transition flex justify-between items-center">
+                          Version PDF / Imprimer <span>🖨️</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="absolute right-[-30px] bottom-[-30px] text-[12rem] opacity-5">⚖️</div>
+                </section>
+                <script>
+                function copyCitation(){
+                  const c = `ROLANDO C., « Droits et libertés constitutionnellement garantis », JurisMaster, ${new Date().getFullYear()}. URL : ${location.href}`;
+                  navigator.clipboard.writeText(c);
+                  alert("Citation copiée.");
+                }
+                </script>
+
+                <p class="text-xs text-slate-400 mt-8 text-center">
+                  Contenu à visée pédagogique. Ne constitue pas un conseil juridique personnalisé.
+                </p>
+            </article>
+        </main>
+    </div>
+
+    <script>
+    document.addEventListener('click', e => {
+      if(e.target.closest('#dark-toggle')){
+        document.documentElement.classList.toggle('dark');
+        localStorage.setItem('jm.theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+      }
+    });
+
+    const JM = {
+      get(){ return JSON.parse(localStorage.getItem('jurismaster.v1') || '{"xp":0,"streak":{"count":0,"lastVisit":""},"lessonsCompleted":[],"badges":[],"quizScores":{}}'); },
+      set(s){ localStorage.setItem('jurismaster.v1', JSON.stringify(s)); },
+      addXP(n){ const s=JM.get(); s.xp=(s.xp||0)+n; JM.set(s); window.dispatchEvent(new CustomEvent('jm:xp',{detail:n})); },
+      completeLesson(slug, xp=50){ const s=JM.get(); s.lessonsCompleted=[...new Set([...(s.lessonsCompleted||[]),slug])]; s.xp=(s.xp||0)+xp; JM.set(s); },
+      touchStreak(){ const s=JM.get(); const today=new Date().toISOString().slice(0,10); const last=s.streak?.lastVisit; if(last&&last!==today){const d=new Date(today)-new Date(last); if(d===86400000){s.streak.count=(s.streak.count||0)+1;} else if(d>86400000){s.streak.count=1;} s.streak.lastVisit=today;} else if(!last){s.streak={count:1,lastVisit:today};} JM.set(s); }
+    };
+    JM.touchStreak();
+    JM.completeLesson('droit-constitutionnel/droits-libertes', 50);
+
+    const s = JM.get();
+    const progress = Math.min(100, Math.round(((s.lessonsCompleted||[]).length / 32) * 100));
+    document.querySelectorAll('[data-progress]').forEach(el => el.textContent = progress);
+    document.querySelectorAll('[data-progress-bar]').forEach(el => el.style.width = progress + '%');
+
+    document.querySelectorAll('.quiz-question').forEach((q, qi) => {
+      const correct = parseInt(q.dataset.correct);
+      const feedback = q.querySelector('.quiz-feedback');
+      const explanations = [
+        ["Les droits-libertés sont des prérogatives individuelles opposables à l'État (liberté, propriété).", "Exact ! Le droit au travail est un droit-créance : il exige une action positive de l'État (politique de l'emploi, formation) pour être effectif.", "Le droit au travail n'est pas absolu : le Conseil constitutionnel a admis qu'il ne pouvait garantir un emploi à chacun."],
+        ["Exact ! La décision n° 77-87 DC du 23 novembre 1977 (loi Veil sur l'IVG) a dégagé le principe d'interdiction de l'arbitraire comme PFRLR.", "La neutralité du service public a été dégagée par la décision 2012-658 DC.", "La liberté de communication a été dégagée par la décision 84-181 DC."],
+        ["Le traité de Maastricht a instauré la citoyenneté de l'Union mais pas la Charte des droits fondamentaux.", "Le traité de Nice a proclamé la Charte des droits fondamentaux mais sans valeur juridique contraignante.", "Exact ! Le traité de Lisbonne (2007) a donné à la Charte des droits fondamentaux de l'UE une valeur juridique contraignante (art. 6 TUE)."],
+        ["Exact ! L'art. 4 de la DDHC dispose : 'La liberté consiste à faire tout ce qui ne nuit pas à autrui.'", "L'absence de toute contrainte est une définition anarchiste, pas celle de la DDHC.", "La soumission à la loi seule correspond à l'art. 4 de la DDHC dans une autre formulation (les limites de la liberté sont déterminées par la loi)."]
+      ];
+      q.querySelectorAll('.quiz-btn').forEach((btn, bi) => {
+        btn.addEventListener('click', () => {
+          if(q.classList.contains('answered')) return;
+          q.classList.add('answered');
+          if(bi === correct){
+            btn.classList.add('bg-green-100', 'border-green-500', 'text-green-800');
+            feedback.textContent = explanations[qi][bi];
+            feedback.className = 'quiz-feedback mt-2 text-sm text-green-700';
+          } else {
+            btn.classList.add('bg-red-100', 'border-red-500', 'text-red-800');
+            q.querySelectorAll('.quiz-btn')[correct].classList.add('bg-green-100', 'border-green-500');
+            feedback.textContent = explanations[qi][bi];
+            feedback.className = 'quiz-feedback mt-2 text-sm text-red-700';
+          }
+          feedback.classList.remove('hidden');
+        });
+      });
+    });
+    </script>
+</body>
+</html>
