@@ -7,72 +7,110 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; line-height: 1.7; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.8; }
         h1, h2, h3 { font-family: 'Playfair Display', serif; }
-        .prose h2 { font-size: 1.875rem; font-weight: 700; margin-top: 2.5rem; margin-bottom: 1.25rem; color: #1e3a8a; }
-        .prose p { margin-bottom: 1.25rem; color: #334155; }
-        .sidebar-link.active { color: #1d4ed8; font-weight: 600; border-left: 2px solid #1d4ed8; }
+        .prose h2 { font-size: 2rem; font-weight: 700; margin-top: 3rem; margin-bottom: 1.5rem; color: #1e3a8a; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; }
+        .prose h3 { font-size: 1.5rem; font-weight: 600; margin-top: 2rem; margin-bottom: 1rem; color: #1e40af; }
+        .prose p { margin-bottom: 1.5rem; color: #334155; text-align: justify; }
+        .sidebar-link.active { color: #1d4ed8; font-weight: 600; border-left: 3px solid #1d4ed8; }
     </style>
 </head>
 <body class="bg-white">
 
-    <nav class="sticky top-0 z-50 bg-white border-b border-slate-200 px-6 py-3 flex justify-between items-center text-left">
-        <a href="../../index.html" class="text-xl font-bold tracking-tight text-left">JURIS<span class="text-blue-700 text-left">MASTER</span></a>
-        <div class="flex items-center space-x-4 text-left">
-            <span class="text-sm text-slate-500 text-left text-left">Progression : 20%</span>
-            <div class="w-32 h-2 bg-slate-100 rounded-full overflow-hidden text-left text-left text-left">
-                <div class="bg-blue-600 h-full w-[20%] text-left text-left"></div>
+    <!-- BARRE DE NAVIGATION SUPÉRIEURE -->
+    <nav class="sticky top-0 z-50 bg-white border-b border-slate-200 px-6 py-3 flex justify-between items-center">
+        <a href="../../index.html" class="text-xl font-bold tracking-tight">JURIS<span class="text-blue-700">MASTER</span></a>
+        <div class="flex items-center space-x-4">
+            <span class="text-sm text-slate-500 text-left">Progression : 20%</span>
+            <div class="w-32 h-2 bg-slate-100 rounded-full overflow-hidden">
+                <div class="bg-blue-600 h-full w-[20%] text-left"></div>
             </div>
         </div>
     </nav>
 
-    <div class="max-w-7xl mx-auto flex flex-col md:flex-row text-left text-left">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row text-left">
         
-        <aside class="w-full md:w-72 border-r border-slate-100 p-8 h-screen sticky top-14 overflow-y-auto bg-slate-50/50 text-left">
-            <h4 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-6 text-left">Droit des obligations</h4>
-            <div class="space-y-6 text-sm text-left text-left">
-                <div class="text-left text-left">
-                    <p class="font-bold text-slate-900 mb-3 text-left">1. Le contrat</p>
-                    <ul class="space-y-3 pl-2 border-l border-slate-200 text-left">
-                        <li><a href="formation-du-contrat.html" class="sidebar-link active pl-3 block text-left">Formation du contrat</a></li>
-                        <li><a href="#" class="sidebar-link pl-3 block text-slate-500 text-left">Exécution et sanctions</a></li>
+        <!-- BARRE LATÉRALE -->
+        <aside class="w-full md:w-80 border-r border-slate-100 p-8 h-screen sticky top-14 overflow-y-auto bg-slate-50/50">
+            <h4 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-6">Droit des obligations</h4>
+            <div class="space-y-8 text-sm">
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">1. L'acte juridique : le contrat</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="formation-du-contrat.html" class="sidebar-link active pl-4 block">Formation du contrat</a></li>
+                        <li><a href="sanctions-formation.html" class="sidebar-link pl-4 block text-slate-500">Nullités et sanctions</a></li>
+                        <li><a href="execution-contrat.html" class="sidebar-link pl-4 block text-slate-500">Exécution du contrat</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">2. Le fait juridique : la responsabilité</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="responsabilite-civile.html" class="sidebar-link pl-4 block text-slate-500">Responsabilité civile</a></li>
+                        <li><a href="regime-general.html" class="sidebar-link pl-4 block text-slate-500">Régime des obligations</a></li>
                     </ul>
                 </div>
             </div>
         </aside>
 
-        <main class="flex-1 py-16 px-6 md:px-16 max-w-4xl text-left">
+        <!-- CONTENU DU COURS -->
+        <main class="flex-1 py-16 px-6 md:px-20 max-w-5xl">
             <article class="prose prose-slate lg:prose-lg mx-auto text-left">
-                <nav class="text-sm text-blue-600 font-medium mb-8 text-left">Chapitre 1 — Le contrat</nav>
-                <h1 class="text-4xl md:text-5xl font-bold mb-8 leading-tight text-left">La formation du contrat</h1>
+                <nav class="text-sm text-blue-600 font-semibold mb-8 uppercase tracking-wide">Chapitre 1 — Le contrat</nav>
+                <h1 class="text-4xl md:text-6xl font-bold mb-10 leading-tight">La formation du contrat</h1>
                 
-                <p class="text-left text-left">
-                    Le contrat est une convention par laquelle une ou plusieurs personnes s'obligent, envers une ou plusieurs autres, à donner, à faire ou à ne pas faire quelque chose. Depuis la réforme de 2016, trois conditions sont nécessaires à sa validité.
+                <p>
+                    Le contrat est, selon l'article 1101 du Code civil (issu de l'ordonnance du 10 février 2016), « un accord de volontés entre deux ou plusieurs personnes destiné à créer, modifier, transmettre ou éteindre des obligations ». Sa validité repose sur des piliers fondamentaux garantissant l'équilibre et la justice contractuelle.
                 </p>
 
-                <h2 class="text-left">1. Le consentement des parties</h2>
-                <p class="text-left">
-                    Le consentement doit exister (rencontre d'une offre et d'une acceptation) et être libre et éclairé. Le droit protège le consentement contre trois "vices" :
+                <h2 id="processus">1. Le processus de formation</h2>
+                <p>
+                    Le contrat n'apparaît pas toujours instantanément. Il est souvent précédé d'une phase de <strong>négociations</strong> (pourparlers) qui doit être conduite de bonne foi (Art. 1112).
                 </p>
-                <ul class="list-disc pl-6 space-y-3 mb-8 text-left">
-                    <li><strong>L'erreur :</strong> Se méprendre sur une qualité essentielle de la prestation ou du cocontractant.</li>
-                    <li><strong>Le dol :</strong> Obtenir le consentement par des manœuvres frauduleuses ou un silence intentionnel.</li>
-                    <li><strong>La violence :</strong> Exercer une pression physique ou morale pour forcer la signature.</li>
+
+                <h3>A. L'offre et l'acceptation</h3>
+                <p>
+                    Le contrat se forme par la rencontre d'une <strong>offre</strong> (ferme et précise) et d'une <strong>acceptation</strong> (pure et simple) exprimant la volonté de s'engager. Si l'acceptant propose des modifications, il s'agit d'une contre-offre.
+                </p>
+
+                <h3>B. Les avant-contrats</h3>
+                <ul class="list-disc pl-6 space-y-2 mb-8">
+                    <li><strong>Le pacte de préférence :</strong> Engagement de proposer prioritairement le contrat au bénéficiaire si l'on décide de contracter.</li>
+                    <li><strong>La promesse unilatérale :</strong> Le promettant accorde au bénéficiaire le droit d'opter pour la conclusion d'un contrat dont les éléments essentiels sont déjà déterminés.</li>
                 </ul>
 
-                <h2 class="text-left">2. La capacité de contracter</h2>
-                <p class="text-left">
-                    En principe, toute personne physique peut contracter, sauf si elle est déclarée incapable par la loi (mineurs non émancipés, majeurs protégés).
+                <h2 id="validite">2. Les conditions de validité (Art. 1128)</h2>
+                <p>
+                    Trois conditions cumulatives sont nécessaires à la validité d'un contrat :
                 </p>
 
-                <h2 class="text-left text-left">3. Un contenu licite et certain</h2>
-                <p class="text-left text-left">
-                    L'objet de l'obligation doit être possible, déterminé (ou déterminable) et ne pas déroger à l'ordre public.
+                <h3>A. Le consentement des parties</h3>
+                <p>
+                    Il doit être exempt de <strong>vices</strong>. L'article 1130 retient trois vices du consentement :
+                </p>
+                <ul class="list-disc pl-6 space-y-4 mb-8">
+                    <li><strong>L'erreur :</strong> Se méprendre sur les qualités essentielles de la prestation ou du cocontractant (si l'intuitu personae est déterminant).</li>
+                    <li><strong>Le dol :</strong> Manœuvres frauduleuses, mensonges ou silence intentionnel (dissimulation d'une information capitale) destinés à tromper l'autre partie.</li>
+                    <li><strong>La violence :</strong> Pression physique, morale ou économique exercée pour contraindre au contrat.</li>
+                </ul>
+
+                <h3>B. La capacité des parties</h3>
+                <p>
+                    Toute personne physique peut contracter, sauf en cas d'incapacité prévue par la loi (mineurs non émancipés et majeurs protégés). La capacité est l'aptitude à être titulaire de droits et à les exercer.
                 </p>
 
-                <div class="mt-20 pt-10 border-t border-slate-100 flex justify-between text-left">
-                    <button class="text-slate-400 font-medium text-left">← Précédent</button>
-                    <a href="#" class="text-blue-600 font-bold hover:underline text-left">Suivant : Exécution →</a>
+                <h3>C. Un contenu licite et certain</h3>
+                <p>
+                    Le contrat ne peut déroger à l'ordre public (licéité). Son objet doit être déterminé ou déterminable, et exister au moment de la conclusion (ou être futur).
+                </p>
+
+                <div class="focus-box">
+                    <h4 class="font-bold text-blue-900 mb-2">Focus : L'obligation d'information</h4>
+                    <p class="text-sm mb-0">Depuis 2016, l'article 1112-1 consacre un devoir général d'information : la partie qui connaît une information dont l'importance est déterminante pour le consentement de l'autre doit l'en informer dès lors que, légitimement, cette dernière ignore cette information ou fait confiance à son cocontractant.</p>
+                </div>
+
+                <div class="mt-20 pt-10 border-t border-slate-100 flex justify-between">
+                    <a href="../../intro-droit.html" class="text-blue-600 font-bold hover:underline transition">← Retour au sommaire</a>
+                    <a href="sanctions-formation.html" class="text-blue-600 font-bold hover:underline transition">Chapitre suivant : Les sanctions de la formation →</a>
                 </div>
             </article>
         </main>

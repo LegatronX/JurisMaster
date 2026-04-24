@@ -7,18 +7,20 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; line-height: 1.7; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.8; }
         h1, h2, h3 { font-family: 'Playfair Display', serif; }
-        .prose h2 { font-size: 1.875rem; font-weight: 700; margin-top: 2.5rem; margin-bottom: 1.25rem; color: #1e3a8a; }
-        .prose p { margin-bottom: 1.25rem; color: #334155; }
-        .sidebar-link.active { color: #1d4ed8; font-weight: 600; border-left: 2px solid #1d4ed8; }
+        .prose h2 { font-size: 2rem; font-weight: 700; margin-top: 3rem; margin-bottom: 1.5rem; color: #1e3a8a; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; }
+        .prose h3 { font-size: 1.5rem; font-weight: 600; margin-top: 2rem; margin-bottom: 1rem; color: #1e40af; }
+        .prose p { margin-bottom: 1.5rem; color: #334155; text-align: justify; }
+        .sidebar-link.active { color: #1d4ed8; font-weight: 600; border-left: 3px solid #1d4ed8; }
     </style>
 </head>
 <body class="bg-white">
 
+    <!-- BARRE DE NAVIGATION SUPÉRIEURE -->
     <nav class="sticky top-0 z-50 bg-white border-b border-slate-200 px-6 py-3 flex justify-between items-center text-left">
         <a href="../../index.html" class="text-xl font-bold tracking-tight text-left text-left">JURIS<span class="text-blue-700 text-left">MASTER</span></a>
-        <div class="flex items-center space-x-4 text-left text-left">
+        <div class="flex items-center space-x-4 text-left">
             <span class="text-sm text-slate-500 text-left">Progression : 75%</span>
             <div class="w-32 h-2 bg-slate-100 rounded-full overflow-hidden text-left">
                 <div class="bg-blue-600 h-full w-[75%] text-left"></div>
@@ -28,49 +30,75 @@
 
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row text-left">
         
-        <aside class="w-full md:w-72 border-r border-slate-100 p-8 h-screen sticky top-14 overflow-y-auto bg-slate-50/50 text-left">
+        <!-- BARRE LATÉRALE -->
+        <aside class="w-full md:w-80 border-r border-slate-100 p-8 h-screen sticky top-14 overflow-y-auto bg-slate-50/50 text-left text-left">
             <h4 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-6 text-left">Droit des obligations</h4>
-            <div class="space-y-6 text-sm text-left">
-                <div class="text-left">
-                    <p class="font-bold text-slate-900 mb-3 text-left">2. La responsabilité</p>
+            <div class="space-y-8 text-sm text-left">
+                <div>
+                    <p class="font-bold text-slate-900 mb-4 text-left">2. Le fait juridique : la responsabilité</p>
                     <ul class="space-y-3 pl-2 border-l border-slate-200 text-left">
-                        <li><a href="responsabilite-civile.html" class="sidebar-link active pl-3 block">Fait générateur</a></li>
-                        <li><a href="#" class="sidebar-link pl-3 block text-slate-500">Réparation</a></li>
+                        <li><a href="responsabilite-civile.html" class="sidebar-link active pl-4 block">Responsabilité civile</a></li>
+                        <li><a href="regime-general.html" class="sidebar-link pl-4 block text-slate-500">Régime des obligations</a></li>
                     </ul>
                 </div>
             </div>
         </aside>
 
-        <main class="flex-1 py-16 px-6 md:px-16 max-w-4xl text-left">
+        <!-- CONTENU DU COURS -->
+        <main class="flex-1 py-16 px-6 md:px-20 max-w-5xl text-left">
             <article class="prose prose-slate lg:prose-lg mx-auto text-left">
-                <nav class="text-sm text-blue-600 font-medium mb-8 text-left">Chapitre 2 — La responsabilité</nav>
-                <h1 class="text-4xl md:text-5xl font-bold mb-8 leading-tight text-left text-left text-left">La responsabilité civile extracontractuelle</h1>
+                <nav class="text-sm text-blue-600 font-semibold mb-8 uppercase tracking-wide text-left">Chapitre 2 — La responsabilité</nav>
+                <h1 class="text-4xl md:text-6xl font-bold mb-10 leading-tight text-left">La responsabilité civile extracontractuelle</h1>
                 
-                <p class="text-left">
-                    La responsabilité civile a pour objet de réparer le dommage causé à autrui. Pour être engagée, elle nécessite la réunion de trois conditions : un fait générateur, un dommage et un lien de causalité.
+                <p>
+                    La responsabilité civile a une fonction essentielle : la <strong>réparation</strong>. Contrairement à la responsabilité pénale qui punit, la responsabilité civile vise à rétablir l'équilibre rompu par le dommage en replaçant la victime dans la situation où elle se serait trouvée si l'acte dommageable n'avait pas eu lieu. Elle repose sur le triptyque classique : un dommage, un fait générateur et un lien de causalité.
                 </p>
 
-                <h2 class="text-left">1. Le fait générateur</h2>
-                <p class="text-left">Il peut prendre trois formes principales :</p>
-                <ul class="list-disc pl-6 space-y-3 mb-8 text-left">
-                    <li><strong>La responsabilité du fait personnel :</strong> Fondée sur la faute (imprudence ou négligence).</li>
-                    <li><strong>La responsabilité du fait des choses :</strong> On est responsable des dommages causés par les choses que l'on a sous sa garde.</li>
-                    <li><strong>La responsabilité du fait d'autrui :</strong> Les parents pour leurs enfants, les commettants (employeurs) pour leurs préposés.</li>
+                <h2 id="dommage">1. Le dommage (Le préjudice)</h2>
+                <p>
+                    Sans dommage, il n'y a pas de responsabilité civile. Le préjudice doit présenter certains caractères pour être réparable : il doit être <strong>certain</strong> (pas seulement éventuel), <strong>direct</strong>, <strong>personnel</strong> et porter atteinte à un intérêt <strong>légitime</strong> juridiquement protégé.
+                </p>
+                <ul class="list-disc pl-6 space-y-2 mb-8">
+                    <li><strong>Matériel :</strong> Atteinte au patrimoine (perte subie, gain manqué).</li>
+                    <li><strong>Corporel :</strong> Atteinte à l'intégrité physique (frais médicaux, pretium doloris).</li>
+                    <li><strong>Moral :</strong> Atteinte aux sentiments, à l'honneur ou à l'affection.</li>
                 </ul>
 
-                <h2 class="text-left">2. Le dommage (ou préjudice)</h2>
-                <p class="text-left text-left">
-                    Le dommage doit être certain, actuel et légitime. Il peut être corporel (atteinte à l'intégrité physique), matériel (atteinte au patrimoine) ou moral (douleur, atteinte à l'honneur).
+                <h2 id="fait-generateur">2. Le fait générateur</h2>
+                <p>C'est l'événement qui cause le dommage. Le Code civil en distingue plusieurs types :</p>
+
+                <h3>A. La responsabilité du fait personnel (Art. 1240 et 1241)</h3>
+                <p>
+                    Elle est fondée sur la <strong>faute</strong>. L'article 1240 dispose que « tout fait quelconque de l'homme, qui cause à autrui un dommage, oblige celui par la faute duquel il est arrivé à le réparer ». La faute peut être intentionnelle (délit) ou résulter d'une simple négligence ou imprudence (quasi-délit).
                 </p>
 
-                <h2 class="text-left">3. Le lien de causalité</h2>
-                <p class="text-left">
-                    Il doit exister une relation directe et certaine entre le fait générateur et le dommage. Le défendeur peut s'exonérer en prouvant une cause étrangère (force majeure, faute de la victime ou fait d'un tiers).
+                <h3>B. La responsabilité du fait des choses (Art. 1242 al. 1)</h3>
+                <p>
+                    On est responsable du dommage causé par le fait des choses que l'on a sous sa <strong>garde</strong> (usage, direction, contrôle). C'est une responsabilité de plein droit (pas besoin de prouver une faute du gardien). <em>Jurisprudence Teffaine (1896) et Blieck (1991).</em>
                 </p>
 
-                <div class="mt-20 pt-10 border-t border-slate-100 flex justify-between text-left">
-                    <a href="execution-contrat.html" class="text-blue-600 font-bold hover:underline text-left">← Précédent</a>
-                    <a href="regime-general.html" class="text-blue-600 font-bold hover:underline text-left">Suivant : Régime général →</a>
+                <h3>C. La responsabilité du fait d'autrui</h3>
+                <p>
+                    La loi désigne certaines personnes comme responsables des actes d'autrui en raison d'un lien d'autorité ou de surveillance :
+                </p>
+                <ul class="list-disc pl-6 space-y-3 mb-8">
+                    <li><strong>Les parents :</strong> Responsables des dommages causés par leurs enfants mineurs habitant avec eux (Responsabilité de plein droit).</li>
+                    <li><strong>Les commettants (employeurs) :</strong> Responsables des dommages causés par leurs préposés (salariés) dans l'exercice de leurs fonctions.</li>
+                </ul>
+
+                <h2 id="causalite">3. Le lien de causalité</h2>
+                <p>
+                    Le dommage doit être la conséquence directe du fait générateur. Deux théories s'affrontent : l'<strong>équivalence des conditions</strong> (tous les événements sans lesquels le dommage ne se serait pas produit sont retenus) et la <strong>causalité adéquate</strong> (seul l'événement qui devait normalement produire le dommage est retenu). La jurisprudence navigue entre les deux.
+                </p>
+
+                <div class="focus-box">
+                    <h4 class="font-bold text-blue-900 mb-2">L'exonération</h4>
+                    <p class="text-sm mb-0">L'auteur présumé peut s'exonérer en prouvant une cause étrangère : la <strong>force majeure</strong> (imprévisible, irrésistible, extérieure), la faute de la victime ou le fait d'un tiers.</p>
+                </div>
+
+                <div class="mt-20 pt-10 border-t border-slate-100 flex justify-between">
+                    <a href="execution-contrat.html" class="text-blue-600 font-bold hover:underline transition">← Chapitre précédent : L'exécution du contrat</a>
+                    <a href="regime-general.html" class="text-blue-600 font-bold hover:underline transition">Chapitre suivant : Le régime général →</a>
                 </div>
             </article>
         </main>

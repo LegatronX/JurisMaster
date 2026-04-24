@@ -7,71 +7,92 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; line-height: 1.7; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.8; }
         h1, h2, h3 { font-family: 'Playfair Display', serif; }
-        .prose h2 { font-size: 1.875rem; font-weight: 700; margin-top: 2.5rem; margin-bottom: 1.25rem; color: #1e3a8a; }
-        .prose p { margin-bottom: 1.25rem; color: #334155; }
-        .sidebar-link.active { color: #1d4ed8; font-weight: 600; border-left: 2px solid #1d4ed8; }
+        .prose h2 { font-size: 2rem; font-weight: 700; margin-top: 3rem; margin-bottom: 1.5rem; color: #1e3a8a; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; }
+        .prose h3 { font-size: 1.5rem; font-weight: 600; margin-top: 2rem; margin-bottom: 1rem; color: #1e40af; }
+        .prose p { margin-bottom: 1.5rem; color: #334155; text-align: justify; }
+        .sidebar-link.active { color: #1d4ed8; font-weight: 600; border-left: 3px solid #1d4ed8; }
     </style>
 </head>
 <body class="bg-white">
 
+    <!-- BARRE DE NAVIGATION SUPÉRIEURE -->
     <nav class="sticky top-0 z-50 bg-white border-b border-slate-200 px-6 py-3 flex justify-between items-center text-left">
-        <a href="../../index.html" class="text-xl font-bold tracking-tight text-left">JURIS<span class="text-blue-700 text-left text-left">MASTER</span></a>
+        <a href="../../index.html" class="text-xl font-bold tracking-tight text-left">JURIS<span class="text-blue-700 text-left">MASTER</span></a>
         <div class="flex items-center space-x-4 text-left">
-            <span class="text-sm text-slate-500 text-left text-left">Progression : 50%</span>
-            <div class="w-32 h-2 bg-slate-100 rounded-full overflow-hidden text-left text-left">
-                <div class="bg-blue-600 h-full w-[50%] text-left text-left"></div>
+            <span class="text-sm text-slate-500 text-left">Progression : 50%</span>
+            <div class="w-32 h-2 bg-slate-100 rounded-full overflow-hidden text-left">
+                <div class="bg-blue-600 h-full w-[50%] text-left"></div>
             </div>
         </div>
     </nav>
 
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row text-left">
         
-        <aside class="w-full md:w-72 border-r border-slate-100 p-8 h-screen sticky top-14 overflow-y-auto bg-slate-50/50 text-left">
+        <!-- BARRE LATÉRALE -->
+        <aside class="w-full md:w-80 border-r border-slate-100 p-8 h-screen sticky top-14 overflow-y-auto bg-slate-50/50 text-left">
             <h4 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-6 text-left">Droit des obligations</h4>
-            <div class="space-y-6 text-sm text-left">
-                <div class="text-left text-left">
-                    <p class="font-bold text-slate-900 mb-3 text-left">1. Le contrat</p>
-                    <ul class="space-y-3 pl-2 border-l border-slate-200 text-left">
-                        <li><a href="sanctions-formation.html" class="sidebar-link pl-3 block text-slate-500">Les sanctions</a></li>
-                        <li><a href="execution-contrat.html" class="sidebar-link active pl-3 block">Exécution du contrat</a></li>
+            <div class="space-y-8 text-sm text-left text-left">
+                <div>
+                    <p class="font-bold text-slate-900 mb-4 text-left text-left">1. L'acte juridique : le contrat</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200 text-left text-left">
+                        <li><a href="formation-du-contrat.html" class="sidebar-link pl-4 block text-slate-500">Formation du contrat</a></li>
+                        <li><a href="sanctions-formation.html" class="sidebar-link pl-4 block text-slate-500">Nullités et sanctions</a></li>
+                        <li><a href="execution-contrat.html" class="sidebar-link active pl-4 block">Exécution du contrat</a></li>
                     </ul>
                 </div>
             </div>
         </aside>
 
-        <main class="flex-1 py-16 px-6 md:px-16 max-w-4xl text-left">
+        <!-- CONTENU DU COURS -->
+        <main class="flex-1 py-16 px-6 md:px-20 max-w-5xl text-left">
             <article class="prose prose-slate lg:prose-lg mx-auto text-left">
-                <nav class="text-sm text-blue-600 font-medium mb-8 text-left">Chapitre 1 — Le contrat</nav>
-                <h1 class="text-4xl md:text-5xl font-bold mb-8 leading-tight text-left">L'exécution du contrat</h1>
+                <nav class="text-sm text-blue-600 font-semibold mb-8 uppercase tracking-wide text-left">Chapitre 1 — Le contrat</nav>
+                <h1 class="text-4xl md:text-6xl font-bold mb-10 leading-tight text-left">L'exécution du contrat</h1>
                 
-                <p class="text-left text-left">
-                    Une fois formé, le contrat doit être exécuté. Le Code civil pose deux principes majeurs : la force obligatoire et l'effet relatif.
+                <p>
+                    Une fois valablement formé, le contrat entre dans sa phase active : l'exécution. Il devient la loi des parties, créant un lien de droit dont elles ne peuvent se délier unilatéralement, sauf exceptions prévues par la loi.
                 </p>
 
-                <h2 class="text-left">1. La force obligatoire (Art. 1103)</h2>
-                <p class="text-left">
-                    "Les contrats légalement formés tiennent lieu de loi à ceux qui les ont faits". Cela signifie que les parties sont liées par leurs engagements comme par la loi elle-même.
+                <h2 id="force-obligatoire">1. La force obligatoire (Art. 1103)</h2>
+                <p>
+                    « Les contrats légalement formés tiennent lieu de loi à ceux qui les ont faits ». Ce principe cardinal interdit aux parties de modifier ou de révoquer le contrat sans un nouvel accord mutuel (Art. 1193).
                 </p>
 
-                <h2 class="text-left">2. L'effet relatif (Art. 1199)</h2>
-                <p class="text-left">
-                    Le contrat ne crée d'obligations qu'entre les parties. Les tiers ne peuvent ni demander l'exécution du contrat, ni se voir opposer des obligations nées de ce contrat.
+                <h3>A. La bonne foi (Art. 1104)</h3>
+                <p>
+                    Les contrats doivent être négociés, formés et exécutés de bonne foi. Cette exigence est d'ordre public. Elle impose aux parties un devoir de <strong>loyauté</strong> et de <strong>coopération</strong>.
                 </p>
 
-                <h2 class="text-left">3. Les sanctions de l'inexécution</h2>
-                <p class="text-left">En cas de faute contractuelle, la partie lésée dispose de plusieurs remèdes :</p>
-                <ul class="list-disc pl-6 space-y-3 mb-8 text-left">
-                    <li><strong>L'exception d'inexécution :</strong> Refuser d'exécuter sa propre obligation tant que l'autre n'a pas exécuté la sienne.</li>
-                    <li><strong>L'exécution forcée en nature :</strong> Contraindre le débiteur à s'exécuter (si c'est possible).</li>
-                    <li><strong>La résolution :</strong> Mettre fin au contrat de façon unilatérale ou judiciaire.</li>
-                    <li><strong>La responsabilité contractuelle :</strong> Obtenir des dommages et intérêts.</li>
+                <h3>B. L'imprévision (Art. 1195)</h3>
+                <p>
+                    Innovation majeure de 2016 : si un changement de circonstances imprévisible lors de la conclusion rend l'exécution excessivement onéreuse pour une partie qui n'avait pas accepté d'en assumer le risque, elle peut demander une renégociation. En cas d'échec, les parties peuvent demander au juge de réviser ou de résilier le contrat.
+                </p>
+
+                <h2 id="effet-relatif">2. L'effet relatif (Art. 1199)</h2>
+                <p>
+                    Le contrat ne crée d'obligations qu'entre les parties. Les tiers (les "penitus extranei") ne peuvent ni demander l'exécution du contrat, ni se voir opposer des obligations nées de ce contrat.
+                </p>
+                <p>
+                    <em>Exception :</em> La stipulation pour autrui (ex : assurance vie) où un contrat profite à un tiers bénéficiaire.
+                </p>
+
+                <h2 id="sanctions">3. Les remèdes à l'inexécution (Art. 1217)</h2>
+                <p>
+                    Le créancier d'une obligation non exécutée peut choisir entre plusieurs sanctions :
+                </p>
+                <ul class="list-disc pl-6 space-y-4 mb-8">
+                    <li><strong>L'exception d'inexécution :</strong> Suspendre sa propre prestation tant que l'autre n'a pas exécuté la sienne.</li>
+                    <li><strong>L'exécution forcée en nature :</strong> Contraindre le débiteur à s'exécuter, sauf si c'est impossible ou si le coût est manifestement déraisonnable.</li>
+                    <li><strong>La réduction du prix :</strong> En cas d'exécution imparfaite.</li>
+                    <li><strong>La résolution :</strong> Mettre fin au contrat (soit par une clause résolutoire, soit par notification unilatérale, soit par décision du juge).</li>
+                    <li><strong>La responsabilité contractuelle :</strong> Demander des dommages et intérêts pour réparer le préjudice causé par le retard ou l'inexécution.</li>
                 </ul>
 
-                <div class="mt-20 pt-10 border-t border-slate-100 flex justify-between text-left">
-                    <a href="sanctions-formation.html" class="text-blue-600 font-bold hover:underline text-left">← Précédent</a>
-                    <a href="responsabilite-civile.html" class="text-blue-600 font-bold hover:underline text-left">Suivant : Responsabilité →</a>
+                <div class="mt-20 pt-10 border-t border-slate-100 flex justify-between">
+                    <a href="sanctions-formation.html" class="text-blue-600 font-bold hover:underline transition">← Chapitre précédent : Nullités et sanctions</a>
+                    <a href="responsabilite-civile.html" class="text-blue-600 font-bold hover:underline transition">Chapitre suivant : La responsabilité civile →</a>
                 </div>
             </article>
         </main>

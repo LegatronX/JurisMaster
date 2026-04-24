@@ -7,15 +7,17 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; line-height: 1.7; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.8; }
         h1, h2, h3 { font-family: 'Playfair Display', serif; }
-        .prose h2 { font-size: 1.875rem; font-weight: 700; margin-top: 2.5rem; margin-bottom: 1.25rem; color: #1e3a8a; }
-        .prose p { margin-bottom: 1.25rem; color: #334155; }
-        .sidebar-link.active { color: #1d4ed8; font-weight: 600; border-left: 2px solid #1d4ed8; }
+        .prose h2 { font-size: 2rem; font-weight: 700; margin-top: 3rem; margin-bottom: 1.5rem; color: #1e3a8a; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; }
+        .prose h3 { font-size: 1.5rem; font-weight: 600; margin-top: 2rem; margin-bottom: 1rem; color: #1e40af; }
+        .prose p { margin-bottom: 1.5rem; color: #334155; text-align: justify; }
+        .sidebar-link.active { color: #1d4ed8; font-weight: 600; border-left: 3px solid #1d4ed8; }
     </style>
 </head>
 <body class="bg-white">
 
+    <!-- BARRE DE NAVIGATION SUPÉRIEURE -->
     <nav class="sticky top-0 z-50 bg-white border-b border-slate-200 px-6 py-3 flex justify-between items-center text-left">
         <a href="../../index.html" class="text-xl font-bold tracking-tight text-left">JURIS<span class="text-blue-700 text-left">MASTER</span></a>
         <div class="flex items-center space-x-4 text-left">
@@ -28,53 +30,80 @@
 
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row text-left">
         
-        <aside class="w-full md:w-72 border-r border-slate-100 p-8 h-screen sticky top-14 overflow-y-auto bg-slate-50/50 text-left">
+        <!-- BARRE LATÉRALE -->
+        <aside class="w-full md:w-80 border-r border-slate-100 p-8 h-screen sticky top-14 overflow-y-auto bg-slate-50/50 text-left">
             <h4 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-6 text-left">Droit des obligations</h4>
-            <div class="space-y-6 text-sm text-left">
-                <div class="text-left">
-                    <p class="font-bold text-slate-900 mb-3 text-left">1. Le contrat</p>
+            <div class="space-y-8 text-sm text-left">
+                <div>
+                    <p class="font-bold text-slate-900 mb-4 text-left">1. L'acte juridique : le contrat</p>
                     <ul class="space-y-3 pl-2 border-l border-slate-200 text-left">
-                        <li><a href="formation-du-contrat.html" class="sidebar-link pl-3 block text-slate-500">Formation du contrat</a></li>
-                        <li><a href="sanctions-formation.html" class="sidebar-link active pl-3 block">Les sanctions</a></li>
+                        <li><a href="formation-du-contrat.html" class="sidebar-link pl-4 block text-slate-500">Formation du contrat</a></li>
+                        <li><a href="sanctions-formation.html" class="sidebar-link active pl-4 block">Nullités et sanctions</a></li>
+                        <li><a href="execution-contrat.html" class="sidebar-link pl-4 block text-slate-500">Exécution du contrat</a></li>
                     </ul>
                 </div>
             </div>
         </aside>
 
-        <main class="flex-1 py-16 px-6 md:px-16 max-w-4xl text-left">
+        <!-- CONTENU DU COURS -->
+        <main class="flex-1 py-16 px-6 md:px-20 max-w-5xl text-left">
             <article class="prose prose-slate lg:prose-lg mx-auto text-left">
-                <nav class="text-sm text-blue-600 font-medium mb-8 text-left">Chapitre 1 — Le contrat</nav>
-                <h1 class="text-4xl md:text-5xl font-bold mb-8 leading-tight text-left">Les sanctions de la formation : les nullités</h1>
+                <nav class="text-sm text-blue-600 font-semibold mb-8 uppercase tracking-wide text-left text-left">Chapitre 1 — Le contrat</nav>
+                <h1 class="text-4xl md:text-6xl font-bold mb-10 leading-tight text-left">Les sanctions de la formation : nullités et caducité</h1>
                 
-                <p class="text-left text-left">
-                    Lorsqu'une condition de formation du contrat fait défaut, la sanction est la nullité. Le contrat est censé n'avoir jamais existé (anéantissement rétroactif).
+                <p>
+                    Lorsqu'un contrat ne respecte pas les conditions de validité imposées par la loi au moment de sa conclusion, il est frappé d'invalidité. Le droit distingue plusieurs types de sanctions en fonction de la gravité du manquement et de la nature de la règle violée.
                 </p>
 
-                <h2 class="text-left">1. Nullité relative et nullité absolue</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-10 text-left">
-                    <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100 text-left">
-                        <h4 class="font-bold text-blue-900 mb-2">Nullité absolue</h4>
-                        <p class="text-xs text-slate-600">Sanctionne la violation d'une règle protégeant l'intérêt général (ex: objet illicite). Elle peut être invoquée par tout intéressé.</p>
+                <h2 id="nullites">1. Les nullités</h2>
+                <p>
+                    La nullité est la sanction de l'invalidité d'un acte juridique pour vice de formation. Elle entraîne l'anéantissement rétroactif de l'acte (Art. 1178).
+                </p>
+
+                <h3>A. La distinction entre nullité absolue et relative</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-10">
+                    <div class="bg-blue-50 p-8 rounded-2xl border border-blue-100">
+                        <h4 class="font-bold text-blue-900 mb-4 uppercase text-xs tracking-widest text-left">Nullité absolue</h4>
+                        <p class="text-sm mb-4 text-left">Sanctionne la violation d'une règle protégeant <strong>l'intérêt général</strong> (ex : contenu illicite, absence de consentement).</p>
+                        <ul class="text-xs space-y-2 text-slate-500 text-left">
+                            <li>Invoquée par tout intéressé.</li>
+                            <li>Délai de 5 ans.</li>
+                            <li>Pas de confirmation possible.</li>
+                        </ul>
                     </div>
-                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 text-left">
-                        <h4 class="font-bold text-slate-900 mb-2">Nullité relative</h4>
-                        <p class="text-xs text-slate-600">Sanctionne la violation d'une règle protégeant un intérêt privé (ex: vice du consentement, incapacité). Seule la personne protégée peut l'invoquer.</p>
+                    <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 text-left text-left">
+                        <h4 class="font-bold text-slate-900 mb-4 uppercase text-xs tracking-widest text-left text-left">Nullité relative</h4>
+                        <p class="text-sm mb-4 text-left">Sanctionne la violation d'une règle protégeant un <strong>intérêt privé</strong> (ex : vices du consentement, incapacité).</p>
+                        <ul class="text-xs space-y-2 text-slate-500 text-left">
+                            <li>Invoquée par la personne protégée.</li>
+                            <li>Délai de 5 ans.</li>
+                            <li>Confirmation possible.</li>
+                        </ul>
                     </div>
                 </div>
 
-                <h2 class="text-left">2. La mise en œuvre de la nullité</h2>
-                <p class="text-left">
-                    La nullité peut être prononcée par le juge ou constatée d'un commun accord par les parties. Le délai de prescription de droit commun est de 5 ans.
+                <h3>B. Les effets de la nullité</h3>
+                <p>
+                    Le contrat nul est censé n'avoir jamais existé (<strong>Rétroactivité</strong>). Si des prestations ont déjà été exécutées, elles doivent donner lieu à des <strong>restitutions</strong>, sauf exception (ex : contrats à exécution successive où la rétroactivité est impossible, comme le bail).
                 </p>
 
-                <h2 class="text-left">3. Les effets de la nullité</h2>
-                <p class="text-left">
-                    Le contrat est anéanti rétroactivement. Cela implique des restitutions : les parties doivent être remises dans l'état où elles se trouvaient avant la conclusion du contrat.
+                <h2 id="caducite">2. La caducité (Art. 1186)</h2>
+                <p>
+                    La caducité frappe un contrat valablement formé mais qui perd, en cours d'exécution, un élément essentiel à son existence.
+                </p>
+                <ul class="list-disc pl-6 space-y-4 mb-8">
+                    <li><strong>Disparition d'un élément essentiel :</strong> Ex : disparition de l'objet ou décès de l'intuitu personae.</li>
+                    <li><strong>Contrats interdépendants :</strong> Lorsque plusieurs contrats sont nécessaires à une même opération, la disparition de l'un peut entraîner la caducité des autres si le contractant contre lequel elle est invoquée connaissait l'existence de l'opération d'ensemble.</li>
+                </ul>
+
+                <h2 id="responsabilite">3. La responsabilité précontractuelle</h2>
+                <p>
+                    L'annulation du contrat n'exclut pas le droit à des dommages et intérêts si une faute a été commise au moment de la formation (ex : réticence dolosive). Il s'agit d'une responsabilité de nature <strong>extracontractuelle</strong> puisque le contrat est anéanti.
                 </p>
 
-                <div class="mt-20 pt-10 border-t border-slate-100 flex justify-between text-left text-left">
-                    <a href="formation-du-contrat.html" class="text-blue-600 font-bold hover:underline text-left">← Précédent</a>
-                    <a href="execution-contrat.html" class="text-blue-600 font-bold hover:underline text-left">Suivant : Exécution →</a>
+                <div class="mt-20 pt-10 border-t border-slate-100 flex justify-between">
+                    <a href="formation-du-contrat.html" class="text-blue-600 font-bold hover:underline transition">← Chapitre précédent : La formation du contrat</a>
+                    <a href="execution-contrat.html" class="text-blue-600 font-bold hover:underline transition">Chapitre suivant : L'exécution du contrat →</a>
                 </div>
             </article>
         </main>

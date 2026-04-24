@@ -7,15 +7,17 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; line-height: 1.7; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.8; }
         h1, h2, h3 { font-family: 'Playfair Display', serif; }
-        .prose h2 { font-size: 1.875rem; font-weight: 700; margin-top: 2.5rem; margin-bottom: 1.25rem; color: #1e3a8a; }
-        .prose p { margin-bottom: 1.25rem; color: #334155; }
-        .sidebar-link.active { color: #1d4ed8; font-weight: 600; border-left: 2px solid #1d4ed8; }
+        .prose h2 { font-size: 2rem; font-weight: 700; margin-top: 3rem; margin-bottom: 1.5rem; color: #1e3a8a; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; }
+        .prose h3 { font-size: 1.5rem; font-weight: 600; margin-top: 2rem; margin-bottom: 1rem; color: #1e40af; }
+        .prose p { margin-bottom: 1.5rem; color: #334155; text-align: justify; }
+        .sidebar-link.active { color: #1d4ed8; font-weight: 600; border-left: 3px solid #1d4ed8; }
     </style>
 </head>
 <body class="bg-white">
 
+    <!-- BARRE DE NAVIGATION SUPÉRIEURE -->
     <nav class="sticky top-0 z-50 bg-white border-b border-slate-200 px-6 py-3 flex justify-between items-center text-left">
         <a href="../../index.html" class="text-xl font-bold tracking-tight text-left">JURIS<span class="text-blue-700 text-left">MASTER</span></a>
         <div class="flex items-center space-x-4 text-left">
@@ -28,44 +30,58 @@
 
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row text-left">
         
-        <aside class="w-full md:w-72 border-r border-slate-100 p-8 h-screen sticky top-14 overflow-y-auto bg-slate-50/50 text-left">
+        <!-- BARRE LATÉRALE -->
+        <aside class="w-full md:w-80 border-r border-slate-100 p-8 h-screen sticky top-14 overflow-y-auto bg-slate-50/50 text-left">
             <h4 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-6 text-left">Droit des obligations</h4>
-            <div class="space-y-6 text-sm text-left">
-                <div class="text-left text-left">
-                    <p class="font-bold text-slate-900 mb-3 text-left">3. Régime général</p>
+            <div class="space-y-8 text-sm text-left">
+                <div>
+                    <p class="font-bold text-slate-900 mb-4 text-left">3. Le régime général de l'obligation</p>
                     <ul class="space-y-3 pl-2 border-l border-slate-200 text-left">
-                        <li><a href="regime-general.html" class="sidebar-link active pl-3 block text-left">Extinction et transmission</a></li>
+                        <li><a href="regime-general.html" class="sidebar-link active pl-4 block">Transmission et extinction</a></li>
                     </ul>
                 </div>
             </div>
         </aside>
 
-        <main class="flex-1 py-16 px-6 md:px-16 max-w-4xl text-left">
-            <article class="prose prose-slate lg:prose-lg mx-auto text-left text-left">
-                <nav class="text-sm text-blue-600 font-medium mb-8 text-left">Chapitre 3 — Régime général</nav>
-                <h1 class="text-4xl md:text-5xl font-bold mb-8 leading-tight text-left">Transmission et extinction des obligations</h1>
+        <!-- CONTENU DU COURS -->
+        <main class="flex-1 py-16 px-6 md:px-20 max-w-5xl text-left">
+            <article class="prose prose-slate lg:prose-lg mx-auto text-left">
+                <nav class="text-sm text-blue-600 font-semibold mb-8 uppercase tracking-wide text-left">Chapitre 3 — Régime général</nav>
+                <h1 class="text-4xl md:text-6xl font-bold mb-10 leading-tight text-left">Transmission et extinction des obligations</h1>
                 
-                <p class="text-left">
-                    Le régime général de l'obligation étudie le sort de l'obligation indépendamment de sa source (contrat ou fait juridique).
+                <p>
+                    Le régime général étudie l'obligation en elle-même, comme un lien de droit abstrait, indépendamment de sa source (contrat, délit, quasi-contrat). Il s'agit de comprendre comment l'obligation circule et comment elle disparaît.
                 </p>
 
-                <h2 class="text-left">1. La transmission de l'obligation</h2>
-                <ul class="list-disc pl-6 space-y-3 mb-8 text-left">
-                    <li><strong>La cession de créance :</strong> Le créancier (cédant) transmet son droit de créance à un tiers (cessionnaire).</li>
-                    <li><strong>La cession de dette :</strong> Un débiteur transmet sa dette à un tiers avec l'accord du créancier.</li>
-                    <li><strong>La subrogation :</strong> Un tiers paie à la place du débiteur et récupère les droits du créancier originel.</li>
+                <h2 id="modalites">1. Les modalités de l'obligation</h2>
+                <p>
+                    L'obligation peut être assortie de modalités qui affectent son exigibilité ou son existence même.
+                </p>
+                <ul class="list-disc pl-6 space-y-4 mb-8">
+                    <li><strong>La condition (Art. 1304) :</strong> Événement futur et incertain dont dépend l'obligation. Elle est <em>suspensive</em> (l'obligation ne naît que si la condition se réalise) ou <em>résolutoire</em> (l'obligation disparaît si la condition se réalise).</li>
+                    <li><strong>Le terme (Art. 1305) :</strong> Événement futur et certain dont dépend l'exigibilité de l'obligation (ex : une date de paiement).</li>
                 </ul>
 
-                <h2 class="text-left">2. L'extinction de l'obligation</h2>
-                <p class="text-left">Le mode normal d'extinction est le <strong>paiement</strong>. Mais il en existe d'autres :</p>
-                <ul class="list-disc pl-6 space-y-3 mb-8 text-left">
-                    <li><strong>La compensation :</strong> Extinction simultanée de deux dettes réciproques entre deux personnes.</li>
-                    <li><strong>La confusion :</strong> Les qualités de créancier et de débiteur se réunissent sur la même tête.</li>
-                    <li><strong>La prescription extinctive :</strong> Perte d'un droit résultant de l'inaction du titulaire pendant un certain temps (généralement 5 ans).</li>
+                <h2 id="transmission">2. La circulation des obligations</h2>
+                <p>
+                    L'obligation est un élément de l'actif ou du passif du patrimoine qui peut être transmis.
+                </p>
+                <ul class="list-disc pl-6 space-y-4 mb-8">
+                    <li><strong>La cession de créance (Art. 1321) :</strong> Contrat par lequel le créancier (cédant) transmet son droit à un tiers (cessionnaire). Elle doit être constatée par écrit.</li>
+                    <li><strong>La cession de dette (Art. 1327) :</strong> Grande nouveauté de 2016. Un débiteur peut céder sa dette avec l'accord du créancier. Si le créancier n'y consent pas expressément, le débiteur originel reste tenu solidairement.</li>
+                    <li><strong>La novation (Art. 1329) :</strong> Contrat qui a pour objet de substituer à une obligation qu'elle éteint une obligation nouvelle qu'elle crée.</li>
                 </ul>
 
-                <div class="mt-20 pt-10 border-t border-slate-100 flex justify-center text-left">
-                    <a href="../../index.html" class="bg-blue-700 text-white px-8 py-3 rounded-full font-bold shadow-lg text-left">Terminé ! Retourner au catalogue</a>
+                <h2 id="extinction">3. L'extinction des obligations</h2>
+                <p>Le mode normal d'extinction est le <strong>paiement</strong> (exécution de la prestation due). Cependant, l'obligation peut s'éteindre sans paiement :</p>
+                <ul class="list-disc pl-6 space-y-4 mb-8">
+                    <li><strong>La compensation (Art. 1347) :</strong> Extinction simultanée de deux dettes réciproques, fongibles, liquides et exigibles.</li>
+                    <li><strong>La confusion (Art. 1349) :</strong> Réunion des qualités de créancier et de débiteur sur la même tête (ex : un fils hérite de son père à qui il devait de l'argent).</li>
+                    <li><strong>La remise de dette (Art. 1350) :</strong> Contrat par lequel le créancier libère son débiteur sans avoir été payé.</li>
+                </ul>
+
+                <div class="mt-20 pt-10 border-t border-slate-100 flex justify-center">
+                    <a href="../../index.html" class="bg-blue-700 hover:bg-blue-800 text-white px-10 py-4 rounded-full font-bold shadow-xl transition-all transform hover:scale-105">Félicitations ! Retourner au catalogue</a>
                 </div>
             </article>
         </main>
