@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La victime et l'action publique - Droit penal general</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', sans-serif; line-height: 1.8; }
+h1, h2, h3 { font-family: 'Playfair Display', serif; }
+.prose h2 { font-size: 2rem; font-weight: 700; margin-top: 3rem; margin-bottom: 1.5rem; color: #1e3a8a; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; }
+.prose h3 { font-size: 1.5rem; font-weight: 600; margin-top: 2rem; margin-bottom: 1rem; color: #1e40af; }
+.prose p { margin-bottom: 1.5rem; color: #334155; text-align: justify; }
+.sidebar-link.active { color: #1d4ed8; font-weight: 600; border-left: 3px solid #1d4ed8; }
+.focus-box { background-color: #f8fafc; border-left: 4px solid #3b82f6; padding: 1.5rem; border-radius: 0.5rem; margin: 2rem 0; }
+.citation { font-style: italic; color: #475569; border-left: 2px solid #cbd5e1; padding-left: 1.5rem; margin: 2rem 0; }
+</style>
+</head>
+<body class="bg-white dark:bg-slate-900">
+<script>tailwind.config={darkMode:'class'}</script>
+<script>
+(function(){
+const stored = localStorage.getItem('jm.theme');
+if(stored === 'dark' || (!stored && matchMedia('(prefers-color-scheme: dark)').matches)){
+document.documentElement.classList.add('dark');
+}
+})();
+</script>
+
+<nav class="sticky top-0 z-50 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-6 py-3 flex justify-between items-center">
+<a href="../../index.html" class="text-xl font-bold tracking-tight">JURIS<span class="text-blue-700">MASTER</span></a>
+<div class="flex items-center space-x-4">
+<button id="dark-toggle" aria-label="Basculer mode sombre" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800">🌓</button>
+<span class="text-sm text-slate-500">Progression : <span data-progress>0</span>%</span>
+<div class="w-32 h-2 bg-slate-100 rounded-full overflow-hidden">
+<div class="bg-blue-600 h-full" data-progress-bar style="width:0%"></div>
+</div>
+</div>
+</nav>
+
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row">
+<aside class="w-full lg:w-72 bg-slate-50 dark:bg-slate-800 border-r border-slate-200 dark:border-slate-700 p-6 lg:sticky lg:top-14 lg:h-[calc(100vh-3.5rem)] lg:overflow-y-auto">
+<div class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-3">Droit pénal général</div>
+<a href="../droit-penal-general.html" class="block text-sm text-blue-700 hover:underline mb-6">← Sommaire</a>
+<ul class="space-y-2 text-sm">
+<li><a href="introduction-droit-penal.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C1. Introduction au droit pénal</a></li>
+<li><a href="loi-penal-legalite-temps-espace.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C2. La loi pénale</a></li>
+<li><a href="infraction-penale-classification.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C3. L'infraction pénale</a></li>
+<li><a href="auteur-infraction-coaction-complicite.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C4. L'auteur de l'infraction</a></li>
+<li><a href="victime-action-publique.html" class="sidebar-link active block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C5. La victime et l'action publique</a></li>
+<li><a href="irresponsabilite-extinction-punissabilite.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C6. Causes d'irresponsabilité</a></li>
+<li><a href="peines-principes-types.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C7. Les peines</a></li>
+<li><a href="mesures-surete.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C8. Les mesures de sûreté</a></li>
+<li><a href="recidivite-contrainte-penale.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C9. Récidive et contrainte pénale</a></li>
+<li><a href="prescription-justice-penale-mineur.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C10. Prescription et justice pénale du mineur</a></li>
+</ul>
+</aside>
+
+<main class="flex-1 p-6 lg:p-12 prose dark:prose-invert max-w-none">
+<article>
+<div class="flex items-center space-x-2 text-sm text-slate-500 mb-4">
+<a href="../../index.html" class="hover:underline">Accueil</a>
+<span>/</span>
+<a href="../droit-penal-general.html" class="hover:underline">Droit pénal général</a>
+<span>/</span>
+<span class="text-slate-800 dark:text-slate-200">C5</span>
+</div>
+<h1 class="text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white mb-4">La victime et l'action publique</h1>
+<p class="text-lg text-slate-600 dark:text-slate-300 mb-8">L'action publique, l'action civile et le statut de la victime dans la procédure pénale française.</p>
+
+<h2>1. L'action publique</h2>
+<p>L'action publique est le droit pour la société de réprimer une infraction. Elle appartient au ministère public, qui représente la société dans le procès pénal. L'article 1er du Code de procédure pénale dispose que "l'action publique est l'action exercée par les officiers du ministère public et par les parties civiles en la forme prévue par la loi". L'action publique se distingue de l'action civile, qui vise à la réparation du préjudice.</p>
+
+<div class="focus-box">
+<strong>À retenir :</strong> L'action publique appartient à la société et est exercée par le ministère public. Elle peut naître de plusieurs modes : l'plainte, la dénonciation, la flagrance, ou l'avis donné par l'autorité administrative ou judiciaire. L'action publique s'éteint par la mort de l'accusé, une amnistie, une prescription, ou une décision définitive de non-lieu ou de relaxe.
+</div>
+
+<h3>1.1 La naissance de l'action publique</h3>
+<p>L'action publique naît du moment où l'infraction est commise, mais elle ne devient exercée que lorsque le ministère public est saisi. Les modes de saisine sont : la plainte (dépose par la victime), la dénonciation (signalement par un tiers), la flagrance (interpellation immédiate), et l'avis donné par une autorité (par exemple, un juge civil qui constate une infraction). Le ministère public dispose d'un pouvoir d'appréciation souverain sur l'exercice de l'action publique (principe de l'opportunité des poursuites), sauf pour les crimes où la poursuite est d'ordre public.</p>
+
+<h3>1.2 L'extinction de l'action publique</h3>
+<p>L'action publique s'éteint par : le décès de l'accusé (pour les crimes et délits, sauf exception), une amnistie (loi d'amnistie qui efface l'infraction), une prescription (écoulement d'un délai fixé par la loi), un arrêt ou jugement définitif de relaxe ou d'acquittement (principe non bis in idem), et le classement sans suite par le procureur (art. 40-1 CPP). L'extinction de l'action publique ne préjuge pas de l'action civile, qui peut être exercée devant le juge civil même après l'extinction de l'action publique.</p>
+
+<h2>2. L'action civile</h2>
+<p>L'action civile est le droit pour la victime d'obtenir la réparation de son préjudice. Elle peut être exercée devant le juge pénal (constitution de partie civile) ou devant le juge civil. L'article 2 du Code de procédure pénale dispose que "la partie lésée par un crime, un délit ou une contravention peut en obtenir réparation par une action civile".</p>
+
+<h3>2.1 La constitution de partie civile</h3>
+<p>La constitution de partie civile permet à la victime de s'associer à l'action publique pour réclamer la réparation de son préjudice. Elle peut se faire à tout stade de la procédure, y compris devant la juridiction de jugement. La partie civile a des droits procéduraux : elle peut être assistée par un avocat, poser des questions aux témoins, et faire appel de la décision sur l'action civile. La constitution de partie civile oblige le ministère public à exercer l'action publique (art. 85 et 87 CPP), sauf exceptions.</p>
+
+<h3>2.2 L'action civile devant le juge civil</h3>
+<p>La victime peut également exercer son action civile devant le juge civil, indépendamment de la procédure pénale. Cette voie présente l'avantage d'une procédure plus rapide et d'une qualification moins stricte des faits. Cependant, le juge civil statue sur la responsabilité civile et non sur la culpabilité pénale. La juridiction pénale a compétence subsidiaire pour connaître de l'action civile si celle-ci a été préalablement portée devant le juge civil.</p>
+
+<h2>3. Le statut de la victime dans la procédure pénale</h2>
+<h3>3.1 Les droits de la victime</h3>
+<p>La loi n° 2008-644 du 1er juillet 2008 et la loi n° 2016-1547 du 18 novembre 2016 ont renforcé considérablement les droits des victimes dans la procédure pénale. La victime a droit à l'information sur l'état de la procédure, à une indemnisation par l'État en cas d'insolvabilité de l'auteur (Fonds de garantie des victimes d'actes de terrorisme et d'autres infractions, FGTI), à une protection contre les représailles, et à une assistance juridique.</p>
+
+<h3>3.2 L'indemnisation de la victime</h3>
+<p>L'indemnisation de la victime peut provenir de plusieurs sources : la condamnation pénale (dommages et intérêts alloués par le juge pénal), la juridiction civile, l'assurance, et le FGTI. Le FGTI intervient lorsque l'auteur est inconnu, insolvable, ou non assuré. La Commission d'indemnisation des victimes d'infractions (CIVI) est compétente pour allouer une indemnisation forfaitaire dans certaines conditions.</p>
+
+<div class="citation">
+"L'action publique est exercée par les officiers du ministère public et par les parties civiles en la forme prévue par la loi." — Article 1er du Code de procédure pénale
+</div>
+
+<h2>4. Quiz</h2>
+<div class="quiz-question" data-correct="0">
+<p class="font-semibold mb-2">1. La constitution de partie civile oblige-t-elle le ministère public à exercer l'action publique ?</p>
+<div class="space-y-2">
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Oui, sauf exceptions légales (art. 85 et 87 CPP)</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Non, le ministère public conserve toujours son pouvoir d'appréciation</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Seulement si la victime a déposé plainte préalablement</button>
+</div>
+<p class="quiz-feedback hidden mt-2 text-sm"></p>
+</div>
+
+<div class="quiz-question mt-6" data-correct="2">
+<p class="font-semibold mb-2">2. L'action civile peut-elle être exercée indépendamment de l'action publique ?</p>
+<div class="space-y-2">
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Non, elle est toujours subordonnée à l'action publique</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Oui, mais seulement après un classement sans suite</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Oui, devant le juge civil indépendamment de la procédure pénale</button>
+</div>
+<p class="quiz-feedback hidden mt-2 text-sm"></p>
+</div>
+
+<div class="quiz-question mt-6" data-correct="1">
+<p class="font-semibold mb-2">3. Quel organisme indemnise les victimes lorsque l'auteur est insolvable ou inconnu ?</p>
+<div class="space-y-2">
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Le ministère public</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Le FGTI (Fonds de garantie des victimes d'actes de terrorisme et d'autres infractions)</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">La Cour de cassation</button>
+</div>
+<p class="quiz-feedback hidden mt-2 text-sm"></p>
+</div>
+
+<h2>Boîte à outils</h2>
+<div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg space-y-4">
+<div>
+<h4 class="font-semibold mb-1">Citation à retenir</h4>
+<p id="citation-box" class="text-sm text-slate-600 dark:text-slate-300">L'article 2 du Code de procédure pénale dispose que la partie lésée par un crime, un délit ou une contravention peut en obtenir réparation par une action civile, soit devant la juridiction pénale, soit devant la juridiction civile.</p>
+</div>
+<div class="flex space-x-3">
+<button onclick="navigator.clipboard.writeText(document.getElementById('citation-box').textContent)" class="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm hover:bg-blue-700">Copier la citation</button>
+<button onclick="window.print()" class="px-4 py-2 bg-slate-200 text-slate-800 rounded-lg text-sm hover:bg-slate-300">Imprimer la leçon</button>
+</div>
+</div>
+</article>
+</main>
+</div>
+
+<footer class="border-t border-slate-200 dark:border-slate-800 mt-12 bg-slate-50 dark:bg-slate-900">
+<div class="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center">
+<div class="text-sm text-slate-500 mb-4 md:mb-0">JurisMaster 2025 — Formation au droit français</div>
+<div class="flex space-x-6 text-sm text-slate-500">
+<a href="#" class="hover:text-blue-700">Mentions légales</a>
+<a href="#" class="hover:text-blue-700">Contact</a>
+</div>
+</div>
+</footer>
+
+<script>
+document.getElementById('dark-toggle').addEventListener('click', () => {
+document.documentElement.classList.toggle('dark');
+localStorage.setItem('jm.theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+});
+
+const JM = {
+get(){ try { return JSON.parse(localStorage.getItem('jurismaster.v1')) || {}; } catch { return {}; } },
+set(s){ localStorage.setItem('jurismaster.v1', JSON.stringify(s)); },
+addXP(n){ const s=JM.get(); s.xp=(s.xp||0)+n; JM.set(s); window.dispatchEvent(new CustomEvent('jm:xp',{detail:n})); },
+completeLesson(slug, xp=50){ const s=JM.get(); s.lessonsCompleted=[...new Set([...(s.lessonsCompleted||[]),slug])]; s.xp=(s.xp||0)+xp; JM.set(s); },
+touchStreak(){ const s=JM.get(); const today=new Date().toISOString().slice(0,10); const last=s.streak?.lastVisit; if(last&&last!==today){const d=new Date(today)-new Date(last); if(d===86400000){s.streak.count=(s.streak.count||0)+1;} else if(d>86400000){s.streak.count=1;} s.streak.lastVisit=today;} else if(!last){s.streak={count:1,lastVisit:today};} JM.set(s); }
+};
+JM.touchStreak();
+JM.completeLesson('droit-penal/victime', 50);
+
+const s = JM.get();
+const progress = Math.min(100, Math.round(((s.lessonsCompleted||[]).length / 32) * 100));
+document.querySelectorAll('[data-progress]').forEach(el => el.textContent = progress);
+document.querySelectorAll('[data-progress-bar]').forEach(el => el.style.width = progress + '%');
+
+document.querySelectorAll('.quiz-question').forEach((q, qi) => {
+const correct = parseInt(q.dataset.correct);
+const feedback = q.querySelector('.quiz-feedback');
+const explanations = [
+["Exact ! La constitution de partie civile oblige généralement le ministère public à exercer l'action publique (art. 85 et 87 CPP), sauf exceptions légales.","Le ministère public perd son pouvoir d'appréciation dans ce cas précis, sous réserve d'exceptions.","La plainte préalable n'est pas une condition de l'obligation d'exercer l'action publique après constitution de partie civile."],
+["L'action civile n'est pas subordonnée à l'action publique.","L'action civile peut être exercée indépendamment de tout classement sans suite.","Exact ! L'article 2 CPP permet à la victime d'exercer son action civile devant le juge civil indépendamment de la procédure pénale."],
+["Le ministère public ne indemnise pas les victimes.","Exact ! Le FGTI (Fonds de garantie des victimes d'actes de terrorisme et d'autres infractions) indemnise les victimes lorsque l'auteur est insolvable, inconnu ou non assuré.","La Cour de cassation est une juridiction de contrôle, pas d'indemnisation."]
+];
+q.querySelectorAll('.quiz-btn').forEach((btn, bi) => {
+btn.addEventListener('click', () => {
+if(q.classList.contains('answered')) return;
+q.classList.add('answered');
+if(bi === correct){
+btn.classList.add('bg-green-100', 'border-green-500', 'text-green-800');
+feedback.textContent = explanations[qi][bi];
+feedback.className = 'quiz-feedback mt-2 text-sm text-green-700';
+} else {
+btn.classList.add('bg-red-100', 'border-red-500', 'text-red-800');
+q.querySelectorAll('.quiz-btn')[correct].classList.add('bg-green-100', 'border-green-500');
+feedback.textContent = explanations[qi][bi];
+feedback.className = 'quiz-feedback mt-2 text-sm text-red-700';
+}
+feedback.classList.remove('hidden');
+});
+});
+});
+</script>
+</body>
+</html>

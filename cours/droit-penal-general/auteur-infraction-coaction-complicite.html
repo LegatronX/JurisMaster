@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>L'auteur de l'infraction (coaction, complicite) - Droit penal general</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', sans-serif; line-height: 1.8; }
+h1, h2, h3 { font-family: 'Playfair Display', serif; }
+.prose h2 { font-size: 2rem; font-weight: 700; margin-top: 3rem; margin-bottom: 1.5rem; color: #1e3a8a; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; }
+.prose h3 { font-size: 1.5rem; font-weight: 600; margin-top: 2rem; margin-bottom: 1rem; color: #1e40af; }
+.prose p { margin-bottom: 1.5rem; color: #334155; text-align: justify; }
+.sidebar-link.active { color: #1d4ed8; font-weight: 600; border-left: 3px solid #1d4ed8; }
+.focus-box { background-color: #f8fafc; border-left: 4px solid #3b82f6; padding: 1.5rem; border-radius: 0.5rem; margin: 2rem 0; }
+.citation { font-style: italic; color: #475569; border-left: 2px solid #cbd5e1; padding-left: 1.5rem; margin: 2rem 0; }
+</style>
+</head>
+<body class="bg-white dark:bg-slate-900">
+<script>tailwind.config={darkMode:'class'}</script>
+<script>
+(function(){
+const stored = localStorage.getItem('jm.theme');
+if(stored === 'dark' || (!stored && matchMedia('(prefers-color-scheme: dark)').matches)){
+document.documentElement.classList.add('dark');
+}
+})();
+</script>
+
+<nav class="sticky top-0 z-50 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-6 py-3 flex justify-between items-center">
+<a href="../../index.html" class="text-xl font-bold tracking-tight">JURIS<span class="text-blue-700">MASTER</span></a>
+<div class="flex items-center space-x-4">
+<button id="dark-toggle" aria-label="Basculer mode sombre" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800">🌓</button>
+<span class="text-sm text-slate-500">Progression : <span data-progress>0</span>%</span>
+<div class="w-32 h-2 bg-slate-100 rounded-full overflow-hidden">
+<div class="bg-blue-600 h-full" data-progress-bar style="width:0%"></div>
+</div>
+</div>
+</nav>
+
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row">
+<aside class="w-full lg:w-72 bg-slate-50 dark:bg-slate-800 border-r border-slate-200 dark:border-slate-700 p-6 lg:sticky lg:top-14 lg:h-[calc(100vh-3.5rem)] lg:overflow-y-auto">
+<div class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-3">Droit pénal général</div>
+<a href="../droit-penal-general.html" class="block text-sm text-blue-700 hover:underline mb-6">← Sommaire</a>
+<ul class="space-y-2 text-sm">
+<li><a href="introduction-droit-penal.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C1. Introduction au droit pénal</a></li>
+<li><a href="loi-penal-legalite-temps-espace.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C2. La loi pénale</a></li>
+<li><a href="infraction-penale-classification.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C3. L'infraction pénale</a></li>
+<li><a href="auteur-infraction-coaction-complicite.html" class="sidebar-link active block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C4. L'auteur de l'infraction</a></li>
+<li><a href="victime-action-publique.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C5. La victime et l'action publique</a></li>
+<li><a href="irresponsabilite-extinction-punissabilite.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C6. Causes d'irresponsabilité</a></li>
+<li><a href="peines-principes-types.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C7. Les peines</a></li>
+<li><a href="mesures-surete.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C8. Les mesures de sûreté</a></li>
+<li><a href="recidivite-contrainte-penale.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C9. Récidive et contrainte pénale</a></li>
+<li><a href="prescription-justice-penale-mineur.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C10. Prescription et justice pénale du mineur</a></li>
+</ul>
+</aside>
+
+<main class="flex-1 p-6 lg:p-12 prose dark:prose-invert max-w-none">
+<article>
+<div class="flex items-center space-x-2 text-sm text-slate-500 mb-4">
+<a href="../../index.html" class="hover:underline">Accueil</a>
+<span>/</span>
+<a href="../droit-penal-general.html" class="hover:underline">Droit pénal général</a>
+<span>/</span>
+<span class="text-slate-800 dark:text-slate-200">C4</span>
+</div>
+<h1 class="text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white mb-4">L'auteur de l'infraction</h1>
+<p class="text-lg text-slate-600 dark:text-slate-300 mb-8">Coaction, complicité, instigation et auteur intellectuel : les modes de participation à l'infraction pénale.</p>
+
+<h2>1. L'auteur principal</h2>
+<p>L'auteur principal est celui qui accomplit matériellement les actes constitutifs de l'infraction. Il est seul ou en coaction avec d'autres auteurs. L'article 121-7 du Code pénal dispose que "l'auteur d'une infraction est la personne qui la commet". L'auteur doit réunir tous les éléments constitutifs de l'infraction : l'élément matériel et l'élément moral. La qualité d'auteur ne peut être retenue qu'à l'égard des personnes physiques ; la responsabilité pénale des personnes morales est régie par des règles spécifiques (art. 121-2 CP).</p>
+
+<div class="focus-box">
+<strong>À retenir :</strong> La coaction est la participation matérielle de plusieurs personnes à la commission d'une infraction. Les coauteurs sont des auteurs principaux qui ont accompli conjointement les actes matériels constitutifs de l'infraction. Chacun est puni comme s'il était seul auteur (art. 121-7 CP).
+</div>
+
+<h2>2. La complicité</h2>
+<p>La complicité est régie par les articles 121-6 et 121-7 du Code pénal. Elle consiste à aider ou assister l'auteur principal dans la commission de l'infraction, sans participer matériellement à celle-ci. Le complice est puni des mêmes peines que l'auteur (art. 121-6 CP), ce qui distingue le droit pénal français de certains droits étrangers où le complice est moins sévèrement puni.</p>
+
+<h3>2.1 Les formes de complicité</h3>
+<p>Le Code pénal distingue deux formes de complicité : la complicité par aide ou assistance (fourniture de moyens, information, conseil) et la complicité par instigation (provocation, incitation). L'article 121-7 énumère les actes de complicité : fournir les moyens de commettre l'infraction, faciliter par tout moyen la préparation ou la consommation, ou donner des instructions. L'instigation est traitée séparément par l'article 121-5 CP : "sera puni comme auteur d'un crime ou d'un délit celui qui aura provoqué à son exécution, par don, promesse, menace, ordre, abus d'autorité ou de pouvoir".</p>
+
+<h3>2.2 L'élément moral du complice</h3>
+<p>Le complice doit avoir connaissance de l'infraction principale ou, à tout le moins, des circonstances de fait qui la caractérisent. La jurisprudence exige une intention criminelle spécifique : le complice doit avoir voulu aider l'auteur à commettre l'infraction. Une aide apportée sans connaissance de l'infraction ne constitue pas de complicité. Cependant, la connaissance peut être implicite ou déduite des circonstances.</p>
+
+<h2>3. L'instigation</h3>
+<p>L'instigation est une forme aggravée de complicité. Elle consiste à provoquer la commission d'une infraction par tout moyen : don, promesse, menace, ordre, abus d'autorité ou de pouvoir. L'instigateur est puni comme auteur (art. 121-5 CP). L'instigation suppose une volonté déterminée d'entraîner autrui à commettre l'infraction. Elle se distingue de la provocation qui est une incitation générale et non adressée à une personne déterminée.</p>
+
+<h2>4. L'auteur intellectuel</h2>
+<p>L'auteur intellectuel est celui qui, sans participer matériellement à l'infraction, en est l'initiateur et le chef d'orchestre. Il conçoit l'infraction, en organise la commission et dirige les auteurs matériels. La notion d'auteur intellectuel n'est pas expressément définie par le Code pénal mais reconnue par la jurisprudence. L'auteur intellectuel est généralement qualifié d'instigateur ou de complice selon les modalités de sa participation.</p>
+
+<h2>5. La responsabilité pénale des personnes morales</h2>
+<p>L'article 121-2 du Code pénal, introduit par la loi du 10 juillet 2000, dispose que "les personnes morales, à l'exclusion de l'État, sont responsables pénales des infractions commises, pour leur compte, par leurs organes ou représentants". Cette réforme a instauré une responsabilité pénale autonome des personnes morales (sociétés, associations, etc.). Les peines applicables sont spécifiques : amende, dissolution, interdiction d'activité, placement sous surveillance, etc. (art. 131-37 et s. CP).</p>
+
+<div class="citation">
+"Sera puni comme auteur d'un crime ou d'un délit celui qui l'aura provoqué à son exécution, par don, promesse, menace, ordre, abus d'autorité ou de pouvoir." — Article 121-5 du Code pénal
+</div>
+
+<h2>6. Quiz</h2>
+<div class="quiz-question" data-correct="1">
+<p class="font-semibold mb-2">1. Le complice est-il puni des mêmes peines que l'auteur principal ?</p>
+<div class="space-y-2">
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Non, il bénéficie toujours d'une attenuation de peine</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Oui, il est puni des mêmes peines (art. 121-6 CP)</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Seulement s'il a commis une infraction distincte</button>
+</div>
+<p class="quiz-feedback hidden mt-2 text-sm"></p>
+</div>
+
+<div class="quiz-question mt-6" data-correct="0">
+<p class="font-semibold mb-2">2. Quelle condition est requise pour la responsabilité pénale des personnes morales ?</p>
+<div class="space-y-2">
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">L'infraction doit être commise pour le compte de la personne morale par ses organes ou représentants</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">La personne morale doit avoir directement accompli les actes matériels</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">L'État est également responsable pénale des infractions de ses agents</button>
+</div>
+<p class="quiz-feedback hidden mt-2 text-sm"></p>
+</div>
+
+<div class="quiz-question mt-6" data-correct="2">
+<p class="font-semibold mb-2">3. La coaction suppose-t-elle un lien d'organisation entre les auteurs ?</p>
+<div class="space-y-2">
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Oui, les coauteurs doivent appartenir à une organisation criminelle</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Oui, un accord préalable est toujours nécessaire</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Non, la coaction existe dès lors que plusieurs personnes accomplissent matériellement l'infraction ensemble</button>
+</div>
+<p class="quiz-feedback hidden mt-2 text-sm"></p>
+</div>
+
+<h2>Boîte à outils</h2>
+<div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg space-y-4">
+<div>
+<h4 class="font-semibold mb-1">Citation à retenir</h4>
+<p id="citation-box" class="text-sm text-slate-600 dark:text-slate-300">L'article 121-7 du Code pénal dispose que l'auteur d'une infraction est la personne qui la commet, tandis que le complice est celui qui, sans en être l'auteur, en facilite la préparation ou la consommation par aide ou assistance.</p>
+</div>
+<div class="flex space-x-3">
+<button onclick="navigator.clipboard.writeText(document.getElementById('citation-box').textContent)" class="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm hover:bg-blue-700">Copier la citation</button>
+<button onclick="window.print()" class="px-4 py-2 bg-slate-200 text-slate-800 rounded-lg text-sm hover:bg-slate-300">Imprimer la leçon</button>
+</div>
+</div>
+</article>
+</main>
+</div>
+
+<footer class="border-t border-slate-200 dark:border-slate-800 mt-12 bg-slate-50 dark:bg-slate-900">
+<div class="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center">
+<div class="text-sm text-slate-500 mb-4 md:mb-0">JurisMaster 2025 — Formation au droit français</div>
+<div class="flex space-x-6 text-sm text-slate-500">
+<a href="#" class="hover:text-blue-700">Mentions légales</a>
+<a href="#" class="hover:text-blue-700">Contact</a>
+</div>
+</div>
+</footer>
+
+<script>
+document.getElementById('dark-toggle').addEventListener('click', () => {
+document.documentElement.classList.toggle('dark');
+localStorage.setItem('jm.theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+});
+
+const JM = {
+get(){ try { return JSON.parse(localStorage.getItem('jurismaster.v1')) || {}; } catch { return {}; } },
+set(s){ localStorage.setItem('jurismaster.v1', JSON.stringify(s)); },
+addXP(n){ const s=JM.get(); s.xp=(s.xp||0)+n; JM.set(s); window.dispatchEvent(new CustomEvent('jm:xp',{detail:n})); },
+completeLesson(slug, xp=50){ const s=JM.get(); s.lessonsCompleted=[...new Set([...(s.lessonsCompleted||[]),slug])]; s.xp=(s.xp||0)+xp; JM.set(s); },
+touchStreak(){ const s=JM.get(); const today=new Date().toISOString().slice(0,10); const last=s.streak?.lastVisit; if(last&&last!==today){const d=new Date(today)-new Date(last); if(d===86400000){s.streak.count=(s.streak.count||0)+1;} else if(d>86400000){s.streak.count=1;} s.streak.lastVisit=today;} else if(!last){s.streak={count:1,lastVisit:today};} JM.set(s); }
+};
+JM.touchStreak();
+JM.completeLesson('droit-penal/auteur', 50);
+
+const s = JM.get();
+const progress = Math.min(100, Math.round(((s.lessonsCompleted||[]).length / 32) * 100));
+document.querySelectorAll('[data-progress]').forEach(el => el.textContent = progress);
+document.querySelectorAll('[data-progress-bar]').forEach(el => el.style.width = progress + '%');
+
+document.querySelectorAll('.quiz-question').forEach((q, qi) => {
+const correct = parseInt(q.dataset.correct);
+const feedback = q.querySelector('.quiz-feedback');
+const explanations = [
+["Le complice n'a pas droit à une attenuation automatique.","Exact ! L'article 121-6 CP dispose que le complice est puni des mêmes peines que l'auteur principal.","Le complice est puni pour sa participation à l'infraction principale, non pour une infraction distincte."],
+["Exact ! L'article 121-2 CP dispose que les personnes morales sont responsables pénales des infractions commises pour leur compte par leurs organes ou représentants.","La personne morale n'accomplit pas directement les actes ; c'est par l'intermédiaire de ses représentants.","L'État est expressément exclu de la responsabilité pénale des personnes morales (art. 121-2 CP)."],
+["La coaction n'exige pas d'appartenance à une organisation criminelle.","L'accord préalable n'est pas toujours nécessaire ; la coaction peut être spontanée.","Exact ! La coaction existe dès lors que plusieurs personnes accomplissent matériellement l'infraction ensemble, sans nécessiter de lien organisationnel préalable."]
+];
+q.querySelectorAll('.quiz-btn').forEach((btn, bi) => {
+btn.addEventListener('click', () => {
+if(q.classList.contains('answered')) return;
+q.classList.add('answered');
+if(bi === correct){
+btn.classList.add('bg-green-100', 'border-green-500', 'text-green-800');
+feedback.textContent = explanations[qi][bi];
+feedback.className = 'quiz-feedback mt-2 text-sm text-green-700';
+} else {
+btn.classList.add('bg-red-100', 'border-red-500', 'text-red-800');
+q.querySelectorAll('.quiz-btn')[correct].classList.add('bg-green-100', 'border-green-500');
+feedback.textContent = explanations[qi][bi];
+feedback.className = 'quiz-feedback mt-2 text-sm text-red-700';
+}
+feedback.classList.remove('hidden');
+});
+});
+});
+</script>
+</body>
+</html>
