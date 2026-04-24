@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le bloc de constitutionnalité et la hiérarchie des normes - Droit constitutionnel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; line-height: 1.8; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .prose h2 { font-size: 2rem; font-weight: 700; margin-top: 3rem; margin-bottom: 1.5rem; color: #1e3a8a; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; }
+        .prose h3 { font-size: 1.5rem; font-weight: 600; margin-top: 2rem; margin-bottom: 1rem; color: #1e40af; }
+        .prose p { margin-bottom: 1.5rem; color: #334155; text-align: justify; }
+        .sidebar-link.active { color: #1d4ed8; font-weight: 600; border-left: 3px solid #1d4ed8; }
+        .focus-box { background-color: #f8fafc; border-left: 4px solid #3b82f6; padding: 1.5rem; border-radius: 0.5rem; margin: 2rem 0; }
+        .citation { font-style: italic; color: #475569; border-left: 2px solid #cbd5e1; padding-left: 1.5rem; margin: 2rem 0; }
+    </style>
+</head>
+<body class="bg-white dark:bg-slate-900">
+    <script>tailwind.config={darkMode:'class'}</script>
+    <script>
+    (function(){
+      const stored = localStorage.getItem('jm.theme');
+      if(stored === 'dark' || (!stored && matchMedia('(prefers-color-scheme: dark)').matches)){
+        document.documentElement.classList.add('dark');
+      }
+    })();
+    </script>
+
+    <nav class="sticky top-0 z-50 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-6 py-3 flex justify-between items-center">
+      <a href="../../index.html" class="text-xl font-bold tracking-tight">JURIS<span class="text-blue-700">MASTER</span></a>
+      <div class="flex items-center space-x-4">
+        <button id="dark-toggle" aria-label="Basculer mode sombre" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800">🌓</button>
+        <span class="text-sm text-slate-500">Progression : <span data-progress>0</span>%</span>
+        <div class="w-32 h-2 bg-slate-100 rounded-full overflow-hidden">
+          <div class="bg-blue-600 h-full" data-progress-bar style="width:0%"></div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row">
+        <aside class="w-full md:w-80 border-r border-slate-100 dark:border-slate-800 p-8 h-screen sticky top-14 overflow-y-auto bg-slate-50/50 dark:bg-slate-900/50">
+            <h4 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-6">Droit constitutionnel</h4>
+            <div class="space-y-8 text-sm text-left">
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">I. L'État et la souveraineté</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="notion-etat-elements-constitutifs.html" class="sidebar-link pl-4 block text-slate-500">A1. La notion d'État</a></li>
+                        <li><a href="souverainete-modes-exercice.html" class="sidebar-link pl-4 block text-slate-500">A2. La souveraineté</a></li>
+                        <li><a href="constitution-notion-types-fonctions.html" class="sidebar-link pl-4 block text-slate-500">A3. La Constitution</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">II. Le bloc de constitutionnalité</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="bloc-constitutionnalite-hierarchie-normes.html" class="sidebar-link active pl-4 block">A4. Bloc et hiérarchie</a></li>
+                        <li><a href="histoire-constitutionnelle-francaise.html" class="sidebar-link pl-4 block text-slate-500">A5. Histoire (1789–1958)</a></li>
+                        <li><a href="typologie-regimes-politiques.html" class="sidebar-link pl-4 block text-slate-500">A6. Régimes politiques</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">III. La Ve République</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="constitution-1958-genese-principes.html" class="sidebar-link pl-4 block text-slate-500">A7. Constitution de 1958</a></li>
+                        <li><a href="president-republique.html" class="sidebar-link pl-4 block text-slate-500">A8. Président</a></li>
+                        <li><a href="gouvernement-parlement-rapports-force.html" class="sidebar-link pl-4 block text-slate-500">A9. Gouvernement et Parlement</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">IV. Le juge et les droits</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="conseil-constitutionnel.html" class="sidebar-link pl-4 block text-slate-500">A10. Conseil constitutionnel</a></li>
+                        <li><a href="droits-libertes-constitutionnellement-garantis.html" class="sidebar-link pl-4 block text-slate-500">A11. Droits et libertés</a></li>
+                        <li><a href="constitution-droit-europeen.html" class="sidebar-link pl-4 block text-slate-500">A12. Droit européen</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <main class="flex-1 py-16 px-6 md:px-20 max-w-5xl">
+            <article class="prose prose-slate lg:prose-lg mx-auto text-left">
+                <nav class="text-sm text-blue-600 font-semibold mb-8 uppercase tracking-wide">Chapitre II — Le bloc de constitutionnalité</nav>
+                <h1 class="text-4xl md:text-6xl font-bold mb-10 leading-tight">Le bloc de constitutionnalité et la hiérarchie des normes</h1>
+                
+                <p class="text-xl text-slate-500 italic mb-12 border-l-4 border-blue-100 pl-6 py-2">
+                    "La Constitution n'est pas une norme isolée au sommet de l'ordre juridique : elle est le cœur d'un bloc de normes supérieures."
+                </p>
+                <p class="text-sm text-slate-400 mb-8">— Louis Favoreu, Droit constitutionnel, 2022</p>
+
+                <h2 id="exorde">Exorde — De la pyramide de Kelsen au bloc de Favoreu</h2>
+                <p>
+                    La hiérarchie des normes, théorisée par Hans Kelsen dans sa <em>Théorie pure du droit</em> (1934), représente l'ordre juridique comme une pyramide dont la Constitution constitue la norme fondamentale (<em>Grundnorm</em>). Chaque norme inférieure tire sa validité de la norme supérieure. Cette structure, apparue en droit allemand puis reprise par la doctrine française, a été profondément transformée par une décision historique du Conseil constitutionnel.
+                </p>
+                <p>
+                    Le 16 juillet 1971, le Conseil constitutionnel, saisi d'une loi restreignant la liberté d'association, a déclaré que le Préambule de la Constitution de 1946 et la Déclaration des droits de l'homme et du citoyen de 1789 faisaient partie intégrante du "bloc de constitutionnalité". Cette décision n° 71-44 DC, connue sous le nom d'"arrêt Liberté d'association", a considérablement élargi le champ du contrôle de constitutionnalité et transformé la nature même de la Constitution française.
+                </p>
+
+                <div class="focus-box">
+                    <h4 class="font-bold text-blue-900 dark:text-blue-300 mb-2">Focus : La décision n° 71-44 DC, 16 juillet 1971</h4>
+                    <p class="text-sm mb-0">
+                        Dans cette décision fondatrice, le Conseil constitutionnel a jugé que "le Préambule de la Constitution du 27 octobre 1946 [et] la Déclaration des droits de l'homme et du citoyen de 1789 ont valeur constitutionnelle". Cette interprétation, qui n'était pas explicitement inscrite dans le texte de 1958, a été élaborée par le juge constitutionnel pour combler le vide normatif laissé par la brièveté de la Constitution. Elle a permis au Conseil de fonder son contrôle sur les droits fondamentaux, alors que le texte de 1958 ne les énumérait pas.
+                    </p>
+                </div>
+
+                <h2 id="partie1">Partie I — La composition du bloc de constitutionnalité</h2>
+
+                <h3>A. Les textes formant le bloc</h3>
+                <p>
+                    Le bloc de constitutionnalité, tel qu'il est aujourd'hui reconnu par la doctrine et la jurisprudence, comprend plusieurs strates normatives :
+                </p>
+                <p>
+                    <strong>1. La Constitution de 1958</strong> : texte fondateur de la Ve République, adopté par référendum le 28 septembre 1958. Il comporte un Préambole (qui renvoie au Préambule de 1946), 16 titres organisant les institutions, et 89 articles.
+                </p>
+                <p>
+                    <strong>2. Le Préambule de la Constitution de 1946</strong> : adopté à la Libération, il proclame les principes fondamentaux reconnus par les lois de la République, les droits et devoirs du citoyen (droit au travail, droit de grève, liberté syndicale, participation à la gestion des entreprises), et les principes de la souveraineté nationale.
+                </p>
+                <p>
+                    <strong>3. La Déclaration des droits de l'homme et du citoyen de 1789</strong> : texte fondateur de la Révolution française, elle énonce les droits naturels, inaliénables et sacrés (liberté, propriété, sûreté, résistance à l'oppression), les principes de l'égalité devant la loi (art. 6), de la présomption d'innocence (art. 9), et de la séparation des pouvoirs (art. 16).
+                </p>
+                <p>
+                    <strong>4. La Charte de l'environnement de 2004</strong> : adoptée par la loi constitutionnelle n° 2005-205 du 1er mars 2005, elle a été intégrée au bloc de constitutionnalité par la décision du Conseil constitutionnel n° 2008-564 DC du 19 juin 2008. Elle proclame de nouveaux droits (droit à un environnement équilibré et respectueux de la santé, principe de précaution, principe de participation du public aux décisions).
+                </p>
+                <p>
+                    <strong>5. Les principes fondamentaux reconnus par les lois de la République (PFRLR)</strong> : ce concept, issu du Préambule de 1946, désigne des principes qui ne sont pas explicitement énoncés dans la Constitution mais qui découlent de l'histoire constitutionnelle française. Le Conseil constitutionnel en a dégagé plusieurs : liberté d'association (71-44 DC), liberté d'enseignement (77-87 DC), liberté de communication (84-181 DC), inviolabilité du domicile (95-360 DC), neutralité du service public (2012-658 DC).
+                </p>
+
+                <h3>B. La hiérarchie des normes dans l'ordre juridique français</h3>
+                <p>
+                    La hiérarchie des normes, telle que la conçoit la doctrine française contemporaine, s'organise en plusieurs niveaux :
+                </p>
+                <p>
+                    Au sommet se trouve le <strong>bloc de constitutionnalité</strong> (Constitution 1958 + Préambule 1946 + DDHC 1789 + PFRLR + Charte de l'environnement). Juste en dessous viennent les <strong>traités et accords internationaux</strong> (art. 55 de la Constitution), qui ont une autorité supérieure à celle des lois. Cette primauté a été affirmée par la Cour de cassation (Cass. ch. mixte, 24 mai 1975, <em>Société des cafés Jacques Vabre</em>) et le Conseil d'État (CE, ass., 20 oct. 1989, <em>Nicolo</em>).
+                </p>
+                <p>
+                    Viennent ensuite les <strong>lois organiques</strong> (art. 46 de la Constitution), qui précisent l'application de certaines dispositions constitutionnelles et doivent être adoptées selon une procédure particulière (vote majoritaire absolu du Congrès ou des deux assemblées, contrôle de constitutionnalité obligatoire). Puis les <strong>lois ordinaires</strong>, les <strong>ordonnances</strong> (art. 38), les <strong>décrets</strong> (art. 37), les <strong>arrêtés</strong> et les <strong>décisions administratives individuelles</strong>.
+                </p>
+
+                <div class="citation">
+                    "La loi votée n'exprime la volonté générale que dans le respect de la Constitution."
+                    <br><span class="text-sm text-slate-400 not-italic">— Cons. const., déc. n° 85-197 DC, 23 août 1985 (Nouvelle-Calédonie)</span>
+                </div>
+
+                <h2 id="partie2">Partie II — Le contrôle de constitutionnalité et ses évolutions</h2>
+
+                <h3>A. Le contrôle a priori (art. 61)</h3>
+                <p>
+                    L'art. 61 de la Constitution prévoit que "les lois organiques, avant leur promulgation, les propositions de loi mentionnées à l'article 11 avant qu'elles ne soient soumises au référendum, et les règlements des assemblées parlementaires, avant leur mise en application, doivent être soumis au Conseil constitutionnel". Le Conseil statue dans un délai d'un mois (huit jours en cas d'urgence déclarée par le Gouvernement ou le Parlement).
+                </p>
+                <p>
+                    Le contrôle a priori est saisi par un nombre restreint d'acteurs : le Président de la République, le Premier ministre, le Président de l'Assemblée nationale, le Président du Sénat, et depuis 2008, soixante députés ou soixante sénateurs (art. 61 al. 2). Cette saisine parlementaire, instaurée par la révision de 2008, a considérablement développé l'activité du Conseil constitutionnel : alors qu'il rendait en moyenne 5 à 10 décisions par an avant 2008, il en prononce désormais 25 à 30 annuellement.
+                </p>
+
+                <h3>B. La QPC : révolution de 2008</h3>
+                <p>
+                    La réforme constitutionnelle du 23 juillet 2008 a introduit un mécanisme révolutionnaire : la <strong>question prioritaire de constitutionnalité</strong> (QPC), consacrée par l'art. 61-1 de la Constitution. Ce dispositif permet à toute partie à un procès de contester, devant n'importe quelle juridiction, qu'une disposition législative porte atteinte aux droits et libertés que la Constitution garantit.
+                </p>
+                <p>
+                    La procédure est tripartite : la juridiction de l'ordre judiciaire (tribunal, cour d'appel, Cour de cassation) ou administrative (tribunal administratif, cour administrative d'appel, Conseil d'État) transmet la QPC au Conseil constitutionnel si elle estime qu'elle présente un caractère sérieux et qu'elle n'a pas déjà été jugée. Le Conseil constitutionnel statue dans un délai de trois mois. Depuis son entrée en vigueur le 1er mars 2010 (LO n° 2009-1523 du 10 décembre 2009), la QPC a provoqué une "judicialisation" massive du droit français : plus de 1 500 décisions QPC ont été rendues en 15 ans.
+                </p>
+                <p>
+                    La QPC a permis au Conseil constitutionnel de requalifier des dispositions législatives en "lois de référence" (principes directeurs, critères de contrôle) et de développer un véritable dialogue des juges avec le législateur. L'article 62 de la Constitution, modifié en 2008, prévoit désormais que "la décision du Conseil constitutionnel s'impose aux pouvoirs publics et à toutes les autorités administratives et juridictionnelles", y compris pour les QPC.
+                </p>
+
+                <div class="focus-box">
+                    <h4 class="font-bold text-blue-900 dark:text-blue-300 mb-2">Appareil critique — Controverses et bibliographie</h4>
+                    <p class="text-sm mb-0">
+                        <strong>Controverse :</strong> La QPC a-t-elle transformé le Conseil constitutionnel en "Conseil constitutionnel à la façon de la Cour suprême américaine" ? La doctrine est divisée. Pour Dominique Rousseau, la QPC consacre la suprématie du juge sur le législateur et menace la séparation des pouvoirs. Pour Bertrand Mathieu, elle participe d'un "constitutionalisme de rationalisation" qui modernise l'État de droit sans le dénaturer.
+                        <br><br>
+                        <strong>Bibliographie :</strong> Louis Favoreu, Patrick Gaïa, <em>Droit constitutionnel</em> (13e éd., 2022) ; Dominique Rousseau, <em>La Question prioritaire de constitutionnalité</em> (Dalloz, 2010) ; Conseil constitutionnel, <em>Rapport annuel sur le contrôle de constitutionnalité</em> (éditions annuelles).
+                    </p>
+                </div>
+
+                <!-- QUIZ -->
+                <section class="mt-16 p-8 bg-slate-50 dark:bg-slate-800 rounded-2xl">
+                    <h3 class="text-2xl font-bold mb-6">Quiz — Le bloc de constitutionnalité</h3>
+                    <div id="quiz-container" class="space-y-6">
+                        <div class="quiz-question" data-correct="1">
+                            <p class="font-semibold mb-3">1. Quelle décision du Conseil constitutionnel a créé le "bloc de constitutionnalité" ?</p>
+                            <div class="space-y-2">
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. 62-20 DC</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. 71-44 DC</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. 74-54 DC</button>
+                            </div>
+                            <p class="quiz-feedback hidden mt-2 text-sm"></p>
+                        </div>
+                        <div class="quiz-question" data-correct="2">
+                            <p class="font-semibold mb-3">2. La Charte de l'environnement a été intégrée au bloc par :</p>
+                            <div class="space-y-2">
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. La loi constitutionnelle de 2005</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. La décision 71-44 DC</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. La décision 2008-564 DC</button>
+                            </div>
+                            <p class="quiz-feedback hidden mt-2 text-sm"></p>
+                        </div>
+                        <div class="quiz-question" data-correct="0">
+                            <p class="font-semibold mb-3">3. Quel article de la Constitution prévoit le contrôle a priori des lois organiques ?</p>
+                            <div class="space-y-2">
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. Art. 61</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. Art. 61-1</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. Art. 62</button>
+                            </div>
+                            <p class="quiz-feedback hidden mt-2 text-sm"></p>
+                        </div>
+                        <div class="quiz-question" data-correct="1">
+                            <p class="font-semibold mb-3">4. La QPC est prévue par :</p>
+                            <div class="space-y-2">
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. La révision de 2000</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. La révision de 2008</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. La révision de 2016</button>
+                            </div>
+                            <p class="quiz-feedback hidden mt-2 text-sm"></p>
+                        </div>
+                    </div>
+                    <div id="quiz-result" class="mt-6 hidden p-4 rounded-xl font-bold text-center"></div>
+                </section>
+
+                <section class="mt-24 p-12 bg-slate-900 text-white rounded-[3rem] overflow-hidden relative">
+                  <div class="relative z-10 text-left">
+                    <h3 class="text-2xl font-bold mb-6">Prêt pour l'examen ?</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                      <div>
+                        <h4 class="text-blue-400 font-bold text-xs uppercase mb-4 tracking-widest">Citation à retenir</h4>
+                        <p class="text-slate-300 italic mb-4">"La loi votée n'exprime la volonté générale que dans le respect de la Constitution."</p>
+                        <p class="text-xs text-slate-500">— Cons. const., déc. n° 85-197 DC, 23 août 1985</p>
+                      </div>
+                      <div class="space-y-4">
+                        <button onclick="copyCitation()" class="w-full py-3 px-6 bg-white/10 hover:bg-white/20 rounded-xl border border-white/10 text-sm font-bold transition flex justify-between items-center">
+                          Citer cette leçon (APA) <span>📋</span>
+                        </button>
+                        <button onclick="window.print()" class="w-full py-3 px-6 bg-blue-600 hover:bg-blue-700 rounded-xl text-sm font-bold transition flex justify-between items-center">
+                          Version PDF / Imprimer <span>🖨️</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="absolute right-[-30px] bottom-[-30px] text-[12rem] opacity-5">⚖️</div>
+                </section>
+                <script>
+                function copyCitation(){
+                  const c = `ROLANDO C., « Le bloc de constitutionnalité et la hiérarchie des normes », JurisMaster, ${new Date().getFullYear()}. URL : ${location.href}`;
+                  navigator.clipboard.writeText(c);
+                  alert("Citation copiée.");
+                }
+                </script>
+
+                <p class="text-xs text-slate-400 mt-8 text-center">
+                  Contenu à visée pédagogique. Ne constitue pas un conseil juridique personnalisé.
+                </p>
+            </article>
+        </main>
+    </div>
+
+    <script>
+    document.addEventListener('click', e => {
+      if(e.target.closest('#dark-toggle')){
+        document.documentElement.classList.toggle('dark');
+        localStorage.setItem('jm.theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+      }
+    });
+
+    const JM = {
+      get(){ return JSON.parse(localStorage.getItem('jurismaster.v1') || '{"xp":0,"streak":{"count":0,"lastVisit":""},"lessonsCompleted":[],"badges":[],"quizScores":{}}'); },
+      set(s){ localStorage.setItem('jurismaster.v1', JSON.stringify(s)); },
+      addXP(n){ const s=JM.get(); s.xp=(s.xp||0)+n; JM.set(s); window.dispatchEvent(new CustomEvent('jm:xp',{detail:n})); },
+      completeLesson(slug, xp=50){ const s=JM.get(); s.lessonsCompleted=[...new Set([...(s.lessonsCompleted||[]),slug])]; s.xp=(s.xp||0)+xp; JM.set(s); },
+      touchStreak(){ const s=JM.get(); const today=new Date().toISOString().slice(0,10); const last=s.streak?.lastVisit; if(last&&last!==today){const d=new Date(today)-new Date(last); if(d===86400000){s.streak.count=(s.streak.count||0)+1;} else if(d>86400000){s.streak.count=1;} s.streak.lastVisit=today;} else if(!last){s.streak={count:1,lastVisit:today};} JM.set(s); }
+    };
+    JM.touchStreak();
+    JM.completeLesson('droit-constitutionnel/bloc-hierarchie', 50);
+
+    const s = JM.get();
+    const progress = Math.min(100, Math.round(((s.lessonsCompleted||[]).length / 32) * 100));
+    document.querySelectorAll('[data-progress]').forEach(el => el.textContent = progress);
+    document.querySelectorAll('[data-progress-bar]').forEach(el => el.style.width = progress + '%');
+
+    document.querySelectorAll('.quiz-question').forEach((q, qi) => {
+      const correct = parseInt(q.dataset.correct);
+      const feedback = q.querySelector('.quiz-feedback');
+      const explanations = [
+        ["La décision 62-20 DC concerne l'incompétence du Conseil sur les lois référendaires. La décision 74-54 DC concerne l'IVG.", "Exact ! La décision n° 71-44 DC du 16 juillet 1971, Liberté d'association, a intégré le Préambule de 1946 et la DDHC 1789 au bloc de constitutionnalité.", "La décision 74-54 DC du 15 janvier 1975 a refusé le contrôle de conventionnalité sur la loi Veil relative à l'IVG."],
+        ["La loi constitutionnelle de 2005 a adopté la Charte, mais son intégration au bloc a été opérée par le juge constitutionnel.", "La décision 71-44 DC concerne la liberté d'association et l'intégration du Préambule 1946, pas la Charte de l'environnement.", "Exact ! La décision n° 2008-564 DC du 19 juin 2008 a intégré la Charte de l'environnement au bloc de constitutionnalité."],
+        ["Exact ! L'art. 61 prévoit le contrôle a priori des lois organiques, propositions de loi référendaires et règlements des assemblées.", "L'art. 61-1 prévoit la QPC (contrôle a posteriori).", "L'art. 62 concerne l'autorité de la décision du Conseil constitutionnel."],
+        ["La révision de 2000 a instauré le quinquennat. La QPC a été introduite par la révision du 23 juillet 2008.", "Exact ! La QPC a été instaurée par la révision constitutionnelle du 23 juillet 2008, entrée en vigueur le 1er mars 2010.", "La révision de 2016 a porté sur la déchéance de nationalité et l'état d'urgence."]
+      ];
+      q.querySelectorAll('.quiz-btn').forEach((btn, bi) => {
+        btn.addEventListener('click', () => {
+          if(q.classList.contains('answered')) return;
+          q.classList.add('answered');
+          if(bi === correct){
+            btn.classList.add('bg-green-100', 'border-green-500', 'text-green-800');
+            feedback.textContent = explanations[qi][bi];
+            feedback.className = 'quiz-feedback mt-2 text-sm text-green-700';
+          } else {
+            btn.classList.add('bg-red-100', 'border-red-500', 'text-red-800');
+            q.querySelectorAll('.quiz-btn')[correct].classList.add('bg-green-100', 'border-green-500');
+            feedback.textContent = explanations[qi][bi];
+            feedback.className = 'quiz-feedback mt-2 text-sm text-red-700';
+          }
+          feedback.classList.remove('hidden');
+        });
+      });
+    });
+    </script>
+</body>
+</html>

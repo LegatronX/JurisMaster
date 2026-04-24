@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histoire constitutionnelle française (1789–1958) - Droit constitutionnel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; line-height: 1.8; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .prose h2 { font-size: 2rem; font-weight: 700; margin-top: 3rem; margin-bottom: 1.5rem; color: #1e3a8a; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; }
+        .prose h3 { font-size: 1.5rem; font-weight: 600; margin-top: 2rem; margin-bottom: 1rem; color: #1e40af; }
+        .prose p { margin-bottom: 1.5rem; color: #334155; text-align: justify; }
+        .sidebar-link.active { color: #1d4ed8; font-weight: 600; border-left: 3px solid #1d4ed8; }
+        .focus-box { background-color: #f8fafc; border-left: 4px solid #3b82f6; padding: 1.5rem; border-radius: 0.5rem; margin: 2rem 0; }
+        .citation { font-style: italic; color: #475569; border-left: 2px solid #cbd5e1; padding-left: 1.5rem; margin: 2rem 0; }
+        .timeline-item { position: relative; padding-left: 2rem; border-left: 2px solid #e2e8f0; margin-bottom: 2rem; }
+        .timeline-item::before { content: ''; position: absolute; left: -6px; top: 0.5rem; width: 10px; height: 10px; background: #3b82f6; border-radius: 50%; }
+    </style>
+</head>
+<body class="bg-white dark:bg-slate-900">
+    <script>tailwind.config={darkMode:'class'}</script>
+    <script>
+    (function(){
+      const stored = localStorage.getItem('jm.theme');
+      if(stored === 'dark' || (!stored && matchMedia('(prefers-color-scheme: dark)').matches)){
+        document.documentElement.classList.add('dark');
+      }
+    })();
+    </script>
+
+    <nav class="sticky top-0 z-50 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-6 py-3 flex justify-between items-center">
+      <a href="../../index.html" class="text-xl font-bold tracking-tight">JURIS<span class="text-blue-700">MASTER</span></a>
+      <div class="flex items-center space-x-4">
+        <button id="dark-toggle" aria-label="Basculer mode sombre" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800">🌓</button>
+        <span class="text-sm text-slate-500">Progression : <span data-progress>0</span>%</span>
+        <div class="w-32 h-2 bg-slate-100 rounded-full overflow-hidden">
+          <div class="bg-blue-600 h-full" data-progress-bar style="width:0%"></div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row">
+        <aside class="w-full md:w-80 border-r border-slate-100 dark:border-slate-800 p-8 h-screen sticky top-14 overflow-y-auto bg-slate-50/50 dark:bg-slate-900/50">
+            <h4 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-6">Droit constitutionnel</h4>
+            <div class="space-y-8 text-sm text-left">
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">I. L'État et la souveraineté</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="notion-etat-elements-constitutifs.html" class="sidebar-link pl-4 block text-slate-500">A1. La notion d'État</a></li>
+                        <li><a href="souverainete-modes-exercice.html" class="sidebar-link pl-4 block text-slate-500">A2. La souveraineté</a></li>
+                        <li><a href="constitution-notion-types-fonctions.html" class="sidebar-link pl-4 block text-slate-500">A3. La Constitution</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">II. Le bloc de constitutionnalité</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="bloc-constitutionnalite-hierarchie-normes.html" class="sidebar-link pl-4 block text-slate-500">A4. Bloc et hiérarchie</a></li>
+                        <li><a href="histoire-constitutionnelle-francaise.html" class="sidebar-link active pl-4 block">A5. Histoire (1789–1958)</a></li>
+                        <li><a href="typologie-regimes-politiques.html" class="sidebar-link pl-4 block text-slate-500">A6. Régimes politiques</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">III. La Ve République</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="constitution-1958-genese-principes.html" class="sidebar-link pl-4 block text-slate-500">A7. Constitution de 1958</a></li>
+                        <li><a href="president-republique.html" class="sidebar-link pl-4 block text-slate-500">A8. Président</a></li>
+                        <li><a href="gouvernement-parlement-rapports-force.html" class="sidebar-link pl-4 block text-slate-500">A9. Gouvernement et Parlement</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">IV. Le juge et les droits</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="conseil-constitutionnel.html" class="sidebar-link pl-4 block text-slate-500">A10. Conseil constitutionnel</a></li>
+                        <li><a href="droits-libertes-constitutionnellement-garantis.html" class="sidebar-link pl-4 block text-slate-500">A11. Droits et libertés</a></li>
+                        <li><a href="constitution-droit-europeen.html" class="sidebar-link pl-4 block text-slate-500">A12. Droit européen</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <main class="flex-1 py-16 px-6 md:px-20 max-w-5xl">
+            <article class="prose prose-slate lg:prose-lg mx-auto text-left">
+                <nav class="text-sm text-blue-600 font-semibold mb-8 uppercase tracking-wide">Chapitre II — Le bloc de constitutionnalité</nav>
+                <h1 class="text-4xl md:text-6xl font-bold mb-10 leading-tight">Histoire constitutionnelle française (1789–1958)</h1>
+                
+                <p class="text-xl text-slate-500 italic mb-12 border-l-4 border-blue-100 pl-6 py-2">
+                    "La France a changé de régime plus souvent que d'habits."
+                </p>
+                <p class="text-sm text-slate-400 mb-8">— Maurice Duverger, Institutions politiques et droit constitutionnel</p>
+
+                <h2 id="exorde">Exorde — L'instabilité comme fil rouge</h2>
+                <p>
+                    L'histoire constitutionnelle française est marquée par une exceptionnelle instabilité régime. Depuis 1789, la France a connu cinq républiques, deux empires, deux monarchies restaurées et un régime d'occupation. Cette succession tumultueuse, loin d'être un simple accident historique, révèle une tension structurelle entre deux conceptions de la souveraineté : la souveraineté populaire (Rousseau) et la souveraineté nationale (Sieyès), entre l'autorité forte et la liberté parlementaire.
+                </p>
+                <p>
+                    Enjeu contemporain : comprendre cette histoire permet de saisir les choix fondateurs de la Ve République (1958), conçue explicitement comme une réponse à l'instabilité gouvernementale de la IVe République (24 gouvernements en 12 ans). Le général de Gaulle, dans son discours de Bayeux du 16 juin 1946, avait déjà esquissé les principes d'un régime qui éviterait les écueils des précédentes expériences.
+                </p>
+
+                <h2 id="partie1">Partie I — De la Révolution à la IIIe République (1789–1940)</h2>
+
+                <h3>A. La Révolution et ses Constitutions (1789–1799)</h3>
+                <p>
+                    La Révolution française produit une explosion constitutionnelle sans précédent. La <strong>Constitution de 1791</strong>, première Constitution écrite française, instaure une monarchie constitutionnelle sur le modèle anglais : Louis XVI devient "roi des Français", le pouvoir législatif appartient à une Assemblée nationale élue au suffrage censitaire (actif/passif). Elle consacre la séparation des pouvoirs, mais la monarchie est rapidement abolie (10 août 1792).
+                </p>
+                <p>
+                    La <strong>Constitution de l'an I (1793)</strong>, plus démocratique, établit le suffrage universel masculin, le droit de révocation des mandats, et l'égalité formelle. Elle n'est jamais appliquée : la Terreur (1793–1794) suspend toute Constitution. La <strong>Constitution de l'an III (1795)</strong> fonde le Directoire, un régime oligarchique où le pouvoir est partagé entre un Conseil des Cinq-Cents (proposition) et un Conseil des Anciens (adoption). Ce régime, marqué par la corruption et les coups d'État, s'effondre en 1799.
+                </p>
+
+                <h3>B. Consulat, Empire et monarchies (1799–1848)</h3>
+                <p>
+                    Le <strong>Consulat</strong> (Constitution de l'an VIII, 1799) concentre le pouvoir exécutif entre les mains de trois consuls, dont le Premier (Napoléon Bonaparte) domine. La Constitution de l'an XII (1804) transforme le Consulat en <strong>Empire</strong>, conférant à Napoléon les pleins pouvoirs. Le <strong>Restauration</strong> (1814–1830), avec la Charte octroyée par Louis XVIII, marque le retour à une monarchie constitutionnelle : la Charte, octroyée (pas votée), limite le pouvoir royal par un Parlement bicaméral (Chambre des pairs héréditaire, Chambre des députés élue).
+                </p>
+                <p>
+                    La <strong>monarchie de Juillet</strong> (1830–1848), fondée par la révolution des Trois Glorieuses, révise la Charte : le roi devient "roi des Français" (pas "roi de France et de Navarre"), le droit d'association est reconnu, la liberté de la presse élargie. Mais le suffrage reste censitaire (payant 200 francs d'impôts, soit environ 1% de la population). La <strong>IIe République</strong> (1848–1852), née de la révolution de février 1848, instaure le suffrage universel masculin direct — une première en Europe — mais est rapidement renversée par le coup d'État de Louis-Napoléon Bonaparte (2 décembre 1851).
+                </p>
+
+                <h3>C. La IIIe République (1875–1940)</h3>
+                <p>
+                    La <strong>IIIe République</strong> est fondée non par une Constitution unique, mais par trois <strong>lois constitutionnelles</strong> (16–24 février et 25 juillet 1875) : la loi sur l'organisation des pouvoirs publics (Assemblée nationale et Sénat), la loi sur l'organisation du Sénat, et la loi sur les rapports des pouvoirs publics. Ce régime parlementaire, inspiré du modèle britannique, repose sur la responsabilité du Gouvernement devant les assemblées (art. 6 et 7 de la loi du 25 février 1875).
+                </p>
+                <p>
+                    La IIIe République connaît une grande instabilité gouvernementale (106 gouvernements en 65 ans) mais une remarquable stabilité institutionnelle. Elle survit à la crise boulangiste (1889), à l'affaire Dreyfus (1894–1906), et à la Première Guerre mondiale. Elle est finalement renversée par le vote des pleins pouvoirs à Philippe Pétain (10 juillet 1940), voté par le Congrès de Vichy à une écrasante majorité (569 voix pour, 80 contre, 18 abstentions).
+                </p>
+
+                <h2 id="partie2">Partie II — IVe République et naissance de la Ve (1940–1958)</h2>
+
+                <h3>A. La IVe République : les erreurs à ne pas reproduire</h3>
+                <p>
+                    La <strong>IVe République</strong> est instituée par la Constitution adoptée par l'Assemblée nationale constituante le 29 septembre 1946 et approuvée par référendum le 13 octobre 1946 (9 millions de oui, 8 millions de non). Ce scrutin très serré traduit déjà la défiance du pays. La Constitution de 1946 reprend les erreurs de la IIIe République : régime parlementaire pur, absence de chef de l'exécutif stable, assemblée dominante.
+                </p>
+                <p>
+                    Les <strong>défauts structurels</strong> de la IVe République sont patentés. Le régime des partis conduit à des coalitions instables (tripartisme 1945–1947, puis troisième force). La procédure de la <strong>motion de censure</strong> (art. 51) est trop facile : un gouvernement peut tomber par une majorité simple. Les gouvernements durent en moyenne 6 mois. L'alinéa 3 de l'art. 51, qui permettait au gouvernement d'engager sa responsabilité sur un texte (<em>engagement de responsabilité</em>), était rarement utilisé. La <strong>crise de la décolonisation</strong> (Indochine, Algérie) achève le régime : le 13 mai 1958, l'insurrection des Français d'Algérie et le putsch des généraux contraignent le président Coty à appeler de Gaulle.
+                </p>
+
+                <h3>B. La Ve République : une réponse aux échecs passés</h3>
+                <p>
+                    La <strong>Constitution de 1958</strong> est conçue comme un <strong>parlementarisme rationalisé</strong>, cher à De Gaulle et à Michel Debré. Elle reprend les innovations suivantes : un <strong>chef de l'État fort</strong> (président de la République, élu au suffrage universel direct depuis 1962), un <strong>Gouvernement responsable devant le Parlement</strong> mais doté d'instruments de résistance (art. 49-3 : engagement de responsabilité ; art. 44-3 : vote bloqué), une <strong>procédure législative restreinte</strong> (domaine de la loi limité par l'art. 34, domaine réglementaire élargi par l'art. 37).
+                </p>
+                <p>
+                    Le discours de Bayeux (16 juin 1946) esquissait déjà cette architecture : "Il est vain de dissimuler que, depuis un demi-siècle, les régimes parlementaires ont donné à la France une inconsistance déplorable [...] Il est indispensable que l'exécutif soit à la source de l'initiative législative et qu'il puisse engager sa responsabilité." La Constitution de 1958 vise à réconcilier l'autorité et la liberté, en s'inspirant des constitutions américaine (séparation stricte) et britannique (responsabilité gouvernementale).
+                </p>
+
+                <div class="focus-box">
+                    <h4 class="font-bold text-blue-900 dark:text-blue-300 mb-2">Appareil critique — Bibliographie</h4>
+                    <p class="text-sm mb-0">
+                        <strong>Doctrinale :</strong> Marcel Morabito, <em>Histoire constitutionnelle de la France</em> (11e éd., LGDJ, 2018) ; Jacques Godechot, <em>Les Constitutions de la France depuis 1789</em> (Garnier-Flammarion, 1970) ; Olivier Duhamel, <em>Histoire constitutionnelle de la France</em> (Seuil, 2014).<br><br>
+                        <strong>Sources :</strong> Discours de Bayeux, 16 juin 1946 ; Michel Debré, <em>La Réforme du Parlementarisme</em> (PUF, 1947).
+                    </p>
+                </div>
+
+                <!-- QUIZ -->
+                <section class="mt-16 p-8 bg-slate-50 dark:bg-slate-800 rounded-2xl">
+                    <h3 class="text-2xl font-bold mb-6">Quiz — Histoire constitutionnelle</h3>
+                    <div id="quiz-container" class="space-y-6">
+                        <div class="quiz-question" data-correct="0">
+                            <p class="font-semibold mb-3">1. Quelle Constitution a instauré le suffrage universel masculin en France ?</p>
+                            <div class="space-y-2">
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. Constitution de 1848</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. Constitution de 1793</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. Constitution de 1958</button>
+                            </div>
+                            <p class="quiz-feedback hidden mt-2 text-sm"></p>
+                        </div>
+                        <div class="quiz-question" data-correct="1">
+                            <p class="font-semibold mb-3">2. La IIIe République a été fondée par :</p>
+                            <div class="space-y-2">
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. Une Constitution unique</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. Trois lois constitutionnelles de 1875</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. La Charte de 1814</button>
+                            </div>
+                            <p class="quiz-feedback hidden mt-2 text-sm"></p>
+                        </div>
+                        <div class="quiz-question" data-correct="2">
+                            <p class="font-semibold mb-3">3. Combien de gouvernements la IVe République a-t-elle connus en 12 ans ?</p>
+                            <div class="space-y-2">
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. 12</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. 18</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. 24</button>
+                            </div>
+                            <p class="quiz-feedback hidden mt-2 text-sm"></p>
+                        </div>
+                        <div class="quiz-question" data-correct="0">
+                            <p class="font-semibold mb-3">4. Le discours de Bayeux, qui a inspiré la Constitution de 1958, date du :</p>
+                            <div class="space-y-2">
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. 16 juin 1946</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. 2 décembre 1951</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. 28 septembre 1958</button>
+                            </div>
+                            <p class="quiz-feedback hidden mt-2 text-sm"></p>
+                        </div>
+                    </div>
+                    <div id="quiz-result" class="mt-6 hidden p-4 rounded-xl font-bold text-center"></div>
+                </section>
+
+                <section class="mt-24 p-12 bg-slate-900 text-white rounded-[3rem] overflow-hidden relative">
+                  <div class="relative z-10 text-left">
+                    <h3 class="text-2xl font-bold mb-6">Prêt pour l'examen ?</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                      <div>
+                        <h4 class="text-blue-400 font-bold text-xs uppercase mb-4 tracking-widest">Citation à retenir</h4>
+                        <p class="text-slate-300 italic mb-4">"Il est vain de dissimuler que, depuis un demi-siècle, les régimes parlementaires ont donné à la France une inconsistance déplorable."</p>
+                        <p class="text-xs text-slate-500">— Charles de Gaulle, Discours de Bayeux, 16 juin 1946</p>
+                      </div>
+                      <div class="space-y-4">
+                        <button onclick="copyCitation()" class="w-full py-3 px-6 bg-white/10 hover:bg-white/20 rounded-xl border border-white/10 text-sm font-bold transition flex justify-between items-center">
+                          Citer cette leçon (APA) <span>📋</span>
+                        </button>
+                        <button onclick="window.print()" class="w-full py-3 px-6 bg-blue-600 hover:bg-blue-700 rounded-xl text-sm font-bold transition flex justify-between items-center">
+                          Version PDF / Imprimer <span>🖨️</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="absolute right-[-30px] bottom-[-30px] text-[12rem] opacity-5">⚖️</div>
+                </section>
+                <script>
+                function copyCitation(){
+                  const c = `ROLANDO C., « Histoire constitutionnelle française (1789–1958) », JurisMaster, ${new Date().getFullYear()}. URL : ${location.href}`;
+                  navigator.clipboard.writeText(c);
+                  alert("Citation copiée.");
+                }
+                </script>
+
+                <p class="text-xs text-slate-400 mt-8 text-center">
+                  Contenu à visée pédagogique. Ne constitue pas un conseil juridique personnalisé.
+                </p>
+            </article>
+        </main>
+    </div>
+
+    <script>
+    document.addEventListener('click', e => {
+      if(e.target.closest('#dark-toggle')){
+        document.documentElement.classList.toggle('dark');
+        localStorage.setItem('jm.theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+      }
+    });
+
+    const JM = {
+      get(){ return JSON.parse(localStorage.getItem('jurismaster.v1') || '{"xp":0,"streak":{"count":0,"lastVisit":""},"lessonsCompleted":[],"badges":[],"quizScores":{}}'); },
+      set(s){ localStorage.setItem('jurismaster.v1', JSON.stringify(s)); },
+      addXP(n){ const s=JM.get(); s.xp=(s.xp||0)+n; JM.set(s); window.dispatchEvent(new CustomEvent('jm:xp',{detail:n})); },
+      completeLesson(slug, xp=50){ const s=JM.get(); s.lessonsCompleted=[...new Set([...(s.lessonsCompleted||[]),slug])]; s.xp=(s.xp||0)+xp; JM.set(s); },
+      touchStreak(){ const s=JM.get(); const today=new Date().toISOString().slice(0,10); const last=s.streak?.lastVisit; if(last&&last!==today){const d=new Date(today)-new Date(last); if(d===86400000){s.streak.count=(s.streak.count||0)+1;} else if(d>86400000){s.streak.count=1;} s.streak.lastVisit=today;} else if(!last){s.streak={count:1,lastVisit:today};} JM.set(s); }
+    };
+    JM.touchStreak();
+    JM.completeLesson('droit-constitutionnel/histoire', 50);
+
+    const s = JM.get();
+    const progress = Math.min(100, Math.round(((s.lessonsCompleted||[]).length / 32) * 100));
+    document.querySelectorAll('[data-progress]').forEach(el => el.textContent = progress);
+    document.querySelectorAll('[data-progress-bar]').forEach(el => el.style.width = progress + '%');
+
+    document.querySelectorAll('.quiz-question').forEach((q, qi) => {
+      const correct = parseInt(q.dataset.correct);
+      const feedback = q.querySelector('.quiz-feedback');
+      const explanations = [
+        ["Exact ! La Constitution de 1848 (IIe République) a instauré le suffrage universel masculin direct, une première en Europe. La Constitution de 1793 l'avait prévu mais elle n'a jamais été appliquée.", "La Constitution de 1793 prévoyait le suffrage universel mais n'a jamais été appliquée. La Constitution de 1958 conserve le suffrage universel hérité de 1848.", "La Constitution de 1958 conserve le suffrage universel mais ne l'a pas instauré."],
+        ["La IIIe République n'a pas été fondée par une Constitution unique, mais par trois lois constitutionnelles de 1875.", "Exact ! La IIIe République repose sur trois lois constitutionnelles : celle du 24 février 1875 (organisation des pouvoirs publics), du 25 février 1875 (organisation du Sénat), et du 16 juillet 1875 (rapports des pouvoirs publics).", "La Charte de 1814 a fondé la Restauration, pas la IIIe République."],
+        ["La IIIe République a connu 106 gouvernements en 65 ans. La IVe République a connu 24 gouvernements en 12 ans.", "La IIIe République a connu 106 gouvernements en 65 ans. La IVe République a connu 24 gouvernements en 12 ans.", "Exact ! La IVe République a connu 24 gouvernements en 12 ans (1946–1958), soit une durée moyenne de 6 mois par gouvernement."],
+        ["Exact ! Le discours de Bayeux du 16 juin 1946 a esquissé les grands principes de la future Constitution de 1958 : exécutif fort, parlementarisme rationalisé, séparation des pouvoirs.", "Le 2 décembre 1951 est le coup d'État de Louis-Napoléon Bonaparte qui a mis fin à la IIe République.", "Le 28 septembre 1958 est la date du référendum approuvant la Constitution de la Ve République."]
+      ];
+      q.querySelectorAll('.quiz-btn').forEach((btn, bi) => {
+        btn.addEventListener('click', () => {
+          if(q.classList.contains('answered')) return;
+          q.classList.add('answered');
+          if(bi === correct){
+            btn.classList.add('bg-green-100', 'border-green-500', 'text-green-800');
+            feedback.textContent = explanations[qi][bi];
+            feedback.className = 'quiz-feedback mt-2 text-sm text-green-700';
+          } else {
+            btn.classList.add('bg-red-100', 'border-red-500', 'text-red-800');
+            q.querySelectorAll('.quiz-btn')[correct].classList.add('bg-green-100', 'border-green-500');
+            feedback.textContent = explanations[qi][bi];
+            feedback.className = 'quiz-feedback mt-2 text-sm text-red-700';
+          }
+          feedback.classList.remove('hidden');
+        });
+      });
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typologie des régimes politiques - Droit constitutionnel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; line-height: 1.8; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .prose h2 { font-size: 2rem; font-weight: 700; margin-top: 3rem; margin-bottom: 1.5rem; color: #1e3a8a; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; }
+        .prose h3 { font-size: 1.5rem; font-weight: 600; margin-top: 2rem; margin-bottom: 1rem; color: #1e40af; }
+        .prose p { margin-bottom: 1.5rem; color: #334155; text-align: justify; }
+        .sidebar-link.active { color: #1d4ed8; font-weight: 600; border-left: 3px solid #1d4ed8; }
+        .focus-box { background-color: #f8fafc; border-left: 4px solid #3b82f6; padding: 1.5rem; border-radius: 0.5rem; margin: 2rem 0; }
+        .citation { font-style: italic; color: #475569; border-left: 2px solid #cbd5e1; padding-left: 1.5rem; margin: 2rem 0; }
+    </style>
+</head>
+<body class="bg-white dark:bg-slate-900">
+    <script>tailwind.config={darkMode:'class'}</script>
+    <script>
+    (function(){
+      const stored = localStorage.getItem('jm.theme');
+      if(stored === 'dark' || (!stored && matchMedia('(prefers-color-scheme: dark)').matches)){
+        document.documentElement.classList.add('dark');
+      }
+    })();
+    </script>
+
+    <nav class="sticky top-0 z-50 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-6 py-3 flex justify-between items-center">
+      <a href="../../index.html" class="text-xl font-bold tracking-tight">JURIS<span class="text-blue-700">MASTER</span></a>
+      <div class="flex items-center space-x-4">
+        <button id="dark-toggle" aria-label="Basculer mode sombre" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800">🌓</button>
+        <span class="text-sm text-slate-500">Progression : <span data-progress>0</span>%</span>
+        <div class="w-32 h-2 bg-slate-100 rounded-full overflow-hidden">
+          <div class="bg-blue-600 h-full" data-progress-bar style="width:0%"></div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row">
+        <aside class="w-full md:w-80 border-r border-slate-100 dark:border-slate-800 p-8 h-screen sticky top-14 overflow-y-auto bg-slate-50/50 dark:bg-slate-900/50">
+            <h4 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-6">Droit constitutionnel</h4>
+            <div class="space-y-8 text-sm text-left">
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">I. L'État et la souveraineté</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="notion-etat-elements-constitutifs.html" class="sidebar-link pl-4 block text-slate-500">A1. La notion d'État</a></li>
+                        <li><a href="souverainete-modes-exercice.html" class="sidebar-link pl-4 block text-slate-500">A2. La souveraineté</a></li>
+                        <li><a href="constitution-notion-types-fonctions.html" class="sidebar-link pl-4 block text-slate-500">A3. La Constitution</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">II. Le bloc de constitutionnalité</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="bloc-constitutionnalite-hierarchie-normes.html" class="sidebar-link pl-4 block text-slate-500">A4. Bloc et hiérarchie</a></li>
+                        <li><a href="histoire-constitutionnelle-francaise.html" class="sidebar-link pl-4 block text-slate-500">A5. Histoire (1789–1958)</a></li>
+                        <li><a href="typologie-regimes-politiques.html" class="sidebar-link active pl-4 block">A6. Régimes politiques</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">III. La Ve République</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="constitution-1958-genese-principes.html" class="sidebar-link pl-4 block text-slate-500">A7. Constitution de 1958</a></li>
+                        <li><a href="president-republique.html" class="sidebar-link pl-4 block text-slate-500">A8. Président</a></li>
+                        <li><a href="gouvernement-parlement-rapports-force.html" class="sidebar-link pl-4 block text-slate-500">A9. Gouvernement et Parlement</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">IV. Le juge et les droits</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="conseil-constitutionnel.html" class="sidebar-link pl-4 block text-slate-500">A10. Conseil constitutionnel</a></li>
+                        <li><a href="droits-libertes-constitutionnellement-garantis.html" class="sidebar-link pl-4 block text-slate-500">A11. Droits et libertés</a></li>
+                        <li><a href="constitution-droit-europeen.html" class="sidebar-link pl-4 block text-slate-500">A12. Droit européen</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <main class="flex-1 py-16 px-6 md:px-20 max-w-5xl">
+            <article class="prose prose-slate lg:prose-lg mx-auto text-left">
+                <nav class="text-sm text-blue-600 font-semibold mb-8 uppercase tracking-wide">Chapitre II — Le bloc de constitutionnalité</nav>
+                <h1 class="text-4xl md:text-6xl font-bold mb-10 leading-tight">Typologie des régimes politiques</h1>
+                
+                <p class="text-xl text-slate-500 italic mb-12 border-l-4 border-blue-100 pl-6 py-2">
+                    "Il n'y a point encore de liberté là où la puissance législative est réunie à la puissance exécutive."
+                </p>
+                <p class="text-sm text-slate-400 mb-8">— Montesquieu, De l'esprit des lois, Livre XI, ch. 6</p>
+
+                <h2 id="exorde">Exorde — Du critère de la séparation des pouvoirs</h2>
+                <p>
+                    Depuis Montesquieu, la science politique classifie les régimes politiques selon le degré de <strong>séparation</strong> entre les pouvoirs législatif et exécutif. Cette distinction, popularisée par Maurice Duverger dans <em>Les Régimes politiques</em> (1951) puis dans ses manuels de droit constitutionnel, demeure l'outil analytique de base pour tout étudiant en droit public. Cependant, la doctrine contemporaine a enrichi cette typologie en ajoutant des critères juridictionnels, législatifs et comportementaux.
+                </p>
+                <p>
+                    Enjeu contemporain : la Ve République française, initialement classée comme "régime parlementaire rationalisé", a évolué vers un "régime semi-présidentiel" puis, selon certains auteurs, vers un "résidentialisme" ou une "monarchie républicaine" (Maurice Duverger, <em>La Monarchie républicaine</em>, 1974). La classification des régimes n'est donc pas figée : elle évolue avec les pratiques institutionnelles.
+                </p>
+
+                <h2 id="partie1">Partie I — Les trois régimes fondamentaux</h2>
+
+                <h3>A. Le régime parlementaire (séparation souple)</h3>
+                <p>
+                    Dans le <strong>régime parlementaire</strong>, le Gouvernement dépend politiquement du Parlement. Il naît du Parlement (investiture), lui rend des comptes (responsabilité), et peut en être renversé (motion de censure). Les deux têtes de l'exécutif — chef de l'État et chef du Gouvernement — sont distinctes. Le chef de l'État (monarque ou président) est le plus souvent une figure symbolique avec des pouvoirs résiduels ; le chef du Gouvernement (Premier ministre, <em>Chancellor</em>) exerce la direction effective de la politique.
+                </p>
+                <p>
+                    Le <strong>Royaume-Uni</strong> est le modèle historique : le roi règne mais ne gouverne pas, le Parlement est souverain, le Premier ministre est membre de la Chambre des communes et dépend de sa majorité. La <strong>loi de 1911</strong> a limité les pouvoirs de la Chambre des lords, consacrant la suprématie de la Chambre des communes. La <strong>Allemagne</strong> (Loi fondamentale de 1949) illustre un parlementarisme consensuel : le <em>Bundeskanzler</em> est élu par le <em>Bundestag</em> à la majorité absolue (art. 63), la motion de censure constructive (art. 67) oblige l'opposition à désigner un successeur, empêchant les instabilités à la française.
+                </p>
+                <p>
+                    Le critère discriminant du parlementarisme est l'existence d'une <strong>responsabilité politique</strong> du Gouvernement devant le Parlement. Sans cette responsabilité, on n'est pas en présence d'un régime parlementaire, même si le chef du Gouvernement est membre du Parlement. Ainsi, le régime soviétique, où le Présidium du Soviet suprême coiffait le Conseil des ministres sans véritable contrôle, n'était pas un parlementarisme.
+                </p>
+
+                <h3>B. Le régime présidentiel (séparation stricte)</h3>
+                <p>
+                    Dans le <strong>régime présidentiel</strong>, les pouvoirs exécutif et législatif sont strictement séparés : le chef de l'exécutif n'est pas membre du Parlement, ne peut être renversé par celui-ci, et n'a pas le droit de dissolution. Les <strong>États-Unis</strong> sont le prototype : le Président, élu au suffrage universel indirect (collège électoral), nomme les secrétaires (ministres) sans contreseing parlementaire, exerce le droit de veto législatif (art. I, sect. 7), et ne peut être destitué que par <em>impeachment</em> (art. II, sect. 4 : trahison, corruption, autres crimes majeurs).
+                </p>
+                <p>
+                    Le régime présidentiel repose sur un système de <strong>freins et contrepoids</strong> (<em>checks and balances</em>) : le Congrès contrôle le président (pouvoir budgétaire, confirmation des nominations, <em>impeachment</em>), le président contrôle le Congrès (veto, appel au peuple), la Cour suprême contrôle les deux (contrôle de constitutionnalité, <em>Marbury v. Madison</em>, 1803). Cette architecture, pensée par les Pères fondateurs pour éviter la concentration du pouvoir, produit un équilibre instable qui peut déboucher sur un <em>gridlock</em> (blocage politique) quand président et Congrès sont de bords opposés.
+                </p>
+
+                <h3>C. Le régime semi-présidentiel (séparation mixte)</h3>
+                <p>
+                    Le <strong>régime semi-présidentiel</strong>, théorisé par Maurice Duverger en 1970, combine des éléments du parlementarisme et du présidentialisme. Il repose sur la coexistence d'un <strong>président élu au suffrage universel direct</strong> (légitimité populaire forte) et d'un <strong>Gouvernement responsable devant le Parlement</strong> (légitimité parlementaire). Ce modèle, initialement considéré comme une "exception" (France, Ve République), s'est répandu : Portugal (1976), Finlande (2000), Roumanie (1991), Russie (1993), Pologne (1997).
+                </p>
+                <p>
+                    Le fonctionnement du régime semi-présidentiel varie selon la <strong>cohérence majoritaire</strong>. En période de <strong>cohabitation</strong> (président et majorité parlementaire de bords opposés), le régime fonctionne comme un parlementarisme : le président désigne un Premier ministre de l'opposition, le Gouvernement dépend du Parlement, le président se contente de ses prérogatives en politique étrangère et défense. En période de <strong>concordance</strong> (président et majorité du même bord), le régime tend vers le présidentialisme : le président dirige la politique par l'intermédiaire d'un Premier ministre docile, le Parlement devient une chambre d'enregistrement.
+                </p>
+                <p>
+                    La France a connu trois périodes de cohabitation : 1986-1988 (Mitterrand/Chirac), 1993-1995 (Mitterrand/Balladur), 1997-2002 (Chirac/Jospin). La réduction du mandat présidentiel de sept à cinq ans (référendum du 24 septembre 2000), suivie de l'inversion du calendrier électoral (législatives avant la présidentielle depuis 2002), visait précisément à éviter la cohabitation en alignant les majorités.
+                </p>
+
+                <div class="focus-box">
+                    <h4 class="font-bold text-blue-900 dark:text-blue-300 mb-2">Focus : La Cour suprême américaine et Marbury v. Madison (1803)</h4>
+                    <p class="text-sm mb-0">
+                        L'arrêt <em>Marbury v. Madison</em> (1803), rendu par la Cour suprême des États-Unis sous la présidence du Chief Justice John Marshall, a instauré le <strong>contrôle de constitutionnalité des lois</strong>. Dans cette affaire, la Cour a jugé une disposition de la loi Judiciary Act of 1789 inconstitutionnelle, affirmant ainsi le pouvoir de la Cour suprême de dire le droit constitutionnel. Ce précédent, qui n'a pas d'équivalent formel dans la Constitution américaine (silent sur le contrôle de constitutionnalité), a fondé le <em>judicial review</em>, modèle inspirateur des juridictions constitutionnelles européennes.
+                    </p>
+                </div>
+
+                <h2 id="partie2">Partie II — Critères contemporains et évolutions</h2>
+
+                <h3>A. Du critère structurel au critère comportemental</h3>
+                <p>
+                    La doctrine moderne, influencée par l'école comparatiste américaine (Juan Linz, Arend Lijphart), a enrichi la typologie classique. Juan Linz, dans <em>The Failure of Presidential Democracy</em> (1990), a montré que les régimes présidentiels sont plus fragiles que les régimes parlementaires en Amérique latine. Arend Lijphart, dans <em>Patterns of Democracy</em> (1999), oppose les démocraties <strong>majoritaires</strong> (Westminster) aux démocraties <strong>consensuelles</strong> (Allemagne, Suisse), selon des critères comportementaux (concentration vs. partage du pouvoir exécutif, unicamérisme vs. bicamérisme, système électoral).
+                </p>
+                <p>
+                        En France, la doctrine s'interroge sur la nature réelle du régime de la Ve République. Pour Duverger (1970-1980), c'est un "semi-présidentialisme". Pour Jean Gicquel (1990), c'est un "parlementarisme rationalisé à tendance présidentielle". Pour Olivier Duhamel (2000), le régime a basculé dans un "hyper-présidentialisme" depuis la réduction du quinquennat et l'inversion du calendrier. La thèse de la "monarchie républicaine" (Duverger, 1974) — où le président cumule les attributs d'un monarque constitutionnel et d'un chef de gouvernement — reste une grille de lecture féconde.
+                </p>
+
+                <h3>B. La bipolarisation et le multipartisme</h3>
+                <p>
+                    La typologie des régimes ne saurait ignorer le <strong>système de partis</strong>. Un régime parlementaire à majorité absolue (Royaume-Uni) fonctionne différemment d'un régime parlementaire à coalition (Italie, Belgique). La France, sous la Ve République, a connu une <strong>bipolarisation</strong> croissante : passage d'un multipartisme à un quasi-bipartisme (UMP/PS puis LREM/LR). Le scrutin majoritaire uninominal à deux tours (art. 24 et 25 de la Constitution, loi organique n° 86-825 du 11 juillet 1986) a favorisé cette concentration.
+                </p>
+
+                <div class="focus-box">
+                    <h4 class="font-bold text-blue-900 dark:text-blue-300 mb-2">Appareil critique — Controverses et bibliographie</h4>
+                    <p class="text-sm mb-0">
+                        <strong>Controverse :</strong> La Ve République est-elle encore un régime semi-présidentiel ? La suppression de la cohabitation (par le quinquennat et l'inversion du calendrier) a-t-elle transformé le régime en présidentialisme déguisé ? La concentration des pouvoirs entre les mains du président (nomination du Premier ministre sans contreseing, contrôle de l'ordre du jour par l'art. 48-1, art. 49-3) relativise la responsabilité gouvernementale.
+                        <br><br>
+                        <strong>Bibliographie :</strong> Maurice Duverger, <em>Les Monarchies républicaines</em> (PUF, 1974) ; Olivier Duhamel, <em>Le pouvoir politique en France</em> (Seuil, 2019) ; Arend Lijphart, <em>Patterns of Democracy</em> (Yale UP, 1999) ; Matteo Gianni, <em>Le Régime semi-présidentiel</em> (LGDJ, 2017).
+                    </p>
+                </div>
+
+                <!-- QUIZ -->
+                <section class="mt-16 p-8 bg-slate-50 dark:bg-slate-800 rounded-2xl">
+                    <h3 class="text-2xl font-bold mb-6">Quiz — Typologie des régimes</h3>
+                    <div id="quiz-container" class="space-y-6">
+                        <div class="quiz-question" data-correct="1">
+                            <p class="font-semibold mb-3">1. Qui a théorisé le concept de "régime semi-présidentiel" ?</p>
+                            <div class="space-y-2">
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. Montesquieu</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. Maurice Duverger</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. Jean Bodin</button>
+                            </div>
+                            <p class="quiz-feedback hidden mt-2 text-sm"></p>
+                        </div>
+                        <div class="quiz-question" data-correct="2">
+                            <p class="font-semibold mb-3">2. Quel arrêt de la Cour suprême américaine a instauré le contrôle de constitutionnalité ?</p>
+                            <div class="space-y-2">
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. Brown v. Board of Education</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. Roe v. Wade</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. Marbury v. Madison</button>
+                            </div>
+                            <p class="quiz-feedback hidden mt-2 text-sm"></p>
+                        </div>
+                        <div class="quiz-question" data-correct="0">
+                            <p class="font-semibold mb-3">3. La motion de censure "constructive" allemande oblige l'opposition à :</p>
+                            <div class="space-y-2">
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. Désigner un successeur au Chancelier</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. Obtenir l'accord du Président fédéral</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. Dissoudre le Bundestag</button>
+                            </div>
+                            <p class="quiz-feedback hidden mt-2 text-sm"></p>
+                        </div>
+                        <div class="quiz-question" data-correct="1">
+                            <p class="font-semibold mb-3">4. La cohabitation en France résulte de :</p>
+                            <div class="space-y-2">
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. L'art. 16 de la Constitution</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. La dissociation entre majorité présidentielle et majorité parlementaire</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. La dissolution de l'Assemblée nationale</button>
+                            </div>
+                            <p class="quiz-feedback hidden mt-2 text-sm"></p>
+                        </div>
+                    </div>
+                    <div id="quiz-result" class="mt-6 hidden p-4 rounded-xl font-bold text-center"></div>
+                </section>
+
+                <section class="mt-24 p-12 bg-slate-900 text-white rounded-[3rem] overflow-hidden relative">
+                  <div class="relative z-10 text-left">
+                    <h3 class="text-2xl font-bold mb-6">Prêt pour l'examen ?</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                      <div>
+                        <h4 class="text-blue-400 font-bold text-xs uppercase mb-4 tracking-widest">Citation à retenir</h4>
+                        <p class="text-slate-300 italic mb-4">"Il n'y a point encore de liberté là où la puissance législative est réunie à la puissance exécutive."</p>
+                        <p class="text-xs text-slate-500">— Montesquieu, De l'esprit des lois, Livre XI, ch. 6</p>
+                      </div>
+                      <div class="space-y-4">
+                        <button onclick="copyCitation()" class="w-full py-3 px-6 bg-white/10 hover:bg-white/20 rounded-xl border border-white/10 text-sm font-bold transition flex justify-between items-center">
+                          Citer cette leçon (APA) <span>📋</span>
+                        </button>
+                        <button onclick="window.print()" class="w-full py-3 px-6 bg-blue-600 hover:bg-blue-700 rounded-xl text-sm font-bold transition flex justify-between items-center">
+                          Version PDF / Imprimer <span>🖨️</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="absolute right-[-30px] bottom-[-30px] text-[12rem] opacity-5">⚖️</div>
+                </section>
+                <script>
+                function copyCitation(){
+                  const c = `ROLANDO C., « Typologie des régimes politiques », JurisMaster, ${new Date().getFullYear()}. URL : ${location.href}`;
+                  navigator.clipboard.writeText(c);
+                  alert("Citation copiée.");
+                }
+                </script>
+
+                <p class="text-xs text-slate-400 mt-8 text-center">
+                  Contenu à visée pédagogique. Ne constitue pas un conseil juridique personnalisé.
+                </p>
+            </article>
+        </main>
+    </div>
+
+    <script>
+    document.addEventListener('click', e => {
+      if(e.target.closest('#dark-toggle')){
+        document.documentElement.classList.toggle('dark');
+        localStorage.setItem('jm.theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+      }
+    });
+
+    const JM = {
+      get(){ return JSON.parse(localStorage.getItem('jurismaster.v1') || '{"xp":0,"streak":{"count":0,"lastVisit":""},"lessonsCompleted":[],"badges":[],"quizScores":{}}'); },
+      set(s){ localStorage.setItem('jurismaster.v1', JSON.stringify(s)); },
+      addXP(n){ const s=JM.get(); s.xp=(s.xp||0)+n; JM.set(s); window.dispatchEvent(new CustomEvent('jm:xp',{detail:n})); },
+      completeLesson(slug, xp=50){ const s=JM.get(); s.lessonsCompleted=[...new Set([...(s.lessonsCompleted||[]),slug])]; s.xp=(s.xp||0)+xp; JM.set(s); },
+      touchStreak(){ const s=JM.get(); const today=new Date().toISOString().slice(0,10); const last=s.streak?.lastVisit; if(last&&last!==today){const d=new Date(today)-new Date(last); if(d===86400000){s.streak.count=(s.streak.count||0)+1;} else if(d>86400000){s.streak.count=1;} s.streak.lastVisit=today;} else if(!last){s.streak={count:1,lastVisit:today};} JM.set(s); }
+    };
+    JM.touchStreak();
+    JM.completeLesson('droit-constitutionnel/typologie-regimes', 50);
+
+    const s = JM.get();
+    const progress = Math.min(100, Math.round(((s.lessonsCompleted||[]).length / 32) * 100));
+    document.querySelectorAll('[data-progress]').forEach(el => el.textContent = progress);
+    document.querySelectorAll('[data-progress-bar]').forEach(el => el.style.width = progress + '%');
+
+    document.querySelectorAll('.quiz-question').forEach((q, qi) => {
+      const correct = parseInt(q.dataset.correct);
+      const feedback = q.querySelector('.quiz-feedback');
+      const explanations = [
+        ["Montesquieu a théorisé la séparation des pouvoirs. Bodin a théorisé la souveraineté.", "Exact ! Maurice Duverger a théorisé le régime semi-présidentiel dans un article de 1970, puis dans ses manuels de droit constitutionnel.", "Bodin a théorisé la souveraineté absolue du monarque dans Les Six Livres de la République (1576)."],
+        ["Brown v. Board of Education (1954) a mis fin à la ségrégation scolaire.", "Roe v. Wade (1973) a reconnu le droit à l'avortement, abrogé par Dobbs v. Jackson (2022).", "Exact ! Marbury v. Madison (1803), rendu par John Marshall, a instauré le contrôle de constitutionnalité des lois (judicial review)."],
+        ["Exact ! L'art. 67 de la Loi fondamentale allemande prévoit une motion de censure constructive : le Bundestag ne peut renverser le Chancelier qu'en élisant un successeur à la majorité absolue.", "Le Président fédéral (Bundespräsident) n'est pas impliqué dans la motion de censure.", "La dissolution du Bundestag est une prérogative du Président fédéral, mais pas consécutive à la motion de censure."],
+        ["L'art. 16 concerne les pouvoirs exceptionnels du président, pas la cohabitation.", "Exact ! La cohabitation résulte de la dissociation entre la majorité présidentielle (le président élu) et la majorité parlementaire (issue des législatives).", "La dissolution de l'Assemblée nationale (art. 12) est un moyen pour le président d'éviter la cohabitation, pas sa cause."]
+      ];
+      q.querySelectorAll('.quiz-btn').forEach((btn, bi) => {
+        btn.addEventListener('click', () => {
+          if(q.classList.contains('answered')) return;
+          q.classList.add('answered');
+          if(bi === correct){
+            btn.classList.add('bg-green-100', 'border-green-500', 'text-green-800');
+            feedback.textContent = explanations[qi][bi];
+            feedback.className = 'quiz-feedback mt-2 text-sm text-green-700';
+          } else {
+            btn.classList.add('bg-red-100', 'border-red-500', 'text-red-800');
+            q.querySelectorAll('.quiz-btn')[correct].classList.add('bg-green-100', 'border-green-500');
+            feedback.textContent = explanations[qi][bi];
+            feedback.className = 'quiz-feedback mt-2 text-sm text-red-700';
+          }
+          feedback.classList.remove('hidden');
+        });
+      });
+    });
+    </script>
+</body>
+</html>
