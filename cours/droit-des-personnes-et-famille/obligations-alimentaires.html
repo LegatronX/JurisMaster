@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Obligations alimentaires - Droit des personnes et de la famille</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', sans-serif; line-height: 1.8; }
+h1, h2, h3 { font-family: 'Playfair Display', serif; }
+.prose h2 { font-size: 2rem; font-weight: 700; margin-top: 3rem; margin-bottom: 1.5rem; color: #1e3a8a; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; }
+.prose h3 { font-size: 1.5rem; font-weight: 600; margin-top: 2rem; margin-bottom: 1rem; color: #1e40af; }
+.prose p { margin-bottom: 1.5rem; color: #334155; text-align: justify; }
+.sidebar-link.active { color: #1d4ed8; font-weight: 600; border-left: 3px solid #1d4ed8; }
+.focus-box { background-color: #f8fafc; border-left: 4px solid #3b82f6; padding: 1.5rem; border-radius: 0.5rem; margin: 2rem 0; }
+.citation { font-style: italic; color: #475569; border-left: 2px solid #cbd5e1; padding-left: 1.5rem; margin: 2rem 0; }
+</style>
+</head>
+<body class="bg-white dark:bg-slate-900">
+<script>tailwind.config={darkMode:'class'}</script>
+<script>
+(function(){
+const stored = localStorage.getItem('jm.theme');
+if(stored === 'dark' || (!stored && matchMedia('(prefers-color-scheme: dark)').matches)){
+document.documentElement.classList.add('dark');
+}
+})();
+</script>
+
+<nav class="sticky top-0 z-50 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-6 py-3 flex justify-between items-center">
+<a href="../../index.html" class="text-xl font-bold tracking-tight">JURIS<span class="text-blue-700">MASTER</span></a>
+<div class="flex items-center space-x-4">
+<button id="dark-toggle" aria-label="Basculer mode sombre" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800">🌓</button>
+<span class="text-sm text-slate-500">Progression : <span data-progress>0</span>%</span>
+<div class="w-32 h-2 bg-slate-100 rounded-full overflow-hidden">
+<div class="bg-blue-600 h-full" data-progress-bar style="width:0%"></div>
+</div>
+</div>
+</nav>
+
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row">
+<aside class="w-full lg:w-72 bg-slate-50 dark:bg-slate-800 border-r border-slate-200 dark:border-slate-700 p-6 lg:sticky lg:top-14 lg:h-[calc(100vh-3.5rem)] lg:overflow-y-auto">
+<div class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-3">Droit des personnes et de la famille</div>
+<a href="../droit-des-personnes-et-famille.html" class="block text-sm text-blue-700 hover:underline mb-6">← Sommaire</a>
+<ul class="space-y-2 text-sm">
+<li><a href="personne-humaine-capacite.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">B1. La personne humaine</a></li>
+<li><a href="mariage-conditions-celebration.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">B2. Le mariage</a></li>
+<li><a href="divorce-procedure-consequences.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">B3. Le divorce</a></li>
+<li><a href="pacs-union-libre.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">B4. Le PACS et l'union libre</a></li>
+<li><a href="filiation-legitime-naturelle-adoptive.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">B5. La filiation</a></li>
+<li><a href="autorite-parentale-garde-education.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">B6. L'autorité parentale</a></li>
+<li><a href="regimes-matrimoniaux.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">B7. Les régimes matrimoniaux</a></li>
+<li><a href="successions-liberalites.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">B8. Successions et libéralités</a></li>
+<li><a href="obligations-alimentaires.html" class="sidebar-link active block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">B9. Obligations alimentaires</a></li>
+<li><a href="protection-majeurs-mineurs.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">B10. Protection majeurs et mineurs</a></li>
+</ul>
+</aside>
+
+<main class="flex-1 p-6 lg:p-12 prose dark:prose-invert max-w-none">
+<article>
+<div class="flex items-center space-x-2 text-sm text-slate-500 mb-4">
+<a href="../../index.html" class="hover:underline">Accueil</a>
+<span>/</span>
+<a href="../droit-des-personnes-et-famille.html" class="hover:underline">Droit des personnes et de la famille</a>
+<span>/</span>
+<span class="text-slate-800 dark:text-slate-200">B9</span>
+</div>
+<h1 class="text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white mb-4">Obligations alimentaires</h1>
+<p class="text-lg text-slate-600 dark:text-slate-300 mb-8">Le devoir de secours entre membres de la famille : fondement, étendue, fixation et exécution de la pension alimentaire.</p>
+
+<h2>1. Fondement et nature de l'obligation alimentaire</h2>
+<p>L'obligation alimentaire est régie par les articles 205 et suivants du Code civil. Elle consiste en un devoir de secours, c'est-à-dire l'obligation de pourvoir aux besoins de celui qui en est l'objet. L'article 205 dispose que « les enfants doivent des aliments à leurs père et mère ou autres ascendants qui sont dans le besoin, selon leurs facultés respectives ». Cette obligation est réciproque : les ascendants doivent également des aliments à leurs descendants dans le besoin (art. 206 CC).</p>
+
+<div class="focus-box">
+<strong>À retenir :</strong> L'obligation alimentaire est un devoir de secours, non un devoir de pourvoir à l'intégralité des besoins. Elle est proportionnée aux besoins de celui qui la réclame et aux ressources de celui qui la doit. Elle ne peut être honorée que dans la mesure où le débiteur conserve la capacité de subvenir à ses propres besoins (art. 207 CC).
+</div>
+
+<p>La nature de l'obligation alimentaire est double : elle est à la fois une obligation morale fondée sur les liens de parenté et une obligation civile susceptible d'exécution forcée. Le caractère familial de cette obligation la distingue des prestations sociales : elle naît du lien de parenté et non d'une situation de détresse générale.</p>
+
+<h2>2. Les bénéficiaires de l'obligation alimentaire</h2>
+<h3>2.1 Les ascendants et descendants</h3>
+<p>Les articles 205 et 206 du Code civil établissent une chaîne d'obligations alimentaires entre ascendants et descendants. Cette chaîne peut s'étendre à l'infini : un arrière-grand-parent peut être tenu d'assister un petit-enfant dans le besoin, et inversement. L'adoption crée les mêmes obligations alimentaires que la filiation naturelle (art. 353 CC). En revanche, la filiation adoptive simple conserve l'obligation alimentaire avec la famille d'origine.</p>
+
+<h3>2.2 Le conjoint et l'ex-conjoint</h3>
+<p>L'article 212 du Code civil dispose que « les époux se doivent mutuellement respect, fidélité, secours, assistance ». Cette obligation de secours, inhérente au mariage, se traduit concrètement par une contribution aux charges du ménage proportionnée aux ressources de chacun. En cas de divorce, l'article 270 du Code civil prévoit une prestation compensatoire destinée à compenser l'éventuel déséquilibre consécutif à la rupture du mariage. Par ailleurs, l'article 301 du Code civil dispose que le divorce ne met pas fin à l'obligation alimentaire entre époux qui a été judiciairement constatée.</p>
+
+<h3>2.3 Le partenaire PACSé et l'ex-partenaire</h3>
+<p>La loi n° 99-944 du 15 novembre 1999 relative au PACS a instauré une obligation d'entraide entre partenaires (art. 515-4 CC). En cas de rupture du PACS, un partenaire peut prétendre à une prestation compensatoire dans les mêmes conditions que l'ex-époux, sous réserve de la durée de la vie commune et de la contribution apportée (art. 515-7 CC).</p>
+
+<h2>3. La fixation de la pension alimentaire</h2>
+<p>La fixation de la pension alimentaire relève du pouvoir souverain des juges du fond, qui apprécient souverainement les besoins du créancier et les ressources du débiteur. Les critères principaux sont :</p>
+<ul class="list-disc pl-6 mb-6">
+<li>Les besoins du bénéficiaire (logement, alimentation, santé, éducation, transport)</li>
+<li>Les ressources du débiteur (revenus professionnels, patrimoine, capacité de gain)</li>
+<li>Le train de vie pendant la vie commune ou la cohabitation</li>
+<li>L'existence d'autres obligations alimentaires à charge du débiteur</li>
+<li>L'âge et l'état de santé des parties</li>
+</ul>
+
+<h3>3.1 L'indexation</h3>
+<p>La pension alimentaire est généralement indexée sur l'indice des prix à la consommation (IPC) pour préserver son pouvoir d'achat. L'indexation peut être prévue par convention ou par décision judiciaire. En l'absence d'indexation, le créancier peut demander une révision lorsque les circonstances ont changé.</p>
+
+<h2>4. La révision et la suppression de la pension</h2>
+<p>L'article 206-1 du Code civil, introduit par la loi n° 2006-728 du 23 juin 2006, dispose que « l'obligation alimentaire cesse lorsque celui qui l'avait est en mesure de subvenir à ses besoins ». Cette révision peut être demandée en cas de changement notable des circonstances : augmentation des ressources du créancier, diminution des ressources du débiteur, nouvelle union du créancier, majorité ou émancipation de l'enfant, etc.</p>
+
+<div class="focus-box">
+<strong>Précision :</strong> La révision de la pension alimentaire n'est pas rétroactive. Elle prend effet à compter de la demande en justice, sauf circonstances exceptionnelles justifiant une date antérieure. La prescription de la pension impayée est de 5 ans (art. 2224 CC).
+</div>
+
+<h2>5. Les sanctions du non-respect</h2>
+<p>Le défaut de paiement de la pension alimentaire est sanctionné par plusieurs mécanismes. Le créancier peut saisir le juge aux affaires familiales d'une demande d'injonction de payer. Il peut également engager une procédure d'exécution forcée sur les biens du débiteur. La loi n° 2010-1625 du 21 décembre 2010 a renforcé les sanctions pénales : le défaut de paiement frauduleux de pension alimentaire peut constituer le délit d'abandon de famille (art. 227-3 du Code pénal) ou le délit de soustraction frauduleuse au paiement de la dette (art. L. 161-1 du Code de la sécurité sociale).</p>
+
+<p>Le tiers recouvreur (CAF ou organisme de sécurité sociale) peut intervenir lorsque le créancier perçoit des prestations sociales. L'article L. 582-1 du Code de la sécurité sociale permet à la CAF de réclamer directement au débiteur le montant des allocations versées au créancier.</p>
+
+<h2>6. L'obligation alimentaire internationale</h2>
+<p>La Convention de New York du 20 juin 1956 sur la reconnaissance et l'exécution des décisions relatives aux obligations alimentaires envers les enfants, ainsi que le Règlement (CE) n° 4/2009, organisent la coopération internationale en matière d'obligations alimentaires. La France a également ratifié la Convention du 23 novembre 2007 de La Haye sur le recouvrement international des aliments, qui facilite la reconnaissance et l'exécution des décisions alimentaires entre États.</p>
+
+<div class="citation">
+"Les enfants doivent des aliments à leurs père et mère ou autres ascendants qui sont dans le besoin, selon leurs facultés respectives." — Article 205 du Code civil
+</div>
+
+<h2>7. Quiz</h2>
+<div class="quiz-question" data-correct="2">
+<p class="font-semibold mb-2">1. L'obligation alimentaire entre ascendants et descendants est-elle limitée à un certain degré de parenté ?</p>
+<div class="space-y-2">
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Oui, elle est limitée au deuxième degré (grands-parents / petits-enfants)</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Oui, elle s'étend jusqu'au quatrième degré</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Non, elle s'étend à l'infini en ligne directe</button>
+</div>
+<p class="quiz-feedback hidden mt-2 text-sm"></p>
+</div>
+
+<div class="quiz-question mt-6" data-correct="1">
+<p class="font-semibold mb-2">2. La révision de la pension alimentaire peut-elle être rétroactive ?</p>
+<div class="space-y-2">
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Oui, elle est toujours rétroactive à la date du changement de situation</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Non, elle prend effet à compter de la demande, sauf circonstances exceptionnelles</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Oui, mais seulement pour les 6 derniers mois</button>
+</div>
+<p class="quiz-feedback hidden mt-2 text-sm"></p>
+</div>
+
+<div class="quiz-question mt-6" data-correct="0">
+<p class="font-semibold mb-2">3. Quel délit peut être constitué par le défaut de paiement frauduleux d'une pension alimentaire ?</p>
+<div class="space-y-2">
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">L'abandon de famille (art. 227-3 du Code pénal)</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">L'escroquerie</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Le vol</button>
+</div>
+<p class="quiz-feedback hidden mt-2 text-sm"></p>
+</div>
+
+<h2>Boîte à outils</h2>
+<div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg space-y-4">
+<div>
+<h4 class="font-semibold mb-1">Citation à retenir</h4>
+<p id="citation-box" class="text-sm text-slate-600 dark:text-slate-300">L'article 207 du Code civil dispose que l'obligation alimentaire n'a lieu que dans la mesure où celui qui l'invoque ne peut pas pourvoir à ses besoins par son travail, et où celui qui la doit peut le faire sans se mettre dans l'impossibilité de subvenir aux siens.</p>
+</div>
+<div class="flex space-x-3">
+<button onclick="navigator.clipboard.writeText(document.getElementById('citation-box').textContent)" class="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm hover:bg-blue-700">Copier la citation</button>
+<button onclick="window.print()" class="px-4 py-2 bg-slate-200 text-slate-800 rounded-lg text-sm hover:bg-slate-300">Imprimer la leçon</button>
+</div>
+</div>
+</article>
+</main>
+</div>
+
+<footer class="border-t border-slate-200 dark:border-slate-800 mt-12 bg-slate-50 dark:bg-slate-900">
+<div class="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center">
+<div class="text-sm text-slate-500 mb-4 md:mb-0">JurisMaster 2025 — Formation au droit français</div>
+<div class="flex space-x-6 text-sm text-slate-500">
+<a href="#" class="hover:text-blue-700">Mentions légales</a>
+<a href="#" class="hover:text-blue-700">Contact</a>
+</div>
+</div>
+</footer>
+
+<script>
+document.getElementById('dark-toggle').addEventListener('click', () => {
+document.documentElement.classList.toggle('dark');
+localStorage.setItem('jm.theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+});
+
+const JM = {
+get(){ try { return JSON.parse(localStorage.getItem('jurismaster.v1')) || {}; } catch { return {}; } },
+set(s){ localStorage.setItem('jurismaster.v1', JSON.stringify(s)); },
+addXP(n){ const s=JM.get(); s.xp=(s.xp||0)+n; JM.set(s); window.dispatchEvent(new CustomEvent('jm:xp',{detail:n})); },
+completeLesson(slug, xp=50){ const s=JM.get(); s.lessonsCompleted=[...new Set([...(s.lessonsCompleted||[]),slug])]; s.xp=(s.xp||0)+xp; JM.set(s); },
+touchStreak(){ const s=JM.get(); const today=new Date().toISOString().slice(0,10); const last=s.streak?.lastVisit; if(last&&last!==today){const d=new Date(today)-new Date(last); if(d===86400000){s.streak.count=(s.streak.count||0)+1;} else if(d>86400000){s.streak.count=1;} s.streak.lastVisit=today;} else if(!last){s.streak={count:1,lastVisit:today};} JM.set(s); }
+};
+JM.touchStreak();
+JM.completeLesson('droit-personnes/obligations-alimentaires', 50);
+
+const s = JM.get();
+const progress = Math.min(100, Math.round(((s.lessonsCompleted||[]).length / 32) * 100));
+document.querySelectorAll('[data-progress]').forEach(el => el.textContent = progress);
+document.querySelectorAll('[data-progress-bar]').forEach(el => el.style.width = progress + '%');
+
+document.querySelectorAll('.quiz-question').forEach((q, qi) => {
+const correct = parseInt(q.dataset.correct);
+const feedback = q.querySelector('.quiz-feedback');
+const explanations = [
+["La limitation au deuxième degré n'existe pas pour les obligations alimentaires en ligne directe.","La limitation au quatrième degré concerne la succession des collatéraux, pas les aliments.","Exact ! L'article 205 et 206 du Code civil établissent une chaîne d'obligations alimentaires qui s'étend à l'infini en ligne directe ascendants-descendants."],
+["La révision n'est pas automatiquement rétroactive.","Exact ! La révision prend effet à compter de la demande en justice, sauf circonstances exceptionnelles justifiant une date antérieure.","Il n'existe pas de règle des 6 mois pour la rétroactivité."],
+["Exact ! Le défaut de paiement frauduleux d'une pension alimentaire peut constituer le délit d'abandon de famille (art. 227-3 du Code pénal).","L'escroquerie nécessite un dol et une manipulation factuelle qui n'est pas caractérisée ici.","Le vol suppose une soustraction de chose mobilière, ce qui ne correspond pas au défaut de paiement d'une pension."]
+];
+q.querySelectorAll('.quiz-btn').forEach((btn, bi) => {
+btn.addEventListener('click', () => {
+if(q.classList.contains('answered')) return;
+q.classList.add('answered');
+if(bi === correct){
+btn.classList.add('bg-green-100', 'border-green-500', 'text-green-800');
+feedback.textContent = explanations[qi][bi];
+feedback.className = 'quiz-feedback mt-2 text-sm text-green-700';
+} else {
+btn.classList.add('bg-red-100', 'border-red-500', 'text-red-800');
+q.querySelectorAll('.quiz-btn')[correct].classList.add('bg-green-100', 'border-green-500');
+feedback.textContent = explanations[qi][bi];
+feedback.className = 'quiz-feedback mt-2 text-sm text-red-700';
+}
+feedback.classList.remove('hidden');
+});
+});
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Successions et liberalites - Droit des personnes et de la famille</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', sans-serif; line-height: 1.8; }
+h1, h2, h3 { font-family: 'Playfair Display', serif; }
+.prose h2 { font-size: 2rem; font-weight: 700; margin-top: 3rem; margin-bottom: 1.5rem; color: #1e3a8a; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; }
+.prose h3 { font-size: 1.5rem; font-weight: 600; margin-top: 2rem; margin-bottom: 1rem; color: #1e40af; }
+.prose p { margin-bottom: 1.5rem; color: #334155; text-align: justify; }
+.sidebar-link.active { color: #1d4ed8; font-weight: 600; border-left: 3px solid #1d4ed8; }
+.focus-box { background-color: #f8fafc; border-left: 4px solid #3b82f6; padding: 1.5rem; border-radius: 0.5rem; margin: 2rem 0; }
+.citation { font-style: italic; color: #475569; border-left: 2px solid #cbd5e1; padding-left: 1.5rem; margin: 2rem 0; }
+</style>
+</head>
+<body class="bg-white dark:bg-slate-900">
+<script>tailwind.config={darkMode:'class'}</script>
+<script>
+(function(){
+const stored = localStorage.getItem('jm.theme');
+if(stored === 'dark' || (!stored && matchMedia('(prefers-color-scheme: dark)').matches)){
+document.documentElement.classList.add('dark');
+}
+})();
+</script>
+
+<nav class="sticky top-0 z-50 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-6 py-3 flex justify-between items-center">
+<a href="../../index.html" class="text-xl font-bold tracking-tight">JURIS<span class="text-blue-700">MASTER</span></a>
+<div class="flex items-center space-x-4">
+<button id="dark-toggle" aria-label="Basculer mode sombre" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800">🌓</button>
+<span class="text-sm text-slate-500">Progression : <span data-progress>0</span>%</span>
+<div class="w-32 h-2 bg-slate-100 rounded-full overflow-hidden">
+<div class="bg-blue-600 h-full" data-progress-bar style="width:0%"></div>
+</div>
+</div>
+</nav>
+
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row">
+<aside class="w-full lg:w-72 bg-slate-50 dark:bg-slate-800 border-r border-slate-200 dark:border-slate-700 p-6 lg:sticky lg:top-14 lg:h-[calc(100vh-3.5rem)] lg:overflow-y-auto">
+<div class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-3">Droit des personnes et de la famille</div>
+<a href="../droit-des-personnes-et-famille.html" class="block text-sm text-blue-700 hover:underline mb-6">← Sommaire</a>
+<ul class="space-y-2 text-sm">
+<li><a href="personne-humaine-capacite.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">B1. La personne humaine</a></li>
+<li><a href="mariage-conditions-celebration.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">B2. Le mariage</a></li>
+<li><a href="divorce-procedure-consequences.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">B3. Le divorce</a></li>
+<li><a href="pacs-union-libre.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">B4. Le PACS et l'union libre</a></li>
+<li><a href="filiation-legitime-naturelle-adoptive.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">B5. La filiation</a></li>
+<li><a href="autorite-parentale-garde-education.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">B6. L'autorité parentale</a></li>
+<li><a href="regimes-matrimoniaux.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">B7. Les régimes matrimoniaux</a></li>
+<li><a href="successions-liberalites.html" class="sidebar-link active block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">B8. Successions et libéralités</a></li>
+<li><a href="obligations-alimentaires.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">B9. Obligations alimentaires</a></li>
+<li><a href="protection-majeurs-mineurs.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">B10. Protection majeurs et mineurs</a></li>
+</ul>
+</aside>
+
+<main class="flex-1 p-6 lg:p-12 prose dark:prose-invert max-w-none">
+<article>
+<div class="flex items-center space-x-2 text-sm text-slate-500 mb-4">
+<a href="../../index.html" class="hover:underline">Accueil</a>
+<span>/</span>
+<a href="../droit-des-personnes-et-famille.html" class="hover:underline">Droit des personnes et de la famille</a>
+<span>/</span>
+<span class="text-slate-800 dark:text-slate-200">B8</span>
+</div>
+<h1 class="text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white mb-4">Successions et libéralités</h1>
+<p class="text-lg text-slate-600 dark:text-slate-300 mb-8">La transmission du patrimoine à la mort : ordre des héritiers, réserve héréditaire, et liberté de tester sous l'empire du Code civil.</p>
+
+<h2>1. Ouverture de la succession et principe général</h2>
+<p>La succession s'ouvre au lieu du dernier domicile du défunt (art. 110 du Code civil) et à la date du décès (art. 720 CC). Le principe fondamental est la transmission universelle du patrimoine : l'ensemble des biens, droits et obligations du défunt sont transmis à ses héritiers, qui succèdent à la personne entière et non à chaque bien individuellement (art. 724 CC). Cette universalité distingue la succession des autres modes d'acquisition de propriété.</p>
+
+<div class="focus-box">
+<strong>À retenir :</strong> La transmission universelle signifie que l'héritier succède à la personne du défunt dans tous ses droits et obligations. Cela implique la transmission non seulement des biens mais aussi des dettes, sous réserve de l'acceptation à concurrence de l'actif net (art. 773 et s. CC).
+</div>
+
+<p>L'article 731 du Code civil dispose que « les successions sont ouvertes par la mort naturelle ou la mort civile ». La mort civile, aujourd'hui déclarative d'absence, entraîne les mêmes effets successoraux que la mort naturelle à l'égard des héritiers et des tiers.</p>
+
+<h2>2. L'ordre des héritiers</h2>
+<p>L'ordre des héritiers est régi par les articles 731 et suivants du Code civil. Il repose sur un double principe : la primauté du sang (parentèle) et la proximité de degré. Le Code civil distingue trois ordres successifs d'héritiers qui se callent les uns les autres : les descendants, les ascendants et les collatéraux, et enfin le conjoint survivant.</p>
+
+<h3>2.1 Les descendants</h3>
+<p>Les descendants constituent le premier ordre héréditaire. Ils sont appelés à la succession par tête et par souche (représentation). La représentation est un mécanisme par lequel les descendants d'un enfant prédécédé ou déchu de ses droits succèdent en sa place. L'article 752 du Code civil dispose que la représentation est admise en ligne directe descendants à l'infini. Les enfants héritent par portions égales, et les petits-enfants représentent leur père ou leur mère.</p>
+
+<h3>2.2 Le conjoint survivant</h3>
+<p>Le conjoint survivant occupe une position particulière. Il n'hérite pas dans la ligne successorale mais dispose d'un droit propre. Selon l'article 756 et suivants du Code civil, le conjoint survivant hérite : en l'absence de descendants, de la totalité de la succession en usufruit ; en présence de descendants, d'un quart en pleine propriété ou de l'usufruit des trois quarts restants. En présence d'ascendants, le conjoint hérite de la moitié en pleine propriété. La loi du 3 décembre 2001 a renforcé les droits du conjoint survivant.</p>
+
+<h3>2.3 Les ascendants et collatéraux</h3>
+<p>En l'absence de descendants et de conjoint, les ascendants et les collatéraux sont appelés. Les ascendants privilégient la ligne paternelle (art. 748 CC). Les collatéraux successibles sont limités au sixième degré (art. 755 CC). Au-delà, l'État recueille la succession par déshérence (art. 768 CC).</p>
+
+<h2>3. La réserve héréditaire et la quotité disponible</h2>
+<p>La réserve héréditaire constitue la part du patrimoine du défunt que la loi garantit aux héritiers réservataires (descendants et, à défaut, le conjoint survivant) et qui ne peut être léguée à d'autres. L'article 913 du Code civil dispose que « les dispositions entre vifs ou testamentaires ne peuvent porter que sur la portion des biens qui excède la réserve, sous réserve des modifications ci-après apportées à la quotité disponible ».</p>
+
+<h3>3.1 Le calcul de la réserve</h3>
+<p>La réserve se calcule sur la masse totale des biens du défunt, après déduction des dettes et ajout des donations passées (rapport à la succession). Elle varie selon le nombre d'héritiers réservataires : un enfant = réserve des deux tiers ; deux enfants = réserve des deux tiers ; trois enfants et plus = réserve des trois quarts (art. 913 CC).</p>
+
+<h3>3.2 La quotité disponible</h3>
+<p>La quotité disponible est la portion du patrimoine que le défunt peut librement disposer par donations ou legs. Elle correspond au complément de la réserve. Par exemple, avec un seul enfant, la quotité disponible est d'un tiers ; avec trois enfants, elle est d'un quart. Le défunt peut utiliser cette quotité au profit de quiconque, y compris d'un étranger à la famille.</p>
+
+<h2>4. Les libéralités</h2>
+<p>Les libéralités sont des actes par lesquels le donateur ou le testateur dispose gratuitement de ses biens au profit d'un autre. Elles se divisent en donations (actes entre vifs) et legs (dispositions pour cause de mort).</p>
+
+<h3>4.1 Les donations</h3>
+<p>La donation est un acte par lequel le donateur se dépouille actuellement et irrévocablement du bien donné au profit du donataire (art. 894 CC). Elle doit être acceptée par le donataire. La donation entre époux est réglementée par l'article 1096 CC : elle ne peut porter que sur la quotité disponible, sauf avantages matrimoniaux autorisés. Les donations doivent être faites par acte notarié lorsqu'elles portent sur des biens immobiliers ou des sommes importantes en numéraire.</p>
+
+<h3>4.2 Les legs</h3>
+<p>Le legs est une disposition testamentaire par laquelle le testateur attribue un bien ou un avantage à un légataire. Il existe trois types de legs : le legs particulier (attribution d'un bien déterminé), le legs universel (attribution de la totalité ou d'une quotité de la succession), et le legs à titre universel (attribution d'un univers de biens). Le legs est soumis aux règles de forme du testament et à la limite de la quotité disponible.</p>
+
+<h2>5. L'acceptation et la renonciation à la succession</h2>
+<p>L'héritier peut accepter purement et simplement, accepter sous bénéfice d'inventaire, ou renoncer à la succession (art. 768 et s. CC). L'acceptation sous bénéfice d'inventaire permet à l'héritier de limiter sa responsabilité aux dettes du défunt à concurrence de l'actif net successoral. La renonciation doit être faite par acte authentique ou sous seing privé signé en présence d'un notaire et d'un témoin.</p>
+
+<div class="citation">
+"Les successions sont ouvertes par la mort naturelle ou la mort civile. Elles se transmettent à la date du décès." — Article 720 du Code civil
+</div>
+
+<h2>6. Quiz</h2>
+<div class="quiz-question" data-correct="2">
+<p class="font-semibold mb-2">1. Quelle est la part de la réserve héréditaire lorsqu'il y a trois enfants ?</p>
+<div class="space-y-2">
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">La moitié du patrimoine</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Les deux tiers du patrimoine</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Les trois quarts du patrimoine</button>
+</div>
+<p class="quiz-feedback hidden mt-2 text-sm"></p>
+</div>
+
+<div class="quiz-question mt-6" data-correct="0">
+<p class="font-semibold mb-2">2. Le conjoint survivant hérite-t-il en l'absence totale de descendants et d'ascendants ?</p>
+<div class="space-y-2">
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Oui, il hérite de la totalité de la succession en pleine propriété</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Non, l'État recueille la succession par déshérence</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Il hérite seulement de la moitié, l'autre moitié revenant aux collatéraux</button>
+</div>
+<p class="quiz-feedback hidden mt-2 text-sm"></p>
+</div>
+
+<div class="quiz-question mt-6" data-correct="1">
+<p class="font-semibold mb-2">3. Qu'est-ce que l'acceptation sous bénéfice d'inventaire ?</p>
+<div class="space-y-2">
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Un moyen de renoncer totalement à la succession</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Une forme d'acceptation limitant la responsabilité aux dettes à concurrence de l'actif net</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Un acte par lequel l'héritier accepte mais réserve le droit de renoncer ultérieurement</button>
+</div>
+<p class="quiz-feedback hidden mt-2 text-sm"></p>
+</div>
+
+<h2>Boîte à outils</h2>
+<div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg space-y-4">
+<div>
+<h4 class="font-semibold mb-1">Citation à retenir</h4>
+<p id="citation-box" class="text-sm text-slate-600 dark:text-slate-300">L'article 724 du Code civil consacre le principe de la transmission universelle : les héritiers succèdent à la personne entière du défunt, et non à chaque bien individuellement.</p>
+</div>
+<div class="flex space-x-3">
+<button onclick="navigator.clipboard.writeText(document.getElementById('citation-box').textContent)" class="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm hover:bg-blue-700">Copier la citation</button>
+<button onclick="window.print()" class="px-4 py-2 bg-slate-200 text-slate-800 rounded-lg text-sm hover:bg-slate-300">Imprimer la leçon</button>
+</div>
+</div>
+</article>
+</main>
+</div>
+
+<footer class="border-t border-slate-200 dark:border-slate-800 mt-12 bg-slate-50 dark:bg-slate-900">
+<div class="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center">
+<div class="text-sm text-slate-500 mb-4 md:mb-0">JurisMaster 2025 — Formation au droit français</div>
+<div class="flex space-x-6 text-sm text-slate-500">
+<a href="#" class="hover:text-blue-700">Mentions légales</a>
+<a href="#" class="hover:text-blue-700">Contact</a>
+</div>
+</div>
+</footer>
+
+<script>
+document.getElementById('dark-toggle').addEventListener('click', () => {
+document.documentElement.classList.toggle('dark');
+localStorage.setItem('jm.theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+});
+
+const JM = {
+get(){ try { return JSON.parse(localStorage.getItem('jurismaster.v1')) || {}; } catch { return {}; } },
+set(s){ localStorage.setItem('jurismaster.v1', JSON.stringify(s)); },
+addXP(n){ const s=JM.get(); s.xp=(s.xp||0)+n; JM.set(s); window.dispatchEvent(new CustomEvent('jm:xp',{detail:n})); },
+completeLesson(slug, xp=50){ const s=JM.get(); s.lessonsCompleted=[...new Set([...(s.lessonsCompleted||[]),slug])]; s.xp=(s.xp||0)+xp; JM.set(s); },
+touchStreak(){ const s=JM.get(); const today=new Date().toISOString().slice(0,10); const last=s.streak?.lastVisit; if(last&&last!==today){const d=new Date(today)-new Date(last); if(d===86400000){s.streak.count=(s.streak.count||0)+1;} else if(d>86400000){s.streak.count=1;} s.streak.lastVisit=today;} else if(!last){s.streak={count:1,lastVisit:today};} JM.set(s); }
+};
+JM.touchStreak();
+JM.completeLesson('droit-personnes/successions', 50);
+
+const s = JM.get();
+const progress = Math.min(100, Math.round(((s.lessonsCompleted||[]).length / 32) * 100));
+document.querySelectorAll('[data-progress]').forEach(el => el.textContent = progress);
+document.querySelectorAll('[data-progress-bar]').forEach(el => el.style.width = progress + '%');
+
+document.querySelectorAll('.quiz-question').forEach((q, qi) => {
+const correct = parseInt(q.dataset.correct);
+const feedback = q.querySelector('.quiz-feedback');
+const explanations = [
+["La moitié est la réserve avec un enfant unique, pas avec trois.","Les deux tiers concernent la situation avec un ou deux enfants.","Exact ! Avec trois enfants et plus, la réserve est des trois quarts du patrimoine (art. 913 CC), laissant un quart de quotité disponible."],
+["Exact ! En l'absence totale de descendants et d'ascendants, le conjoint survivant hérite de la totalité de la succession en pleine propriété (art. 757-3 CC).","L'État ne recueille la succession que lorsqu'il n'existe aucun héritier successible ni conjoint.","Le conjoint n'hérite pas seulement de la moitié en l'absence d'ascendants et de descendants."],
+["La renonciation totale est distincte de l'acceptation sous bénéfice d'inventaire.","Exact ! L'acceptation sous bénéfice d'inventaire (art. 773 et s. CC) limite la responsabilité de l'héritier aux dettes du défunt à concurrence de l'actif net successoral.","L'acceptation sous bénéfice d'inventaire ne réserve pas un droit de renonciation ultérieure."]
+];
+q.querySelectorAll('.quiz-btn').forEach((btn, bi) => {
+btn.addEventListener('click', () => {
+if(q.classList.contains('answered')) return;
+q.classList.add('answered');
+if(bi === correct){
+btn.classList.add('bg-green-100', 'border-green-500', 'text-green-800');
+feedback.textContent = explanations[qi][bi];
+feedback.className = 'quiz-feedback mt-2 text-sm text-green-700';
+} else {
+btn.classList.add('bg-red-100', 'border-red-500', 'text-red-800');
+q.querySelectorAll('.quiz-btn')[correct].classList.add('bg-green-100', 'border-green-500');
+feedback.textContent = explanations[qi][bi];
+feedback.className = 'quiz-feedback mt-2 text-sm text-red-700';
+}
+feedback.classList.remove('hidden');
+});
+});
+});
+</script>
+</body>
+</html>
