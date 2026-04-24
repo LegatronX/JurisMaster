@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cas pratiques - Droit des obligations</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; line-height: 1.8; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .prose h2 { font-size: 2rem; font-weight: 700; margin-top: 3rem; margin-bottom: 1.5rem; color: #1e3a8a; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; }
+        .prose h3 { font-size: 1.5rem; font-weight: 600; margin-top: 2rem; margin-bottom: 1rem; color: #1e40af; }
+        .prose p { margin-bottom: 1.5rem; color: #334155; text-align: justify; }
+        .sidebar-link.active { color: #1d4ed8; font-weight: 600; border-left: 3px solid #1d4ed8; }
+        .case-box { background-color: #f8fafc; border-left: 4px solid #1d4ed8; padding: 2rem; margin: 2rem 0; border-radius: 0 0.5rem 0.5rem 0; }
+        .solution-box { display: none; background-color: #f0fdf4; border: 1px solid #bbf7d0; padding: 2rem; border-radius: 0.5rem; margin-top: 1rem; }
+    </style>
+</head>
+<body class="bg-white">
+
+    <!-- BARRE DE NAVIGATION SUPÉRIEURE -->
+    <nav class="sticky top-0 z-50 bg-white border-b border-slate-200 px-6 py-3 flex justify-between items-center text-left">
+        <a href="../../index.html" class="text-xl font-bold tracking-tight text-left">JURIS<span class="text-blue-700 text-left">MASTER</span></a>
+        <div class="flex items-center space-x-4 text-left">
+            <span class="text-sm text-slate-500 text-left">Entraînement</span>
+        </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row text-left">
+        
+        <!-- BARRE LATÉRALE -->
+        <aside class="w-full md:w-80 border-r border-slate-100 p-8 h-screen sticky top-14 overflow-y-auto bg-slate-50/50 text-left">
+            <h4 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-6 text-left">Droit des obligations</h4>
+            <div class="space-y-8 text-sm text-left">
+                <div>
+                    <p class="font-bold text-slate-900 mb-4 text-left">4. Exercices</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200 text-left">
+                        <li><a href="cas-pratiques.html" class="sidebar-link active pl-4 block text-left">Cas pratiques</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <!-- CONTENU DU COURS -->
+        <main class="flex-1 py-16 px-6 md:px-20 max-w-5xl text-left">
+            <article class="prose prose-slate lg:prose-lg mx-auto text-left">
+                <nav class="text-sm text-blue-600 font-semibold mb-8 uppercase tracking-wide text-left">Mise en pratique</nav>
+                <h1 class="text-4xl md:text-6xl font-bold mb-10 leading-tight text-left">Cas pratiques : Droit des obligations</h1>
+                
+                <p>
+                    L'exercice du cas pratique est le meilleur moyen de vérifier votre compréhension des mécanismes juridiques. Pour chaque cas, utilisez la méthode du <strong>syllogisme juridique</strong> : Rappel des faits, Majeure (la règle), Mineure (l'application) et Conclusion.
+                </p>
+
+                <h2 id="cas-1">Cas n°1 : Le silence est-il d'or ?</h2>
+                <div class="case-box text-left">
+                    <p class="font-semibold text-slate-900 mb-4 text-left">Énoncé :</p>
+                    <p class="text-slate-700 mb-0 text-left">
+                        M. Martin a acheté un véhicule d'occasion à M. Durand. Deux semaines après la vente, le moteur casse. M. Martin apprend par un garagiste que M. Durand était parfaitement au courant d'une fissure dans le bloc moteur, mais qu'il a sciemment "maquillé" la pièce pour que le défaut ne soit pas visible lors de l'essai. M. Martin souhaite annuler la vente. 
+                        <strong>Quels sont ses moyens d'action sur le terrain du consentement ?</strong>
+                    </p>
+                </div>
+                
+                <button onclick="toggleSolution('sol-1')" class="bg-blue-600 text-white px-4 py-2 rounded text-sm font-bold hover:bg-blue-700 transition">Voir la correction indicative</button>
+                
+                <div id="sol-1" class="solution-box text-left">
+                    <h4 class="font-bold text-green-900 mb-4 text-left">Correction indicative</h4>
+                    <p class="text-sm text-slate-700 text-left">
+                        <strong>1. Majeure :</strong> En vertu de l'article 1137 du Code civil, le dol est le fait d'un contractant d'obtenir le consentement de l'autre par des manœuvres ou des mensonges. Il constitue également un dol la dissimulation intentionnelle par l'un des contractants d'une information dont il sait le caractère déterminant pour l'autre partie.
+                    </p>
+                    <p class="text-sm text-slate-700 text-left">
+                        <strong>2. Mineure :</strong> En l'espèce, M. Durand a dissimulé une fissure grave du moteur et a même effectué un "maquillage" (manœuvre positive). Cette information était déterminante car M. Martin n'aurait pas acheté le véhicule s'il avait connu l'état réel du moteur.
+                    </p>
+                    <p class="text-sm text-slate-700 text-left">
+                        <strong>3. Conclusion :</strong> M. Martin peut agir en nullité relative du contrat pour dol sur le fondement de l'article 1137. Il dispose d'un délai de 5 ans à compter de la découverte du vice pour agir.
+                    </p>
+                </div>
+
+                <h2 id="cas-2">Cas n°2 : La chute imprévue</h2>
+                <div class="case-box text-left">
+                    <p class="font-semibold text-slate-900 mb-4 text-left text-left">Énoncé :</p>
+                    <p class="text-slate-700 mb-0 text-left">
+                        Mme Leroy fait ses courses dans un supermarché. Elle glisse sur une feuille de salade qui traînait au sol dans le rayon fruits et légumes et se fracture le poignet. Elle souhaite engager la responsabilité du magasin.
+                        <strong>Sur quel fondement peut-elle agir ?</strong>
+                    </p>
+                </div>
+
+                <button onclick="toggleSolution('sol-2')" class="bg-blue-600 text-white px-4 py-2 rounded text-sm font-bold hover:bg-blue-700 transition">Voir la correction indicative</button>
+
+                <div id="sol-2" class="solution-box text-left">
+                    <h4 class="font-bold text-green-900 mb-4 text-left">Correction indicative</h4>
+                    <p class="text-sm text-slate-700 text-left">
+                        <strong>1. Majeure :</strong> Selon l'article 1242 alinéa 1er du Code civil, on est responsable du dommage causé par le fait des choses que l'on a sous sa garde. Pour une chose inerte, la victime doit prouver que la chose a eu un rôle actif dans le dommage (anormalité de sa position ou de son état).
+                    </p>
+                    <p class="text-sm text-slate-700 text-left">
+                        <strong>2. Mineure :</strong> Ici, la feuille de salade (chose inerte) se trouvait au sol dans un lieu de passage. Sa présence au sol est anormale et a été l'instrument du dommage (glissade). Le supermarché est le gardien de la structure du magasin et des produits qui s'y trouvent.
+                    </p>
+                    <p class="text-sm text-slate-700 text-left">
+                        <strong>3. Conclusion :</strong> Mme Leroy peut engager la responsabilité extracontractuelle du supermarché sur le fondement du fait des choses. Elle n'a pas besoin de prouver une faute du magasin.
+                    </p>
+                </div>
+
+                <div class="mt-20 pt-10 border-t border-slate-100 flex justify-between">
+                    <a href="../../obligations.html" class="text-blue-600 font-bold hover:underline transition">← Retour au sommaire</a>
+                </div>
+            </article>
+        </main>
+    </div>
+
+    <script>
+        function toggleSolution(id) {
+            const el = document.getElementById(id);
+            el.style.display = el.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+
+</body>
+</html>
