@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le mariage (conditions, célébration, nullité) - Droit des personnes et de la famille</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; line-height: 1.8; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .prose h2 { font-size: 2rem; font-weight: 700; margin-top: 3rem; margin-bottom: 1.5rem; color: #1e3a8a; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; }
+        .prose h3 { font-size: 1.5rem; font-weight: 600; margin-top: 2rem; margin-bottom: 1rem; color: #1e40af; }
+        .prose p { margin-bottom: 1.5rem; color: #334155; text-align: justify; }
+        .sidebar-link.active { color: #1d4ed8; font-weight: 600; border-left: 3px solid #1d4ed8; }
+        .focus-box { background-color: #f8fafc; border-left: 4px solid #3b82f6; padding: 1.5rem; border-radius: 0.5rem; margin: 2rem 0; }
+        .citation { font-style: italic; color: #475569; border-left: 2px solid #cbd5e1; padding-left: 1.5rem; margin: 2rem 0; }
+    </style>
+</head>
+<body class="bg-white dark:bg-slate-900">
+    <script>tailwind.config={darkMode:'class'}</script>
+    <script>
+    (function(){
+      const stored = localStorage.getItem('jm.theme');
+      if(stored === 'dark' || (!stored && matchMedia('(prefers-color-scheme: dark)').matches)){
+        document.documentElement.classList.add('dark');
+      }
+    })();
+    </script>
+
+    <nav class="sticky top-0 z-50 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-6 py-3 flex justify-between items-center">
+      <a href="../../index.html" class="text-xl font-bold tracking-tight">JURIS<span class="text-blue-700">MASTER</span></a>
+      <div class="flex items-center space-x-4">
+        <button id="dark-toggle" aria-label="Basculer mode sombre" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800">🌓</button>
+        <span class="text-sm text-slate-500">Progression : <span data-progress>0</span>%</span>
+        <div class="w-32 h-2 bg-slate-100 rounded-full overflow-hidden">
+          <div class="bg-blue-600 h-full" data-progress-bar style="width:0%"></div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row">
+        <aside class="w-full md:w-80 border-r border-slate-100 dark:border-slate-800 p-8 h-screen sticky top-14 overflow-y-auto bg-slate-50/50 dark:bg-slate-900/50">
+            <h4 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-6">Droit des personnes et de la famille</h4>
+            <div class="space-y-8 text-sm text-left">
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">I. La personne et le couple</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="personne-humaine-capacite.html" class="sidebar-link pl-4 block text-slate-500">B1. La personne humaine</a></li>
+                        <li><a href="mariage-conditions-celebration.html" class="sidebar-link active pl-4 block">B2. Le mariage</a></li>
+                        <li><a href="divorce-procedure-consequences.html" class="sidebar-link pl-4 block text-slate-500">B3. Le divorce</a></li>
+                        <li><a href="pacs-union-libre.html" class="sidebar-link pl-4 block text-slate-500">B4. Le PACS et l'union libre</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">II. Filiation et autorité parentale</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="filiation-legitime-naturelle-adoptive.html" class="sidebar-link pl-4 block text-slate-500">B5. La filiation</a></li>
+                        <li><a href="autorite-parentale-garde-education.html" class="sidebar-link pl-4 block text-slate-500">B6. L'autorité parentale</a></li>
+                        <li><a href="regimes-matrimoniaux.html" class="sidebar-link pl-4 block text-slate-500">B7. Régimes matrimoniaux</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">III. Successions et obligations</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="successions-ordre-heritiers-testament.html" class="sidebar-link pl-4 block text-slate-500">B8. Les successions</a></li>
+                        <li><a href="obligations-alimentaires.html" class="sidebar-link pl-4 block text-slate-500">B9. Obligations alimentaires</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">IV. Protection des personnes</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="protection-majeurs-mineurs-tutelle-curatelle.html" class="sidebar-link pl-4 block text-slate-500">B10. Protection majeurs/mineurs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <main class="flex-1 py-16 px-6 md:px-20 max-w-5xl">
+            <article class="prose prose-slate lg:prose-lg mx-auto text-left">
+                <nav class="text-sm text-blue-600 font-semibold mb-8 uppercase tracking-wide">Chapitre I — La personne et le couple</nav>
+                <h1 class="text-4xl md:text-6xl font-bold mb-10 leading-tight">Le mariage</h1>
+                
+                <p class="text-xl text-slate-500 italic mb-12 border-l-4 border-blue-100 pl-6 py-2">
+                    "Le mariage est l'union d'un homme et d'une femme."
+                </p>
+                <p class="text-sm text-slate-400 mb-8">— Art. 143 du Code civil, dans sa rédaction originelle de 1804</p>
+
+                <h2 id="exorde">Exorde — De l'union hétérosexuelle au mariage pour tous</h2>
+                <p>
+                    Le mariage, institution centrale du droit des personnes, a connu une transformation radicale en France. Jusqu'en 2013, l'art. 143 du Code civil réservait le mariage à un homme et une femme. La loi n° 2013-404 du 17 mai 2013, dite "loi Taubira", a ouvert le mariage aux couples de personnes de même sexe, modifiant l'art. 143 : "Le mariage est contracté par deux personnes physiques de sexe différent ou de même sexe". Cette réforme, précédée de débats passionnés et de manifestations massives (La Manif pour tous), a été validée par le Conseil constitutionnel (décision n° 2013-669 DC du 17 mai 2013).
+                </p>
+
+                <h2 id="partie1">Partie I — Les conditions du mariage</h2>
+
+                <h3>A. Conditions de fond</h3>
+                <p>
+                    Le Code civil énumère plusieurs conditions de fond. Le <strong>consentement</strong> (art. 146) : "il n'y a pas de mariage lorsqu'il n'y a point de consentement". Le consentement doit être libre et éclairé ; le mariage sous la contrainte (violence, menace) peut être annulé (art. 180, 4°). L'âge minimum : 18 ans (art. 144), sauf dérogation accordée par le procureur de la République pour motif grave (16 ans minimum, art. 145). Le <strong>monogamie</strong> (art. 147) : l'existence d'un précédent mariage non dissous (par divorce, décès, ou nullité définitive) empêche toute nouvelle union (bigamie, délit pénal art. 433-13 du Code pénal).
+                </p>
+                <p>
+                    La <strong>différence de sexe</strong>, ancienne condition, a été supprimée par la loi de 2013. Le <strong>lien de parenté</strong> (art. 161-164) : le mariage entre ascendants et descendants (inceste, art. 222-24 du Code pénal) et entre collatéraux germains (frère et sœur) est interdit. Le mariage entre alliés en ligne directe (beau-père et belle-fille) est autorisé depuis la loi n° 2016-1547 du 18 novembre 2016, sous réserve que le mariage ayant créé l'alliance soit dissous.
+                </p>
+
+                <h3>B. Conditions de forme</h3>
+                <p>
+                    Le mariage doit être célébré <strong>publiquement</strong> (art. 165), devant l'officier d'état civil (maire ou adjoint) de la commune où l'un des futurs époux a son domicile ou sa résidence (art. 146-1). Les publications (affichage à la mairie pendant 10 jours) doivent être faites (art. 63 du Code civil). Le mariage civil est obligatoire en France ; le mariage religieux, s'il est célébré avant le mariage civil, est nul (art. 433-17 du Code pénal).
+                </p>
+
+                <h2 id="partie2">Partie II — Les effets et la nullité du mariage</h2>
+
+                <h3>A. Les effets du mariage</h3>
+                <p>
+                    Le mariage produit des effets personnels et patrimoniaux. Sur le plan personnel, il crée l'<strong>obligation de cohabitation</strong> (art. 215), le <strong>devoir de secours</strong> (art. 212), la <strong>fidélité</strong> (art. 212), et l'<strong>assistance mutuelle</strong> (art. 213). Le nom de famille : depuis la loi de 2016, chaque époux conserve son nom, mais peut porter le nom de son conjoint ou un nom d'usage (art. 225). L'<strong>autorité parentale</strong> est exercée conjointement par les deux parents (art. 372).
+                </p>
+                <p>
+                    Sur le plan patrimonial, le mariage entraîne un <strong>régime matrimonial</strong> (art. 1387 et s.). À défaut de contrat de mariage, les époux sont soumis au régime de la <strong>communauté légale réduite aux acquêts</strong> (art. 1400 et s.) : les biens propres (acquis avant le mariage, héritages, donations) restent personnels ; les biens acquis pendant le mariage sont communs. Les époux peuvent opter pour d'autres régimes (séparation de biens, communauté universelle) par contrat de mariage.
+                </p>
+
+                <h3>B. La nullité du mariage</h3>
+                <p>
+                    Le mariage peut être frappé de <strong>nullité absolue</strong> (pour cause d'inceste, bigamie, non-respect des conditions de sexe avant 2013) ou de <strong>nullité relative</strong> (pour défaut de consentement, vice du consentement, absence de publications). La nullité absolue peut être invoquée par toute personne intéressée ou le ministère public ; la nullité relative ne peut être invoquée que par les parties habilitées (art. 180 et 184). La prescription de l'action en nullité est de 30 ans pour la nullité absolue, 5 ans pour la nullité relative (art. 190 et 191).
+                </p>
+
+                <div class="focus-box">
+                    <h4 class="font-bold text-blue-900 dark:text-blue-300 mb-2">Focus : La loi Taubira (2013)</h4>
+                    <p class="text-sm mb-0">
+                        La loi n° 2013-404 du 17 mai 2013 a ouvert le mariage et l'adoption aux couples de personnes de même sexe. Le Conseil constitutionnel, dans sa décision n° 2013-669 DC, a validé la loi en jugeant que la différence de traitement entre couples de sexe différent et de même sexe n'était pas justifiée au regard du principe d'égalité (art. 6 de la DDHC, art. 1er de la Constitution). Cette décision a confirmé que le législateur était libre de réformer l'institution du mariage, pour autant qu'il respecte les droits fondamentaux.
+                    </p>
+                </div>
+
+                <!-- QUIZ -->
+                <section class="mt-16 p-8 bg-slate-50 dark:bg-slate-800 rounded-2xl">
+                    <h3 class="text-2xl font-bold mb-6">Quiz — Le mariage</h3>
+                    <div id="quiz-container" class="space-y-6">
+                        <div class="quiz-question" data-correct="1">
+                            <p class="font-semibold mb-3">1. Depuis 2013, le mariage en France est ouvert aux couples :</p>
+                            <div class="space-y-2">
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. Uniquement de sexe différent</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. De sexe différent ou de même sexe</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. Uniquement de même sexe</button>
+                            </div>
+                            <p class="quiz-feedback hidden mt-2 text-sm"></p>
+                        </div>
+                        <div class="quiz-question" data-correct="2">
+                            <p class="font-semibold mb-3">2. L'âge minimum pour se marier en France est de :</p>
+                            <div class="space-y-2">
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. 16 ans</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. 21 ans</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. 18 ans</button>
+                            </div>
+                            <p class="quiz-feedback hidden mt-2 text-sm"></p>
+                        </div>
+                        <div class="quiz-question" data-correct="0">
+                            <p class="font-semibold mb-3">3. Le régime matrimonial légal en France est :</p>
+                            <div class="space-y-2">
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. La communauté réduite aux acquêts</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. La séparation de biens</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. La communauté universelle</button>
+                            </div>
+                            <p class="quiz-feedback hidden mt-2 text-sm"></p>
+                        </div>
+                    </div>
+                    <div id="quiz-result" class="mt-6 hidden p-4 rounded-xl font-bold text-center"></div>
+                </section>
+
+                <section class="mt-24 p-12 bg-slate-900 text-white rounded-[3rem] overflow-hidden relative">
+                  <div class="relative z-10 text-left">
+                    <h3 class="text-2xl font-bold mb-6">Prêt pour l'examen ?</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                      <div>
+                        <h4 class="text-blue-400 font-bold text-xs uppercase mb-4 tracking-widest">Citation à retenir</h4>
+                        <p class="text-slate-300 italic mb-4">"Le mariage est contracté par deux personnes physiques de sexe différent ou de même sexe."</p>
+                        <p class="text-xs text-slate-500">— Art. 143 du Code civil, dans sa rédaction actuelle</p>
+                      </div>
+                      <div class="space-y-4">
+                        <button onclick="copyCitation()" class="w-full py-3 px-6 bg-white/10 hover:bg-white/20 rounded-xl border border-white/10 text-sm font-bold transition flex justify-between items-center">
+                          Citer cette leçon (APA) <span>📋</span>
+                        </button>
+                        <button onclick="window.print()" class="w-full py-3 px-6 bg-blue-600 hover:bg-blue-700 rounded-xl text-sm font-bold transition flex justify-between items-center">
+                          Version PDF / Imprimer <span>🖨️</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="absolute right-[-30px] bottom-[-30px] text-[12rem] opacity-5">⚖️</div>
+                </section>
+                <script>
+                function copyCitation(){
+                  const c = `ROLANDO C., « Le mariage (conditions, célébration, nullité) », JurisMaster, ${new Date().getFullYear()}. URL : ${location.href}`;
+                  navigator.clipboard.writeText(c);
+                  alert("Citation copiée.");
+                }
+                </script>
+
+                <p class="text-xs text-slate-400 mt-8 text-center">
+                  Contenu à visée pédagogique. Ne constitue pas un conseil juridique personnalisé.
+                </p>
+            </article>
+        </main>
+    </div>
+
+    <script>
+    document.addEventListener('click', e => {
+      if(e.target.closest('#dark-toggle')){
+        document.documentElement.classList.toggle('dark');
+        localStorage.setItem('jm.theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+      }
+    });
+
+    const JM = {
+      get(){ return JSON.parse(localStorage.getItem('jurismaster.v1') || '{"xp":0,"streak":{"count":0,"lastVisit":""},"lessonsCompleted":[],"badges":[],"quizScores":{}}'); },
+      set(s){ localStorage.setItem('jurismaster.v1', JSON.stringify(s)); },
+      addXP(n){ const s=JM.get(); s.xp=(s.xp||0)+n; JM.set(s); window.dispatchEvent(new CustomEvent('jm:xp',{detail:n})); },
+      completeLesson(slug, xp=50){ const s=JM.get(); s.lessonsCompleted=[...new Set([...(s.lessonsCompleted||[]),slug])]; s.xp=(s.xp||0)+xp; JM.set(s); },
+      touchStreak(){ const s=JM.get(); const today=new Date().toISOString().slice(0,10); const last=s.streak?.lastVisit; if(last&&last!==today){const d=new Date(today)-new Date(last); if(d===86400000){s.streak.count=(s.streak.count||0)+1;} else if(d>86400000){s.streak.count=1;} s.streak.lastVisit=today;} else if(!last){s.streak={count:1,lastVisit:today};} JM.set(s); }
+    };
+    JM.touchStreak();
+    JM.completeLesson('droit-personnes/mariage', 50);
+
+    const s = JM.get();
+    const progress = Math.min(100, Math.round(((s.lessonsCompleted||[]).length / 32) * 100));
+    document.querySelectorAll('[data-progress]').forEach(el => el.textContent = progress);
+    document.querySelectorAll('[data-progress-bar]').forEach(el => el.style.width = progress + '%');
+
+    document.querySelectorAll('.quiz-question').forEach((q, qi) => {
+      const correct = parseInt(q.dataset.correct);
+      const feedback = q.querySelector('.quiz-feedback');
+      const explanations = [
+        ["Avant 2013, le mariage était réservé aux couples de sexe différent.", "Exact ! La loi n° 2013-404 du 17 mai 2013 (loi Taubira) a ouvert le mariage aux couples de personnes de même sexe.", "Le mariage n'est pas réservé aux couples de même sexe."],
+        ["16 ans est l'âge minimum avec dérogation, pas l'âge normal.", "21 ans était l'âge de la majorité avant 1974, pas l'âge minimum pour se marier.", "Exact ! L'art. 144 du Code civil fixe l'âge minimum pour contracter mariage à 18 ans."],
+        ["Exact ! À défaut de contrat de mariage, les époux sont soumis au régime de la communauté légale réduite aux acquêts (art. 1400 et s.).", "La séparation de biens est un régime optionnel, pas le régime légal.", "La communauté universelle est un régime optionnel, pas le régime légal."]
+      ];
+      q.querySelectorAll('.quiz-btn').forEach((btn, bi) => {
+        btn.addEventListener('click', () => {
+          if(q.classList.contains('answered')) return;
+          q.classList.add('answered');
+          if(bi === correct){
+            btn.classList.add('bg-green-100', 'border-green-500', 'text-green-800');
+            feedback.textContent = explanations[qi][bi];
+            feedback.className = 'quiz-feedback mt-2 text-sm text-green-700';
+          } else {
+            btn.classList.add('bg-red-100', 'border-red-500', 'text-red-800');
+            q.querySelectorAll('.quiz-btn')[correct].classList.add('bg-green-100', 'border-green-500');
+            feedback.textContent = explanations[qi][bi];
+            feedback.className = 'quiz-feedback mt-2 text-sm text-red-700';
+          }
+          feedback.classList.remove('hidden');
+        });
+      });
+    });
+    </script>
+</body>
+</html>

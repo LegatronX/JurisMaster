@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le divorce (procédure, conséquences, réforme 2016) - Droit des personnes et de la famille</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; line-height: 1.8; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .prose h2 { font-size: 2rem; font-weight: 700; margin-top: 3rem; margin-bottom: 1.5rem; color: #1e3a8a; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; }
+        .prose h3 { font-size: 1.5rem; font-weight: 600; margin-top: 2rem; margin-bottom: 1rem; color: #1e40af; }
+        .prose p { margin-bottom: 1.5rem; color: #334155; text-align: justify; }
+        .sidebar-link.active { color: #1d4ed8; font-weight: 600; border-left: 3px solid #1d4ed8; }
+        .focus-box { background-color: #f8fafc; border-left: 4px solid #3b82f6; padding: 1.5rem; border-radius: 0.5rem; margin: 2rem 0; }
+        .citation { font-style: italic; color: #475569; border-left: 2px solid #cbd5e1; padding-left: 1.5rem; margin: 2rem 0; }
+    </style>
+</head>
+<body class="bg-white dark:bg-slate-900">
+    <script>tailwind.config={darkMode:'class'}</script>
+    <script>
+    (function(){
+      const stored = localStorage.getItem('jm.theme');
+      if(stored === 'dark' || (!stored && matchMedia('(prefers-color-scheme: dark)').matches)){
+        document.documentElement.classList.add('dark');
+      }
+    })();
+    </script>
+
+    <nav class="sticky top-0 z-50 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-6 py-3 flex justify-between items-center">
+      <a href="../../index.html" class="text-xl font-bold tracking-tight">JURIS<span class="text-blue-700">MASTER</span></a>
+      <div class="flex items-center space-x-4">
+        <button id="dark-toggle" aria-label="Basculer mode sombre" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800">🌓</button>
+        <span class="text-sm text-slate-500">Progression : <span data-progress>0</span>%</span>
+        <div class="w-32 h-2 bg-slate-100 rounded-full overflow-hidden">
+          <div class="bg-blue-600 h-full" data-progress-bar style="width:0%"></div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row">
+        <aside class="w-full md:w-80 border-r border-slate-100 dark:border-slate-800 p-8 h-screen sticky top-14 overflow-y-auto bg-slate-50/50 dark:bg-slate-900/50">
+            <h4 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-6">Droit des personnes et de la famille</h4>
+            <div class="space-y-8 text-sm text-left">
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">I. La personne et le couple</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="personne-humaine-capacite.html" class="sidebar-link pl-4 block text-slate-500">B1. La personne humaine</a></li>
+                        <li><a href="mariage-conditions-celebration.html" class="sidebar-link pl-4 block text-slate-500">B2. Le mariage</a></li>
+                        <li><a href="divorce-procedure-consequences.html" class="sidebar-link active pl-4 block">B3. Le divorce</a></li>
+                        <li><a href="pacs-union-libre.html" class="sidebar-link pl-4 block text-slate-500">B4. Le PACS et l'union libre</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">II. Filiation et autorité parentale</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="filiation-legitime-naturelle-adoptive.html" class="sidebar-link pl-4 block text-slate-500">B5. La filiation</a></li>
+                        <li><a href="autorite-parentale-garde-education.html" class="sidebar-link pl-4 block text-slate-500">B6. L'autorité parentale</a></li>
+                        <li><a href="regimes-matrimoniaux.html" class="sidebar-link pl-4 block text-slate-500">B7. Régimes matrimoniaux</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">III. Successions et obligations</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="successions-ordre-heritiers-testament.html" class="sidebar-link pl-4 block text-slate-500">B8. Les successions</a></li>
+                        <li><a href="obligations-alimentaires.html" class="sidebar-link pl-4 block text-slate-500">B9. Obligations alimentaires</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">IV. Protection des personnes</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="protection-majeurs-mineurs-tutelle-curatelle.html" class="sidebar-link pl-4 block text-slate-500">B10. Protection majeurs/mineurs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <main class="flex-1 py-16 px-6 md:px-20 max-w-5xl">
+            <article class="prose prose-slate lg:prose-lg mx-auto text-left">
+                <nav class="text-sm text-blue-600 font-semibold mb-8 uppercase tracking-wide">Chapitre I — La personne et le couple</nav>
+                <h1 class="text-4xl md:text-6xl font-bold mb-10 leading-tight">Le divorce</h1>
+                
+                <p class="text-xl text-slate-500 italic mb-12 border-l-4 border-blue-100 pl-6 py-2">
+                    "Le divorce est la dissolution du mariage."
+                </p>
+                <p class="text-sm text-slate-400 mb-8">— Art. 229 du Code civil</p>
+
+                <h2 id="exorde">Exorde — De la faute au consentement mutuel</h2>
+                <p>
+                    Le droit du divorce a connu une évolution majeure en France. Jusqu'à la loi n° 75-617 du 11 juillet 1975, le divorce était fondé sur le principe de la <strong>faute</strong> : il fallait prouver l'adultère, les sévices, ou l'abandon pour obtenir la dissolution du mariage. La loi de 1975 a introduit la <strong>rupture de la vie commune</strong> (séparation de fait pendant 6 ans). La loi n° 2004-439 du 26 mai 2004 a ajouté la <strong>procédure pour altération définitive du lien conjugal</strong> (séparation de 2 ans). La loi n° 2016-1547 du 18 novembre 2016 a profondément réformé le divorce en instaurant le <strong>divorce par consentement mutuel sans juge</strong> (art. 229-1 et s.).
+                </p>
+
+                <h2 id="partie1">Partie I — Les causes et la procédure de divorce</h2>
+
+                <h3>A. Les cinq causes de divorce</h3>
+                <p>
+                    Le Code civil prévoit aujourd'hui cinq causes de divorce. 1. Le <strong>consentement mutuel</strong> (art. 229-1 et s.) : les époux s'accordent sur le principe et les effets du divorce (garde des enfants, pension alimentaire, répartition des biens). Depuis 2016, cette procédure peut être conclue par acte d'avocats, sans passage devant le juge (art. 229-3), sous réserve d'homologation par le notaire si un bien immobilier est concerné. 2. L'<strong>acceptation du principe du divorce</strong> (art. 230) : un époux demande le divorce, l'autre l'accepte, mais ils ne s'accordent pas sur les effets ; le juge statue.
+                </p>
+                <p>
+                    3. La <strong>vie commune altérée</strong> (art. 237 et s.) : les époux vivent séparés depuis au moins 2 ans (séparation de corps ou de fait). 4. La <strong>faute</strong> (art. 242 et s.) : un époux invoque une faute de l'autre qui rend intolérable le maintien de la vie commune (adultère, violence, abandon de famille). 5. L'<strong>altération définitive du lien conjugal</strong> (art. 246) : les époux vivent séparés depuis au moins 2 ans et l'un d'eux demande le divorce sans invoquer de faute.
+                </p>
+
+                <h3>B. La procédure</h3>
+                <p>
+                    La procédure de divorce est régie par les arts. 1070 et s. du Code de procédure civile. Le divorce par consentement mutuel suit une procédure simplifiée : les époux signent une convention rédigée par leurs avocats, qui est déposée au greffe. Si tous les enfants sont majeurs et d'accord, la procédure est rapide (quelques mois). Si des enfants mineurs sont concernés, le juge aux affaires familiales (JAF) vérifie que la convention respecte leur intérêt.
+                </p>
+                <p>
+                    Les autres procédures sont contentieuses : assignation en divorce, tentative de conciliation, mesures provisoires (garde alternée, pension alimentaire, attribution du logement), puis jugement de divorce. La loi de 2016 a supprimé l'obligation de passer devant le juge pour le consentement mutuel, ce qui a considérablement désengorgé les tribunaux. En 2022, 55% des divorces étaient par consentement mutuel.
+                </p>
+
+                <h2 id="partie2">Partie II — Les effets du divorce</h2>
+
+                <h3>A. Effets personnels</h3>
+                <p>
+                    Le divorce met fin aux obligations matrimoniales (cohabitation, secours, fidélité). L'autorité parentale est exercée conjointement par les deux parents, sauf décision contraire du juge (art. 373-2-1). Le <strong>droit de visite et d'hébergement</strong> est accordé au parent non gardien (art. 373-2-1). La loi de 2002 a instauré la <strong>garde alternée</strong> comme principe : "l'enfant a le droit d'entretenir des relations personnelles avec ses deux parents" (art. 373-2-9). La garde alternée est la règle, sauf si elle n'est pas dans l'intérêt de l'enfant.
+                </p>
+
+                <h3>B. Effets patrimoniaux</h3>
+                <p>
+                    Le divorce entraîne le <strong>partage des biens</strong> selon le régime matrimonial. En communauté réduite aux acquêts, les biens propres restent personnels ; les acquêts sont partagés par moitié. Le <strong>prestation compensatoire</strong> (art. 270 et s.) est une indemnité versée par l'époux le plus aisé à l'autre pour compenser la disparité de niveau de vie créée par le divorce. Elle est fixée selon la durée du mariage, l'âge des époux, leur santé, leur profession, et les sacrifices consentis pour la famille.
+                </p>
+                <p>
+                    La <strong>pension alimentaire</strong> (art. 208 et s.) est due par l'époux à l'autre si celui-ci est dans le besoin. Elle cesse si le bénéficiaire se remarie ou cohabite (art. 295). Le <strong>devoir de secours</strong> persiste après le divorce : les époux doivent s'entraider dans la mesure de leurs facultés respectives (art. 207). En cas de faute, le juge peut allouer une <strong>indemnité pour préjudice moral</strong> (art. 266-1).
+                </p>
+
+                <div class="focus-box">
+                    <h4 class="font-bold text-blue-900 dark:text-blue-300 mb-2">Focus : La réforme de 2016</h4>
+                    <p class="text-sm mb-0">
+                        La loi n° 2016-1547 du 18 novembre 2016 a instauré le divorce par consentement mutuel sans juge, une première en France. Les époux peuvent divorcer par simple acte d'avocats, déposé au greffe du tribunal judiciaire. Cette réforme vise à désengorger les tribunaux et à réduire les coûts. Cependant, elle a été critiquée par la doctrine et le Conseil d'État : elle priverait le juge de son rôle protecteur, notamment en cas de déséquilibre de pouvoir entre les époux. En 2021, le divorce par consentement mutuel représentait 55% des divorces, contre 40% pour les divorces contentieux.
+                    </p>
+                </div>
+
+                <!-- QUIZ -->
+                <section class="mt-16 p-8 bg-slate-50 dark:bg-slate-800 rounded-2xl">
+                    <h3 class="text-2xl font-bold mb-6">Quiz — Le divorce</h3>
+                    <div id="quiz-container" class="space-y-6">
+                        <div class="quiz-question" data-correct="1">
+                            <p class="font-semibold mb-3">1. Depuis 2016, le divorce par consentement mutuel peut être conclu :</p>
+                            <div class="space-y-2">
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. Uniquement devant le juge</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. Par acte d'avocats, sans juge</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. Par simple déclaration à la mairie</button>
+                            </div>
+                            <p class="quiz-feedback hidden mt-2 text-sm"></p>
+                        </div>
+                        <div class="quiz-question" data-correct="2">
+                            <p class="font-semibold mb-3">2. La garde alternée des enfants après divorce est :</p>
+                            <div class="space-y-2">
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. Exceptionnelle</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. Interdite</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. La règle, sauf si contraire à l'intérêt de l'enfant</button>
+                            </div>
+                            <p class="quiz-feedback hidden mt-2 text-sm"></p>
+                        </div>
+                        <div class="quiz-question" data-correct="0">
+                            <p class="font-semibold mb-3">3. La prestation compensatoire vise à :</p>
+                            <div class="space-y-2">
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. Compenser la disparité de niveau de vie créée par le divorce</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. Punir l'époux fautif</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. Financer la garde des enfants</button>
+                            </div>
+                            <p class="quiz-feedback hidden mt-2 text-sm"></p>
+                        </div>
+                    </div>
+                    <div id="quiz-result" class="mt-6 hidden p-4 rounded-xl font-bold text-center"></div>
+                </section>
+
+                <section class="mt-24 p-12 bg-slate-900 text-white rounded-[3rem] overflow-hidden relative">
+                  <div class="relative z-10 text-left">
+                    <h3 class="text-2xl font-bold mb-6">Prêt pour l'examen ?</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                      <div>
+                        <h4 class="text-blue-400 font-bold text-xs uppercase mb-4 tracking-widest">Citation à retenir</h4>
+                        <p class="text-slate-300 italic mb-4">"Le divorce est la dissolution du mariage."</p>
+                        <p class="text-xs text-slate-500">— Art. 229 du Code civil</p>
+                      </div>
+                      <div class="space-y-4">
+                        <button onclick="copyCitation()" class="w-full py-3 px-6 bg-white/10 hover:bg-white/20 rounded-xl border border-white/10 text-sm font-bold transition flex justify-between items-center">
+                          Citer cette leçon (APA) <span>📋</span>
+                        </button>
+                        <button onclick="window.print()" class="w-full py-3 px-6 bg-blue-600 hover:bg-blue-700 rounded-xl text-sm font-bold transition flex justify-between items-center">
+                          Version PDF / Imprimer <span>🖨️</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="absolute right-[-30px] bottom-[-30px] text-[12rem] opacity-5">⚖️</div>
+                </section>
+                <script>
+                function copyCitation(){
+                  const c = `ROLANDO C., « Le divorce (procédure, conséquences, réforme 2016) », JurisMaster, ${new Date().getFullYear()}. URL : ${location.href}`;
+                  navigator.clipboard.writeText(c);
+                  alert("Citation copiée.");
+                }
+                </script>
+
+                <p class="text-xs text-slate-400 mt-8 text-center">
+                  Contenu à visée pédagogique. Ne constitue pas un conseil juridique personnalisé.
+                </p>
+            </article>
+        </main>
+    </div>
+
+    <script>
+    document.addEventListener('click', e => {
+      if(e.target.closest('#dark-toggle')){
+        document.documentElement.classList.toggle('dark');
+        localStorage.setItem('jm.theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+      }
+    });
+
+    const JM = {
+      get(){ return JSON.parse(localStorage.getItem('jurismaster.v1') || '{"xp":0,"streak":{"count":0,"lastVisit":""},"lessonsCompleted":[],"badges":[],"quizScores":{}}'); },
+      set(s){ localStorage.setItem('jurismaster.v1', JSON.stringify(s)); },
+      addXP(n){ const s=JM.get(); s.xp=(s.xp||0)+n; JM.set(s); window.dispatchEvent(new CustomEvent('jm:xp',{detail:n})); },
+      completeLesson(slug, xp=50){ const s=JM.get(); s.lessonsCompleted=[...new Set([...(s.lessonsCompleted||[]),slug])]; s.xp=(s.xp||0)+xp; JM.set(s); },
+      touchStreak(){ const s=JM.get(); const today=new Date().toISOString().slice(0,10); const last=s.streak?.lastVisit; if(last&&last!==today){const d=new Date(today)-new Date(last); if(d===86400000){s.streak.count=(s.streak.count||0)+1;} else if(d>86400000){s.streak.count=1;} s.streak.lastVisit=today;} else if(!last){s.streak={count:1,lastVisit:today};} JM.set(s); }
+    };
+    JM.touchStreak();
+    JM.completeLesson('droit-personnes/divorce', 50);
+
+    const s = JM.get();
+    const progress = Math.min(100, Math.round(((s.lessonsCompleted||[]).length / 32) * 100));
+    document.querySelectorAll('[data-progress]').forEach(el => el.textContent = progress);
+    document.querySelectorAll('[data-progress-bar]').forEach(el => el.style.width = progress + '%');
+
+    document.querySelectorAll('.quiz-question').forEach((q, qi) => {
+      const correct = parseInt(q.dataset.correct);
+      const feedback = q.querySelector('.quiz-feedback');
+      const explanations = [
+        ["Avant 2016, le divorce par consentement mutuel nécessitait un passage devant le juge.", "Exact ! La loi n° 2016-1547 du 18 novembre 2016 permet le divorce par consentement mutuel par acte d'avocats, sans passage obligatoire devant le juge.", "La mairie n'a pas compétence pour prononcer le divorce."],
+        ["La garde alternée n'est pas exceptionnelle ; elle est devenue la règle.", "La garde alternée n'est pas interdite ; elle est encouragée par la loi.", "Exact ! L'art. 373-2-9 du Code civil dispose que la garde alternée est la règle, sauf si elle n'est pas dans l'intérêt de l'enfant."],
+        ["Exact ! La prestation compensatoire (art. 270 et s.) vise à compenser la disparité de niveau de vie créée par la dissolution du mariage.", "La prestation compensatoire n'a pas un caractère punitif ; elle est indépendante de la faute.", "La pension alimentaire pour les enfants est distincte de la prestation compensatoire."]
+      ];
+      q.querySelectorAll('.quiz-btn').forEach((btn, bi) => {
+        btn.addEventListener('click', () => {
+          if(q.classList.contains('answered')) return;
+          q.classList.add('answered');
+          if(bi === correct){
+            btn.classList.add('bg-green-100', 'border-green-500', 'text-green-800');
+            feedback.textContent = explanations[qi][bi];
+            feedback.className = 'quiz-feedback mt-2 text-sm text-green-700';
+          } else {
+            btn.classList.add('bg-red-100', 'border-red-500', 'text-red-800');
+            q.querySelectorAll('.quiz-btn')[correct].classList.add('bg-green-100', 'border-green-500');
+            feedback.textContent = explanations[qi][bi];
+            feedback.className = 'quiz-feedback mt-2 text-sm text-red-700';
+          }
+          feedback.classList.remove('hidden');
+        });
+      });
+    });
+    </script>
+</body>
+</html>

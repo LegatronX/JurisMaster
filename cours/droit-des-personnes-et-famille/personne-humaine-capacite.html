@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La personne humaine en droit civil - Droit des personnes et de la famille</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; line-height: 1.8; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .prose h2 { font-size: 2rem; font-weight: 700; margin-top: 3rem; margin-bottom: 1.5rem; color: #1e3a8a; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; }
+        .prose h3 { font-size: 1.5rem; font-weight: 600; margin-top: 2rem; margin-bottom: 1rem; color: #1e40af; }
+        .prose p { margin-bottom: 1.5rem; color: #334155; text-align: justify; }
+        .sidebar-link.active { color: #1d4ed8; font-weight: 600; border-left: 3px solid #1d4ed8; }
+        .focus-box { background-color: #f8fafc; border-left: 4px solid #3b82f6; padding: 1.5rem; border-radius: 0.5rem; margin: 2rem 0; }
+        .citation { font-style: italic; color: #475569; border-left: 2px solid #cbd5e1; padding-left: 1.5rem; margin: 2rem 0; }
+    </style>
+</head>
+<body class="bg-white dark:bg-slate-900">
+    <script>tailwind.config={darkMode:'class'}</script>
+    <script>
+    (function(){
+      const stored = localStorage.getItem('jm.theme');
+      if(stored === 'dark' || (!stored && matchMedia('(prefers-color-scheme: dark)').matches)){
+        document.documentElement.classList.add('dark');
+      }
+    })();
+    </script>
+
+    <nav class="sticky top-0 z-50 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-6 py-3 flex justify-between items-center">
+      <a href="../../index.html" class="text-xl font-bold tracking-tight">JURIS<span class="text-blue-700">MASTER</span></a>
+      <div class="flex items-center space-x-4">
+        <button id="dark-toggle" aria-label="Basculer mode sombre" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800">🌓</button>
+        <span class="text-sm text-slate-500">Progression : <span data-progress>0</span>%</span>
+        <div class="w-32 h-2 bg-slate-100 rounded-full overflow-hidden">
+          <div class="bg-blue-600 h-full" data-progress-bar style="width:0%"></div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row">
+        <aside class="w-full md:w-80 border-r border-slate-100 dark:border-slate-800 p-8 h-screen sticky top-14 overflow-y-auto bg-slate-50/50 dark:bg-slate-900/50">
+            <h4 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-6">Droit des personnes et de la famille</h4>
+            <div class="space-y-8 text-sm text-left">
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">I. La personne et le couple</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="personne-humaine-capacite.html" class="sidebar-link active pl-4 block">B1. La personne humaine</a></li>
+                        <li><a href="mariage-conditions-celebration.html" class="sidebar-link pl-4 block text-slate-500">B2. Le mariage</a></li>
+                        <li><a href="divorce-procedure-consequences.html" class="sidebar-link pl-4 block text-slate-500">B3. Le divorce</a></li>
+                        <li><a href="pacs-union-libre.html" class="sidebar-link pl-4 block text-slate-500">B4. Le PACS et l'union libre</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">II. Filiation et autorité parentale</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="filiation-legitime-naturelle-adoptive.html" class="sidebar-link pl-4 block text-slate-500">B5. La filiation</a></li>
+                        <li><a href="autorite-parentale-garde-education.html" class="sidebar-link pl-4 block text-slate-500">B6. L'autorité parentale</a></li>
+                        <li><a href="regimes-matrimoniaux.html" class="sidebar-link pl-4 block text-slate-500">B7. Régimes matrimoniaux</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">III. Successions et obligations</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="successions-ordre-heritiers-testament.html" class="sidebar-link pl-4 block text-slate-500">B8. Les successions</a></li>
+                        <li><a href="obligations-alimentaires.html" class="sidebar-link pl-4 block text-slate-500">B9. Obligations alimentaires</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">IV. Protection des personnes</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="protection-majeurs-mineurs-tutelle-curatelle.html" class="sidebar-link pl-4 block text-slate-500">B10. Protection majeurs/mineurs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <main class="flex-1 py-16 px-6 md:px-20 max-w-5xl">
+            <article class="prose prose-slate lg:prose-lg mx-auto text-left">
+                <nav class="text-sm text-blue-600 font-semibold mb-8 uppercase tracking-wide">Chapitre I — La personne et le couple</nav>
+                <h1 class="text-4xl md:text-6xl font-bold mb-10 leading-tight">La personne humaine en droit civil</h1>
+                
+                <p class="text-xl text-slate-500 italic mb-12 border-l-4 border-blue-100 pl-6 py-2">
+                    "L'existence de la personne commence à la naissance et cesse à la mort."
+                </p>
+                <p class="text-sm text-slate-400 mb-8">— Art. 22 du Code civil, dans sa rédaction issue de la loi n° 2016-1547 du 18 novembre 2016</p>
+
+                <h2 id="exorde">Exorde — Du code Napoléon au XXIe siècle</h2>
+                <p>
+                    Le droit des personnes constitue le livre Ier du Code civil. Il définit la personne comme sujet de droit, dotée d'un statut juridique qui comprend son état civil (nom, prénoms, sexe), sa capacité juridique, son domicile, et sa nationalité. Le Code civil de 1804, dans sa vision libérale et individualiste, a posé les fondements d'un droit des personnes centrée sur l'homme adulte, marié, propriétaire. Les réformes contemporaines (loi n° 2016-1547 du 18 novembre 2016, loi n° 2019-222 du 23 mars 2019) ont profondément modernisé ce livre, en reconnaissant la liberté de choisir son nom, la transparence de la gestation pour autrui, et la protection renforcée des enfants.
+                </p>
+
+                <h2 id="partie1">Partie I — L'état civil et l'identité</h2>
+
+                <h3>A. Le nom et les prénoms</h3>
+                <p>
+                    L'art. 311-21 du Code civil dispose que "l'enfant dont la filiation est établie à l'égard de ses deux parents reçoit, à titre de nom de famille, le nom du père, celui de la mère ou les deux noms accolés dans l'ordre choisi par eux". Cette réforme de 2002 (loi n° 2002-304 du 4 mars 2002) a introduit la liberté de choix du nom de famille, rompant avec la tradition du nom patronymique unique. En cas de désaccord entre les parents, l'enfant reçoit les deux noms accolés. L'art. 61 du Code civil permet le changement de nom pour motif légitime (inconfort, discrimination, insertion sociale).
+                </p>
+                <p>
+                    Les prénoms sont libres (art. 62), mais l'officier d'état civil peut s'opposer à un prénom contraire à l'intérêt de l'enfant (Cass. 1re civ., 24 mai 2023, n° 22-10.000). La juridiction administrative (TA de Strasbourg, 4 janv. 2015) a refusé le prénom "Nutella" au motif qu'il exposait l'enfant au ridicule. La liberté de choix des prénoms n'est donc pas absolue : elle est limitée par l'intérêt supérieur de l'enfant (art. 3 de la Convention de New York de 1989 sur les droits de l'enfant, ratifiée par la France).
+                </p>
+
+                <h3>B. Le sexe et l'état civil</h3>
+                <p>
+                    L'art. 57 du Code civil dispose que "la mention du sexe dans l'acte de naissance est déterminée par l'apparence des organes génitaux". Cette disposition a été interprétée restrictivement par la jurisprudence. La Cour de cassation a admis la rectification de la mention du sexe pour les personnes transgenres, à condition qu'ils présentent une "apparence conforme au sexe revendiqué" (Cass. 1re civ., 19 novembre 1992, arrêt "W". 2 arrêts, 11 décembre 2012). La loi n° 2016-1547 du 18 novembre 2016 a supprimé la condition de "chirurgie de réassignation sexuelle" : la rectification peut désormais être demandée sur simple déclaration de la personne, accompagnée d'un avis médical (art. 61-7 du Code civil).
+                </p>
+
+                <h2 id="partie2">Partie II — La capacité juridique</h2>
+
+                <h3>A. La capacité de jouissance et la capacité d'exercice</h3>
+                <p>
+                    La doctrine distingue deux types de capacité. La <strong>capacité de jouissance</strong> est la capacité d'être titulaire de droits et d'obligations. En principe, tout être humain en possède, du vivant (art. 16 du Code civil : "le corps humain, ses éléments et ses produits ne peuvent faire l'objet d'un droit patrimonial"). Le <strong>nasciturus</strong> (conçu mais non encore né) est protégé (art. 725, 906 du Code civil) : il peut recevoir des donations et des successions à condition de naître vivant et viable. Le <strong>fœtus</strong> n'est pas une personne juridique, mais sa destruction volontaire (avortement) est réglementée par la loi (art. L. 2211-1 et s. du Code de la santé publique).
+                </p>
+                <p>
+                    La <strong>capacité d'exercice</strong> est la capacité d'exercer ses droits par elle-même (passer des contrats, ester en justice, se marier). Elle suppose la majorité légale (18 ans, art. 388 du Code civil, abaissée de 21 à 18 ans par la loi n° 74-696 du 7 août 1974) et l'absence de protection juridique (tutelle, curatelle, sauvegarde de justice). Les mineurs et les majeurs protégés ont une capacité d'exercice réduite ou nulle.
+                </p>
+
+                <h3>B. La protection des majeurs</h3>
+                <p>
+                    L'art. 425 du Code civil prévoit trois mesures de protection pour les majeurs en difficulté : la <strong>sauvegarde de justice</strong> (mesure temporaire d'assistance, art. 491 et s.), la <strong>curatelle</strong> (assistance pour les actes de la vie civile, art. 492 et s.), et la <strong>tutelle</strong> (représentation pour les personnes incapables d'exprimer leur volonté, art. 494 et s.). La loi n° 2007-308 du 5 mars 2007 a modernisé ces dispositions en instaurant le principe de "l'autonomie de la personne protégée" : la mesure doit être proportionnée à l'état de la personne et respecter ses droits fondamentaux.
+                </p>
+
+                <div class="focus-box">
+                    <h4 class="font-bold text-blue-900 dark:text-blue-300 mb-2">Focus : La loi n° 2016-1547 du 18 novembre 2016</h4>
+                    <p class="text-sm mb-0">
+                        Cette loi, dite "loi Justice du XXIe siècle", a profondément réformé le livre Ier du Code civil. Elle a instauré : la liberté du choix du nom de famille pour l'enfant (art. 311-21), la suppression de la mention "fils/naturel" dans l'acte de naissance (art. 311-23), la reconnaissance de la filiation pour les couples de femmes (art. 311-14), la simplification de la procédure de changement de sexe à l'état civil (art. 61-7), et la création de l'<strong>autorité parentale conjointe</strong> pour remplacer la puissance paternelle.
+                    </p>
+                </div>
+
+                <!-- QUIZ -->
+                <section class="mt-16 p-8 bg-slate-50 dark:bg-slate-800 rounded-2xl">
+                    <h3 class="text-2xl font-bold mb-6">Quiz — La personne humaine</h3>
+                    <div id="quiz-container" class="space-y-6">
+                        <div class="quiz-question" data-correct="1">
+                            <p class="font-semibold mb-3">1. Depuis 2002, l'enfant dont la filiation est établie à l'égard de ses deux parents peut recevoir :</p>
+                            <div class="space-y-2">
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. Uniquement le nom du père</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. Le nom du père, de la mère, ou les deux noms accolés</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. Uniquement le nom de la mère</button>
+                            </div>
+                            <p class="quiz-feedback hidden mt-2 text-sm"></p>
+                        </div>
+                        <div class="quiz-question" data-correct="2">
+                            <p class="font-semibold mb-3">2. La majorité légale en France est fixée à :</p>
+                            <div class="space-y-2">
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. 16 ans</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. 21 ans</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. 18 ans</button>
+                            </div>
+                            <p class="quiz-feedback hidden mt-2 text-sm"></p>
+                        </div>
+                        <div class="quiz-question" data-correct="0">
+                            <p class="font-semibold mb-3">3. La mesure la plus lourde de protection des majeurs est :</p>
+                            <div class="space-y-2">
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. La tutelle</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. La curatelle</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. La sauvegarde de justice</button>
+                            </div>
+                            <p class="quiz-feedback hidden mt-2 text-sm"></p>
+                        </div>
+                    </div>
+                    <div id="quiz-result" class="mt-6 hidden p-4 rounded-xl font-bold text-center"></div>
+                </section>
+
+                <section class="mt-24 p-12 bg-slate-900 text-white rounded-[3rem] overflow-hidden relative">
+                  <div class="relative z-10 text-left">
+                    <h3 class="text-2xl font-bold mb-6">Prêt pour l'examen ?</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                      <div>
+                        <h4 class="text-blue-400 font-bold text-xs uppercase mb-4 tracking-widest">Citation à retenir</h4>
+                        <p class="text-slate-300 italic mb-4">"L'existence de la personne commence à la naissance et cesse à la mort."</p>
+                        <p class="text-xs text-slate-500">— Art. 22 du Code civil</p>
+                      </div>
+                      <div class="space-y-4">
+                        <button onclick="copyCitation()" class="w-full py-3 px-6 bg-white/10 hover:bg-white/20 rounded-xl border border-white/10 text-sm font-bold transition flex justify-between items-center">
+                          Citer cette leçon (APA) <span>📋</span>
+                        </button>
+                        <button onclick="window.print()" class="w-full py-3 px-6 bg-blue-600 hover:bg-blue-700 rounded-xl text-sm font-bold transition flex justify-between items-center">
+                          Version PDF / Imprimer <span>🖨️</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="absolute right-[-30px] bottom-[-30px] text-[12rem] opacity-5">⚖️</div>
+                </section>
+                <script>
+                function copyCitation(){
+                  const c = `ROLANDO C., « La personne humaine en droit civil », JurisMaster, ${new Date().getFullYear()}. URL : ${location.href}`;
+                  navigator.clipboard.writeText(c);
+                  alert("Citation copiée.");
+                }
+                </script>
+
+                <p class="text-xs text-slate-400 mt-8 text-center">
+                  Contenu à visée pédagogique. Ne constitue pas un conseil juridique personnalisé.
+                </p>
+            </article>
+        </main>
+    </div>
+
+    <script>
+    document.addEventListener('click', e => {
+      if(e.target.closest('#dark-toggle')){
+        document.documentElement.classList.toggle('dark');
+        localStorage.setItem('jm.theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+      }
+    });
+
+    const JM = {
+      get(){ return JSON.parse(localStorage.getItem('jurismaster.v1') || '{"xp":0,"streak":{"count":0,"lastVisit":""},"lessonsCompleted":[],"badges":[],"quizScores":{}}'); },
+      set(s){ localStorage.setItem('jurismaster.v1', JSON.stringify(s)); },
+      addXP(n){ const s=JM.get(); s.xp=(s.xp||0)+n; JM.set(s); window.dispatchEvent(new CustomEvent('jm:xp',{detail:n})); },
+      completeLesson(slug, xp=50){ const s=JM.get(); s.lessonsCompleted=[...new Set([...(s.lessonsCompleted||[]),slug])]; s.xp=(s.xp||0)+xp; JM.set(s); },
+      touchStreak(){ const s=JM.get(); const today=new Date().toISOString().slice(0,10); const last=s.streak?.lastVisit; if(last&&last!==today){const d=new Date(today)-new Date(last); if(d===86400000){s.streak.count=(s.streak.count||0)+1;} else if(d>86400000){s.streak.count=1;} s.streak.lastVisit=today;} else if(!last){s.streak={count:1,lastVisit:today};} JM.set(s); }
+    };
+    JM.touchStreak();
+    JM.completeLesson('droit-personnes/personne-humaine', 50);
+
+    const s = JM.get();
+    const progress = Math.min(100, Math.round(((s.lessonsCompleted||[]).length / 32) * 100));
+    document.querySelectorAll('[data-progress]').forEach(el => el.textContent = progress);
+    document.querySelectorAll('[data-progress-bar]').forEach(el => el.style.width = progress + '%');
+
+    document.querySelectorAll('.quiz-question').forEach((q, qi) => {
+      const correct = parseInt(q.dataset.correct);
+      const feedback = q.querySelector('.quiz-feedback');
+      const explanations = [
+        ["Avant 2002, l'enfant recevait le nom du père. La réforme de 2002 a introduit la liberté de choix.", "Exact ! L'art. 311-21 du Code civil permet aux parents de choisir le nom du père, de la mère, ou les deux noms accolés.", "La possibilité de recevoir uniquement le nom de la mère existe mais n'est pas la seule option."],
+        ["16 ans est l'âge de la majorité dans certains pays (Écosse) mais pas en France.", "21 ans était l'âge de la majorité avant 1974.", "Exact ! La loi n° 74-696 du 7 août 1974 a abaissé la majorité légale de 21 à 18 ans."],
+        ["Exact ! La tutelle est la mesure la plus lourde : elle suppose une représentation totale de la personne protégée, qui est incapable d'exprimer sa volonté.", "La curatelle est une mesure d'assistance, moins lourde que la tutelle.", "La sauvegarde de justice est une mesure temporaire et légère d'assistance."]
+      ];
+      q.querySelectorAll('.quiz-btn').forEach((btn, bi) => {
+        btn.addEventListener('click', () => {
+          if(q.classList.contains('answered')) return;
+          q.classList.add('answered');
+          if(bi === correct){
+            btn.classList.add('bg-green-100', 'border-green-500', 'text-green-800');
+            feedback.textContent = explanations[qi][bi];
+            feedback.className = 'quiz-feedback mt-2 text-sm text-green-700';
+          } else {
+            btn.classList.add('bg-red-100', 'border-red-500', 'text-red-800');
+            q.querySelectorAll('.quiz-btn')[correct].classList.add('bg-green-100', 'border-green-500');
+            feedback.textContent = explanations[qi][bi];
+            feedback.className = 'quiz-feedback mt-2 text-sm text-red-700';
+          }
+          feedback.classList.remove('hidden');
+        });
+      });
+    });
+    </script>
+</body>
+</html>
