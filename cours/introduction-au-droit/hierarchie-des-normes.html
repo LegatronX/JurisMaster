@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La hiérarchie des normes - Introduction au droit</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; line-height: 1.8; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .prose h2 { font-size: 2rem; font-weight: 700; margin-top: 3rem; margin-bottom: 1.5rem; color: #1e3a8a; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; }
+        .prose h3 { font-size: 1.5rem; font-weight: 600; margin-top: 2rem; margin-bottom: 1rem; color: #1e40af; }
+        .prose p { margin-bottom: 1.5rem; color: #334155; text-align: justify; }
+        .sidebar-link.active { color: #1d4ed8; font-weight: 600; border-left: 3px solid #1d4ed8; }
+        .norm-pyramid { background-color: #f8fafc; border: 1px solid #e2e8f0; padding: 2rem; border-radius: 1rem; margin: 2rem 0; }
+        .pyramid-level { padding: 0.75rem; margin-bottom: 0.5rem; text-align: center; font-weight: bold; border-radius: 0.25rem; }
+    </style>
+</head>
+<body class="bg-white">
+
+    <!-- BARRE DE NAVIGATION SUPÉRIEURE -->
+    <nav class="sticky top-0 z-50 bg-white border-b border-slate-200 px-6 py-3 flex justify-between items-center">
+        <a href="../../index.html" class="text-xl font-bold tracking-tight">JURIS<span class="text-blue-700 text-left">MASTER</span></a>
+        <div class="flex items-center space-x-4">
+            <span class="text-sm text-slate-500 text-left">Progression : 25%</span>
+            <div class="w-32 h-2 bg-slate-100 rounded-full overflow-hidden">
+                <div class="bg-blue-600 h-full w-[25%]"></div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row">
+        
+        <!-- BARRE LATÉRALE -->
+        <aside class="w-full md:w-80 border-r border-slate-100 p-8 h-screen sticky top-14 overflow-y-auto bg-slate-50/50 text-left">
+            <h4 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-6">Introduction au droit</h4>
+            <div class="space-y-8 text-sm">
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">1. Le droit objectif</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="la-regle-de-droit.html" class="sidebar-link pl-4 block text-slate-500">La règle de droit</a></li>
+                        <li><a href="sources-du-droit.html" class="sidebar-link pl-4 block text-slate-500">Les sources du droit</a></li>
+                        <li><a href="hierarchie-des-normes.html" class="sidebar-link active pl-4 block">La hiérarchie des normes</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">2. Les droits subjectifs</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="personnes-juridiques.html" class="sidebar-link pl-4 block text-slate-500">Les titulaires des droits</a></li>
+                        <li><a href="actes-et-faits-juridiques.html" class="sidebar-link pl-4 block text-slate-500">Les sources des droits</a></li>
+                        <li><a href="preuve-des-droits.html" class="sidebar-link pl-4 block text-slate-500">Le droit de la preuve</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <!-- CONTENU DU COURS -->
+        <main class="flex-1 py-16 px-6 md:px-20 max-w-5xl">
+            <article class="prose prose-slate lg:prose-lg mx-auto text-left">
+                <nav class="text-sm text-blue-600 font-semibold mb-8 uppercase tracking-wide">Chapitre 1 — Le droit objectif</nav>
+                <h1 class="text-4xl md:text-6xl font-bold mb-10 leading-tight">La hiérarchie des normes</h1>
+                
+                <p>
+                    La hiérarchie des normes est un principe structurel du droit qui postule que l'ordre juridique est un ensemble organisé où chaque règle tire sa validité de sa conformité à la norme qui lui est supérieure. Ce concept a été magistralement théorisé par le juriste autrichien <strong>Hans Kelsen</strong> à travers sa "Stufenbaulehre" (théorie des paliers).
+                </p>
+
+                <div class="norm-pyramid">
+                    <div class="pyramid-level bg-blue-900 text-white w-1/4 mx-auto">Bloc de constitutionnalité</div>
+                    <div class="pyramid-level bg-blue-800 text-white w-1/2 mx-auto">Bloc de conventionnalité</div>
+                    <div class="pyramid-level bg-blue-700 text-white w-2/3 mx-auto">Bloc de légalité</div>
+                    <div class="pyramid-level bg-blue-600 text-white w-3/4 mx-auto">Principes généraux du droit</div>
+                    <div class="pyramid-level bg-blue-500 text-white w-full mx-auto">Bloc réglementaire</div>
+                </div>
+
+                <h2 id="bloc-constitutionnalite">1. Le bloc de constitutionnalité</h2>
+                <p>
+                    Situé au sommet de la pyramide, le bloc de constitutionnalité n'est pas limité à la seule Constitution du 4 octobre 1958. Depuis la décision historique "Liberté d'association" de 1971, le Conseil constitutionnel y intègre :
+                </p>
+                <ul class="list-disc pl-6 space-y-2 mb-8 text-left">
+                    <li>La <strong>Déclaration des droits de l'homme et du citoyen</strong> de 1789.</li>
+                    <li>Le <strong>Préambule de la Constitution de 1946</strong> (droits économiques et sociaux).</li>
+                    <li>La <strong>Charte de l'environnement</strong> de 2004.</li>
+                    <li>Les <strong>Principes fondamentaux reconnus par les lois de la République (PFRLR)</strong>.</li>
+                </ul>
+
+                <h2 id="bloc-conventionnalite">2. Le bloc de conventionnalité</h2>
+                <p>
+                    Il regroupe les engagements internationaux de la France. En vertu de l'article 55 de la Constitution, les traités ont une autorité supérieure à celle des lois. Une place particulière doit être faite au <strong>Droit de l'Union européenne</strong> :
+                </p>
+                <ul class="list-disc pl-6 space-y-2 mb-8">
+                    <li><strong>Le droit originaire :</strong> Les traités fondateurs (ex : Traité de Lisbonne).</li>
+                    <li><strong>Le droit dérivé :</strong> Les règlements (d'application directe) et les directives (qui nécessitent une transposition en droit national).</li>
+                </ul>
+
+                <h2 id="bloc-legalite">3. Le bloc de légalité et les PGD</h2>
+                <p>
+                    Il comprend les lois votées par le Parlement. On distingue les lois organiques (organisation des pouvoirs publics) et les lois ordinaires. 
+                </p>
+                <p>
+                    Les <strong>Principes généraux du droit (PGD)</strong> sont des règles non écrites, dégagées par le Conseil d'État, qui ont une valeur infra-législative mais supra-réglementaire. Ils protègent les droits fondamentaux des administrés (ex : respect des droits de la défense).
+                </p>
+
+                <h2 id="bloc-reglementaire">4. Le bloc réglementaire</h2>
+                <p>
+                    C'est l'ensemble des actes pris par le pouvoir exécutif et les autorités administratives (décrets du Premier ministre, arrêtés ministériels, préfectoraux ou municipaux). Un règlement doit impérativement respecter la loi qu'il applique.
+                </p>
+
+                <div class="focus-box">
+                    <h4 class="font-bold text-blue-900 mb-2">Le contrôle de la hiérarchie</h4>
+                    <p class="text-sm">Pour que cette pyramide soit efficace, il existe des mécanismes de contrôle :</p>
+                    <ul class="text-sm space-y-2">
+                        <li><strong>Contrôle de constitutionnalité :</strong> Assuré par le Conseil constitutionnel (<em>a priori</em> avant la loi ou <em>a posteriori</em> via la QPC).</li>
+                        <li><strong>Contrôle de conventionnalité :</strong> Assuré par les juges ordinaires (judiciaires ou administratifs).</li>
+                        <li><strong>Contrôle de légalité :</strong> Assuré par le juge administratif pour annuler les règlements contraires à la loi.</li>
+                    </ul>
+                </div>
+
+                <div class="mt-20 pt-10 border-t border-slate-100 flex justify-between">
+                    <a href="sources-du-droit.html" class="text-blue-600 font-bold hover:underline transition">← Chapitre précédent : Les sources du droit</a>
+                    <a href="personnes-juridiques.html" class="text-blue-600 font-bold hover:underline transition">Chapitre suivant : Les titulaires des droits →</a>
+                </div>
+            </article>
+        </main>
+    </div>
+
+</body>
+</html>
