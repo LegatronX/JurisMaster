@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>L'infraction penale (classification, elements) - Droit penal general</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', sans-serif; line-height: 1.8; }
+h1, h2, h3 { font-family: 'Playfair Display', serif; }
+.prose h2 { font-size: 2rem; font-weight: 700; margin-top: 3rem; margin-bottom: 1.5rem; color: #1e3a8a; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; }
+.prose h3 { font-size: 1.5rem; font-weight: 600; margin-top: 2rem; margin-bottom: 1rem; color: #1e40af; }
+.prose p { margin-bottom: 1.5rem; color: #334155; text-align: justify; }
+.sidebar-link.active { color: #1d4ed8; font-weight: 600; border-left: 3px solid #1d4ed8; }
+.focus-box { background-color: #f8fafc; border-left: 4px solid #3b82f6; padding: 1.5rem; border-radius: 0.5rem; margin: 2rem 0; }
+.citation { font-style: italic; color: #475569; border-left: 2px solid #cbd5e1; padding-left: 1.5rem; margin: 2rem 0; }
+</style>
+</head>
+<body class="bg-white dark:bg-slate-900">
+<script>tailwind.config={darkMode:'class'}</script>
+<script>
+(function(){
+const stored = localStorage.getItem('jm.theme');
+if(stored === 'dark' || (!stored && matchMedia('(prefers-color-scheme: dark)').matches)){
+document.documentElement.classList.add('dark');
+}
+})();
+</script>
+
+<nav class="sticky top-0 z-50 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-6 py-3 flex justify-between items-center">
+<a href="../../index.html" class="text-xl font-bold tracking-tight">JURIS<span class="text-blue-700">MASTER</span></a>
+<div class="flex items-center space-x-4">
+<button id="dark-toggle" aria-label="Basculer mode sombre" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800">🌓</button>
+<span class="text-sm text-slate-500">Progression : <span data-progress>0</span>%</span>
+<div class="w-32 h-2 bg-slate-100 rounded-full overflow-hidden">
+<div class="bg-blue-600 h-full" data-progress-bar style="width:0%"></div>
+</div>
+</div>
+</nav>
+
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row">
+<aside class="w-full lg:w-72 bg-slate-50 dark:bg-slate-800 border-r border-slate-200 dark:border-slate-700 p-6 lg:sticky lg:top-14 lg:h-[calc(100vh-3.5rem)] lg:overflow-y-auto">
+<div class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-3">Droit pénal général</div>
+<a href="../droit-penal-general.html" class="block text-sm text-blue-700 hover:underline mb-6">← Sommaire</a>
+<ul class="space-y-2 text-sm">
+<li><a href="introduction-droit-penal.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C1. Introduction au droit pénal</a></li>
+<li><a href="loi-penal-legalite-temps-espace.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C2. La loi pénale</a></li>
+<li><a href="infraction-penale-classification.html" class="sidebar-link active block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C3. L'infraction pénale</a></li>
+<li><a href="auteur-infraction-coaction-complicite.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C4. L'auteur de l'infraction</a></li>
+<li><a href="victime-action-publique.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C5. La victime et l'action publique</a></li>
+<li><a href="irresponsabilite-extinction-punissabilite.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C6. Causes d'irresponsabilité</a></li>
+<li><a href="peines-principes-types.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C7. Les peines</a></li>
+<li><a href="mesures-surete.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C8. Les mesures de sûreté</a></li>
+<li><a href="recidivite-contrainte-penale.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C9. Récidive et contrainte pénale</a></li>
+<li><a href="prescription-justice-penale-mineur.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C10. Prescription et justice pénale du mineur</a></li>
+</ul>
+</aside>
+
+<main class="flex-1 p-6 lg:p-12 prose dark:prose-invert max-w-none">
+<article>
+<div class="flex items-center space-x-2 text-sm text-slate-500 mb-4">
+<a href="../../index.html" class="hover:underline">Accueil</a>
+<span>/</span>
+<a href="../droit-penal-general.html" class="hover:underline">Droit pénal général</a>
+<span>/</span>
+<span class="text-slate-800 dark:text-slate-200">C3</span>
+</div>
+<h1 class="text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white mb-4">L'infraction pénale</h1>
+<p class="text-lg text-slate-600 dark:text-slate-300 mb-8">Classification des infractions et éléments constitutifs : la matérialité, l'élément moral, et le lien de causalité.</p>
+
+<h2>1. Classification des infractions</h2>
+<p>Le Code pénal distingue trois catégories d'infractions selon leur gravité : les crimes, les délits et les contraventions (art. 111-1 CP). Cette classification, héritée du droit révolutionnaire, détermine la compétence des juridictions, la nature des peines, et les règles de procédure applicables.</p>
+
+<div class="focus-box">
+<strong>À retenir :</strong> La classification en crimes, délits et contraventions repose sur la nature de la peine principale encourue : réclusion criminelle ou détention criminelle perpétuelle pour les crimes, emprisonnement pour les délits, amende pour les contraventions. Le législateur ne peut pas créer un crime puni d'une simple amende.
+</div>
+
+<h3>1.1 Les crimes</h3>
+<p>Les crimes constituent les infractions les plus graves. Ils sont définis par l'article 111-1 du Code pénal comme les infractions punies de la réclusion criminelle ou de la détention criminelle perpétuelle. La réclusion criminelle est une peine d'emprisonnement de plus de dix ans (art. 131-1 CP). Les crimes relèvent de la compétence de la cour d'assises et sont jugés avec jury. Exemples : l'assassinat (art. 221-1 CP), le meurtre (art. 221-2 CP), le viol (art. 222-24 CP).</p>
+
+<h3>1.2 Les délits</h3>
+<p>Les délits sont les infractions punies de l'emprisonnement (art. 111-1 CP). L'emprisonnement est une peine privative de liberté de dix ans au plus (art. 131-2 CP). Les délits relèvent de la compétence du tribunal correctionnel. La procédure est plus souple que pour les crimes : le jugement se fait sans jury. Exemples : les violences volontaires ayant entraîné une ITT de moins de 8 jours (art. 222-7 CP), le vol simple (art. 311-1 CP), l'escroquerie (art. 313-1 CP).</p>
+
+<h3>1.3 Les contraventions</h3>
+<p>Les contraventions sont les infractions les moins graves, punies d'une amende (art. 111-1 CP, art. R610-1 et s. CP). Elles relèvent de la compétence du tribunal de police. Les contraventions sont classées en 5 classes selon le montant de l'amende maximale (de 38 € à 3 750 € pour une contravention de 5e classe). Exemples : les infractions au code de la route, les tapages nocturnes, les outrages aux agents.</p>
+
+<h2>2. Les éléments constitutifs de l'infraction</h2>
+<p>Toute infraction pénale se compose de trois éléments cumulatifs : l'élément légal (la loi pénale), l'élément matériel (le fait matériel), et l'élément moral (l'intention ou la faute). L'absence de l'un de ces éléments entraîne l'acquittement ou la relaxe.</p>
+
+<h3>2.1 L'élément légal</h3>
+<p>L'élément légal est la disposition légale qui définit l'infraction et la peine. Il découle du principe de légalité. Le juge doit vérifier que les faits reprochés entrent dans la définition légale de l'infraction. Cette qualification est soumise au contrôle de la Cour de cassation.</p>
+
+<h3>2.2 L'élément matériel (fait matériel)</h3>
+<p>L'élément matériel est le comportement réprimé par la loi pénale. Il peut consister en une action (comportement actif) ou une omission (comportement passif). L'omission n'est pénalement réprimée que lorsque la loi l'impose expressément ou lorsque l'auteur avait un devoir d'agir (art. 121-1 CP : "constitue une infraction l'action ou l'omission volontairement commise en violation d'une loi »). Par exemple, le non-assistance à personne en danger (art. 223-6 CP) pénalise une omission.</p>
+
+<h3>2.3 L'élément moral (faute)</h3>
+<p>L'élément moral est la faute qui accompagne le fait matériel. Le droit pénal français repose sur le principe de la culpabilité : nul n'est punissable sans faute (art. 121-1 CP). La faute pénale se caractérise généralement par l'intention (dol) : l'auteur a voulu le fait et ses conséquences. Pour certains délits et contraventions, une simple imprudence ou négligence (faute non intentionnelle) suffit. Il existe également des infractions dites de danger, où l'élément moral est atténué ou spécifique.</p>
+
+<h2>3. Le lien de causalité</h2>
+<p>Le lien de causalité est nécessaire pour relier l'acte de l'auteur au résultat constitutif de l'infraction. Il doit exister une relation directe entre le fait matériel et le résultat. La jurisprudence applique la théorie de l'équivalence des conditions : tout fait qui, sans lequel le résultat ne se serait pas produit, est considéré comme cause du résultat. Cependant, des causes étrangères (force majeure, faute de la victime, cas fortuit) peuvent rompre le lien de causalité et exclure la responsabilité pénale.</p>
+
+<h2>4. La consommation et la tentative</h2>
+<h3>4.1 La consommation</h3>
+<p>L'infraction est consommée lorsque tous ses éléments constitutifs sont réunis. La consommation n'exige pas nécessairement que le résultat prévu par la loi soit atteint : certaines infractions sont dites formelles ou instantanées (délits de possession, outrage), d'autres sont matérielles ou continues (vol, escroquerie). Pour les infractions matérielles, la consommation intervient au moment où le résultat est atteint.</p>
+
+<h3>4.2 La tentative</h3>
+<p>L'article 121-4 du Code pénal dispose que « la tentative d'un crime ou d'un délit, lorsqu'elle a été manifestée par un commencement d'exécution, est punissable ». La tentative exige un commencement d'exécution, c'est-à-dire des actes matériels qui vont directement au-delà de la simple préparation. La tentative est punie des mêmes peines que l'infraction consommée, mais le juge peut réduire la peine (art. 121-5 CP). Les contraventions ne sont pas punissables à l'état de tentative.</p>
+
+<div class="focus-box">
+<strong>Précision :</strong> Le commencement d'exécution se distingue de la simple préparation par sa proximité avec l'infraction consommée. La jurisprudence retient généralement que le commencement d'exécution existe lorsque les actes accomplis révèlent de manière non équivoque la volonté de l'auteur de commettre l'infraction.
+</div>
+
+<div class="citation">
+"Constitue une infraction l'action ou l'omission volontairement commise en violation d'une loi." — Article 121-1 du Code pénal
+</div>
+
+<h2>5. Quiz</h2>
+<div class="quiz-question" data-correct="2">
+<p class="font-semibold mb-2">1. Quel est le critère de classification entre crime, délit et contravention ?</p>
+<div class="space-y-2">
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">La gravité subjective du comportement</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">La compétence de la juridiction saisie</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">La nature de la peine principale encourue</button>
+</div>
+<p class="quiz-feedback hidden mt-2 text-sm"></p>
+</div>
+
+<div class="quiz-question mt-6" data-correct="0">
+<p class="font-semibold mb-2">2. La tentative est-elle punissable pour les contraventions ?</p>
+<div class="space-y-2">
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Non, la tentative n'est punissable que pour les crimes et les délits</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Oui, pour toutes les catégories d'infractions</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Oui, mais seulement pour les contraventions de 4e et 5e classe</button>
+</div>
+<p class="quiz-feedback hidden mt-2 text-sm"></p>
+</div>
+
+<div class="quiz-question mt-6" data-correct="1">
+<p class="font-semibold mb-2">3. Qu'est-ce que le commencement d'exécution ?</p>
+<div class="space-y-2">
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">L'intention seule de commettre une infraction</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Des actes matériels allant directement au-delà de la simple préparation</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">L'achat du matériel nécessaire à la commission de l'infraction</button>
+</div>
+<p class="quiz-feedback hidden mt-2 text-sm"></p>
+</div>
+
+<h2>Boîte à outils</h2>
+<div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg space-y-4">
+<div>
+<h4 class="font-semibold mb-1">Citation à retenir</h4>
+<p id="citation-box" class="text-sm text-slate-600 dark:text-slate-300">L'article 121-1 du Code pénal dispose que constitue une infraction l'action ou l'omission volontairement commise en violation d'une loi. Ce texte consacre le principe de la culpabilité : nul n'est punissable sans faute.</p>
+</div>
+<div class="flex space-x-3">
+<button onclick="navigator.clipboard.writeText(document.getElementById('citation-box').textContent)" class="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm hover:bg-blue-700">Copier la citation</button>
+<button onclick="window.print()" class="px-4 py-2 bg-slate-200 text-slate-800 rounded-lg text-sm hover:bg-slate-300">Imprimer la leçon</button>
+</div>
+</div>
+</article>
+</main>
+</div>
+
+<footer class="border-t border-slate-200 dark:border-slate-800 mt-12 bg-slate-50 dark:bg-slate-900">
+<div class="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center">
+<div class="text-sm text-slate-500 mb-4 md:mb-0">JurisMaster 2025 — Formation au droit français</div>
+<div class="flex space-x-6 text-sm text-slate-500">
+<a href="#" class="hover:text-blue-700">Mentions légales</a>
+<a href="#" class="hover:text-blue-700">Contact</a>
+</div>
+</div>
+</footer>
+
+<script>
+document.getElementById('dark-toggle').addEventListener('click', () => {
+document.documentElement.classList.toggle('dark');
+localStorage.setItem('jm.theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+});
+
+const JM = {
+get(){ try { return JSON.parse(localStorage.getItem('jurismaster.v1')) || {}; } catch { return {}; } },
+set(s){ localStorage.setItem('jurismaster.v1', JSON.stringify(s)); },
+addXP(n){ const s=JM.get(); s.xp=(s.xp||0)+n; JM.set(s); window.dispatchEvent(new CustomEvent('jm:xp',{detail:n})); },
+completeLesson(slug, xp=50){ const s=JM.get(); s.lessonsCompleted=[...new Set([...(s.lessonsCompleted||[]),slug])]; s.xp=(s.xp||0)+xp; JM.set(s); },
+touchStreak(){ const s=JM.get(); const today=new Date().toISOString().slice(0,10); const last=s.streak?.lastVisit; if(last&&last!==today){const d=new Date(today)-new Date(last); if(d===86400000){s.streak.count=(s.streak.count||0)+1;} else if(d>86400000){s.streak.count=1;} s.streak.lastVisit=today;} else if(!last){s.streak={count:1,lastVisit:today};} JM.set(s); }
+};
+JM.touchStreak();
+JM.completeLesson('droit-penal/infraction', 50);
+
+const s = JM.get();
+const progress = Math.min(100, Math.round(((s.lessonsCompleted||[]).length / 32) * 100));
+document.querySelectorAll('[data-progress]').forEach(el => el.textContent = progress);
+document.querySelectorAll('[data-progress-bar]').forEach(el => el.style.width = progress + '%');
+
+document.querySelectorAll('.quiz-question').forEach((q, qi) => {
+const correct = parseInt(q.dataset.correct);
+const feedback = q.querySelector('.quiz-feedback');
+const explanations = [
+["La gravité subjective n'est pas un critère juridique de classification.","La compétence de la juridiction est une conséquence de la classification, pas son critère.","Exact ! La classification repose sur la nature de la peine principale encourue : réclusion pour les crimes, emprisonnement pour les délits, amende pour les contraventions (art. 111-1 CP)."],
+["Exact ! L'article 121-4 CP dispose que la tentative est punissable pour les crimes et les délits, mais pas pour les contraventions.","La tentative n'est pas punissable pour toutes les infractions.","La tentative n'est pas punissable pour les contraventions, quelle que soit leur classe."],
+["L'intention seule ne constitue pas le commencement d'exécution ; c'est la simple préparation.","Exact ! Le commencement d'exécution est constitué par des actes matériels allant directement au-delà de la simple préparation (art. 121-4 CP).","L'achat de matériel relève généralement de la préparation, pas du commencement d'exécution."]
+];
+q.querySelectorAll('.quiz-btn').forEach((btn, bi) => {
+btn.addEventListener('click', () => {
+if(q.classList.contains('answered')) return;
+q.classList.add('answered');
+if(bi === correct){
+btn.classList.add('bg-green-100', 'border-green-500', 'text-green-800');
+feedback.textContent = explanations[qi][bi];
+feedback.className = 'quiz-feedback mt-2 text-sm text-green-700';
+} else {
+btn.classList.add('bg-red-100', 'border-red-500', 'text-red-800');
+q.querySelectorAll('.quiz-btn')[correct].classList.add('bg-green-100', 'border-green-500');
+feedback.textContent = explanations[qi][bi];
+feedback.className = 'quiz-feedback mt-2 text-sm text-red-700';
+}
+feedback.classList.remove('hidden');
+});
+});
+});
+</script>
+</body>
+</html>

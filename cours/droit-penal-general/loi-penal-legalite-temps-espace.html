@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La loi penale (legalite, temps, espace) - Droit penal general</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', sans-serif; line-height: 1.8; }
+h1, h2, h3 { font-family: 'Playfair Display', serif; }
+.prose h2 { font-size: 2rem; font-weight: 700; margin-top: 3rem; margin-bottom: 1.5rem; color: #1e3a8a; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; }
+.prose h3 { font-size: 1.5rem; font-weight: 600; margin-top: 2rem; margin-bottom: 1rem; color: #1e40af; }
+.prose p { margin-bottom: 1.5rem; color: #334155; text-align: justify; }
+.sidebar-link.active { color: #1d4ed8; font-weight: 600; border-left: 3px solid #1d4ed8; }
+.focus-box { background-color: #f8fafc; border-left: 4px solid #3b82f6; padding: 1.5rem; border-radius: 0.5rem; margin: 2rem 0; }
+.citation { font-style: italic; color: #475569; border-left: 2px solid #cbd5e1; padding-left: 1.5rem; margin: 2rem 0; }
+</style>
+</head>
+<body class="bg-white dark:bg-slate-900">
+<script>tailwind.config={darkMode:'class'}</script>
+<script>
+(function(){
+const stored = localStorage.getItem('jm.theme');
+if(stored === 'dark' || (!stored && matchMedia('(prefers-color-scheme: dark)').matches)){
+document.documentElement.classList.add('dark');
+}
+})();
+</script>
+
+<nav class="sticky top-0 z-50 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-6 py-3 flex justify-between items-center">
+<a href="../../index.html" class="text-xl font-bold tracking-tight">JURIS<span class="text-blue-700">MASTER</span></a>
+<div class="flex items-center space-x-4">
+<button id="dark-toggle" aria-label="Basculer mode sombre" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800">🌓</button>
+<span class="text-sm text-slate-500">Progression : <span data-progress>0</span>%</span>
+<div class="w-32 h-2 bg-slate-100 rounded-full overflow-hidden">
+<div class="bg-blue-600 h-full" data-progress-bar style="width:0%"></div>
+</div>
+</div>
+</nav>
+
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row">
+<aside class="w-full lg:w-72 bg-slate-50 dark:bg-slate-800 border-r border-slate-200 dark:border-slate-700 p-6 lg:sticky lg:top-14 lg:h-[calc(100vh-3.5rem)] lg:overflow-y-auto">
+<div class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-3">Droit pénal général</div>
+<a href="../droit-penal-general.html" class="block text-sm text-blue-700 hover:underline mb-6">← Sommaire</a>
+<ul class="space-y-2 text-sm">
+<li><a href="introduction-droit-penal.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C1. Introduction au droit pénal</a></li>
+<li><a href="loi-penal-legalite-temps-espace.html" class="sidebar-link active block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C2. La loi pénale</a></li>
+<li><a href="infraction-penale-classification.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C3. L'infraction pénale</a></li>
+<li><a href="auteur-infraction-coaction-complicite.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C4. L'auteur de l'infraction</a></li>
+<li><a href="victime-action-publique.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C5. La victime et l'action publique</a></li>
+<li><a href="irresponsabilite-extinction-punissabilite.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C6. Causes d'irresponsabilité</a></li>
+<li><a href="peines-principes-types.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C7. Les peines</a></li>
+<li><a href="mesures-surete.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C8. Les mesures de sûreté</a></li>
+<li><a href="recidivite-contrainte-penale.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C9. Récidive et contrainte pénale</a></li>
+<li><a href="prescription-justice-penale-mineur.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C10. Prescription et justice pénale du mineur</a></li>
+</ul>
+</aside>
+
+<main class="flex-1 p-6 lg:p-12 prose dark:prose-invert max-w-none">
+<article>
+<div class="flex items-center space-x-2 text-sm text-slate-500 mb-4">
+<a href="../../index.html" class="hover:underline">Accueil</a>
+<span>/</span>
+<a href="../droit-penal-general.html" class="hover:underline">Droit pénal général</a>
+<span>/</span>
+<span class="text-slate-800 dark:text-slate-200">C2</span>
+</div>
+<h1 class="text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white mb-4">La loi pénale</h1>
+<p class="text-lg text-slate-600 dark:text-slate-300 mb-8">Principe de légalité, application de la loi pénale dans le temps et dans l'espace : les règles fondamentales de la répression.</p>
+
+<h2>1. Le principe de légalité des délits et des peines</h2>
+<p>Le principe de légalité, consacré par l'article 8 de la Déclaration des Droits de l'Homme et du Citoyen et par l'article 111-1 du Code pénal, constitue la pierre angulaire du droit pénal. Il se décline en trois exigences cumulatives : la loi doit définir l'infraction (nullum crimen sine lege), la loi doit fixer la peine (nulla poena sine lege), et la loi doit être écrite, précise et rigoureuse.</p>
+
+<div class="focus-box">
+<strong>À retenir :</strong> Le principe de légalité s'impose à toutes les branches du droit pénal : il interdit au juge de créer une infraction par interprétation extensive, de créer une peine non prévue par la loi, ou d'aggraver une peine au-delà de ce que la loi prescrit. C'est une garantie fondamentale des libertés individuelles.
+</div>
+
+<h3>1.1 Nullum crimen sine lege</h3>
+<p>Aucune infraction ne peut être constituée sans une base légale. Le comportement incriminé doit être expressément décrit par une loi antérieure au fait. L'article 111-2 du Code pénal dispose que « la loi pénale est d'interprétation stricte ». Cette règle d'interprétation stricte signifie que, en cas de doute sur le sens d'une loi pénale, le juge doit choisir l'interprétation la plus favorable à l'accusé (principe in dubio pro reo).</p>
+
+<h3>1.2 Nulla poena sine lege</h3>
+<p>Aucune peine ne peut être appliquée sans avoir été prévue par la loi. Le juge ne peut pas inventer une peine, même pour un comportement particulièrement odieux. L'article 111-3 du Code pénal dispose que « la loi pénale ne s'applique qu'aux personnes qui ont commis une infraction postérieurement à son entrée en vigueur ». C'est l'expression du principe de non-rétroactivité de la loi pénale défavorable.</p>
+
+<h3>1.3 La précision de la loi</h3>
+<p>La loi pénale doit être suffisamment précise pour que le citoyen puisse connaître les comportements interdits et les peines encourues. Cependant, une certaine souplesse est admise : la loi peut employer des notions indéterminées (bonnes mœurs, usage de la force, etc.) à condition que leur sens puisse être précisé par la jurisprudence ou le contexte. La Cour européenne des droits de l'homme contrôle cette précision au regard de l'article 7 de la CEDH.</p>
+
+<h2>2. La loi pénale dans le temps</h2>
+<h3>2.1 La non-rétroactivité de la loi pénale défavorable</h3>
+<p>L'article 112-1 du Code pénal dispose que « la loi pénale n'est pas rétroactive, sauf lorsqu'elle est moins sévère ». Ce principe, déjà affirmé par l'article 8 de la Déclaration de 1789, interdit d'appliquer une loi pénale à des faits antérieurs à son entrée en vigueur lorsque cette loi est plus sévère que celle en vigueur au moment des faits. Il s'agit d'une garantie essentielle contre l'arbitraire législatif.</p>
+
+<h3>2.2 La rétroactivité favorable (lex mitior)</h3>
+<p>L'article 112-1 du Code pénal autorise expressément la rétroactivité de la loi pénale lorsqu'elle est moins sévère. Si une loi postérieure au fait abroge l'infraction, en modifie les éléments constitutifs, ou atténue la peine, elle s'applique immédiatement aux faits antérieurs non jugés définitivement. Cette règle de la loi pénale plus douce (lex mitior) s'applique également aux condamnations définitives en ce qui concerne l'exécution de la peine.</p>
+
+<h3>2.3 La continuité de la loi et la répétition des faits</h3>
+<p>Lorsqu'un fait matériellement unique se prolonge dans le temps et chevauche l'entrée en vigueur d'une nouvelle loi, le juge applique la loi nouvelle si elle est moins sévère, et la loi ancienne si elle est plus sévère. La jurisprudence a élaboré des critères pour déterminer la loi applicable en cas de fait continu ou d'état continu.</p>
+
+<h2>3. La loi pénale dans l'espace</h2>
+<h3>3.1 La territorialité de la loi pénale française</h3>
+<p>Le principe général est la territorialité : la loi pénale française s'applique aux infractions commises sur le territoire français (art. 113-1 du Code pénal). Le territoire français comprend la métropole, les départements et régions d'outre-mer, et les collectivités d'outre-mer. Les infractions commises à bord des navires et aéronefs français sont réputées commises sur le territoire français (art. 113-3 et 113-4 CP).</p>
+
+<h3>3.2 L'extraterritorialité active</h3>
+<p>L'article 113-5 du Code pénal prévoit que la loi française s'applique aux crimes commis par un Français ou par une personne résidant habituellement sur le territoire français hors de ce territoire. Pour les délits, l'extraterritorialité active est subordonnée à une double incrimination : le fait doit être punissable tant par la loi française que par la loi du lieu de commission (art. 113-6 et 113-7 CP). Cette condition de double incrimination ne s'applique pas aux infractions de terrorisme, de traite des êtres humains, et à certaines infractions sexuelles sur mineurs.</p>
+
+<h3>3.3 L'extraterritorialité passive</h3>
+<p>L'article 113-8 du Code pénal dispose que la loi française s'applique aux crimes commis par un étranger hors du territoire français contre un ressortissant français. Pour les délits, l'extraterritorialité passive requiert également la double incrimination (art. 113-9 et 113-10 CP) et une dénonciation par le ministère public ou une plainte de la victime ou de ses ayants droit.</p>
+
+<div class="focus-box">
+<strong>Précision :</strong> L'extraterritorialité du droit pénal français a été considérablement élargie par les lois de 2008 et 2012 relatives au terrorisme et aux infractions sexuelles sur mineurs. Ces infractions peuvent désormais être poursuivies en France sans condition de double incrimination, renforçant ainsi la protection des victimes.
+</div>
+
+<h2>4. La concurrence des lois pénales</h2>
+<p>La concurrence des lois pénales se présente lorsqu'un même fait peut être réprimé par plusieurs textes. Le principe est l'absorption : la loi spéciale absorbe la loi générale (lex specialis derogat legi generali). Si un texte réprime spécifiquement un comportement, il écarte l'application d'un texte général. En l'absence de spécialité, le juge applique le texte le plus sévère, sauf si la loi nouvelle est moins sévère (principe de la lex mitior).</p>
+
+<div class="citation">
+"La loi pénale est d'interprétation stricte." — Article 111-2 du Code pénal
+</div>
+
+<h2>5. Quiz</h2>
+<div class="quiz-question" data-correct="1">
+<p class="font-semibold mb-2">1. Quelle règle s'applique lorsqu'une loi pénale postérieure est moins sévère que celle en vigueur au moment des faits ?</p>
+<div class="space-y-2">
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">La loi ancienne s'applique toujours, quelle que soit sa sévérité</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">La loi nouvelle s'applique immédiatement (principe de la lex mitior)</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Le juge choisit la loi qu'il estime la plus adaptée</button>
+</div>
+<p class="quiz-feedback hidden mt-2 text-sm"></p>
+</div>
+
+<div class="quiz-question mt-6" data-correct="2">
+<p class="font-semibold mb-2">2. Pour les délits commis par un Français à l'étranger, quelle condition est généralement requise ?</p>
+<div class="space-y-2">
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Aucune condition, la loi française s'applique automatiquement</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">La victime doit être française</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">La double incrimination (le fait doit être punissable par la loi française et par la loi du lieu)</button>
+</div>
+<p class="quiz-feedback hidden mt-2 text-sm"></p>
+</div>
+
+<div class="quiz-question mt-6" data-correct="0">
+<p class="font-semibold mb-2">3. Quelle est la règle d'interprétation des lois pénales en cas de doute ?</p>
+<div class="space-y-2">
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Interprétation stricte au profit de l'accusé (in dubio pro reo)</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Interprétation extensive pour mieux protéger la société</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Interprétation selon l'intention du législateur, même si elle défavorise l'accusé</button>
+</div>
+<p class="quiz-feedback hidden mt-2 text-sm"></p>
+</div>
+
+<h2>Boîte à outils</h2>
+<div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg space-y-4">
+<div>
+<h4 class="font-semibold mb-1">Citation à retenir</h4>
+<p id="citation-box" class="text-sm text-slate-600 dark:text-slate-300">L'article 111-1 du Code pénal dispose que la loi pénale détermine les infractions et fixe les peines. Nul ne peut être puni pour une infraction qui, au moment où elle a été commise, n'était pas réprimée par une loi pénale.</p>
+</div>
+<div class="flex space-x-3">
+<button onclick="navigator.clipboard.writeText(document.getElementById('citation-box').textContent)" class="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm hover:bg-blue-700">Copier la citation</button>
+<button onclick="window.print()" class="px-4 py-2 bg-slate-200 text-slate-800 rounded-lg text-sm hover:bg-slate-300">Imprimer la leçon</button>
+</div>
+</div>
+</article>
+</main>
+</div>
+
+<footer class="border-t border-slate-200 dark:border-slate-800 mt-12 bg-slate-50 dark:bg-slate-900">
+<div class="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center">
+<div class="text-sm text-slate-500 mb-4 md:mb-0">JurisMaster 2025 — Formation au droit français</div>
+<div class="flex space-x-6 text-sm text-slate-500">
+<a href="#" class="hover:text-blue-700">Mentions légales</a>
+<a href="#" class="hover:text-blue-700">Contact</a>
+</div>
+</div>
+</footer>
+
+<script>
+document.getElementById('dark-toggle').addEventListener('click', () => {
+document.documentElement.classList.toggle('dark');
+localStorage.setItem('jm.theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+});
+
+const JM = {
+get(){ try { return JSON.parse(localStorage.getItem('jurismaster.v1')) || {}; } catch { return {}; } },
+set(s){ localStorage.setItem('jurismaster.v1', JSON.stringify(s)); },
+addXP(n){ const s=JM.get(); s.xp=(s.xp||0)+n; JM.set(s); window.dispatchEvent(new CustomEvent('jm:xp',{detail:n})); },
+completeLesson(slug, xp=50){ const s=JM.get(); s.lessonsCompleted=[...new Set([...(s.lessonsCompleted||[]),slug])]; s.xp=(s.xp||0)+xp; JM.set(s); },
+touchStreak(){ const s=JM.get(); const today=new Date().toISOString().slice(0,10); const last=s.streak?.lastVisit; if(last&&last!==today){const d=new Date(today)-new Date(last); if(d===86400000){s.streak.count=(s.streak.count||0)+1;} else if(d>86400000){s.streak.count=1;} s.streak.lastVisit=today;} else if(!last){s.streak={count:1,lastVisit:today};} JM.set(s); }
+};
+JM.touchStreak();
+JM.completeLesson('droit-penal/loi-penale', 50);
+
+const s = JM.get();
+const progress = Math.min(100, Math.round(((s.lessonsCompleted||[]).length / 32) * 100));
+document.querySelectorAll('[data-progress]').forEach(el => el.textContent = progress);
+document.querySelectorAll('[data-progress-bar]').forEach(el => el.style.width = progress + '%');
+
+document.querySelectorAll('.quiz-question').forEach((q, qi) => {
+const correct = parseInt(q.dataset.correct);
+const feedback = q.querySelector('.quiz-feedback');
+const explanations = [
+["La loi ancienne ne s'applique pas toujours ; le principe de la lex mitior prévaut.","Exact ! L'article 112-1 CP dispose que la loi pénale rétroactive lorsqu'elle est moins sévère (lex mitior).","Le juge ne choisit pas librement la loi applicable ; il est lié par les règles de conflit de lois pénales dans le temps."],
+["Ce n'est pas automatique pour les délits, la double incrimination est généralement requise.","La nationalité de la victime n'est pas requise pour l'extraterritorialité active (art. 113-5 CP).","Exact ! Pour les délits commis par un Français à l'étranger, la double incrimination est généralement requise (art. 113-6 CP), sauf exceptions (terrorisme, traite, certaines infractions sexuelles)."],
+["Exact ! L'article 111-2 CP dispose que la loi pénale est d'interprétation stricte, ce qui impose de privilégier l'interprétation favorable à l'accusé en cas de doute.","L'interprétation extensive est interdite en droit pénal.","L'intention du législateur ne peut justifier une interprétation défavorable à l'accusé."]
+];
+q.querySelectorAll('.quiz-btn').forEach((btn, bi) => {
+btn.addEventListener('click', () => {
+if(q.classList.contains('answered')) return;
+q.classList.add('answered');
+if(bi === correct){
+btn.classList.add('bg-green-100', 'border-green-500', 'text-green-800');
+feedback.textContent = explanations[qi][bi];
+feedback.className = 'quiz-feedback mt-2 text-sm text-green-700';
+} else {
+btn.classList.add('bg-red-100', 'border-red-500', 'text-red-800');
+q.querySelectorAll('.quiz-btn')[correct].classList.add('bg-green-100', 'border-green-500');
+feedback.textContent = explanations[qi][bi];
+feedback.className = 'quiz-feedback mt-2 text-sm text-red-700';
+}
+feedback.classList.remove('hidden');
+});
+});
+});
+</script>
+</body>
+</html>

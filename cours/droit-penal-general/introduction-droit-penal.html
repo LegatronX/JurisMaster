@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Introduction au droit penal - Droit penal general</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', sans-serif; line-height: 1.8; }
+h1, h2, h3 { font-family: 'Playfair Display', serif; }
+.prose h2 { font-size: 2rem; font-weight: 700; margin-top: 3rem; margin-bottom: 1.5rem; color: #1e3a8a; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; }
+.prose h3 { font-size: 1.5rem; font-weight: 600; margin-top: 2rem; margin-bottom: 1rem; color: #1e40af; }
+.prose p { margin-bottom: 1.5rem; color: #334155; text-align: justify; }
+.sidebar-link.active { color: #1d4ed8; font-weight: 600; border-left: 3px solid #1d4ed8; }
+.focus-box { background-color: #f8fafc; border-left: 4px solid #3b82f6; padding: 1.5rem; border-radius: 0.5rem; margin: 2rem 0; }
+.citation { font-style: italic; color: #475569; border-left: 2px solid #cbd5e1; padding-left: 1.5rem; margin: 2rem 0; }
+</style>
+</head>
+<body class="bg-white dark:bg-slate-900">
+<script>tailwind.config={darkMode:'class'}</script>
+<script>
+(function(){
+const stored = localStorage.getItem('jm.theme');
+if(stored === 'dark' || (!stored && matchMedia('(prefers-color-scheme: dark)').matches)){
+document.documentElement.classList.add('dark');
+}
+})();
+</script>
+
+<nav class="sticky top-0 z-50 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-6 py-3 flex justify-between items-center">
+<a href="../../index.html" class="text-xl font-bold tracking-tight">JURIS<span class="text-blue-700">MASTER</span></a>
+<div class="flex items-center space-x-4">
+<button id="dark-toggle" aria-label="Basculer mode sombre" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800">🌓</button>
+<span class="text-sm text-slate-500">Progression : <span data-progress>0</span>%</span>
+<div class="w-32 h-2 bg-slate-100 rounded-full overflow-hidden">
+<div class="bg-blue-600 h-full" data-progress-bar style="width:0%"></div>
+</div>
+</div>
+</nav>
+
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row">
+<aside class="w-full lg:w-72 bg-slate-50 dark:bg-slate-800 border-r border-slate-200 dark:border-slate-700 p-6 lg:sticky lg:top-14 lg:h-[calc(100vh-3.5rem)] lg:overflow-y-auto">
+<div class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-3">Droit pénal général</div>
+<a href="../droit-penal-general.html" class="block text-sm text-blue-700 hover:underline mb-6">← Sommaire</a>
+<ul class="space-y-2 text-sm">
+<li><a href="introduction-droit-penal.html" class="sidebar-link active block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C1. Introduction au droit pénal</a></li>
+<li><a href="loi-penal-legalite-temps-espace.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C2. La loi pénale</a></li>
+<li><a href="infraction-penale-classification.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C3. L'infraction pénale</a></li>
+<li><a href="auteur-infraction-coaction-complicite.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C4. L'auteur de l'infraction</a></li>
+<li><a href="victime-action-publique.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C5. La victime et l'action publique</a></li>
+<li><a href="irresponsabilite-extinction-punissabilite.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C6. Causes d'irresponsabilité</a></li>
+<li><a href="peines-principes-types.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C7. Les peines</a></li>
+<li><a href="mesures-surete.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C8. Les mesures de sûreté</a></li>
+<li><a href="recidivite-contrainte-penale.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C9. Récidive et contrainte pénale</a></li>
+<li><a href="prescription-justice-penale-mineur.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">C10. Prescription et justice pénale du mineur</a></li>
+</ul>
+</aside>
+
+<main class="flex-1 p-6 lg:p-12 prose dark:prose-invert max-w-none">
+<article>
+<div class="flex items-center space-x-2 text-sm text-slate-500 mb-4">
+<a href="../../index.html" class="hover:underline">Accueil</a>
+<span>/</span>
+<a href="../droit-penal-general.html" class="hover:underline">Droit pénal général</a>
+<span>/</span>
+<span class="text-slate-800 dark:text-slate-200">C1</span>
+</div>
+<h1 class="text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white mb-4">Introduction au droit pénal</h1>
+<p class="text-lg text-slate-600 dark:text-slate-300 mb-8">Les fondements, fonctions et sources du droit pénal français : une approche des principes directeurs de la répression.</p>
+
+<h2>1. Définition et objet du droit pénal</h2>
+<p>Le droit pénal constitue la branche du droit qui définit les infractions, détermine les auteurs et les peines applicables, et organise la procédure de répression. Il se distingue du droit civil par la nature de la sanction : tandis que le droit civil vise à réparer un préjudice par une indemnisation, le droit pénal vise à punir un comportement prohibé par une peine afflictive ou infamante. L'objet du droit pénal est donc double : la protection de la société contre les comportements dangereux et la punition du coupable.</p>
+
+<div class="focus-box">
+<strong>À retenir :</strong> Le droit pénal est répressif (il punit) et protecteur (il protège la société). Cette dualité fondamentale se retrouve dans l'ensemble des institutions pénales, de la définition de l'infraction à l'exécution des peines.
+</div>
+
+<h2>2. Les fonctions du droit pénal</h2>
+<h3>2.1 La fonction de protection</h3>
+<p>La fonction première du droit pénal est de protéger la société contre les comportements qui portent atteinte aux biens juridiques fondamentaux : la vie, l'intégrité physique, la liberté, la propriété, l'État et ses institutions. Cette protection s'exerce par la délimitation d'un champ d'interdit : tout comportement tombant dans ce champ est qualifié d'infraction et expose son auteur à une peine. Le droit pénal protège également par la prévention : la menace de la peine vise à dissuader les comportements délinquants.</p>
+
+<h3>2.2 La fonction de punition</h3>
+<p>La punition est l'ancêtre historique du droit pénal. Elle répond à une exigence de justice rétributive : le coupable doit souffrir en proportion de la gravité de son acte. Cette fonction a été progressivement tempérée par des considérations utilitaristes et humanistes, conduisant à l'objectif d'insertion et de réinsertion sociale du condamné. L'article 130-1 du Code pénal dispose que les peines ont pour objet de sanctionner les auteurs d'infractions, de prévenir la commission des infractions, et de permettre l'insertion ou la réinsertion sociale des condamnés.</p>
+
+<h3>2.3 La fonction de réinsertion</h3>
+<p>La réinsertion sociale du condamné est devenue un objectif essentiel du droit pénal contemporain. La loi pénitentiaire du 24 novembre 2009 a consacré le principe selon lequel la peine vise à favoriser l'insertion sociale du condamné. Cette évolution se traduit par le développement des peines alternatives à l'incarcération, de la contrainte pénale, et des mesures d'individualisation de la peine.</p>
+
+<h2>3. Les sources du droit pénal</h2>
+<h3>3.1 La loi</h3>
+<p>La source principale du droit pénal est la loi, en application du principe de légalité des délits et des peines (art. 8 de la Déclaration des Droits de l'Homme et du Citoyen, art. 111-1 du Code pénal). Ce principe exige que l'infraction et la peine soient définies par une loi écrite, précise et rigoureuse. Aucun règlement, aucune jurisprudence, aucun usage ne peuvent créer une infraction ou une peine.</p>
+
+<h3>3.2 Le décret et le règlement</h3>
+<p>Le décret et le règlement peuvent compléter la loi pénale dans certaines limites. Ils peuvent instituer des contraventions (art. R610-1 et s. du Code pénal) et fixer les modalités d'application des peines. Cependant, ils ne peuvent créer des délits ou des crimes, ni instaurer des peines principales d'emprisonnement ou d'amende supérieures à certaines limites.</p>
+
+<h3>3.3 La jurisprudence</h3>
+<p>La jurisprudence n'est pas une source formelle du droit pénal en raison du principe de légalité. Cependant, elle joue un rôle essentiel d'interprétation des textes pénaux, de précision des notions indéterminées (bonnes mœurs, usage de la force, etc.), et d'adaptation du droit pénal aux évolutions sociales. La Cour de cassation, notamment sa chambre criminelle, assure l'unité de l'interprétation des lois pénales.</p>
+
+<h3>3.4 Les conventions internationales</h3>
+<p>Les conventions internationales constituent une source importante du droit pénal français, notamment en matière de droits de l'homme. La Convention européenne de sauvegarde des droits de l'homme (CEDH) influence directement le droit pénal français : nullum crimen sine lege (art. 7), interdiction de la torture (art. 3), droit à un procès équitable (art. 6). Les décisions de la Cour européenne des droits de l'homme peuvent contraindre la France à modifier sa législation pénale.</p>
+
+<h2>4. Le système dualiste : droit pénal général et droit pénal spécial</h2>
+<p>Le droit pénal français se structure autour d'une distinction fondamentale entre le droit pénal général et le droit pénal spécial. Le droit pénal général (étudié dans cette matière) définit les notions communes à toutes les infractions : la loi pénale, l'infraction, l'auteur, la victime, les causes d'irresponsabilité, les peines. Le droit pénal spécial (étudié en matière de droit pénal spécial) définit les infractions particulières : crimes contre les personnes, crimes contre les biens, infractions économiques, etc.</p>
+
+<div class="citation">
+"Nul ne sera accusé, arrêté ou détenu que dans les cas déterminés par la loi et selon les formes qu'elle a prescrites." — Article 7 de la Déclaration des Droits de l'Homme et du Citoyen de 1789
+</div>
+
+<h2>5. Quiz</h2>
+<div class="quiz-question" data-correct="1">
+<p class="font-semibold mb-2">1. Quelle est la source principale du droit pénal en application du principe de légalité ?</p>
+<div class="space-y-2">
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">La jurisprudence</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">La loi</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Les usages</button>
+</div>
+<p class="quiz-feedback hidden mt-2 text-sm"></p>
+</div>
+
+<div class="quiz-question mt-6" data-correct="2">
+<p class="font-semibold mb-2">2. Quel objectif de la peine a été consacré par la loi pénitentiaire de 2009 ?</p>
+<div class="space-y-2">
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">La vengeance sociale</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">L'exemplarité exclusive</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">L'insertion et la réinsertion sociale du condamné</button>
+</div>
+<p class="quiz-feedback hidden mt-2 text-sm"></p>
+</div>
+
+<div class="quiz-question mt-6" data-correct="0">
+<p class="font-semibold mb-2">3. La jurisprudence peut-elle créer une infraction pénale ?</p>
+<div class="space-y-2">
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Non, en raison du principe de légalité (art. 8 DDHC)</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Oui, lorsque la loi est muette sur un comportement dangereux</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Oui, mais seulement pour les contraventions</button>
+</div>
+<p class="quiz-feedback hidden mt-2 text-sm"></p>
+</div>
+
+<h2>Boîte à outils</h2>
+<div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg space-y-4">
+<div>
+<h4 class="font-semibold mb-1">Citation à retenir</h4>
+<p id="citation-box" class="text-sm text-slate-600 dark:text-slate-300">L'article 8 de la Déclaration des Droits de l'Homme et du Citoyen dispose que la loi ne doit établir que des peines strictement nécessaires, et nul ne doit être puni qu'en vertu d'une loi établie et promulguée antérieurement au délit.</p>
+</div>
+<div class="flex space-x-3">
+<button onclick="navigator.clipboard.writeText(document.getElementById('citation-box').textContent)" class="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm hover:bg-blue-700">Copier la citation</button>
+<button onclick="window.print()" class="px-4 py-2 bg-slate-200 text-slate-800 rounded-lg text-sm hover:bg-slate-300">Imprimer la leçon</button>
+</div>
+</div>
+</article>
+</main>
+</div>
+
+<footer class="border-t border-slate-200 dark:border-slate-800 mt-12 bg-slate-50 dark:bg-slate-900">
+<div class="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center">
+<div class="text-sm text-slate-500 mb-4 md:mb-0">JurisMaster 2025 — Formation au droit français</div>
+<div class="flex space-x-6 text-sm text-slate-500">
+<a href="#" class="hover:text-blue-700">Mentions légales</a>
+<a href="#" class="hover:text-blue-700">Contact</a>
+</div>
+</div>
+</footer>
+
+<script>
+document.getElementById('dark-toggle').addEventListener('click', () => {
+document.documentElement.classList.toggle('dark');
+localStorage.setItem('jm.theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+});
+
+const JM = {
+get(){ try { return JSON.parse(localStorage.getItem('jurismaster.v1')) || {}; } catch { return {}; } },
+set(s){ localStorage.setItem('jurismaster.v1', JSON.stringify(s)); },
+addXP(n){ const s=JM.get(); s.xp=(s.xp||0)+n; JM.set(s); window.dispatchEvent(new CustomEvent('jm:xp',{detail:n})); },
+completeLesson(slug, xp=50){ const s=JM.get(); s.lessonsCompleted=[...new Set([...(s.lessonsCompleted||[]),slug])]; s.xp=(s.xp||0)+xp; JM.set(s); },
+touchStreak(){ const s=JM.get(); const today=new Date().toISOString().slice(0,10); const last=s.streak?.lastVisit; if(last&&last!==today){const d=new Date(today)-new Date(last); if(d===86400000){s.streak.count=(s.streak.count||0)+1;} else if(d>86400000){s.streak.count=1;} s.streak.lastVisit=today;} else if(!last){s.streak={count:1,lastVisit:today};} JM.set(s); }
+};
+JM.touchStreak();
+JM.completeLesson('droit-penal/introduction', 50);
+
+const s = JM.get();
+const progress = Math.min(100, Math.round(((s.lessonsCompleted||[]).length / 32) * 100));
+document.querySelectorAll('[data-progress]').forEach(el => el.textContent = progress);
+document.querySelectorAll('[data-progress-bar]').forEach(el => el.style.width = progress + '%');
+
+document.querySelectorAll('.quiz-question').forEach((q, qi) => {
+const correct = parseInt(q.dataset.correct);
+const feedback = q.querySelector('.quiz-feedback');
+const explanations = [
+["La jurisprudence n'est pas une source formelle du droit pénal en raison du principe de légalité.","Exact ! Le principe de légalité (art. 8 DDHC, art. 111-1 CP) fait de la loi la seule source de l'infraction et de la peine.","Les usages ne peuvent créer d'infraction ni de peine."],
+["La vengeance sociale n'est pas un objectif légal de la peine.","L'exemplarité est un effet attendu mais pas l'objectif exclusif.","Exact ! La loi pénitentiaire du 24 novembre 2009 a consacré l'objectif d'insertion et de réinsertion sociale du condamné (art. 130-1 CP)."],
+["Exact ! La jurisprudence ne peut créer d'infraction en raison du principe de légalité (nullum crimen sine lege).","La jurisprudence ne peut suppléer la loi, même en cas de silence législatif.","La jurisprudence ne peut pas non plus créer de contraventions ; seul le règlement le peut dans certaines limites."]
+];
+q.querySelectorAll('.quiz-btn').forEach((btn, bi) => {
+btn.addEventListener('click', () => {
+if(q.classList.contains('answered')) return;
+q.classList.add('answered');
+if(bi === correct){
+btn.classList.add('bg-green-100', 'border-green-500', 'text-green-800');
+feedback.textContent = explanations[qi][bi];
+feedback.className = 'quiz-feedback mt-2 text-sm text-green-700';
+} else {
+btn.classList.add('bg-red-100', 'border-red-500', 'text-red-800');
+q.querySelectorAll('.quiz-btn')[correct].classList.add('bg-green-100', 'border-green-500');
+feedback.textContent = explanations[qi][bi];
+feedback.className = 'quiz-feedback mt-2 text-sm text-red-700';
+}
+feedback.classList.remove('hidden');
+});
+});
+});
+</script>
+</body>
+</html>

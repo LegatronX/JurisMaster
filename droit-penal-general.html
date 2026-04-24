@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Droit penal general - JurisMaster</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<style>body{font-family:'Inter',sans-serif}h1,h2{font-family:'Playfair Display',serif}</style>
+</head>
+<body class="bg-white dark:bg-slate-900">
+<script>tailwind.config={darkMode:'class'}</script>
+<script>
+(function(){
+const stored = localStorage.getItem('jm.theme');
+if(stored === 'dark' || (!stored && matchMedia('(prefers-color-scheme: dark)').matches)){
+document.documentElement.classList.add('dark');
+}
+})();
+</script>
+
+<nav class="sticky top-0 z-50 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-6 py-3 flex justify-between items-center">
+<a href="../index.html" class="text-xl font-bold tracking-tight">JURIS<span class="text-blue-700">MASTER</span></a>
+<div class="flex items-center space-x-4">
+<button id="dark-toggle" aria-label="Basculer mode sombre" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800">🌓</button>
+<span class="text-sm text-slate-500">Progression : <span data-progress>0</span>%</span>
+<div class="w-32 h-2 bg-slate-100 rounded-full overflow-hidden">
+<div class="bg-blue-600 h-full" data-progress-bar style="width:0%"></div>
+</div>
+</div>
+</nav>
+
+<div class="max-w-7xl mx-auto px-6 py-12">
+<div class="mb-8">
+<a href="../index.html" class="text-sm text-blue-700 hover:underline">← Retour à l'accueil</a>
+</div>
+<h1 class="text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white mb-4">Droit pénal général</h1>
+<p class="text-lg text-slate-600 dark:text-slate-300 mb-12 max-w-3xl">Les principes fondamentaux de la répression pénale : loi pénale, infraction, auteur, peines et mesures de sûreté.</p>
+
+<div class="grid gap-8 md:grid-cols-2">
+<div>
+<div class="flex items-center space-x-3 mb-4">
+<div class="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center text-blue-700 dark:text-blue-300 font-bold">1</div>
+<h2 class="text-2xl font-bold text-slate-900 dark:text-white">Introduction et loi pénale</h2>
+</div>
+<div class="space-y-3">
+<a href="cours/droit-penal-general/introduction-droit-penal.html" class="block p-4 bg-slate-50 dark:bg-slate-800 rounded-lg hover:bg-blue-50 dark:hover:bg-slate-700 transition">
+<div class="font-semibold text-slate-900 dark:text-white">C1. Introduction au droit pénal</div>
+<div class="text-sm text-slate-500 mt-1">Fonctions, sources et principes généraux du droit pénal</div>
+</a>
+<a href="cours/droit-penal-general/loi-penal-legalite-temps-espace.html" class="block p-4 bg-slate-50 dark:bg-slate-800 rounded-lg hover:bg-blue-50 dark:hover:bg-slate-700 transition">
+<div class="font-semibold text-slate-900 dark:text-white">C2. La loi pénale</div>
+<div class="text-sm text-slate-500 mt-1">Légalité, application dans le temps et dans l'espace</div>
+</a>
+<a href="cours/droit-penal-general/infraction-penale-classification.html" class="block p-4 bg-slate-50 dark:bg-slate-800 rounded-lg hover:bg-blue-50 dark:hover:bg-slate-700 transition">
+<div class="font-semibold text-slate-900 dark:text-white">C3. L'infraction pénale</div>
+<div class="text-sm text-slate-500 mt-1">Classification, éléments constitutifs, tentative</div>
+</a>
+</div>
+</div>
+
+<div>
+<div class="flex items-center space-x-3 mb-4">
+<div class="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center text-blue-700 dark:text-blue-300 font-bold">2</div>
+<h2 class="text-2xl font-bold text-slate-900 dark:text-white">Auteur, victime et responsabilité</h2>
+</div>
+<div class="space-y-3">
+<a href="cours/droit-penal-general/auteur-infraction-coaction-complicite.html" class="block p-4 bg-slate-50 dark:bg-slate-800 rounded-lg hover:bg-blue-50 dark:hover:bg-slate-700 transition">
+<div class="font-semibold text-slate-900 dark:text-white">C4. L'auteur de l'infraction</div>
+<div class="text-sm text-slate-500 mt-1">Coaction, complicité, instigation et auteur intellectuel</div>
+</a>
+<a href="cours/droit-penal-general/victime-action-publique.html" class="block p-4 bg-slate-50 dark:bg-slate-800 rounded-lg hover:bg-blue-50 dark:hover:bg-slate-700 transition">
+<div class="font-semibold text-slate-900 dark:text-white">C5. La victime et l'action publique</div>
+<div class="text-sm text-slate-500 mt-1">Action publique, action civile, partie civile</div>
+</a>
+<a href="cours/droit-penal-general/irresponsabilite-extinction-punissabilite.html" class="block p-4 bg-slate-50 dark:bg-slate-800 rounded-lg hover:bg-blue-50 dark:hover:bg-slate-700 transition">
+<div class="font-semibold text-slate-900 dark:text-white">C6. Causes d'irresponsabilité</div>
+<div class="text-sm text-slate-500 mt-1">Folie, contrainte, erreur, état de nécessité</div>
+</a>
+</div>
+</div>
+
+<div>
+<div class="flex items-center space-x-3 mb-4">
+<div class="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center text-blue-700 dark:text-blue-300 font-bold">3</div>
+<h2 class="text-2xl font-bold text-slate-900 dark:text-white">Peines et mesures de sûreté</h2>
+</div>
+<div class="space-y-3">
+<a href="cours/droit-penal-general/peines-principes-types.html" class="block p-4 bg-slate-50 dark:bg-slate-800 rounded-lg hover:bg-blue-50 dark:hover:bg-slate-700 transition">
+<div class="font-semibold text-slate-900 dark:text-white">C7. Les peines</div>
+<div class="text-sm text-slate-500 mt-1">Principes, types de peines, régime d'exécution</div>
+</a>
+<a href="cours/droit-penal-general/mesures-surete.html" class="block p-4 bg-slate-50 dark:bg-slate-800 rounded-lg hover:bg-blue-50 dark:hover:bg-slate-700 transition">
+<div class="font-semibold text-slate-900 dark:text-white">C8. Les mesures de sûreté</div>
+<div class="text-sm text-slate-500 mt-1">Sûreté judiciaires, défense de séjour, interdiction de paraître</div>
+</a>
+<a href="cours/droit-penal-general/recidivite-contrainte-penale.html" class="block p-4 bg-slate-50 dark:bg-slate-800 rounded-lg hover:bg-blue-50 dark:hover:bg-slate-700 transition">
+<div class="font-semibold text-slate-900 dark:text-white">C9. Récidive et contrainte pénale</div>
+<div class="text-sm text-slate-500 mt-1">Récidive légale et judiciaire, contrainte pénale</div>
+</a>
+</div>
+</div>
+
+<div>
+<div class="flex items-center space-x-3 mb-4">
+<div class="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center text-blue-700 dark:text-blue-300 font-bold">4</div>
+<h2 class="text-2xl font-bold text-slate-900 dark:text-white">Justice pénale du mineur</h2>
+</div>
+<div class="space-y-3">
+<a href="cours/droit-penal-general/prescription-justice-penale-mineur.html" class="block p-4 bg-slate-50 dark:bg-slate-800 rounded-lg hover:bg-blue-50 dark:hover:bg-slate-700 transition">
+<div class="font-semibold text-slate-900 dark:text-white">C10. Prescription et justice pénale du mineur</div>
+<div class="text-sm text-slate-500 mt-1">Prescription, responsabilité pénale des mineurs, ORPM</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+
+<footer class="border-t border-slate-200 dark:border-slate-800 mt-12 bg-slate-50 dark:bg-slate-900">
+<div class="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center">
+<div class="text-sm text-slate-500 mb-4 md:mb-0">JurisMaster 2025 — Formation au droit français</div>
+<div class="flex space-x-6 text-sm text-slate-500">
+<a href="#" class="hover:text-blue-700">Mentions légales</a>
+<a href="#" class="hover:text-blue-700">Contact</a>
+</div>
+</div>
+</footer>
+
+<script>
+document.getElementById('dark-toggle').addEventListener('click', () => {
+document.documentElement.classList.toggle('dark');
+localStorage.setItem('jm.theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+});
+
+const JM = {
+get(){ try { return JSON.parse(localStorage.getItem('jurismaster.v1')) || {}; } catch { return {}; } },
+set(s){ localStorage.setItem('jurismaster.v1', JSON.stringify(s)); },
+addXP(n){ const s=JM.get(); s.xp=(s.xp||0)+n; JM.set(s); window.dispatchEvent(new CustomEvent('jm:xp',{detail:n})); },
+touchStreak(){ const s=JM.get(); const today=new Date().toISOString().slice(0,10); const last=s.streak?.lastVisit; if(last&&last!==today){const d=new Date(today)-new Date(last); if(d===86400000){s.streak.count=(s.streak.count||0)+1;} else if(d>86400000){s.streak.count=1;} s.streak.lastVisit=today;} else if(!last){s.streak={count:1,lastVisit:today};} JM.set(s); }
+};
+JM.touchStreak();
+
+const s = JM.get();
+const progress = Math.min(100, Math.round(((s.lessonsCompleted||[]).length / 32) * 100));
+document.querySelectorAll('[data-progress]').forEach(el => el.textContent = progress);
+document.querySelectorAll('[data-progress-bar]').forEach(el => el.style.width = progress + '%');
+</script>
+</body>
+</html>
