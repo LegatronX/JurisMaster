@@ -1,4 +1,13 @@
 <!DOCTYPE html>
+<!-- Frontmatter:
+title: "Le divorce : procédure et conséquences"
+matiere: "Droit des personnes et de la famille"
+ordre: 3
+slug: "droit-personnes-famille/divorce"
+quiz_count: 3
+theme: "droit-personnes-famille"
+-->
+
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -15,9 +24,14 @@
         .sidebar-link.active { color: #1d4ed8; font-weight: 600; border-left: 3px solid #1d4ed8; }
         .focus-box { background-color: #f8fafc; border-left: 4px solid #3b82f6; padding: 1.5rem; border-radius: 0.5rem; margin: 2rem 0; }
         .citation { font-style: italic; color: #475569; border-left: 2px solid #cbd5e1; padding-left: 1.5rem; margin: 2rem 0; }
+            *:focus-visible { outline: 2px solid #3b82f6; outline-offset: 2px; }
     </style>
 </head>
 <body class="bg-white dark:bg-slate-900">
+<a href="#contenu-principal" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-blue-600 focus:text-white focus:px-4 focus:py-2 focus:rounded-lg">
+  Aller au contenu principal
+</a>
+
     <script>tailwind.config={darkMode:'class'}</script>
     <script>
     (function(){
@@ -48,7 +62,7 @@
                     <ul class="space-y-3 pl-2 border-l border-slate-200">
                         <li><a href="personne-humaine-capacite.html" class="sidebar-link pl-4 block text-slate-500">B1. La personne humaine</a></li>
                         <li><a href="mariage-conditions-celebration.html" class="sidebar-link pl-4 block text-slate-500">B2. Le mariage</a></li>
-                        <li><a href="divorce-procedure-consequences.html" class="sidebar-link active pl-4 block">B3. Le divorce</a></li>
+                        <li><a href="divorce-procedure-consequences.html" class="sidebar-link active pl-4 block" aria-current="page">B3. Le divorce</a></li>
                         <li><a href="pacs-union-libre.html" class="sidebar-link pl-4 block text-slate-500">B4. Le PACS et l'union libre</a></li>
                     </ul>
                 </div>
@@ -76,8 +90,14 @@
             </div>
         </aside>
 
-        <main class="flex-1 py-16 px-6 md:px-20 max-w-5xl">
+        <main id="contenu-principal" class="flex-1 py-16 px-6 md:px-20 max-w-5xl">
             <article class="prose prose-slate lg:prose-lg mx-auto text-left">
+<div class="mb-4 flex items-center gap-2 text-sm">
+<a href="../../index.html" class="text-slate-500 dark:text-slate-400 hover:text-blue-700">Catalogue</a>
+<span class="text-slate-300">/</span>
+<a href="../../ma-progression.html" class="text-slate-500 dark:text-slate-400 hover:text-blue-700">Ma progression</a>
+</div>
+
                 <nav class="text-sm text-blue-600 font-semibold mb-8 uppercase tracking-wide">Chapitre I — La personne et le couple</nav>
                 <h1 class="text-4xl md:text-6xl font-bold mb-10 leading-tight">Le divorce</h1>
                 
@@ -195,9 +215,38 @@
                 }
                 </script>
 
-                <p class="text-xs text-slate-400 mt-8 text-center">
-                  Contenu à visée pédagogique. Ne constitue pas un conseil juridique personnalisé.
-                </p>
+                <h2>Boîte à outils</h2>
+<div class="my-16 bg-slate-900 text-white rounded-[3rem] p-8 lg:p-12 shadow-2xl relative overflow-hidden">
+  <div class="absolute top-0 right-0 w-40 h-40 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+  <div class="relative z-10">
+    <div class="flex items-center gap-3 mb-6">
+      <span class="text-3xl">&#9878;</span>
+      <h3 class="text-xl font-bold">Boîte à outils</h3>
+    </div>
+    <div class="mb-6">
+      <h4 class="font-semibold mb-2 text-blue-300">Citation à retenir</h4>
+      <p id="citation-box" class="text-sm text-slate-300 leading-relaxed">Le divorce met fin au lien conjugal et libère les époux de leurs devoirs réciproques. La loi de 2016 a modernisé les procédures par divorce par consentement mutuel notarié et allégement du contentieux.</p>
+    </div>
+    <div class="flex flex-wrap gap-3">
+      <button onclick="navigator.clipboard.writeText(document.getElementById('citation-box').textContent); showToast('Citation copi&eacute;e au format APA')" class="px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-sm font-medium transition-colors flex items-center gap-2">
+        <span>Citer cette le&ccedil;on (APA)</span>
+        <span>&#128203;</span>
+      </button>
+      <button onclick="window.print()" class="px-5 py-2.5 bg-white/10 hover:bg-white/20 text-white rounded-lg text-sm font-medium transition-colors flex items-center gap-2">
+        <span>Version PDF / Imprimer</span>
+        <span>&#128424;&#65039;</span>
+      </button>
+    </div>
+  </div>
+</div>
+<!-- Disclaimer -->
+<div class="mt-12 p-6 bg-slate-50 dark:bg-slate-800/50 rounded-xl border-l-4 border-slate-300 dark:border-slate-600">
+  <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+    <span class="text-lg mr-2">&#9878;</span>
+    <strong>Contenu &agrave; vis&eacute;e p&eacute;dagogique.</strong> Les cours et exercices de JurisMaster ont &eacute;t&eacute; r&eacute;dig&eacute;s par Docteur Christian Rolando et enrichis par des contributions acad&eacute;miques. Les informations pr&eacute;sent&eacute;es le sont &agrave; titre &eacute;ducatif et ne constituent en aucun cas un conseil juridique personnalis&eacute;. Pour toute question relative &agrave; une situation concr&egrave;te, il est recommand&eacute; de consulter un professionnel du droit.
+  </p>
+</div>
+
             </article>
         </main>
     </div>
@@ -251,6 +300,22 @@
         });
       });
     });
+    
+function showToast(msg) {
+  let toast = document.getElementById('toast');
+  if (!toast) {
+    toast = document.createElement('div');
+    toast.id = 'toast';
+    toast.className = 'fixed bottom-8 left-1/2 -translate-x-1/2 px-6 py-3 bg-slate-800 text-white rounded-xl shadow-2xl opacity-0 pointer-events-none transition-opacity duration-300 z-50';
+    toast.innerHTML = '<span id="toast-message"></span>';
+    document.body.appendChild(toast);
+  }
+  document.getElementById('toast-message').textContent = msg;
+  toast.style.opacity = '1';
+  toast.style.pointerEvents = 'auto';
+  setTimeout(() => { toast.style.opacity = '0'; toast.style.pointerEvents = 'none'; }, 2500);
+}
+
     </script>
 </body>
 </html>

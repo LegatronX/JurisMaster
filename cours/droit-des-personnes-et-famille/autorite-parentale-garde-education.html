@@ -1,4 +1,13 @@
 <!DOCTYPE html>
+<!-- Frontmatter:
+title: "L'autorité parentale, la garde et l'éducation"
+matiere: "Droit des personnes et de la famille"
+ordre: 6
+slug: "droit-personnes-famille/autorite-parentale"
+quiz_count: 3
+theme: "droit-personnes-famille"
+-->
+
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
@@ -15,9 +24,14 @@ h1, h2, h3 { font-family: 'Playfair Display', serif; }
 .sidebar-link.active { color: #1d4ed8; font-weight: 600; border-left: 3px solid #1d4ed8; }
 .focus-box { background-color: #f8fafc; border-left: 4px solid #3b82f6; padding: 1.5rem; border-radius: 0.5rem; margin: 2rem 0; }
 .citation { font-style: italic; color: #475569; border-left: 2px solid #cbd5e1; padding-left: 1.5rem; margin: 2rem 0; }
-</style>
+        *:focus-visible { outline: 2px solid #3b82f6; outline-offset: 2px; }
+    </style>
 </head>
 <body class="bg-white dark:bg-slate-900">
+<a href="#contenu-principal" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-blue-600 focus:text-white focus:px-4 focus:py-2 focus:rounded-lg">
+  Aller au contenu principal
+</a>
+
 <script>tailwind.config={darkMode:'class'}</script>
 <script>
 (function(){
@@ -49,7 +63,7 @@ document.documentElement.classList.add('dark');
 <li><a href="divorce-procedure-consequences.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">B3. Le divorce</a></li>
 <li><a href="pacs-union-libre.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">B4. Le PACS et l'union libre</a></li>
 <li><a href="filiation-legitime-naturelle-adoptive.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">B5. La filiation</a></li>
-<li><a href="autorite-parentale-garde-education.html" class="sidebar-link active block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">B6. L'autorité parentale</a></li>
+<li><a href="autorite-parentale-garde-education.html" class="sidebar-link active block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700" aria-current="page">B6. L'autorité parentale</a></li>
 <li><a href="regimes-matrimoniaux.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">B7. Les régimes matrimoniaux</a></li>
 <li><a href="successions-liberalites.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">B8. Successions et libéralités</a></li>
 <li><a href="obligations-alimentaires.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">B9. Obligations alimentaires</a></li>
@@ -57,7 +71,7 @@ document.documentElement.classList.add('dark');
 </ul>
 </aside>
 
-<main class="flex-1 p-6 lg:p-12 prose dark:prose-invert max-w-none">
+<main id="contenu-principal" class="flex-1 p-6 lg:p-12 prose dark:prose-invert max-w-none">
 <article>
 <div class="flex items-center space-x-2 text-sm text-slate-500 mb-4">
 <a href="../../index.html" class="hover:underline">Accueil</a>
@@ -234,6 +248,22 @@ feedback.classList.remove('hidden');
 });
 });
 });
-</script>
+
+function showToast(msg) {
+  let toast = document.getElementById('toast');
+  if (!toast) {
+    toast = document.createElement('div');
+    toast.id = 'toast';
+    toast.className = 'fixed bottom-8 left-1/2 -translate-x-1/2 px-6 py-3 bg-slate-800 text-white rounded-xl shadow-2xl opacity-0 pointer-events-none transition-opacity duration-300 z-50';
+    toast.innerHTML = '<span id="toast-message"></span>';
+    document.body.appendChild(toast);
+  }
+  document.getElementById('toast-message').textContent = msg;
+  toast.style.opacity = '1';
+  toast.style.pointerEvents = 'auto';
+  setTimeout(() => { toast.style.opacity = '0'; toast.style.pointerEvents = 'none'; }, 2500);
+}
+
+    </script>
 </body>
 </html>
