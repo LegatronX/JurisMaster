@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Gouvernement et le Parlement — rapports de force - Droit constitutionnel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; line-height: 1.8; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .prose h2 { font-size: 2rem; font-weight: 700; margin-top: 3rem; margin-bottom: 1.5rem; color: #1e3a8a; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; }
+        .prose h3 { font-size: 1.5rem; font-weight: 600; margin-top: 2rem; margin-bottom: 1rem; color: #1e40af; }
+        .prose p { margin-bottom: 1.5rem; color: #334155; text-align: justify; }
+        .sidebar-link.active { color: #1d4ed8; font-weight: 600; border-left: 3px solid #1d4ed8; }
+        .focus-box { background-color: #f8fafc; border-left: 4px solid #3b82f6; padding: 1.5rem; border-radius: 0.5rem; margin: 2rem 0; }
+        .citation { font-style: italic; color: #475569; border-left: 2px solid #cbd5e1; padding-left: 1.5rem; margin: 2rem 0; }
+    </style>
+</head>
+<body class="bg-white dark:bg-slate-900">
+    <script>tailwind.config={darkMode:'class'}</script>
+    <script>
+    (function(){
+      const stored = localStorage.getItem('jm.theme');
+      if(stored === 'dark' || (!stored && matchMedia('(prefers-color-scheme: dark)').matches)){
+        document.documentElement.classList.add('dark');
+      }
+    })();
+    </script>
+
+    <nav class="sticky top-0 z-50 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-6 py-3 flex justify-between items-center">
+      <a href="../../index.html" class="text-xl font-bold tracking-tight">JURIS<span class="text-blue-700">MASTER</span></a>
+      <div class="flex items-center space-x-4">
+        <button id="dark-toggle" aria-label="Basculer mode sombre" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800">🌓</button>
+        <span class="text-sm text-slate-500">Progression : <span data-progress>0</span>%</span>
+        <div class="w-32 h-2 bg-slate-100 rounded-full overflow-hidden">
+          <div class="bg-blue-600 h-full" data-progress-bar style="width:0%"></div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row">
+        <aside class="w-full md:w-80 border-r border-slate-100 dark:border-slate-800 p-8 h-screen sticky top-14 overflow-y-auto bg-slate-50/50 dark:bg-slate-900/50">
+            <h4 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-6">Droit constitutionnel</h4>
+            <div class="space-y-8 text-sm text-left">
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">I. L'État et la souveraineté</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="notion-etat-elements-constitutifs.html" class="sidebar-link pl-4 block text-slate-500">A1. La notion d'État</a></li>
+                        <li><a href="souverainete-modes-exercice.html" class="sidebar-link pl-4 block text-slate-500">A2. La souveraineté</a></li>
+                        <li><a href="constitution-notion-types-fonctions.html" class="sidebar-link pl-4 block text-slate-500">A3. La Constitution</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">II. Le bloc de constitutionnalité</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="bloc-constitutionnalite-hierarchie-normes.html" class="sidebar-link pl-4 block text-slate-500">A4. Bloc et hiérarchie</a></li>
+                        <li><a href="histoire-constitutionnelle-francaise.html" class="sidebar-link pl-4 block text-slate-500">A5. Histoire (1789–1958)</a></li>
+                        <li><a href="typologie-regimes-politiques.html" class="sidebar-link pl-4 block text-slate-500">A6. Régimes politiques</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">III. La Ve République</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="constitution-1958-genese-principes.html" class="sidebar-link pl-4 block text-slate-500">A7. Constitution de 1958</a></li>
+                        <li><a href="president-republique.html" class="sidebar-link pl-4 block text-slate-500">A8. Président</a></li>
+                        <li><a href="gouvernement-parlement-rapports-force.html" class="sidebar-link active pl-4 block">A9. Gouvernement et Parlement</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">IV. Le juge et les droits</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="conseil-constitutionnel.html" class="sidebar-link pl-4 block text-slate-500">A10. Conseil constitutionnel</a></li>
+                        <li><a href="droits-libertes-constitutionnellement-garantis.html" class="sidebar-link pl-4 block text-slate-500">A11. Droits et libertés</a></li>
+                        <li><a href="constitution-droit-europeen.html" class="sidebar-link pl-4 block text-slate-500">A12. Droit européen</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <main class="flex-1 py-16 px-6 md:px-20 max-w-5xl">
+            <article class="prose prose-slate lg:prose-lg mx-auto text-left">
+                <nav class="text-sm text-blue-600 font-semibold mb-8 uppercase tracking-wide">Chapitre III — La Ve République</nav>
+                <h1 class="text-4xl md:text-6xl font-bold mb-10 leading-tight">Le Gouvernement et le Parlement — rapports de force</h1>
+                
+                <p class="text-xl text-slate-500 italic mb-12 border-l-4 border-blue-100 pl-6 py-2">
+                    "Le Gouvernement détermine et conduit la politique de la Nation."
+                </p>
+                <p class="text-sm text-slate-400 mb-8">— Art. 20 de la Constitution de 1958</p>
+
+                <h2 id="exorde">Exorde — Le parlementarisme rationalisé</h2>
+                <p>
+                    L'art. 20 de la Constitution dispose : "Le Gouvernement détermine et conduit la politique de la Nation. Il dispose de l'administration et de la force armée." Cette affirmation de la prééminence gouvernementale sur le Parlement marque une rupture avec la IVe République, où l'Assemblée nationale était souveraine. La Constitution de 1958, fidèle au discours de Bayeux (1946), a "rationalisé" le parlementarisme en limitant les prérogatives parlementaires et en dotant le Gouvernement d'instruments de résistance.
+                </p>
+                <p>
+                    Enjeu contemporain : la concentration des pouvoirs entre les mains du président (qui dirige la majorité et nomme le Premier ministre) a relativisé la responsabilité gouvernementale devant le Parlement. Le Parlement, loin d'être souverain, est devenu une chambre d'enregistrement sous la Ve République. Cependant, les révisions de 2008 ont tenté de rééquilibrer les rapports : élargissement du domaine de la loi (art. 34 modifié), renforcement du contrôle parlementaire (art. 51-1 : commissions d'enquête), droit d'amendement des députés élargi.
+                </p>
+
+                <h2 id="partie1">Partie I — Le Gouvernement : composition et prérogatives</h2>
+
+                <h3>A. Structure et nomination</h3>
+                <p>
+                    Le Gouvernement comprend le <strong>Premier ministre</strong> et les <strong>ministres</strong> (art. 8). Le Premier ministre est nommé par le président (art. 8 al. 1er), qui choisit librement — mais dans la pratique, il nomme le leader de la majorité parlementaire. Les ministres sont nommés sur proposition du Premier ministre (art. 8 al. 2). Le Gouvernement peut comporter des <strong>secrétaires d'État</strong>, nommés dans les mêmes conditions, qui assistent les ministres (art. 8 al. 4).
+                </p>
+                <p>
+                    L'art. 23 prévoit les <strong>incompatibilités</strong> : les membres du Gouvernement ne peuvent exercer de mandat parlementaire, de représentation professionnelle nationale, ni de fonction publique ou d'activité professionnelle. Cette règle, qui conduit à la "députation vacante" (le député ministre est remplacé par son suppléant), vise à garantir l'indépendance et la disponibilité des ministres. En cas de cessation des fonctions gouvernementales, le parlementaire retrouve son siège (art. 23 al. 2).
+                </p>
+
+                <h3>B. L'engagement de responsabilité (art. 49)</h3>
+                <p>
+                    L'art. 49 organise la responsabilité du Gouvernement devant le Parlement sur trois modes. L'art. 49 al. 1er : après la déclaration de politique générale, le Gouvernement engage sa responsabilité sur son programme ou une déclaration de politique générale. L'art. 49 al. 2 : le Gouvernement engage sa responsabilité sur le vote d'un projet de loi de finances ou de financement de la sécurité sociale. L'art. 49 al. 3 (49-3) : le Premier ministre peut engager la responsabilité du Gouvernement sur un projet de loi ; le texte est adopté sauf si une motion de censure, déposée dans les 24 heures et votée dans les 48 heures, est adoptée à la majorité absolue des membres de l'Assemblée nationale (289 voix sur 577).
+                </p>
+                <p>
+                    La motion de censure de l'art. 49 al. 3 est l'instrument parlementaire le plus spectaculaire. Elle n'a été votée qu'une seule fois : le 4 octobre 1962, contre le projet de révision de la Constitution sur l'élection présidentielle au suffrage universel (motion de censure déposée par la gauche et le MRP, adoptée par 280 voix — 9 de moins que la majorité requise). Pompidou démissionne mais est aussitôt reconduit par De Gaulle. Depuis, le 49-3 est devenu un instrument gouvernemental quasi-routine : il a été utilisé plus de 100 fois depuis 1958, souvent pour les lois de finances et les réformes controversées (retraites, loi Travail).
+                </p>
+
+                <h3>C. L'ordonnance (art. 38)</h3>
+                <p>
+                    L'art. 38 permet au Gouvernement de demander au Parlement une <strong>autorisation de prendre des mesures par ordonnances</strong> dans le domaine normalement réservé à la loi. Les ordonnances sont prises en Conseil des ministres, puis ratifiées par la loi dans le délai fixé par la loi d'habilitation. Si elles ne sont pas ratifiées, elles deviennent caduques. Cette procédure a été utilisée pour des réformes majeures : nationalisations (1982), privatisations (1986), réforme du droit du travail (2017, ordonnances Macron), réforme des retraites (2023).
+                </p>
+
+                <h2 id="partie2">Partie II — Le Parlement : Assemblée nationale et Sénat</h2>
+
+                <h3>A. Organisation et fonctionnement</h3>
+                <p>
+                    Le Parlement est composé de deux assemblées : l'<strong>Assemblée nationale</strong> (art. 24) et le <strong>Sénat</strong> (art. 24). L'Assemblée nationale compte 577 députés (depuis le redécoupage de 2010, qui a réduit le nombre de 577 à 556 pour les élections de 2024 suite au décret n° 2024-XXX, puis 577 à nouveau), élus au suffrage universel direct uninominal majoritaire à deux tours pour 5 ans (art. 25). Le Sénat compte 348 sénateurs (depuis 2011), élus au suffrage universel indirect par les grands électeurs (conseillers municipaux, régionaux, départementaux, députés) pour 6 ans, renouvelables par moitié tous les 3 ans.
+                </p>
+                <p>
+                    Le fonctionnement du Parlement est régi par les <strong>règlements intérieurs</strong> (art. 28), qui sont des actes réglementaires ayant valeur constitutionnelle (ils doivent être soumis au Conseil constitutionnel avant leur mise en application, art. 61). L'art. 28 prévoit deux sessions ordinaires par an (depuis 1995, révision du 8 août 1995). La session ordinaire d'automne est consacrée principalement à l'examen du projet de loi de finances (art. 47).
+                </p>
+
+                <h3>B. La procédure législative et la navette</h3>
+                <p>
+                    La procédure législative suit le principe de la <strong>navette parlementaire</strong> (art. 45) : le projet ou la proposition de loi est examiné successivement par les deux assemblées, dans le but d'adopter un texte identique. En cas de désaccord persistant après deux lectures par chaque assemblée (ou une seule si le Gouvernement a déclaré l'urgence, art. 45 al. 2), une <strong>commission mixte paritaire</strong> (7 députés, 7 sénateurs) est constituée pour proposer un texte de compromis. Si la CMP échoue, le Gouvernement peut demander à l'Assemblée nationale de statuer définitivement (art. 45 al. 4), sauf pour les lois organiques (art. 46) et le règlement des assemblées.
+                </p>
+                <p>
+                    Le Gouvernement contrôle fortement l'ordre du jour : l'art. 48-1, introduit par la révision de 2008, dispose que "une session de questions au Gouvernement se tient chaque semaine" et que "une séance par mois est réservée par priorité à l'agenda fixé par chaque assemblée". Cependant, l'art. 48-1 al. 2 maintient la prérogative gouvernementale : "une séance par mois est réservée par priorité à l'examen des textes de son choix". En pratique, le Gouvernement fixe l'essentiel de l'ordre du jour.
+                </p>
+
+                <h3>C. Le contrôle parlementaire</h3>
+                <p>
+                    Le Parlement exerce un <strong>contrôle de l'action gouvernementale</strong> (art. 20 al. 2). Les instruments sont : les <strong>questions</strong> (écrites, orales, au Gouvernement), les <strong>interpellations</strong>, les <strong>commissions d'enquête</strong> (art. 51-1, depuis 2008 : 6 commissions permanentes à l'Assemblée, 6 au Sénat ; commissions d'enquête temporaires), et le <strong>budget</strong> (art. 47 : la loi de finances fixe les règles concernant l'équilibre, la sincérité et la transparence ; la Cour des comptes contrôle l'exécution).
+                </p>
+                <p>
+                    Les révisions de 2008 ont renforcé le contrôle : création de la <strong>Haute Assemblée</strong> (Sénat) comme chambre de la décentralisation, élargissement du domaine de la loi (art. 34 : ajout de la "détermination des règles relatives à l'état-civil", "la création des catégories d'établissements publics"), possibilité pour les parlementaires de saisir le Conseil constitutionnel (art. 61 al. 2), et institution de la QPC (art. 61-1).
+                </p>
+
+                <div class="focus-box">
+                    <h4 class="font-bold text-blue-900 dark:text-blue-300 mb-2">Appareil critique — La démocratie parlementaire en déclin ?</h4>
+                    <p class="text-sm mb-0">
+                        La doctrine s'interroge sur la réelle efficacité du contrôle parlementaire. Le 49-3, utilisé comme menace permanente, viderait de leur substance les débats. La concentration de la majorité présidentielle (bipolarisation) rend le Parlement une chambre d'enregistrement. Pierre Rosanvallon parle de "contre-démocratie" : le contrôle parlementaire existe mais il est médiatisé, spectacle, sans effet réel sur la décision. En revanche, les révisions de 2008 et la pratique de la QPC ont redonné un rôle au Parlement dans la protection des droits fondamentaux.
+                        <br><br>
+                        <strong>Bibliographie :</strong> Olivier Duhamel, <em>Droit constitutionnel et institutions politiques</em> (4e éd., 2021) ; Dominique Rousseau, <em>Droit du contentieux constitutionnel</em> (14e éd., 2023) ; Pierre Rosanvallon, <em>La Contre-démocratie</em> (Seuil, 2006).
+                    </p>
+                </div>
+
+                <!-- QUIZ -->
+                <section class="mt-16 p-8 bg-slate-50 dark:bg-slate-800 rounded-2xl">
+                    <h3 class="text-2xl font-bold mb-6">Quiz — Gouvernement et Parlement</h3>
+                    <div id="quiz-container" class="space-y-6">
+                        <div class="quiz-question" data-correct="1">
+                            <p class="font-semibold mb-3">1. L'art. 49-3 permet au Premier ministre de :</p>
+                            <div class="space-y-2">
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. Dissoudre l'Assemblée nationale</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. Engager la responsabilité du Gouvernement sur un projet de loi</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. Nommer des ministres sans contreseing</button>
+                            </div>
+                            <p class="quiz-feedback hidden mt-2 text-sm"></p>
+                        </div>
+                        <div class="quiz-question" data-correct="0">
+                            <p class="font-semibold mb-3">2. La motion de censure doit être adoptée à la majorité absolue des membres de l'Assemblée nationale, soit :</p>
+                            <div class="space-y-2">
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. 289 voix</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. 577 voix</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. 349 voix</button>
+                            </div>
+                            <p class="quiz-feedback hidden mt-2 text-sm"></p>
+                        </div>
+                        <div class="quiz-question" data-correct="2">
+                            <p class="font-semibold mb-3">3. Les ordonnances (art. 38) doivent être ratifiées par :</p>
+                            <div class="space-y-2">
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. Le Conseil constitutionnel</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. Le président de la République seul</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. La loi dans le délai fixé par la loi d'habilitation</button>
+                            </div>
+                            <p class="quiz-feedback hidden mt-2 text-sm"></p>
+                        </div>
+                        <div class="quiz-question" data-correct="1">
+                            <p class="font-semibold mb-3">4. La commission mixte paritaire (CMP) est composée de :</p>
+                            <div class="space-y-2">
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. 5 députés et 5 sénateurs</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. 7 députés et 7 sénateurs</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. 14 députés et 14 sénateurs</button>
+                            </div>
+                            <p class="quiz-feedback hidden mt-2 text-sm"></p>
+                        </div>
+                    </div>
+                    <div id="quiz-result" class="mt-6 hidden p-4 rounded-xl font-bold text-center"></div>
+                </section>
+
+                <section class="mt-24 p-12 bg-slate-900 text-white rounded-[3rem] overflow-hidden relative">
+                  <div class="relative z-10 text-left">
+                    <h3 class="text-2xl font-bold mb-6">Prêt pour l'examen ?</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                      <div>
+                        <h4 class="text-blue-400 font-bold text-xs uppercase mb-4 tracking-widest">Citation à retenir</h4>
+                        <p class="text-slate-300 italic mb-4">"Le Gouvernement détermine et conduit la politique de la Nation."</p>
+                        <p class="text-xs text-slate-500">— Art. 20 de la Constitution de 1958</p>
+                      </div>
+                      <div class="space-y-4">
+                        <button onclick="copyCitation()" class="w-full py-3 px-6 bg-white/10 hover:bg-white/20 rounded-xl border border-white/10 text-sm font-bold transition flex justify-between items-center">
+                          Citer cette leçon (APA) <span>📋</span>
+                        </button>
+                        <button onclick="window.print()" class="w-full py-3 px-6 bg-blue-600 hover:bg-blue-700 rounded-xl text-sm font-bold transition flex justify-between items-center">
+                          Version PDF / Imprimer <span>🖨️</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="absolute right-[-30px] bottom-[-30px] text-[12rem] opacity-5">⚖️</div>
+                </section>
+                <script>
+                function copyCitation(){
+                  const c = `ROLANDO C., « Le Gouvernement et le Parlement — rapports de force », JurisMaster, ${new Date().getFullYear()}. URL : ${location.href}`;
+                  navigator.clipboard.writeText(c);
+                  alert("Citation copiée.");
+                }
+                </script>
+
+                <p class="text-xs text-slate-400 mt-8 text-center">
+                  Contenu à visée pédagogique. Ne constitue pas un conseil juridique personnalisé.
+                </p>
+            </article>
+        </main>
+    </div>
+
+    <script>
+    document.addEventListener('click', e => {
+      if(e.target.closest('#dark-toggle')){
+        document.documentElement.classList.toggle('dark');
+        localStorage.setItem('jm.theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+      }
+    });
+
+    const JM = {
+      get(){ return JSON.parse(localStorage.getItem('jurismaster.v1') || '{"xp":0,"streak":{"count":0,"lastVisit":""},"lessonsCompleted":[],"badges":[],"quizScores":{}}'); },
+      set(s){ localStorage.setItem('jurismaster.v1', JSON.stringify(s)); },
+      addXP(n){ const s=JM.get(); s.xp=(s.xp||0)+n; JM.set(s); window.dispatchEvent(new CustomEvent('jm:xp',{detail:n})); },
+      completeLesson(slug, xp=50){ const s=JM.get(); s.lessonsCompleted=[...new Set([...(s.lessonsCompleted||[]),slug])]; s.xp=(s.xp||0)+xp; JM.set(s); },
+      touchStreak(){ const s=JM.get(); const today=new Date().toISOString().slice(0,10); const last=s.streak?.lastVisit; if(last&&last!==today){const d=new Date(today)-new Date(last); if(d===86400000){s.streak.count=(s.streak.count||0)+1;} else if(d>86400000){s.streak.count=1;} s.streak.lastVisit=today;} else if(!last){s.streak={count:1,lastVisit:today};} JM.set(s); }
+    };
+    JM.touchStreak();
+    JM.completeLesson('droit-constitutionnel/gouvernement-parlement', 50);
+
+    const s = JM.get();
+    const progress = Math.min(100, Math.round(((s.lessonsCompleted||[]).length / 32) * 100));
+    document.querySelectorAll('[data-progress]').forEach(el => el.textContent = progress);
+    document.querySelectorAll('[data-progress-bar]').forEach(el => el.style.width = progress + '%');
+
+    document.querySelectorAll('.quiz-question').forEach((q, qi) => {
+      const correct = parseInt(q.dataset.correct);
+      const feedback = q.querySelector('.quiz-feedback');
+      const explanations = [
+        ["La dissolution de l'Assemblée nationale est prévue par l'art. 12, pas le 49-3.", "Exact ! L'art. 49 al. 3 (49-3) permet au Premier ministre d'engager la responsabilité du Gouvernement sur un projet de loi. Le texte est adopté sauf si une motion de censure est votée.", "La nomination des ministres relève de l'art. 8."],
+        ["Exact ! L'Assemblée nationale compte 577 députés. La majorité absolue est donc de 289 voix (577/2 + 1).", "577 voix correspond à l'unanimité moins une voix, pas à la majorité absolue.", "349 voix correspond à la majorité absolue au Sénat (348/2 + 1, soit 175, pas 349)."],
+        ["Le Conseil constitutionnel contrôle la constitutionnalité des lois, pas la ratification des ordonnances.", "Le président signe les ordonnances mais ne les ratifie pas seul.", "Exact ! L'art. 38 dispose que les ordonnances doivent être ratifiées par la loi dans le délai fixé par la loi d'habilitation. Sans ratification, elles deviennent caduques."],
+        ["5 députés et 5 sénateurs n'est pas la composition de la CMP.", "Exact ! La commission mixte paritaire est composée de 7 députés et 7 sénateurs (art. 45 al. 3).", "14 députés et 14 sénateurs ne correspond pas à la composition prévue par la Constitution."]
+      ];
+      q.querySelectorAll('.quiz-btn').forEach((btn, bi) => {
+        btn.addEventListener('click', () => {
+          if(q.classList.contains('answered')) return;
+          q.classList.add('answered');
+          if(bi === correct){
+            btn.classList.add('bg-green-100', 'border-green-500', 'text-green-800');
+            feedback.textContent = explanations[qi][bi];
+            feedback.className = 'quiz-feedback mt-2 text-sm text-green-700';
+          } else {
+            btn.classList.add('bg-red-100', 'border-red-500', 'text-red-800');
+            q.querySelectorAll('.quiz-btn')[correct].classList.add('bg-green-100', 'border-green-500');
+            feedback.textContent = explanations[qi][bi];
+            feedback.className = 'quiz-feedback mt-2 text-sm text-red-700';
+          }
+          feedback.classList.remove('hidden');
+        });
+      });
+    });
+    </script>
+</body>
+</html>
