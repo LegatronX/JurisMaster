@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Constitution : notion, types, fonctions - Droit constitutionnel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; line-height: 1.8; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .prose h2 { font-size: 2rem; font-weight: 700; margin-top: 3rem; margin-bottom: 1.5rem; color: #1e3a8a; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; }
+        .prose h3 { font-size: 1.5rem; font-weight: 600; margin-top: 2rem; margin-bottom: 1rem; color: #1e40af; }
+        .prose p { margin-bottom: 1.5rem; color: #334155; text-align: justify; }
+        .sidebar-link.active { color: #1d4ed8; font-weight: 600; border-left: 3px solid #1d4ed8; }
+        .focus-box { background-color: #f8fafc; border-left: 4px solid #3b82f6; padding: 1.5rem; border-radius: 0.5rem; margin: 2rem 0; }
+        .citation { font-style: italic; color: #475569; border-left: 2px solid #cbd5e1; padding-left: 1.5rem; margin: 2rem 0; }
+    </style>
+</head>
+<body class="bg-white dark:bg-slate-900">
+    <script>tailwind.config={darkMode:'class'}</script>
+    <script>
+    (function(){
+      const stored = localStorage.getItem('jm.theme');
+      if(stored === 'dark' || (!stored && matchMedia('(prefers-color-scheme: dark)').matches)){
+        document.documentElement.classList.add('dark');
+      }
+    })();
+    </script>
+
+    <nav class="sticky top-0 z-50 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-6 py-3 flex justify-between items-center">
+      <a href="../../index.html" class="text-xl font-bold tracking-tight">JURIS<span class="text-blue-700">MASTER</span></a>
+      <div class="flex items-center space-x-4">
+        <button id="dark-toggle" aria-label="Basculer mode sombre" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800">🌓</button>
+        <span class="text-sm text-slate-500">Progression : <span data-progress>0</span>%</span>
+        <div class="w-32 h-2 bg-slate-100 rounded-full overflow-hidden">
+          <div class="bg-blue-600 h-full" data-progress-bar style="width:0%"></div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row">
+        <aside class="w-full md:w-80 border-r border-slate-100 dark:border-slate-800 p-8 h-screen sticky top-14 overflow-y-auto bg-slate-50/50 dark:bg-slate-900/50">
+            <h4 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-6">Droit constitutionnel</h4>
+            <div class="space-y-8 text-sm text-left">
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">I. L'État et la souveraineté</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="notion-etat-elements-constitutifs.html" class="sidebar-link pl-4 block text-slate-500">A1. La notion d'État</a></li>
+                        <li><a href="souverainete-modes-exercice.html" class="sidebar-link pl-4 block text-slate-500">A2. La souveraineté</a></li>
+                        <li><a href="constitution-notion-types-fonctions.html" class="sidebar-link active pl-4 block">A3. La Constitution</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">II. Le bloc de constitutionnalité</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="bloc-constitutionnalite-hierarchie-normes.html" class="sidebar-link pl-4 block text-slate-500">A4. Bloc et hiérarchie</a></li>
+                        <li><a href="histoire-constitutionnelle-francaise.html" class="sidebar-link pl-4 block text-slate-500">A5. Histoire (1789–1958)</a></li>
+                        <li><a href="typologie-regimes-politiques.html" class="sidebar-link pl-4 block text-slate-500">A6. Régimes politiques</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">III. La Ve République</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="constitution-1958-genese-principes.html" class="sidebar-link pl-4 block text-slate-500">A7. Constitution de 1958</a></li>
+                        <li><a href="president-republique.html" class="sidebar-link pl-4 block text-slate-500">A8. Président</a></li>
+                        <li><a href="gouvernement-parlement-rapports-force.html" class="sidebar-link pl-4 block text-slate-500">A9. Gouvernement et Parlement</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">IV. Le juge et les droits</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="conseil-constitutionnel.html" class="sidebar-link pl-4 block text-slate-500">A10. Conseil constitutionnel</a></li>
+                        <li><a href="droits-libertes-constitutionnellement-garantis.html" class="sidebar-link pl-4 block text-slate-500">A11. Droits et libertés</a></li>
+                        <li><a href="constitution-droit-europeen.html" class="sidebar-link pl-4 block text-slate-500">A12. Droit européen</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <main class="flex-1 py-16 px-6 md:px-20 max-w-5xl">
+            <article class="prose prose-slate lg:prose-lg mx-auto text-left">
+                <nav class="text-sm text-blue-600 font-semibold mb-8 uppercase tracking-wide">Chapitre I — L'État et la souveraineté</nav>
+                <h1 class="text-4xl md:text-6xl font-bold mb-10 leading-tight">La Constitution : notion, types, fonctions</h1>
+                
+                <p class="text-xl text-slate-500 italic mb-12 border-l-4 border-blue-100 pl-6 py-2">
+                    "Une Constitution n'est point un acte du Gouvernement, mais un acte du peuple."
+                </p>
+                <p class="text-sm text-slate-400 mb-8">— Emmanuel Sieyès, Qu'est-ce que le Tiers-État ?, 1789</p>
+
+                <h2 id="exorde">Exorde — Du mot à la norme suprême</h2>
+                <p>
+                    Le mot "Constitution" vient du latin <em>constitutio</em>, qui désignait sous l'Empire romain un édit impérial. Au XVIIIe siècle, le terme acquiert un sens nouveau : la Constitution devient l'acte fondamental qui organise les pouvoirs publics et garantit les droits fondamentaux. Cette mutation conceptuelle est l'œuvre des révolutions américaine (1776-1787) et française (1789-1791). La Constitution de 1791, première Constitution française écrite, consacre le principe de la séparation des pouvoirs et la souveraineté nationale.
+                </p>
+                <p>
+                    Enjeu contemporain : la Constitution est-elle un texte figé ou évolutif ? La rigidité des procédures de révision (art. 89 de la Constitution de 1958) freine l'adaptation aux évolutions sociétales. À l'inverse, une Constitution trop souple perd son caractère de norme suprême. Le débat entre constitutionnalisme originaliste (Scalia aux États-Unis) et constitutionnalisme évolutif (la Cour européenne des droits de l'homme) traverse toute la doctrine.
+                </p>
+
+                <div class="focus-box">
+                    <h4 class="font-bold text-blue-900 dark:text-blue-300 mb-2">Focus : Constitution formelle et matérielle</h4>
+                    <p class="text-sm mb-0">
+                        La doctrine distingue deux acceptions du terme "Constitution" :<br><br>
+                        <strong>Constitution formelle</strong> : l'ensemble des règles écrites et codifiées qui organisent les institutions et proclament les droits fondamentaux. Exemple : la Constitution de 1958, un texte unique de 89 articles.<br><br>
+                        <strong>Constitution matérielle</strong> : l'ensemble des règles — écrites ou non — qui déterminent réellement la répartition des pouvoirs. Cela inclut les lois organiques, les règlements intérieurs, les jurisprudences du Conseil constitutionnel, voire les conventions de la Constitution (comme la cohabitation, qui n'est pas prévue par le texte de 1958 mais structure pourtant le fonctionnement des institutions).
+                    </p>
+                </div>
+
+                <h2 id="partie1">Partie I — La Constitution comme norme fondamentale</h2>
+
+                <h3>A. La Constitution : norme suprême du droit interne</h3>
+                <p>
+                    La Constitution occupe le sommet de la hiérarchie des normes dans l'ordre juridique interne. Cette suprématie repose sur deux fondements. D'une part, la <strong>légitimité démocratique</strong> : la Constitution exprime la volonté du peuple, détenteur de la souveraineté nationale (art. 3 DDHC). D'autre part, la <strong>fonction de garantie</strong> : la Constitution protège les droits fondamentaux contre les violations potentielles du législateur ordinaire.
+                </p>
+                <p>
+                    En France, la hiérarchie des normes est structurée ainsi : Constitution > traités internationaux > lois organiques > lois ordinaires > règlements > décisions administratives individuelles. Cette pyramide, héritée de Hans Kelsen (<em>Théorie pure du droit</em>, 1934), a été consacrée par la jurisprudence du Conseil constitutionnel, notamment dans la décision n° 71-44 DC du 16 juillet 1971 qui a intégré le Préambule de 1946 et la DDHC de 1789 au bloc de constitutionnalité.
+                </p>
+
+                <h3>B. Les fonctions de la Constitution</h3>
+                <p>
+                    La Constitution remplit trois fonctions complémentaires. La fonction <strong>organique</strong> : elle crée les institutions (Parlement, Gouvernement, Président, juridictions) et définit leurs compétences respectives. La fonction <strong>programmatique</strong> : elle énonce les valeurs et les objectifs de la collectivité (Préambule de 1946 : droit au travail, droit de grève). La fonction <strong>limitative</strong> : elle encadre l'action des pouvoirs publics par des droits et libertés fondamentaux (DDHC 1789, Charte de l'environnement 2004).
+                </p>
+                <p>
+                    La Constitution française de 1958 est volontairement courte (89 articles) comparée à d'autres Constitutions contemporaines (Constitution indienne : 395 articles ; Constitution brésilienne : 250 articles). Ce caractère laconique, voulu par De Gaulle et Debré, vise à éviter la rigidité excessive et à laisser une marge de manœuvre au législateur. Cependant, cette brièveté génère des zones d'ombre qui ont été comblées par la jurisprudence du Conseil constitutionnel (cohabitation, alternance, QPC) et par les révisions constitutionnelles.
+                </p>
+
+                <h3>C. Les Constitutions souples et rigides (James Bryce)</h3>
+                <p>
+                    Le juriste britannique James Bryce, dans <em>Studies in History and Jurisprudence</em> (1901), a proposé une classification fondée sur la procédure de modification. Une Constitution <strong>rigide</strong> ne peut être modifiée que par une procédure particulière, plus complexe que la procédure législative ordinaire. C'est le cas de la France (art. 89 : vote identique des deux assemblées ou Congrès, ratification référendaire possible) et des États-Unis (amendement : proposition par les deux tiers du Congrès ou des États, ratification par les trois quarts des États).
+                </p>
+                <p>
+                    Une Constitution <strong>souple</strong> peut être modifiée par la procédure législative ordinaire. Le Royaume-Uni est l'exemple classique : il n'existe pas de "Constitution" au sens formel, mais un ensemble de textes (Bill of Rights 1689, Act of Settlement 1701, Human Rights Act 1998) et de conventions (responsabilité ministérielle) qui peuvent être modifiés par une simple loi du Parlement. Cette souplesse confère une grande adaptabilité mais fragilise la protection des droits fondamentaux (le Parlement peut légalement abroger n'importe quel droit par une loi ordinaire).
+                </p>
+
+                <h2 id="partie2">Partie II — Le pouvoir constituant</h2>
+
+                <h3>A. Pouvoir constituant originaire et dérivé</h3>
+                <p>
+                    La doctrine, suivant Sieyès, distingue le <strong>pouvoir constituant originaire</strong> et le <strong>pouvoir constituant dérivé</strong>. Le premier est le peuple lui-même, détenteur de la souveraineté nationale, qui crée la Constitution ex nihilo. Il est illimité, irrévocable, inaliénable. Le second est une autorité créée par la Constitution (assemblée constituante, parlement, congrès) qui exerce ses prérogatives dans les limites fixées par le texte fondamental.
+                </p>
+                <p>
+                    En France, le pouvoir constituant originaire s'est exprimé à plusieurs reprises : 1789-1791 (Assemblée nationale constituante), 1848 (Assemblée nationale constituante), 1946 (Assemblée nationale constituante élues après la Libération), 1958 (referendum du 28 septembre 1958 approuvant la Constitution de la Ve République). Depuis 1958, toutes les révisions se sont faites par le pouvoir constituant dérivé, selon la procédure de l'art. 89.
+                </p>
+
+                <h3>B. La procédure de révision de la Constitution française (art. 89)</h3>
+                <p>
+                    L'art. 89 de la Constitution de 1958 prévoit une procédure rigoureuse. L'initiative appartient conjointement au Président de la République et au Premier ministre (proposition du Gouvernement) ou aux membres du Parlement (proposition parlementaire). Le projet ou la proposition de révision doit être voté par les deux assemblées en termes identiques. La révision est définitive après avoir été approuvée par référendum (voie normale) ou par les trois cinquièmes des suffrages exprimés du Congrès (voie parlementaire, ajoutée par révision de 1995).
+                </p>
+                <p>
+                    Le référendum de l'art. 89 est le mode historique de révision. Il a été utilisé pour les révisions de 1962 (élection du président au suffrage universel direct), 1969 (réforme du Sénat et des régions, rejetée par le peuple), 2000 (quinquennat). Depuis la révision de 1995 (loi constitutionnelle n° 95-880 du 4 août 1995), le Congrès peut adopter la révision à la majorité des trois cinquièmes sans référendum. Cette voie a été utilisée pour la plupart des révisions postérieures (1998, 1999, 2005, 2008, 2016, 2024).
+                </p>
+                <p>
+                    Le Président de la République ne peut pas procéder seul à une révision : il doit obligatoirement obtenir l'accord du Premier ministre. En revanche, il dispose d'un droit de regard sur les propositions parlementaires : "les projets [de révision] en ce cas ne sont présentés au référendum qu'après avoir été adoptés à cette majorité par l'Assemblée nationale" (art. 89 al. 4).
+                </p>
+
+                <div class="focus-box">
+                    <h4 class="font-bold text-blue-900 dark:text-blue-300 mb-2">Focus : Le précédent 1962 et la décision 62-20 DC</h4>
+                    <p class="text-sm mb-0">
+                        Le référendum du 28 octobre 1962, par lequel le général de Gaulle a soumis au peuple la révision de l'art. 6 et 7 (élection présidentielle au suffrage universel direct), a été organisé par voie d'art. 11 et non d'art. 89. Cette procédure, controversée, a été contestée devant le Conseil constitutionnel. Dans sa décision n° 62-20 DC du 6 novembre 1962, le Conseil a déclaré qu'il n'était pas compétent pour contrôler les lois référendaires adoptées par voie d'art. 11. Cette décision, critiquée par la doctrine (Favoreu, Vedel), a marqué une limite au contrôle de constitutionnalité a priori. Le débat sur la "révision contournée" reste vif.
+                    </p>
+                </div>
+
+                <div class="citation">
+                    "La Constitution, ce n'est pas un programme, c'est un ensemble d'instruments."
+                    <br><span class="text-sm text-slate-400 not-italic">— Michel Debré, discours au Conseil d'État, 1958</span>
+                </div>
+
+                <div class="focus-box">
+                    <h4 class="font-bold text-blue-900 dark:text-blue-300 mb-2">Appareil critique — Bibliographie</h4>
+                    <p class="text-sm mb-0">
+                        <strong>Doctrinale :</strong> Louis Favoreu, Patrick Gaïa, <em>Droit constitutionnel</em> (13e éd., 2022) ; Dominique Rousseau, <em>Droit du contentieux constitutionnel</em> (14e éd., 2023) ; Olivier Duhamel, <em>Droit constitutionnel et institutions politiques</em> (4e éd., 2021).<br><br>
+                        <strong>Essais :</strong> Maurice Duverger, <em>Les Monarchies républicaines</em> (PUF, 1974) ; Bertrand Mathieu, <em>La Ve République, une révolution juridique ?</em> (Dalloz, 2017).<br><br>
+                        <strong>Arrêts de principe :</strong> Cons. const., déc. n° 62-20 DC, 6 nov. 1962 (incompétence sur les lois référendaires) ; déc. n° 71-44 DC, 16 juill. 1971 (bloc de constitutionnalité).
+                    </p>
+                </div>
+
+                <!-- QUIZ -->
+                <section class="mt-16 p-8 bg-slate-50 dark:bg-slate-800 rounded-2xl">
+                    <h3 class="text-2xl font-bold mb-6">Quiz — La Constitution</h3>
+                    <div id="quiz-container" class="space-y-6">
+                        <div class="quiz-question" data-correct="1">
+                            <p class="font-semibold mb-3">1. Quel juriste a proposé la distinction entre Constitutions souples et rigides ?</p>
+                            <div class="space-y-2">
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. Hans Kelsen</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. James Bryce</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. Sieyès</button>
+                            </div>
+                            <p class="quiz-feedback hidden mt-2 text-sm"></p>
+                        </div>
+                        <div class="quiz-question" data-correct="2">
+                            <p class="font-semibold mb-3">2. Quel article de la Constitution de 1958 régit la procédure de révision ?</p>
+                            <div class="space-y-2">
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. Art. 11</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. Art. 61</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. Art. 89</button>
+                            </div>
+                            <p class="quiz-feedback hidden mt-2 text-sm"></p>
+                        </div>
+                        <div class="quiz-question" data-correct="0">
+                            <p class="font-semibold mb-3">3. Quel pays possède une Constitution "souple", modifiable par une simple loi du Parlement ?</p>
+                            <div class="space-y-2">
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. Royaume-Uni</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. France</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. États-Unis</button>
+                            </div>
+                            <p class="quiz-feedback hidden mt-2 text-sm"></p>
+                        </div>
+                        <div class="quiz-question" data-correct="1">
+                            <p class="font-semibold mb-3">4. Quelle décision du Conseil constitutionnel a intégré le Préambule de 1946 et la DDHC 1789 au bloc de constitutionnalité ?</p>
+                            <div class="space-y-2">
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. 62-20 DC</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. 71-44 DC</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. 2004-496 DC</button>
+                            </div>
+                            <p class="quiz-feedback hidden mt-2 text-sm"></p>
+                        </div>
+                        <div class="quiz-question" data-correct="2">
+                            <p class="font-semibold mb-3">5. La voie parlementaire de révision (sans référendum) requiert une majorité de :</p>
+                            <div class="space-y-2">
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. La moitié + 1</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. Les deux tiers</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. Les trois cinquièmes</button>
+                            </div>
+                            <p class="quiz-feedback hidden mt-2 text-sm"></p>
+                        </div>
+                    </div>
+                    <div id="quiz-result" class="mt-6 hidden p-4 rounded-xl font-bold text-center"></div>
+                </section>
+
+                <section class="mt-24 p-12 bg-slate-900 text-white rounded-[3rem] overflow-hidden relative">
+                  <div class="relative z-10 text-left">
+                    <h3 class="text-2xl font-bold mb-6">Prêt pour l'examen ?</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                      <div>
+                        <h4 class="text-blue-400 font-bold text-xs uppercase mb-4 tracking-widest">Citation à retenir</h4>
+                        <p class="text-slate-300 italic mb-4">"La Constitution n'est point un acte du Gouvernement, mais un acte du peuple."</p>
+                        <p class="text-xs text-slate-500">— Sieyès, Qu'est-ce que le Tiers-État ?, 1789</p>
+                      </div>
+                      <div class="space-y-4">
+                        <button onclick="copyCitation()" class="w-full py-3 px-6 bg-white/10 hover:bg-white/20 rounded-xl border border-white/10 text-sm font-bold transition flex justify-between items-center">
+                          Citer cette leçon (APA) <span>📋</span>
+                        </button>
+                        <button onclick="window.print()" class="w-full py-3 px-6 bg-blue-600 hover:bg-blue-700 rounded-xl text-sm font-bold transition flex justify-between items-center">
+                          Version PDF / Imprimer <span>🖨️</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="absolute right-[-30px] bottom-[-30px] text-[12rem] opacity-5">⚖️</div>
+                </section>
+                <script>
+                function copyCitation(){
+                  const c = `ROLANDO C., « La Constitution : notion, types, fonctions », JurisMaster, ${new Date().getFullYear()}. URL : ${location.href}`;
+                  navigator.clipboard.writeText(c);
+                  alert("Citation copiée.");
+                }
+                </script>
+
+                <p class="text-xs text-slate-400 mt-8 text-center">
+                  Contenu à visée pédagogique. Ne constitue pas un conseil juridique personnalisé.
+                </p>
+            </article>
+        </main>
+    </div>
+
+    <script>
+    document.addEventListener('click', e => {
+      if(e.target.closest('#dark-toggle')){
+        document.documentElement.classList.toggle('dark');
+        localStorage.setItem('jm.theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+      }
+    });
+
+    const JM = {
+      get(){ return JSON.parse(localStorage.getItem('jurismaster.v1') || '{"xp":0,"streak":{"count":0,"lastVisit":""},"lessonsCompleted":[],"badges":[],"quizScores":{}}'); },
+      set(s){ localStorage.setItem('jurismaster.v1', JSON.stringify(s)); },
+      addXP(n){ const s=JM.get(); s.xp=(s.xp||0)+n; JM.set(s); window.dispatchEvent(new CustomEvent('jm:xp',{detail:n})); },
+      completeLesson(slug, xp=50){ const s=JM.get(); s.lessonsCompleted=[...new Set([...(s.lessonsCompleted||[]),slug])]; s.xp=(s.xp||0)+xp; JM.set(s); },
+      touchStreak(){ const s=JM.get(); const today=new Date().toISOString().slice(0,10); const last=s.streak?.lastVisit; if(last&&last!==today){const d=new Date(today)-new Date(last); if(d===86400000){s.streak.count=(s.streak.count||0)+1;} else if(d>86400000){s.streak.count=1;} s.streak.lastVisit=today;} else if(!last){s.streak={count:1,lastVisit:today};} JM.set(s); }
+    };
+    JM.touchStreak();
+    JM.completeLesson('droit-constitutionnel/constitution-notion', 50);
+
+    const s = JM.get();
+    const progress = Math.min(100, Math.round(((s.lessonsCompleted||[]).length / 32) * 100));
+    document.querySelectorAll('[data-progress]').forEach(el => el.textContent = progress);
+    document.querySelectorAll('[data-progress-bar]').forEach(el => el.style.width = progress + '%');
+
+    document.querySelectorAll('.quiz-question').forEach((q, qi) => {
+      const correct = parseInt(q.dataset.correct);
+      const feedback = q.querySelector('.quiz-feedback');
+      const explanations = [
+        ["Kelsen a théorisé la hiérarchie des normes (Stufenbau). Sieyès a théorisé le pouvoir constituant.", "Exact ! James Bryce, dans Studies in History and Jurisprudence (1901), a distingué les Constitutions souples (modifiables par la procédure législative ordinaire) et rigides (procédure spéciale).", "Sieyès a théorisé le pouvoir constituant originaire et dérivé, pas la distinction souple/rigide."],
+        ["L'art. 11 concerne le référendum d'initiative présidentielle, pas la révision constitutionnelle.", "L'art. 61 concerne le contrôle de constitutionnalité a priori par le Conseil constitutionnel.", "Exact ! L'art. 89 de la Constitution de 1958 régit la procédure de révision : vote identique des deux assemblées, puis ratification par référendum ou Congrès à la majorité des trois cinquièmes."],
+        ["Exact ! Le Royaume-Uni possède une Constitution souple : aucune loi n'est supérieure à une autre, et le Parlement peut modifier n'importe quelle règle par une simple loi.", "La France possède une Constitution rigide (art. 89).", "Les États-Unis possèdent une Constitution rigide : amendement par proposition des deux tiers du Congrès et ratification par les trois quarts des États."],
+        ["La décision 62-20 DC a déclaré le Conseil constitutionnel incompétent pour contrôler les lois référendaires (art. 11).", "Exact ! La décision n° 71-44 DC du 16 juillet 1971, Liberté d'association, a intégré le Préambule de 1946 et la DDHC 1789 au bloc de constitutionnalité.", "La décision 2004-496 DC concerne la limitation de souveraineté par l'intégration européenne."],
+        ["La majorité simple suffit pour les lois ordinaires, pas pour les révisions constitutionnelles.", "Les deux tiers sont requis pour la proposition d'amendement au Congrès américain, pas pour la voie parlementaire française.", "Exact ! Depuis la révision constitutionnelle de 1995 (loi n° 95-880 du 4 août 1995), la révision peut être adoptée par le Congrès à la majorité des trois cinquièmes des suffrages exprimés, sans référendum."]
+      ];
+      q.querySelectorAll('.quiz-btn').forEach((btn, bi) => {
+        btn.addEventListener('click', () => {
+          if(q.classList.contains('answered')) return;
+          q.classList.add('answered');
+          if(bi === correct){
+            btn.classList.add('bg-green-100', 'border-green-500', 'text-green-800');
+            feedback.textContent = explanations[qi][bi];
+            feedback.className = 'quiz-feedback mt-2 text-sm text-green-700';
+          } else {
+            btn.classList.add('bg-red-100', 'border-red-500', 'text-red-800');
+            q.querySelectorAll('.quiz-btn')[correct].classList.add('bg-green-100', 'border-green-500');
+            feedback.textContent = explanations[qi][bi];
+            feedback.className = 'quiz-feedback mt-2 text-sm text-red-700';
+          }
+          feedback.classList.remove('hidden');
+        });
+      });
+    });
+    </script>
+</body>
+</html>

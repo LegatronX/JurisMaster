@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La souveraineté et ses modes d'exercice - Droit constitutionnel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; line-height: 1.8; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .prose h2 { font-size: 2rem; font-weight: 700; margin-top: 3rem; margin-bottom: 1.5rem; color: #1e3a8a; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; }
+        .prose h3 { font-size: 1.5rem; font-weight: 600; margin-top: 2rem; margin-bottom: 1rem; color: #1e40af; }
+        .prose p { margin-bottom: 1.5rem; color: #334155; text-align: justify; }
+        .sidebar-link.active { color: #1d4ed8; font-weight: 600; border-left: 3px solid #1d4ed8; }
+        .focus-box { background-color: #f8fafc; border-left: 4px solid #3b82f6; padding: 1.5rem; border-radius: 0.5rem; margin: 2rem 0; }
+        .citation { font-style: italic; color: #475569; border-left: 2px solid #cbd5e1; padding-left: 1.5rem; margin: 2rem 0; }
+    </style>
+</head>
+<body class="bg-white dark:bg-slate-900">
+    <script>tailwind.config={darkMode:'class'}</script>
+    <script>
+    (function(){
+      const stored = localStorage.getItem('jm.theme');
+      if(stored === 'dark' || (!stored && matchMedia('(prefers-color-scheme: dark)').matches)){
+        document.documentElement.classList.add('dark');
+      }
+    })();
+    </script>
+
+    <nav class="sticky top-0 z-50 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-6 py-3 flex justify-between items-center">
+      <a href="../../index.html" class="text-xl font-bold tracking-tight">JURIS<span class="text-blue-700">MASTER</span></a>
+      <div class="flex items-center space-x-4">
+        <button id="dark-toggle" aria-label="Basculer mode sombre" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800">🌓</button>
+        <span class="text-sm text-slate-500">Progression : <span data-progress>0</span>%</span>
+        <div class="w-32 h-2 bg-slate-100 rounded-full overflow-hidden">
+          <div class="bg-blue-600 h-full" data-progress-bar style="width:0%"></div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row">
+        <aside class="w-full md:w-80 border-r border-slate-100 dark:border-slate-800 p-8 h-screen sticky top-14 overflow-y-auto bg-slate-50/50 dark:bg-slate-900/50">
+            <h4 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-6">Droit constitutionnel</h4>
+            <div class="space-y-8 text-sm text-left">
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">I. L'État et la souveraineté</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="notion-etat-elements-constitutifs.html" class="sidebar-link pl-4 block text-slate-500">A1. La notion d'État</a></li>
+                        <li><a href="souverainete-modes-exercice.html" class="sidebar-link active pl-4 block">A2. La souveraineté</a></li>
+                        <li><a href="constitution-notion-types-fonctions.html" class="sidebar-link pl-4 block text-slate-500">A3. La Constitution</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">II. Le bloc de constitutionnalité</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="bloc-constitutionnalite-hierarchie-normes.html" class="sidebar-link pl-4 block text-slate-500">A4. Bloc et hiérarchie</a></li>
+                        <li><a href="histoire-constitutionnelle-francaise.html" class="sidebar-link pl-4 block text-slate-500">A5. Histoire (1789–1958)</a></li>
+                        <li><a href="typologie-regimes-politiques.html" class="sidebar-link pl-4 block text-slate-500">A6. Régimes politiques</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">III. La Ve République</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="constitution-1958-genese-principes.html" class="sidebar-link pl-4 block text-slate-500">A7. Constitution de 1958</a></li>
+                        <li><a href="president-republique.html" class="sidebar-link pl-4 block text-slate-500">A8. Président</a></li>
+                        <li><a href="gouvernement-parlement-rapports-force.html" class="sidebar-link pl-4 block text-slate-500">A9. Gouvernement et Parlement</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">IV. Le juge et les droits</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="conseil-constitutionnel.html" class="sidebar-link pl-4 block text-slate-500">A10. Conseil constitutionnel</a></li>
+                        <li><a href="droits-libertes-constitutionnellement-garantis.html" class="sidebar-link pl-4 block text-slate-500">A11. Droits et libertés</a></li>
+                        <li><a href="constitution-droit-europeen.html" class="sidebar-link pl-4 block text-slate-500">A12. Droit européen</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <main class="flex-1 py-16 px-6 md:px-20 max-w-5xl">
+            <article class="prose prose-slate lg:prose-lg mx-auto text-left">
+                <nav class="text-sm text-blue-600 font-semibold mb-8 uppercase tracking-wide">Chapitre I — L'État et la souveraineté</nav>
+                <h1 class="text-4xl md:text-6xl font-bold mb-10 leading-tight">La souveraineté et ses modes d'exercice</h1>
+                
+                <p class="text-xl text-slate-500 italic mb-12 border-l-4 border-blue-100 pl-6 py-2">
+                    "La souveraineté est l'absolue et perpétuelle puissance d'une République."
+                </p>
+                <p class="text-sm text-slate-400 mb-8">— Jean Bodin, Les Six Livres de la République, 1576</p>
+
+                <h2 id="exorde">Exorde — De Bodin à Sieyès</h2>
+                <p>
+                    Le concept de souveraineté est au cœur de la science politique moderne depuis le XVIe siècle. Jean Bodin, dans ses <em>Six Livres de la République</em> (1576), en donne la première formulation systématique : la souveraineté est cette "puissance absolue et perpétuelle" qui fonde l'autorité de l'État. Cette définition, élaborée dans un contexte de guerres de Religion, visait à affirmer l'autonomie du pouvoir royal face aux tutelles papale et féodale.
+                </p>
+                <p>
+                    Deux siècles plus tard, la Révolution française transforme radicalement le concept. Emmanuel Sieyès, dans <em>Qu'est-ce que le Tiers-État ?</em> (1789), déplace la souveraineté du monarque au "corps des commissaires" — le peuple. Cette inversion, consacrée par la Déclaration de 1789 (art. 3 : "le principe de toute souveraineté réside essentiellement dans la Nation"), marque le passage de la souveraineté monarchique à la souveraineté nationale. Enjeu contemporain : la tension entre souveraineté nationale et intégration européenne, entre démocratie directe et démocratie représentative.
+                </p>
+
+                <div class="focus-box">
+                    <h4 class="font-bold text-blue-900 dark:text-blue-300 mb-2">Focus : Les deux conceptions classiques</h4>
+                    <p class="text-sm mb-0">
+                        <strong>Souveraineté nationale (Sieyès, 1789)</strong> : le peuple exerce sa souveraineté par l'intermédiaire de représentants. C'est une souveraineté indirecte, déléguée, compatible avec des États de grande taille. Elle fonde la démocratie représentative moderne.<br><br>
+                        <strong>Souveraineté populaire (Rousseau, 1762)</strong> : dans le <em>Contrat social</em>, Rousseau affirme que la souveraineté est inaliénable et indivisible. Elle ne peut être représentée : "la volonté générale ne peut être représentée" (Livre III, ch. 15). Cette conception radicale justifie les mécanismes de démocratie directe (référendum, initiative populaire).
+                    </p>
+                </div>
+
+                <h2 id="partie1">Partie I — La souveraineté nationale et la démocratie représentative</h2>
+
+                <h3>A. Fondements textuels et doctrinaux</h3>
+                <p>
+                    L'art. 3 de la Déclaration des droits de l'homme et du citoyen de 1789 dispose : "Le principe de toute Souveraineté reside essentiellement dans la Nation. Nul corps, nul individu ne peut exercer d'autorité qui n'en emane expressément." Cette disposition, intégrée au bloc de constitutionnalité par la décision du Conseil constitutionnel n° 71-44 DC du 16 juillet 1971, constitue la pierre angulaire de l'ordre juridique français.
+                </p>
+                <p>
+                    L'art. 27 de la Constitution de 1958 consacre la théorie du <strong>mandat représentatif</strong> libre : "Le mandat des membres du Parlement est représentatif." Cette formule, issue de la Constitution de 1848 (art. 21), signifie que le député ou le sénateur n'est pas lié par les instructions de ses électeurs. Il vote selon sa conscience et sa conviction. Cette liberté de mandat distingue la démocratie représentative française de la démocratie impérative (conseils ouvriers, soviets).
+                </p>
+                <p>
+                    Cependant, le mandat représentatif connaît des limites. L'art. 27 al. 2 de la Constitution interdit "tout mandat impératif". Le député peut être révoqué par ses électeurs dans certains systèmes (rappel en Californie), mais pas en France. L'indépendance du mandataire est pensée comme une garantie contre la pression des intérêts particuliers. Maurice Duverger, dans <em>Institutions politiques et droit constitutionnel</em>, y voyait un mécanisme de "démocratie calme" : le peuple choisit ses gouvernants, puis leur laisse agir jusqu'à la prochaine échéance électorale.
+                </p>
+
+                <h3>B. Les modes d'exercice de la souveraineté</h3>
+                <p>
+                    La souveraineté nationale s'exerce principalement par le <strong>vote</strong>. L'art. 6 de la DDHC dispose : "La Loi est l'expression de la volonté générale. Tous les Citoyens ont droit de concourir personnellement, ou par leurs Représentants, à sa formation." Deux modalités coexistent : le suffrage direct (élection du président de la République, référendum) et le suffrage indirect (élection des députés au suffrage universel direct, des sénateurs au suffrage universel indirect).
+                </p>
+                <p>
+                    La démocratie <strong>directe</strong> permet au peuple de s'exprimer sans intermédiaire. En France, elle se déploie par le référendum (art. 11 et 89 de la Constitution), le Référendum d'initiative populaire (RIP, art. 11 al. 3, instauré par la révision constitutionnelle de 2008), et la pétition. Le référendum de l'art. 11, révisé en 2008, permet au président de la République de soumettre au peuple tout projet de réforme portant sur "l'organisation des pouvoirs publics, sur des réformes relatives à la politique économique, sociale ou environnementale de la Nation, ou tendant à autoriser la ratification d'un traité qui, sans être contraire à la Constitution, aurait des incidences sur le fonctionnement des institutions".
+                </p>
+                <p>
+                    La démocratie <strong>semi-directe</strong> (ou démocratie représentative complétée) caractérise les régimes où le peuple s'exprime régulièrement mais non exclusivement. La Suisse est l'exemple type : votes populaires fréquents (4-6 fois par an), initiative populaire fédérale (100 000 signatures pour proposer une révision totale ou partielle de la Constitution), référendum facultatif (50 000 signatures pour contester une loi). La France est beaucoup plus restrictive : seuls 9 référendums ont eu lieu depuis 1958 (art. 11), le RIP n'a jamais abouti (il requiert le soutien d'un cinquième des membres du Parlement, puis 4,5 millions de signatures).
+                </p>
+
+                <div class="citation">
+                    "La volonté générale est toujours droite, mais le jugement qui la guide n'est pas toujours éclairé."
+                    <br><span class="text-sm text-slate-400 not-italic">— Jean-Jacques Rousseau, Du Contrat social, Livre II, ch. 6</span>
+                </div>
+
+                <h2 id="partie2">Partie II — Les limites et les débats contemporains</h2>
+
+                <h3>A. La démocratie représentative en crise ?</h3>
+                <p>
+                    La doctrine contemporaine s'interroge sur la pertinence du modèle représentatif face à l'abstention croissante (abstention record de 66,7% aux élections régionales de 2021, 53% aux législatives de 2022), à la défiance envers les élus et au succès des mouvements populistes. Pierre Rosanvallon, dans <em>La Contre-démocratie</em> (2006), parle de "démocratie inachevée" et appelle à développer les formes de contre-démocratie (pouvoir de surveillance, de prévention, de jugement) pour compenser les failles de la démocratie élective.
+                </p>
+                <p>
+                    L'absence de révision du mode de scrutin législatif français (uninominal majoritaire à deux tours) est également débattue. La représentativité proportionnelle, qui prévaut dans la plupart des démocraties européennes (Allemagne, Espagne, Italie), permet une meilleure représentation des minorités politiques. La France y a renoncé après l'expérience de 1986 (loi n° 85-889 du 10 août 1985), qui avait instauré la proportionnelle pour les législatives, produisant une forte fragmentation de l'Assemblée nationale.
+                </p>
+
+                <h3>B. Souveraineté nationale et intégration européenne</h3>
+                <p>
+                    L'art. 88-1 de la Constitution pose le principe de participation de la République à l'Union européenne. Le Conseil constitutionnel, dans sa décision n° 2004-496 DC du 10 juin 2004, a admis une "limitation de souveraineté" compatible avec la Constitution, pour autant qu'elle ne porte pas atteinte aux conditions essentielles d'exercice de la souveraineté nationale. Cette jurisprudence reprend la distinction entre "compétences" (qui peuvent être transférées) et "souveraineté" (qui demeure inaliénable).
+                </p>
+                <p>
+                    Le traité de Lisbonne (2007) a introduit le principe de "compétence d'attribution" (art. 5 TUE) : l'Union n'agit que dans les limites des compétences qui lui sont attribuées par les États membres. Le Conseil constitutionnel, dans sa décision n° 2007-560 DC du 20 décembre 2007, a validé ce traité en jugeant que les compétences transférées n'atteignaient pas le "noyau dur" de la souveraineté nationale (défense, justice pénale, identité constitutionnelle).
+                </p>
+
+                <h3>C. La souveraineté numérique</h3>
+                <p>
+                    Un débat émerge autour de la <strong>souveraineté numérique</strong>. Le contrôle des données personnelles par les géants américains (Google, Meta, Amazon), le stockage cloud, l'intelligence artificielle générative interrogent la capacité de l'État à protéger ses citoyens sur le territoire numérique. Le RGPD (règlement UE 2016/679) et la loi française sur la protection des données (loi n° 78-17 du 6 janvier 1978 modifiée) tentent de réaffirmer un contrôle étatique, mais la fluidité des flux transfrontaliers rend l'effectivité de cette souveraineté problématique.
+                </p>
+
+                <div class="focus-box">
+                    <h4 class="font-bold text-blue-900 dark:text-blue-300 mb-2">Appareil critique — Bibliographie</h4>
+                    <p class="text-sm mb-0">
+                        <strong>Doctrinale :</strong> Maurice Duverger, <em>Institutions politiques et droit constitutionnel</em> (23e éd., 1998) ; Olivier Duhamel, <em>Droit constitutionnel et institutions politiques</em> (4e éd., 2021) ; Dominique Rousseau, <em>Droit du contentieux constitutionnel</em> (14e éd., 2023).<br><br>
+                        <strong>Essais :</strong> Pierre Rosanvallon, <em>La Contre-démocratie</em> (Seuil, 2006) ; Étienne Balibar, <em>La Proposition de l'égaliberté</em> (PUF, 2011).<br><br>
+                        <strong>Arrêts de principe :</strong> Cons. const., déc. n° 71-44 DC, 16 juill. 1971 (bloc de constitutionnalité) ; déc. n° 2004-496 DC, 10 juin 2004 (traité établissant une Constitution pour l'Europe).
+                    </p>
+                </div>
+
+                <!-- QUIZ -->
+                <section class="mt-16 p-8 bg-slate-50 dark:bg-slate-800 rounded-2xl">
+                    <h3 class="text-2xl font-bold mb-6">Quiz — La souveraineté</h3>
+                    <div id="quiz-container" class="space-y-6">
+                        <div class="quiz-question" data-correct="2">
+                            <p class="font-semibold mb-3">1. Quel philosophe affirme que "la volonté générale ne peut être représentée" ?</p>
+                            <div class="space-y-2">
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. Sieyès</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. Bodin</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. Rousseau</button>
+                            </div>
+                            <p class="quiz-feedback hidden mt-2 text-sm"></p>
+                        </div>
+                        <div class="quiz-question" data-correct="0">
+                            <p class="font-semibold mb-3">2. Quel article de la DDHC 1789 dispose que "le principe de toute souveraineté réside dans la Nation" ?</p>
+                            <div class="space-y-2">
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. Art. 3</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. Art. 6</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. Art. 16</button>
+                            </div>
+                            <p class="quiz-feedback hidden mt-2 text-sm"></p>
+                        </div>
+                        <div class="quiz-question" data-correct="1">
+                            <p class="font-semibold mb-3">3. Quel article de la Constitution interdit "tout mandat impératif" ?</p>
+                            <div class="space-y-2">
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. Art. 11</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. Art. 27</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. Art. 88-1</button>
+                            </div>
+                            <p class="quiz-feedback hidden mt-2 text-sm"></p>
+                        </div>
+                        <div class="quiz-question" data-correct="2">
+                            <p class="font-semibold mb-3">4. Le RIP (Référendum d'initiative populaire) est prévu par :</p>
+                            <div class="space-y-2">
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. L'art. 89</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. L'art. 61-1</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. L'art. 11 al. 3</button>
+                            </div>
+                            <p class="quiz-feedback hidden mt-2 text-sm"></p>
+                        </div>
+                    </div>
+                    <div id="quiz-result" class="mt-6 hidden p-4 rounded-xl font-bold text-center"></div>
+                </section>
+
+                <section class="mt-24 p-12 bg-slate-900 text-white rounded-[3rem] overflow-hidden relative">
+                  <div class="relative z-10 text-left">
+                    <h3 class="text-2xl font-bold mb-6">Prêt pour l'examen ?</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                      <div>
+                        <h4 class="text-blue-400 font-bold text-xs uppercase mb-4 tracking-widest">Citation à retenir</h4>
+                        <p class="text-slate-300 italic mb-4">"Le principe de toute Souveraineté reside essentiellement dans la Nation."</p>
+                        <p class="text-xs text-slate-500">— Déclaration des droits de l'homme et du citoyen, 1789, art. 3</p>
+                      </div>
+                      <div class="space-y-4">
+                        <button onclick="copyCitation()" class="w-full py-3 px-6 bg-white/10 hover:bg-white/20 rounded-xl border border-white/10 text-sm font-bold transition flex justify-between items-center">
+                          Citer cette leçon (APA) <span>📋</span>
+                        </button>
+                        <button onclick="window.print()" class="w-full py-3 px-6 bg-blue-600 hover:bg-blue-700 rounded-xl text-sm font-bold transition flex justify-between items-center">
+                          Version PDF / Imprimer <span>🖨️</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="absolute right-[-30px] bottom-[-30px] text-[12rem] opacity-5">⚖️</div>
+                </section>
+                <script>
+                function copyCitation(){
+                  const c = `ROLANDO C., « La souveraineté et ses modes d'exercice », JurisMaster, ${new Date().getFullYear()}. URL : ${location.href}`;
+                  navigator.clipboard.writeText(c);
+                  alert("Citation copiée.");
+                }
+                </script>
+
+                <p class="text-xs text-slate-400 mt-8 text-center">
+                  Contenu à visée pédagogique. Ne constitue pas un conseil juridique personnalisé.
+                </p>
+            </article>
+        </main>
+    </div>
+
+    <script>
+    document.addEventListener('click', e => {
+      if(e.target.closest('#dark-toggle')){
+        document.documentElement.classList.toggle('dark');
+        localStorage.setItem('jm.theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+      }
+    });
+
+    const JM = {
+      get(){ return JSON.parse(localStorage.getItem('jurismaster.v1') || '{"xp":0,"streak":{"count":0,"lastVisit":""},"lessonsCompleted":[],"badges":[],"quizScores":{}}'); },
+      set(s){ localStorage.setItem('jurismaster.v1', JSON.stringify(s)); },
+      addXP(n){ const s=JM.get(); s.xp=(s.xp||0)+n; JM.set(s); window.dispatchEvent(new CustomEvent('jm:xp',{detail:n})); },
+      completeLesson(slug, xp=50){ const s=JM.get(); s.lessonsCompleted=[...new Set([...(s.lessonsCompleted||[]),slug])]; s.xp=(s.xp||0)+xp; JM.set(s); },
+      touchStreak(){ const s=JM.get(); const today=new Date().toISOString().slice(0,10); const last=s.streak?.lastVisit; if(last&&last!==today){const d=new Date(today)-new Date(last); if(d===86400000){s.streak.count=(s.streak.count||0)+1;} else if(d>86400000){s.streak.count=1;} s.streak.lastVisit=today;} else if(!last){s.streak={count:1,lastVisit:today};} JM.set(s); }
+    };
+    JM.touchStreak();
+    JM.completeLesson('droit-constitutionnel/souverainete', 50);
+
+    const s = JM.get();
+    const progress = Math.min(100, Math.round(((s.lessonsCompleted||[]).length / 32) * 100));
+    document.querySelectorAll('[data-progress]').forEach(el => el.textContent = progress);
+    document.querySelectorAll('[data-progress-bar]').forEach(el => el.style.width = progress + '%');
+
+    document.querySelectorAll('.quiz-question').forEach((q, qi) => {
+      const correct = parseInt(q.dataset.correct);
+      const feedback = q.querySelector('.quiz-feedback');
+      const explanations = [
+        ["Sieyès défend la souveraineté nationale et le mandat représentatif. Bodin a théorisé la souveraineté absolue du monarque.", "Bodin a théorisé la souveraineté absolue du monarque dans les Six Livres de la République (1576). Rousseau est celui qui affirme l'inaliénabilité de la volonté générale.", "Exact ! Rousseau, dans Du Contrat social (Livre III, ch. 15), écrit : 'La volonté générale ne peut être représentée.' C'est la base de sa critique de la démocratie représentative."],
+        ["Exact ! L'art. 3 de la DDHC 1789 dispose : 'Le principe de toute Souveraineté reside essentiellement dans la Nation.'", "L'art. 6 concerne l'expression de la volonté générale par la loi et le droit de vote.", "L'art. 16 proclame que 'Toute société dans laquelle la garantie des Droits n'est pas assurée... n'a point de Constitution.'"],
+        ["L'art. 11 concerne le référendum. L'art. 88-1 concerne l'Union européenne.", "Exact ! L'art. 27 de la Constitution dispose : 'Le mandat des membres du Parlement est représentatif. Aucun mandat impératif n'est accepté.'", "L'art. 88-1 concerne la participation de la République à l'Union européenne."],
+        ["L'art. 89 concerne la procédure de révision de la Constitution. L'art. 61-1 concerne la QPC.", "L'art. 61-1 concerne la question prioritaire de constitutionnalité (QPC), pas le RIP.", "Exact ! Le RIP a été instauré par la révision constitutionnelle du 23 juillet 2008, qui a ajouté un alinéa 3 à l'art. 11. Il requiert le soutien d'un cinquième des parlementaires puis 4,5 millions de signatures."]
+      ];
+      q.querySelectorAll('.quiz-btn').forEach((btn, bi) => {
+        btn.addEventListener('click', () => {
+          if(q.classList.contains('answered')) return;
+          q.classList.add('answered');
+          if(bi === correct){
+            btn.classList.add('bg-green-100', 'border-green-500', 'text-green-800');
+            feedback.textContent = explanations[qi][bi];
+            feedback.className = 'quiz-feedback mt-2 text-sm text-green-700';
+          } else {
+            btn.classList.add('bg-red-100', 'border-red-500', 'text-red-800');
+            q.querySelectorAll('.quiz-btn')[correct].classList.add('bg-green-100', 'border-green-500');
+            feedback.textContent = explanations[qi][bi];
+            feedback.className = 'quiz-feedback mt-2 text-sm text-red-700';
+          }
+          feedback.classList.remove('hidden');
+        });
+      });
+    });
+    </script>
+</body>
+</html>

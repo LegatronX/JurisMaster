@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La notion d'État et ses éléments constitutifs - Droit constitutionnel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; line-height: 1.8; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .prose h2 { font-size: 2rem; font-weight: 700; margin-top: 3rem; margin-bottom: 1.5rem; color: #1e3a8a; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; }
+        .prose h3 { font-size: 1.5rem; font-weight: 600; margin-top: 2rem; margin-bottom: 1rem; color: #1e40af; }
+        .prose p { margin-bottom: 1.5rem; color: #334155; text-align: justify; }
+        .sidebar-link.active { color: #1d4ed8; font-weight: 600; border-left: 3px solid #1d4ed8; }
+        .focus-box { background-color: #f8fafc; border-left: 4px solid #3b82f6; padding: 1.5rem; border-radius: 0.5rem; margin: 2rem 0; }
+        .citation { font-style: italic; color: #475569; border-left: 2px solid #cbd5e1; padding-left: 1.5rem; margin: 2rem 0; }
+    </style>
+</head>
+<body class="bg-white dark:bg-slate-900">
+    <script>tailwind.config={darkMode:'class'}</script>
+    <script>
+    (function(){
+      const stored = localStorage.getItem('jm.theme');
+      if(stored === 'dark' || (!stored && matchMedia('(prefers-color-scheme: dark)').matches)){
+        document.documentElement.classList.add('dark');
+      }
+    })();
+    </script>
+
+    <nav class="sticky top-0 z-50 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-6 py-3 flex justify-between items-center">
+      <a href="../../index.html" class="text-xl font-bold tracking-tight">JURIS<span class="text-blue-700">MASTER</span></a>
+      <div class="flex items-center space-x-4">
+        <button id="dark-toggle" aria-label="Basculer mode sombre" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800">🌓</button>
+        <span class="text-sm text-slate-500">Progression : <span data-progress>0</span>%</span>
+        <div class="w-32 h-2 bg-slate-100 rounded-full overflow-hidden">
+          <div class="bg-blue-600 h-full" data-progress-bar style="width:0%"></div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row">
+        <aside class="w-full md:w-80 border-r border-slate-100 dark:border-slate-800 p-8 h-screen sticky top-14 overflow-y-auto bg-slate-50/50 dark:bg-slate-900/50">
+            <h4 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-6">Droit constitutionnel</h4>
+            <div class="space-y-8 text-sm text-left">
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">I. L'État et la souveraineté</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="notion-etat-elements-constitutifs.html" class="sidebar-link active pl-4 block">A1. La notion d'État</a></li>
+                        <li><a href="souverainete-modes-exercice.html" class="sidebar-link pl-4 block text-slate-500">A2. La souveraineté</a></li>
+                        <li><a href="constitution-notion-types-fonctions.html" class="sidebar-link pl-4 block text-slate-500">A3. La Constitution</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">II. Le bloc de constitutionnalité</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="bloc-constitutionnalite-hierarchie-normes.html" class="sidebar-link pl-4 block text-slate-500">A4. Bloc et hiérarchie</a></li>
+                        <li><a href="histoire-constitutionnelle-francaise.html" class="sidebar-link pl-4 block text-slate-500">A5. Histoire (1789–1958)</a></li>
+                        <li><a href="typologie-regimes-politiques.html" class="sidebar-link pl-4 block text-slate-500">A6. Régimes politiques</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">III. La Ve République</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="constitution-1958-genese-principes.html" class="sidebar-link pl-4 block text-slate-500">A7. Constitution de 1958</a></li>
+                        <li><a href="president-republique.html" class="sidebar-link pl-4 block text-slate-500">A8. Président</a></li>
+                        <li><a href="gouvernement-parlement-rapports-force.html" class="sidebar-link pl-4 block text-slate-500">A9. Gouvernement et Parlement</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-bold text-slate-900 mb-4">IV. Le juge et les droits</p>
+                    <ul class="space-y-3 pl-2 border-l border-slate-200">
+                        <li><a href="conseil-constitutionnel.html" class="sidebar-link pl-4 block text-slate-500">A10. Conseil constitutionnel</a></li>
+                        <li><a href="droits-libertes-constitutionnellement-garantis.html" class="sidebar-link pl-4 block text-slate-500">A11. Droits et libertés</a></li>
+                        <li><a href="constitution-droit-europeen.html" class="sidebar-link pl-4 block text-slate-500">A12. Droit européen</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <main class="flex-1 py-16 px-6 md:px-20 max-w-5xl">
+            <article class="prose prose-slate lg:prose-lg mx-auto text-left">
+                <nav class="text-sm text-blue-600 font-semibold mb-8 uppercase tracking-wide">Chapitre I — L'État et la souveraineté</nav>
+                <h1 class="text-4xl md:text-6xl font-bold mb-10 leading-tight">La notion d'État et ses éléments constitutifs</h1>
+                
+                <p class="text-xl text-slate-500 italic mb-12 border-l-4 border-blue-100 pl-6 py-2">
+                    "L'État est une communauté de personnes vivant sur un territoire déterminé, possédant une organisation propre, c'est-à-dire un pouvoir qui émane d'elle et s'exerce en son nom."
+                </p>
+                <p class="text-sm text-slate-400 mb-8">— Georges Burdeau, <em>Traité de science politique</em></p>
+
+                <h2 id="exorde">Exorde — Étymologie et enjeux</h2>
+                <p>
+                    Le terme "État" dérive du latin <em>status</em>, qui désigne une condition ou une situation stable. C'est au XVIe siècle, sous l'influence de Machiavel (dans <em>Le Prince</em>, 1532), que le mot acquiert son sens moderne d'entité politique souveraine, distincte à la fois du prince et du peuple. Avant cette mutation sémantique, on parlait de "république" (au sens cicéronien de <em>res publica</em>) ou de "royaume". La naissance du concept d'État marque l'affirmation d'une abstraction juridique qui transcende les individus qui le composent.
+                </p>
+                <p>
+                    Enjeu contemporain majeur : l'État-nation, modèle hérité du traité de Westphalie (1648), est aujourd'hui contesté par deux mouvements convergents. D'une part, la mondialisation et le développement du droit international, qui limitent l'autonomie de l'État (art. 55 de la Constitution). D'autre part, les mouvements décentralisateurs et régionalistes, qui réclament une délégation de compétences au profit des collectivités territoriales (loi n° 2003-276 du 2 avril 2003, réforme des collectivités locales).
+                </p>
+
+                <div class="focus-box">
+                    <h4 class="font-bold text-blue-900 dark:text-blue-300 mb-2">Focus : La théorie de Jellinek (1851–1911)</h4>
+                    <p class="text-sm mb-0">
+                        Le publiciste allemand Georg Jellinek, dans sa <em>Théorie générale de l'État</em> (1900), propose la célèbre théorie des trois éléments constitutifs : la <strong>population</strong> (<em>Staatsvolk</em>), le <strong>territoire</strong> (<em>Staatsgebiet</em>) et le <strong>pouvoir d'organisation</strong> (<em>Staatsgewalt</em>). Cette trilogie, reprise par Carré de Malberg et l'ensemble de la doctrine française, constitue encore aujourd'hui le cadre de référence pour analyser toute entité étatique.
+                    </p>
+                </div>
+
+                <h2 id="partie1">Partie I — Les trois éléments constitutifs de l'État</h2>
+
+                <h3>A. La population (élément personnel)</h3>
+                <p>
+                    La population est l'ensemble des personnes physiques et morales soumises à la juridiction de l'État. La nationalité (art. 19-1 et s. Code civil) constitue le critère juridique principal d'appartenance. Cependant, le lien de sujétion à l'État ne s'épuise pas dans la nationalité : les étrangers résidant sur le territoire (art. L. 111-1 CESEDA) sont également soumis à l'autorité étatique. La doctrine contemporaine, sous l'influence du droit international des droits de l'homme, tend à relativiser la distinction entre nationaux et étrangers : l'art. 16 de la Déclaration des droits de l'homme et du citoyen de 1789 proclame que "toute société dans laquelle la garantie des droits n'est pas assurée [...] n'a point de Constitution" — formule qui s'applique indistinctement à tous les hommes, sans distinction de nationalité.
+                </p>
+                <p>
+                    Le critère quantitatif pose également question : un État peut-il exister sans population significative ? Le droit international reconnaît des micro-États (Monaco, 39 000 habitants ; Nauru, 11 000 habitants). Le critère démographique est donc relatif. En revanche, l'absence totale de population (cas hypothétique d'une colonie inhabitée) empêcherait l'existence d'un État au sens juridique plein.
+                </p>
+
+                <h3>B. Le territoire (élément matériel)</h3>
+                <p>
+                    Le territoire est la portion de l'espace terrestre, fluvial, lacustre et aérien sur laquelle l'État exerce sa souveraineté. Le principe de territorialité du droit (art. 113-2 Code pénal) en découle directement. Les frontières, qu'elles soient naturelles (fleuves, chaînes de montagnes) ou conventionnelles (traités), matérialisent l'étendue de la souveraineté.
+                </p>
+                <p>
+                    Le territoire comprend trois strates : le sol et le sous-sol, les eaux territoriales (jusqu'à 12 milles marins des lignes de base, Convention de Montego Bay de 1982), et l'espace aérien (Convention de Chicago de 1944 sur l'aviation civile internationale). L'espace extra-atmosphérique n'est pas soumis à la souveraineté étatique (traité de 1967 sur l'espace).
+                </p>
+                <p>
+                    La contiguïté territoriale n'est pas une condition nécessaire : l'État peut posséder des territoires discontinus (départements et régions d'outre-mer pour la France, l'Alaska pour les États-Unis). En revanche, l'existence d'un territoire propre est indispensable : une "nation sans territoire" (peuple palestinien avant 1988, Kurdes) est un peuple, pas un État au sens du droit international public.
+                </p>
+
+                <h3>C. Le pouvoir d'organisation (élément formel)</h3>
+                <p>
+                    L'élément le plus spécifique, celui qui distingue l'État d'une simple tribu ou d'une communauté ethnique, est l'existence d'une <strong>organisation politique</strong>, c'est-à-dire d'institutions capables de formuler et d'appliquer des règles de droit à la collectivité. Carré de Malberg, dans sa <em>Contribution à la théorie générale de l'État</em> (1920-1922), insistait sur ce critère : l'État se définit par sa capacité à produire du droit et à contraindre à son respect.
+                </p>
+                <p>
+                    Ce pouvoir d'organisation se décline en trois fonctions classiques, héritées de la théorie de Montesquieu (<em>De l'esprit des lois</em>, 1748) : la fonction législative (produire la loi), la fonction exécutive (appliquer la loi) et la fonction juridictionnelle (dire le droit). La tripartition des pouvoirs n'est pas une condition sine qua non de l'existence de l'État : des régimes totalitaires ou autoritaires concentrent les pouvoirs sans cesser d'être des États. En revanche, l'absence totale d'institutions (cas de la Somalie de 1991 à 2004) conduit au déclassement juridique de l'entité en "État failli" (<em>failed state</em>).
+                </p>
+
+                <div class="focus-box">
+                    <h4 class="font-bold text-blue-900 dark:text-blue-300 mb-2">Focus : État failli et reconnaissance</h4>
+                    <p class="text-sm mb-0">
+                        L'État n'existe pas isolément : il doit être <strong>reconnu</strong> par les autres membres de la communauté internationale. Le critère de l'effectivité (existence réelle des trois éléments) prime sur le critère de la reconnaissance selon la doctrine majoritaire (théorie constitutiviste vs. théorie déclaratoire). Ainsi, la République démocratique du Congo reste un État malgré les périodes où son pouvoir central n'administrait qu'une portion du territoire. À l'inverse, la République turque de Chypre du Nord, qui possède population, territoire et organisation, n'est reconnue que par la Turquie.
+                    </p>
+                </div>
+
+                <h2 id="partie2">Partie II — La souveraineté : interne et externe</h2>
+
+                <h3>A. Souveraineté interne</h3>
+                <p>
+                    La souveraineté interne (<em>imperium</em>) est la suprématie du pouvoir étatique sur toutes les autres autorités présentes sur le territoire. Elle s'exprime par le monopole de la violence légitime (Max Weber, <em>Le Savant et le Politique</em>, 1919), le pouvoir d'imposition fiscale et la capacité législative. Aucune autorité interne — religieuse, économique ou militaire — ne peut s'ériger en concurrente légitime de l'État sur son propre territoire.
+                </p>
+                <p>
+                    Cette souveraineté interne connaît des limites croissantes : la décentralisation (art. 72 de la Constitution de 1958), la déconcentration administrative, et surtout le développement des droits fondamentaux qui protègent l'individu contre les abus de l'État (art. 16 DDHC, CEDH art. 8, jurisprudence du Conseil constitutionnel sur le principe d'interdiction de l'arbitraire, décision n° 77-87 DC du 23 novembre 1977).
+                </p>
+
+                <h3>B. Souveraineté externe</h3>
+                <p>
+                    La souveraineté externe est l'indépendance de l'État vis-à-vis des autres États. Elle se traduit par la capacité de conclure des traités, d'accréditer des ambassadeurs et de n'être soumis à aucune autorité supérieure. L'art. 53 de la Constitution de 1958 dispose que "les traités ou accords régulièrement ratifiés ou approuvés ont, dès leur publication, une autorité supérieure à celle des lois, sous réserve, pour chaque accord ou traité, de son application par l'autre partie".
+                </p>
+                <p>
+                    La souveraineté externe est néanmoins relativisée par l'intégration européenne. L'art. 88-1 de la Constitution, introduit par la loi constitutionnelle n° 92-554 du 25 juin 1992, dispose que "la République participe aux Communautés européennes et à l'Union européenne". Le Conseil constitutionnel a admis que cette participation implique une limitation temporaire et limitée de la souveraineté nationale (décision n° 2004-496 DC du 10 juin 2004, traité établissant une Constitution pour l'Europe).
+                </p>
+
+                <div class="citation">
+                    "La souveraineté nationale est une et indivisible. Elle résulte de l'unité de la nation française. Elle appartient au peuple."
+                    <br><span class="text-sm text-slate-400 not-italic">— Préambule de la Constitution de 1946, al. 3 (intégré au bloc de constitutionnalité par décision 71-44 DC)</span>
+                </div>
+
+                <h2 id="partie3">Partie III — Les formes d'État</h2>
+
+                <h3>A. État unitaire et État fédéral</h3>
+                <p>
+                    L'État <strong>unitaire</strong> concentre les compétences législatives et réglementaires au niveau central. La France est traditionnellement un État unitaire, même si la décentralisation des années 1980-2000 a introduit une dose de régionalisation. L'État <strong>fédéral</strong> (États-Unis, Allemagne, Suisse, Canada, Belgique, Inde) répartit les compétences entre deux niveaux de pouvoir législatif autonomes, chacun doté de sa propre Constitution et de ses propres institutions. Le critère discriminant est l'existence d'un droit de regard du centre sur les entités fédérées : dans un État fédéral, les entités membres participent à l'élaboration de la volonté centrale (Bundesrat allemand, Sénat américain).
+                </p>
+
+                <h3>B. État décentralisé vs. déconcentré</h3>
+                <p>
+                    Dans l'État <strong>déconcentré</strong>, l'administration centrale envoie des représentants sur le territoire (préfets, sous-préfets, DREAL, DDT) qui agissent au nom et pour le compte de l'État. Dans l'État <strong>décentralisé</strong>, des collectivités territoriales autonomes (régions, départements, communes) exercent des compétences propres, avec des assemblées élues au suffrage universel et un patrimoine distinct. La France est aujourd'hui un État <strong>décentralisé</strong> (art. 1er de la Constitution : "l'organisation de la République est décentralisée"), même si la déconcentration persiste parallèlement.
+                </p>
+
+                <h3>C. L'État régional</h3>
+                <p>
+                    Le modèle <strong>régional</strong>, intermédiaire entre l'unitarisme et le fédéralisme, accorde une large autonomie à des régions dotées de statut particulier sans pour autant leur reconnaître une souveraineté. L'Italie (régions à statut ordinaire et spécial, art. 114 et 116 de la Constitution de 1948) et l'Espagne (Communautés autonomes, Constitution de 1978) illustrent ce modèle. La France y tend avec les collectivités à statut particulier (Corse, art. 73 ; Nouvelle-Calédonie, art. 77 ; Polynésie française, art. 76), mais reste globalement unitaire.
+                </p>
+
+                <div class="focus-box">
+                    <h4 class="font-bold text-blue-900 dark:text-blue-300 mb-2">Appareil critique — Controverses doctrinales</h4>
+                    <p class="text-sm mb-0">
+                        <strong>1. L'État est-il en déclin ?</strong> Certains auteurs (Susan Strange, <em>The Retreat of the State</em>, 1996 ; Jean-Marc Ferry) annoncent la "mort de l'État-nation" face aux multinationales, aux réseaux terroristes et aux organisations supranationales. D'autres (Neil Walker, Martin Loughlin) défendent la résilience de l'État comme cadre normatif incontournable. La pandémie de COVID-19 a paradoxalement réaffirmé le rôle central de l'État (confinements, politiques sanitaires, plans de relance).
+                        <br><br>
+                        <strong>2. La souveraineté numérique.</strong> Le contrôle des infrastructures numériques (GAFAM, cloud computing, intelligence artificielle) pose la question d'un nouvel élément constitutif : la souveraineté cybernétique. La doctrine s'interroge sur la pertinence du cadre jellinékien face aux défis du XXIe siècle.
+                    </p>
+                </div>
+
+                <!-- QUIZ -->
+                <section class="mt-16 p-8 bg-slate-50 dark:bg-slate-800 rounded-2xl">
+                    <h3 class="text-2xl font-bold mb-6">Quiz — La notion d'État</h3>
+                    <div id="quiz-container" class="space-y-6">
+                        <div class="quiz-question" data-correct="1">
+                            <p class="font-semibold mb-3">1. Quel publiciste allemand a formulé la théorie des trois éléments constitutifs de l'État ?</p>
+                            <div class="space-y-2">
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. Hans Kelsen</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. Georg Jellinek</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. Max Weber</button>
+                            </div>
+                            <p class="quiz-feedback hidden mt-2 text-sm"></p>
+                        </div>
+                        <div class="quiz-question" data-correct="0">
+                            <p class="font-semibold mb-3">2. Lequel de ces éléments n'est PAS un élément constitutif de l'État selon Jellinek ?</p>
+                            <div class="space-y-2">
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. La constitution écrite</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. Le territoire</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. La population</button>
+                            </div>
+                            <p class="quiz-feedback hidden mt-2 text-sm"></p>
+                        </div>
+                        <div class="quiz-question" data-correct="2">
+                            <p class="font-semibold mb-3">3. Quel article de la Constitution de 1958 dispose que "l'organisation de la République est décentralisée" ?</p>
+                            <div class="space-y-2">
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. Art. 72</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. Art. 53</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. Art. 1er</button>
+                            </div>
+                            <p class="quiz-feedback hidden mt-2 text-sm"></p>
+                        </div>
+                        <div class="quiz-question" data-correct="1">
+                            <p class="font-semibold mb-3">4. La Convention de Montego Bay de 1982 fixe la limite des eaux territoriales à :</p>
+                            <div class="space-y-2">
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. 3 milles marins</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. 12 milles marins</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. 200 milles marins</button>
+                            </div>
+                            <p class="quiz-feedback hidden mt-2 text-sm"></p>
+                        </div>
+                        <div class="quiz-question" data-correct="0">
+                            <p class="font-semibold mb-3">5. Quelle décision du Conseil constitutionnel a admis une limitation de la souveraineté nationale par l'intégration européenne ?</p>
+                            <div class="space-y-2">
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. 2004-496 DC</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. 71-44 DC</button>
+                                <button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. 2006-540 DC</button>
+                            </div>
+                            <p class="quiz-feedback hidden mt-2 text-sm"></p>
+                        </div>
+                    </div>
+                    <div id="quiz-result" class="mt-6 hidden p-4 rounded-xl font-bold text-center"></div>
+                </section>
+
+                <!-- TOOLBOX -->
+                <section class="mt-24 p-12 bg-slate-900 text-white rounded-[3rem] overflow-hidden relative">
+                  <div class="relative z-10 text-left">
+                    <h3 class="text-2xl font-bold mb-6">Prêt pour l'examen ?</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                      <div>
+                        <h4 class="text-blue-400 font-bold text-xs uppercase mb-4 tracking-widest">Citation à retenir</h4>
+                        <p class="text-slate-300 italic mb-4">"L'État est une communauté de personnes vivant sur un territoire déterminé, possédant une organisation propre."</p>
+                        <p class="text-xs text-slate-500">— Georg Jellinek, Théorie générale de l'État, 1900</p>
+                      </div>
+                      <div class="space-y-4">
+                        <button onclick="copyCitation()" class="w-full py-3 px-6 bg-white/10 hover:bg-white/20 rounded-xl border border-white/10 text-sm font-bold transition flex justify-between items-center">
+                          Citer cette leçon (APA) <span>📋</span>
+                        </button>
+                        <button onclick="window.print()" class="w-full py-3 px-6 bg-blue-600 hover:bg-blue-700 rounded-xl text-sm font-bold transition flex justify-between items-center">
+                          Version PDF / Imprimer <span>🖨️</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="absolute right-[-30px] bottom-[-30px] text-[12rem] opacity-5">⚖️</div>
+                </section>
+                <script>
+                function copyCitation(){
+                  const c = `ROLANDO C., « La notion d'État et ses éléments constitutifs », JurisMaster, ${new Date().getFullYear()}. URL : ${location.href}`;
+                  navigator.clipboard.writeText(c);
+                  alert("Citation copiée.");
+                }
+                </script>
+
+                <p class="text-xs text-slate-400 mt-8 text-center">
+                  Contenu à visée pédagogique. Ne constitue pas un conseil juridique personnalisé.
+                </p>
+            </article>
+        </main>
+    </div>
+
+    <script>
+    document.addEventListener('click', e => {
+      if(e.target.closest('#dark-toggle')){
+        document.documentElement.classList.toggle('dark');
+        localStorage.setItem('jm.theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+      }
+    });
+
+    const JM = {
+      get(){ return JSON.parse(localStorage.getItem('jurismaster.v1') || '{"xp":0,"streak":{"count":0,"lastVisit":""},"lessonsCompleted":[],"badges":[],"quizScores":{}}'); },
+      set(s){ localStorage.setItem('jurismaster.v1', JSON.stringify(s)); },
+      addXP(n){ const s=JM.get(); s.xp=(s.xp||0)+n; JM.set(s); window.dispatchEvent(new CustomEvent('jm:xp',{detail:n})); },
+      completeLesson(slug, xp=50){ const s=JM.get(); s.lessonsCompleted=[...new Set([...(s.lessonsCompleted||[]),slug])]; s.xp=(s.xp||0)+xp; JM.set(s); },
+      touchStreak(){ const s=JM.get(); const today=new Date().toISOString().slice(0,10); const last=s.streak?.lastVisit; if(last&&last!==today){const d=new Date(today)-new Date(last); if(d===86400000){s.streak.count=(s.streak.count||0)+1;} else if(d>86400000){s.streak.count=1;} s.streak.lastVisit=today;} else if(!last){s.streak={count:1,lastVisit:today};} JM.set(s); }
+    };
+    JM.touchStreak();
+    JM.completeLesson('droit-constitutionnel/notion-etat', 50);
+
+    const s = JM.get();
+    const progress = Math.min(100, Math.round(((s.lessonsCompleted||[]).length / 32) * 100));
+    document.querySelectorAll('[data-progress]').forEach(el => el.textContent = progress);
+    document.querySelectorAll('[data-progress-bar]').forEach(el => el.style.width = progress + '%');
+
+    // Quiz logic
+    document.querySelectorAll('.quiz-question').forEach((q, qi) => {
+      const correct = parseInt(q.dataset.correct);
+      const feedback = q.querySelector('.quiz-feedback');
+      q.querySelectorAll('.quiz-btn').forEach((btn, bi) => {
+        btn.addEventListener('click', () => {
+          if(q.classList.contains('answered')) return;
+          q.classList.add('answered');
+          const explanations = [
+            ["Jellinek (1900) a formulé la théorie des trois éléments : population, territoire, pouvoir d'organisation. Kelsen est le fondateur de la théorie pure du droit. Weber a théorisé le monopole de la violence légitime.", "Exact ! Jellinek, dans sa Théorie générale de l'État (1900), propose les trois éléments : population, territoire, pouvoir d'organisation.", "Max Weber a défini l'État par le monopole de la violence légitime, pas par les trois éléments matériels."],
+            ["Exact ! La constitution écrite n'est pas un élément constitutif selon Jellinek. Certains États (Royaume-Uni, Israël, Nouvelle-Zélande) n'ont pas de constitution écrite et existent pourtant pleinement.", "Le territoire est bien un des trois éléments de Jellinek (Staatsgebiet).", "La population est bien un des trois éléments de Jellinek (Staatsvolk)."],
+            ["L'art. 72 concerne les collectivités territoriales. L'art. 53 traite des traités internationaux.", "L'art. 72 concerne les collectivités territoriales, pas la décentralisation en tant que principe d'organisation de la République.", "Exact ! L'art. 1er de la Constitution dispose : 'La France est une République indivisible, laïque, démocratique et sociale. L'organisation de la République est décentralisée.'"],
+            ["La limite de 3 milles correspond à l'ancien canon-shot rule abandonné en 1982.", "Exact ! La Convention de Montego Bay de 1982 fixe la limite des eaux territoriales à 12 milles marins (art. 3).", "200 milles correspond à la zone économique exclusive (ZEE), pas aux eaux territoriales."],
+            ["Exact ! Le Conseil constitutionnel, dans sa décision n° 2004-496 DC du 10 juin 2004, a admis que l'art. 88-1 de la Constitution autorise une limitation temporaire et limitée de la souveraineté nationale par l'intégration européenne.", "La décision 71-44 DC concerne le bloc de constitutionnalité (intégration du Préambule 1946 et DDHC 1789), pas l'Europe.", "La décision 2006-540 DC concerne également les rapports entre droit européen et constitution, mais c'est la 2004-496 DC qui a posé le principe de la limitation de souveraineté."]
+          ];
+          if(bi === correct){
+            btn.classList.add('bg-green-100', 'border-green-500', 'text-green-800');
+            feedback.textContent = explanations[qi][bi];
+            feedback.className = 'quiz-feedback mt-2 text-sm text-green-700';
+          } else {
+            btn.classList.add('bg-red-100', 'border-red-500', 'text-red-800');
+            q.querySelectorAll('.quiz-btn')[correct].classList.add('bg-green-100', 'border-green-500');
+            feedback.textContent = explanations[qi][bi];
+            feedback.className = 'quiz-feedback mt-2 text-sm text-red-700';
+          }
+          feedback.classList.remove('hidden');
+        });
+      });
+    });
+    </script>
+</body>
+</html>
