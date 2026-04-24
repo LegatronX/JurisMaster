@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Prestige - JurisMaster</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; transition: background-color 0.3s; }
+        .badge-card { transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .badge-card.locked { opacity: 0.3; filter: grayscale(1); border-style: dashed; }
+        .badge-card.unlocked { transform: scale(1.05); border-color: #3b82f6; box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.2); }
+        .streak-fire { animation: flicker 1.5s infinite alternate; }
+        @keyframes flicker { from { filter: drop-shadow(0 0 2px #f97316); } to { filter: drop-shadow(0 0 10px #ea580c); } }
+        .progress-circle { transform: rotate(-90deg); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 min-h-screen">
+
+    <!-- NAVIGATION -->
+    <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-slate-200 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold tracking-tight">JURIS<span class="text-blue-700">MASTER</span></a>
+            <div class="flex items-center space-x-6">
+                <div class="flex items-center bg-orange-50 px-3 py-1 rounded-full border border-orange-100">
+                    <span class="streak-fire mr-2">🔥</span>
+                    <span id="streak-count" class="font-bold text-orange-600 text-sm">0 JOURS</span>
+                </div>
+                <div class="text-right hidden md:block">
+                    <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Prestige Total</p>
+                    <p id="total-xp" class="text-lg font-black text-blue-700">0</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto py-12 px-6">
+        
+        <div class="flex flex-col md:flex-row gap-12 items-start">
+            
+            <!-- COLONNE GAUCHE : PROFIL & STATS -->
+            <div class="w-full md:w-1/3 sticky top-28">
+                <div class="bg-white p-8 rounded-[2rem] border border-slate-200 shadow-sm text-center">
+                    <div class="relative w-32 h-32 mx-auto mb-6">
+                        <svg class="progress-circle w-full h-full" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="#f1f5f9" stroke-width="8"></circle>
+                            <circle id="xp-circle" cx="50" cy="50" r="45" fill="none" stroke="#3b82f6" stroke-width="8" stroke-dasharray="283" stroke-dashoffset="283" stroke-linecap="round" class="transition-all duration-1000"></circle>
+                        </svg>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <span class="text-4xl">⚖️</span>
+                        </div>
+                    </div>
+                    <h2 id="rank-name" class="text-2xl font-bold text-slate-900 mb-2">Étudiant Novice</h2>
+                    <p class="text-slate-400 text-sm mb-6">En route vers le barreau</p>
+                    
+                    <div class="space-y-4 text-left border-t border-slate-100 pt-6">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-slate-500">Modules validés</span>
+                            <span id="modules-count" class="font-bold">0 / 12</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-slate-500">Précision moyenne</span>
+                            <span id="accuracy" class="font-bold">0%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COLONNE DROITE : BADGES & RÉCOMPENSES -->
+            <div class="flex-1">
+                <h2 class="text-3xl font-bold mb-8 flex items-center">
+                    Sceaux de Justice 
+                    <span class="ml-4 px-3 py-1 bg-blue-100 text-blue-700 text-xs rounded-full uppercase tracking-tighter">Collection</span>
+                </h2>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <!-- BADGE 1 -->
+                    <div id="badge-kelsen" class="badge-card locked bg-white p-6 rounded-3xl border border-slate-100 hover:border-blue-200 group">
+                        <div class="w-12 h-12 bg-slate-50 rounded-xl flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">📐</div>
+                        <h4 class="font-bold text-slate-900">Architecte de Kelsen</h4>
+                        <p class="text-xs text-slate-500 mt-2 leading-relaxed">Maîtrise parfaite de la hiérarchie des normes constitutionnelles.</p>
+                        <div class="mt-4 h-1 w-full bg-slate-100 rounded-full overflow-hidden">
+                            <div class="bg-blue-500 h-full w-0"></div>
+                        </div>
+                    </div>
+
+                    <!-- BADGE 2 -->
+                    <div id="badge-civilist" class="badge-card locked bg-white p-6 rounded-3xl border border-slate-100 hover:border-blue-200 group">
+                        <div class="w-12 h-12 bg-slate-50 rounded-xl flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">📜</div>
+                        <h4 class="font-bold text-slate-900">Codeur du Civil</h4>
+                        <p class="text-xs text-slate-500 mt-2 leading-relaxed">A terminé l'intégralité du module Introduction au droit.</p>
+                        <div class="mt-4 h-1 w-full bg-slate-100 rounded-full overflow-hidden">
+                            <div class="bg-blue-500 h-full w-0"></div>
+                        </div>
+                    </div>
+
+                    <!-- BADGE 3 -->
+                    <div id="badge-force" class="badge-card locked bg-white p-6 rounded-3xl border border-slate-100 hover:border-blue-200 group">
+                        <div class="w-12 h-12 bg-slate-50 rounded-xl flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">⛓️</div>
+                        <h4 class="font-bold text-slate-900">Lien Obligatoire</h4>
+                        <p class="text-xs text-slate-500 mt-2 leading-relaxed">Expert en force obligatoire et exécution du contrat.</p>
+                        <div class="mt-4 h-1 w-full bg-slate-100 rounded-full overflow-hidden">
+                            <div class="bg-blue-500 h-full w-0"></div>
+                        </div>
+                    </div>
+
+                    <!-- BADGE 4 -->
+                    <div id="badge-master" class="badge-card locked bg-white p-6 rounded-3xl border border-slate-100 hover:border-blue-200 group">
+                        <div class="w-12 h-12 bg-slate-50 rounded-xl flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">🎓</div>
+                        <h4 class="font-bold text-slate-900">Sceau du Maître</h4>
+                        <p class="text-xs text-slate-500 mt-2 leading-relaxed">Atteindre le niveau suprême de 5000 points de prestige.</p>
+                        <div class="mt-4 h-1 w-full bg-slate-100 rounded-full overflow-hidden">
+                            <div class="bg-blue-500 h-full w-0"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- SECTION CADEAU/CONSEIL -->
+                <div class="mt-16 bg-blue-900 text-white p-10 rounded-[2.5rem] relative overflow-hidden">
+                    <div class="relative z-10 text-left">
+                        <h3 class="text-2xl font-bold mb-4">Le savais-tu ?</h3>
+                        <p class="text-blue-200 mb-6 leading-relaxed max-w-lg italic">
+                            "Le droit est la plus puissante des écoles de l'imagination. Jamais poète n'a interprété la nature aussi librement qu'un juriste la réalité."
+                        </p>
+                        <a href="index.html" class="bg-white text-blue-900 px-6 py-3 rounded-full font-bold text-sm hover:bg-blue-50 transition">Reprendre un cours</a>
+                    </div>
+                    <div class="absolute right-[-20px] bottom-[-20px] text-[15rem] opacity-10 pointer-events-none">⚖️</div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        function updateUI() {
+            const xp = parseInt(localStorage.getItem('juris_xp')) || 0;
+            const badges = JSON.parse(localStorage.getItem('juris_badges')) || [];
+            const streak = parseInt(localStorage.getItem('juris_streak')) || 0;
+            
+            // Update Text
+            document.getElementById('total-xp').innerText = xp;
+            document.getElementById('streak-count').innerText = streak + ' JOURS';
+            
+            // Rank Logic
+            let rank = "Étudiant Novice";
+            if (xp > 1000) rank = "Auditeur de Justice";
+            if (xp > 3000) rank = "Conseiller Référendaire";
+            if (xp > 5000) rank = "Juris Master";
+            document.getElementById('rank-name').innerText = rank;
+
+            // Progress Circle
+            const circle = document.getElementById('xp-circle');
+            const percent = Math.min((xp / 5000) * 100, 100);
+            const offset = 283 - (283 * percent) / 100;
+            circle.style.strokeDashoffset = offset;
+
+            // Badges
+            badges.forEach(bid => {
+                const el = document.getElementById(bid);
+                if (el) {
+                    el.classList.remove('locked');
+                    el.classList.add('unlocked');
+                    const bar = el.querySelector('.bg-blue-500');
+                    if(bar) bar.style.width = '100%';
+                }
+            });
+        }
+
+        // Streak Logic Simple
+        function checkStreak() {
+            const lastDate = localStorage.getItem('juris_last_visit');
+            const today = new Date().toDateString();
+            let streak = parseInt(localStorage.getItem('juris_streak')) || 0;
+
+            if (lastDate) {
+                const last = new Date(lastDate);
+                const diff = (new Date(today) - last) / (1000 * 60 * 60 * 24);
+                
+                if (diff === 1) {
+                    streak++;
+                } else if (diff > 1) {
+                    streak = 1;
+                }
+            } else {
+                streak = 1;
+            }
+
+            localStorage.setItem('juris_streak', streak);
+            localStorage.setItem('juris_last_visit', today);
+        }
+
+        window.onload = () => {
+            checkStreak();
+            updateUI();
+        };
+    </script>
+
+</body>
+</html>
