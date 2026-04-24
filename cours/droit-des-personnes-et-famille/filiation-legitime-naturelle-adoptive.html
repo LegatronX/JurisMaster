@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La filiation (légitime, naturelle, adoptive) - Droit des personnes et de la famille</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', sans-serif; line-height: 1.8; }
+h1, h2, h3 { font-family: 'Playfair Display', serif; }
+.prose h2 { font-size: 2rem; font-weight: 700; margin-top: 3rem; margin-bottom: 1.5rem; color: #1e3a8a; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; }
+.prose h3 { font-size: 1.5rem; font-weight: 600; margin-top: 2rem; margin-bottom: 1rem; color: #1e40af; }
+.prose p { margin-bottom: 1.5rem; color: #334155; text-align: justify; }
+.sidebar-link.active { color: #1d4ed8; font-weight: 600; border-left: 3px solid #1d4ed8; }
+.focus-box { background-color: #f8fafc; border-left: 4px solid #3b82f6; padding: 1.5rem; border-radius: 0.5rem; margin: 2rem 0; }
+.citation { font-style: italic; color: #475569; border-left: 2px solid #cbd5e1; padding-left: 1.5rem; margin: 2rem 0; }
+</style>
+</head>
+<body class="bg-white dark:bg-slate-900">
+<script>tailwind.config={darkMode:'class'}</script>
+<script>
+(function(){
+const stored = localStorage.getItem('jm.theme');
+if(stored === 'dark' || (!stored && matchMedia('(prefers-color-scheme: dark)').matches)){
+document.documentElement.classList.add('dark');
+}
+})();
+</script>
+
+<nav class="sticky top-0 z-50 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-6 py-3 flex justify-between items-center">
+<a href="../../index.html" class="text-xl font-bold tracking-tight">JURIS<span class="text-blue-700">MASTER</span></a>
+<div class="flex items-center space-x-4">
+<button id="dark-toggle" aria-label="Basculer mode sombre" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800">🌓</button>
+<span class="text-sm text-slate-500">Progression : <span data-progress>0</span>%</span>
+<div class="w-32 h-2 bg-slate-100 rounded-full overflow-hidden">
+<div class="bg-blue-600 h-full" data-progress-bar style="width:0%"></div>
+</div>
+</div>
+</nav>
+
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row">
+<aside class="w-full md:w-80 border-r border-slate-100 dark:border-slate-800 p-8 h-screen sticky top-14 overflow-y-auto bg-slate-50/50 dark:bg-slate-900/50">
+<h4 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-6">Droit des personnes et de la famille</h4>
+<div class="space-y-8 text-sm text-left">
+<div>
+<p class="font-bold text-slate-900 mb-4">I. La personne et le couple</p>
+<ul class="space-y-3 pl-2 border-l border-slate-200">
+<li><a href="personne-humaine-capacite.html" class="sidebar-link pl-4 block text-slate-500">B1. La personne humaine</a></li>
+<li><a href="mariage-conditions-celebration.html" class="sidebar-link pl-4 block text-slate-500">B2. Le mariage</a></li>
+<li><a href="divorce-procedure-consequences.html" class="sidebar-link pl-4 block text-slate-500">B3. Le divorce</a></li>
+<li><a href="pacs-union-libre.html" class="sidebar-link pl-4 block text-slate-500">B4. Le PACS et l'union libre</a></li>
+</ul>
+</div>
+<div>
+<p class="font-bold text-slate-900 mb-4">II. Filiation et autorité parentale</p>
+<ul class="space-y-3 pl-2 border-l border-slate-200">
+<li><a href="filiation-legitime-naturelle-adoptive.html" class="sidebar-link active pl-4 block">B5. La filiation</a></li>
+<li><a href="autorite-parentale-garde-education.html" class="sidebar-link pl-4 block text-slate-500">B6. L'autorité parentale</a></li>
+<li><a href="regimes-matrimoniaux.html" class="sidebar-link pl-4 block text-slate-500">B7. Régimes matrimoniaux</a></li>
+</ul>
+</div>
+<div>
+<p class="font-bold text-slate-900 mb-4">III. Successions et obligations</p>
+<ul class="space-y-3 pl-2 border-l border-slate-200">
+<li><a href="successions-ordre-heritiers-testament.html" class="sidebar-link pl-4 block text-slate-500">B8. Les successions</a></li>
+<li><a href="obligations-alimentaires.html" class="sidebar-link pl-4 block text-slate-500">B9. Obligations alimentaires</a></li>
+</ul>
+</div>
+<div>
+<p class="font-bold text-slate-900 mb-4">IV. Protection des personnes</p>
+<ul class="space-y-3 pl-2 border-l border-slate-200">
+<li><a href="protection-majeurs-mineurs-tutelle-curatelle.html" class="sidebar-link pl-4 block text-slate-500">B10. Protection majeurs/mineurs</a></li>
+</ul>
+</div>
+</div>
+</aside>
+
+<main class="flex-1 py-16 px-6 md:px-20 max-w-5xl">
+<article class="prose prose-slate lg:prose-lg mx-auto text-left">
+<nav class="text-sm text-blue-600 font-semibold mb-8 uppercase tracking-wide">Chapitre II — Filiation et autorité parentale</nav>
+<h1 class="text-4xl md:text-6xl font-bold mb-10 leading-tight">La filiation</h1>
+
+<p class="text-xl text-slate-500 italic mb-12 border-l-4 border-blue-100 pl-6 py-2">
+"La filiation est l'ensemble des liens juridiques entre parents et enfants."
+</p>
+<p class="text-sm text-slate-400 mb-8">— Art. 308 du Code civil</p>
+
+<h2 id="exorde">Exorde — De la filiation légitime à la filiation égalitaire</h2>
+<p>
+Le droit de la filiation a connu une révolution depuis 1972. Jusqu'à la loi n° 72-3 du 3 janvier 1972, le Code civil distinguait la filiation légitime (née du mariage) et la filiation naturelle (hors mariage), avec des droits inégaux pour l'enfant naturel. La loi de 1972 a aboli cette distinction, instaurant l'égalité des droits entre tous les enfants, quelle que soit leur filiation. La loi n° 2016-1547 du 18 novembre 2016 a encore modernisé le droit de la filiation en reconnaissant la filiation pour les couples de femmes (art. 311-14) et en instaurant l'accouchement sous X anonyme.
+</p>
+
+<h2 id="partie1">Partie I — Les modes d'établissement de la filiation</h2>
+
+<h3>A. La filiation par le mariage (présomption de paternité)</h3>
+<p>
+L'art. 312 du Code civil dispose que "l'enfant conçu ou né pendant le mariage a pour père le mari". C'est la <strong>présomption de paternité</strong>, qui repose sur le postulat que l'enfant né pendant le mariage est le fruit de l'union conjugale. La présomption peut être détruite par une <strong>action en désaveu de paternité</strong> (art. 312-1 et s.) : l'époux peut contester la paternité s'il prouve qu'il n'a pas eu de relations sexuelles avec sa femme pendant la période de conception, ou si l'enfant est manifestement non issu de lui (différence de groupe sanguin, couleur de peau). L'action en désaveu est prescrite par 6 mois à compter de la naissance (ou de la découverte de la fraude).
+</p>
+
+<h3>B. La filiation par la reconnaissance</h3>
+<p>
+Hors mariage, la filiation peut être établie par la <strong>reconnaissance volontaire</strong> (art. 316 et s.). Le père ou la mère reconnaît l'enfant par acte authentique (notaire) ou sous seing privé (déclaration à l'officier d'état civil). La reconnaissance par le père nécessite le consentement de la mère si l'enfant est mineur (art. 317). La reconnaissance peut être contestée si elle est contraire à l'état de l'enfant (art. 321). Depuis 2009, la double filiation est possible : un enfant peut être reconnu par deux mères (couple de femmes) ou deux pères (couple d'hommes, via l'adoption).
+</p>
+
+<h3>C. La filiation par l'adoption</h3>
+<p>
+L'adoption simple (art. 343 et s.) crée un lien de filiation entre l'adoptant et l'adopté, sans rompre le lien avec la famille d'origine. L'adoption plénière (art. 345 et s.) crée un lien de filiation complet et rompt le lien avec la famille d'origine. L'adoption plénière est réservée aux enfants dont les parents ont été déchus de leur autorité parentale ou qui ont été abandonnés. L'adoption est ouverte aux couples mariés (depuis 2013, couples de même sexe inclus) et aux couples pacsés depuis 2016. L'adoption par un couple pacsé de personnes de même sexe a été validée par le Conseil constitutionnel (décision n° 2013-669 DC).
+</p>
+
+<h2 id="partie2">Partie II — L'effet de la filiation : l'autorité parentale</h2>
+
+<h3>A. Principe et contenu</h3>
+<p>
+L'autorité parentale est l'ensemble des droits et devoirs des parents à l'égard de leur enfant mineur (art. 371-1). Elle comprend : le droit de garde (résidence habituelle de l'enfant), le droit de surveillance (contrôle de l'éducation, de la santé, des relations), le droit de représentation (agir au nom de l'enfant), et le droit d'administration (gestion du patrimoine de l'enfant). L'autorité parentale est exercée <strong>conjointement</strong> par les deux parents (art. 372), sauf décision contraire du juge.
+</p>
+
+<h3>B. La filiation pour les couples de femmes (art. 311-14)</h3>
+<p>
+La loi n° 2013-404 du 17 mai 2013 a instauré l'art. 311-14 : "lorsque la mère est mariée à une autre femme, la filiation de l'enfant né de l'une d'elles à l'égard de l'autre est établie par une reconnaissance conjointe préalable à la délivrance de l'acte de naissance". Cette disposition permet à la conjointe de la mère biologique de devenir légalement parent de l'enfant sans adoption. La même loi a ouvert l'adoption conjointe aux couples de personnes de même sexe.
+</p>
+
+<div class="focus-box">
+<h4 class="font-bold text-blue-900 dark:text-blue-300 mb-2">Focus : L'accouchement sous X</h4>
+<p class="text-sm mb-0">
+L'art. 341-1 et s. du Code civil permet à une femme d'accoucher dans le secret de son identité (accouchement sous X). L'enfant est confié à l'ASE (Aide sociale à l'enfance) et peut être adopté. La mère dispose d'un délai de 10 ans pour révéler son identité et réclamer l'enfant. Depuis la loi de 2016, l'accouchement sous X est toujours possible, mais la mère est encouragée à laisser des informations non identifiantes pour permettre à l'enfant d'accéder à ses origines à sa majorité. Cette réforme vise à concilier le droit de la mère à l'anonymat et le droit de l'enfant à connaître ses origines (art. 7 de la Convention de New York de 1989).
+</p>
+</div>
+
+<section class="mt-16 p-8 bg-slate-50 dark:bg-slate-800 rounded-2xl">
+<h3 class="text-2xl font-bold mb-6">Quiz — La filiation</h3>
+<div id="quiz-container" class="space-y-6">
+<div class="quiz-question" data-correct="1">
+<p class="font-semibold mb-3">1. Depuis 1972, la distinction entre filiation légitime et naturelle est :</p>
+<div class="space-y-2">
+<button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. Maintenue</button>
+<button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. Abolie</button>
+<button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. Réservée aux enfants adoptifs</button>
+</div>
+<p class="quiz-feedback hidden mt-2 text-sm"></p>
+</div>
+<div class="quiz-question" data-correct="0">
+<p class="font-semibold mb-3">2. L'adoption plénière :</p>
+<div class="space-y-2">
+<button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. Rompt le lien avec la famille d'origine</button>
+<button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. Conserve le lien avec la famille d'origine</button>
+<button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. Est réservée aux couples mariés</button>
+</div>
+<p class="quiz-feedback hidden mt-2 text-sm"></p>
+</div>
+<div class="quiz-question" data-correct="2">
+<p class="font-semibold mb-3">3. L'autorité parentale est exercée :</p>
+<div class="space-y-2">
+<button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. Par le père seul</button>
+<button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. Par la mère seule</button>
+<button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. Conjointement par les deux parents</button>
+</div>
+<p class="quiz-feedback hidden mt-2 text-sm"></p>
+</div>
+</div>
+<div id="quiz-result" class="mt-6 hidden p-4 rounded-xl font-bold text-center"></div>
+</section>
+
+<section class="mt-24 p-12 bg-slate-900 text-white rounded-[3rem] overflow-hidden relative">
+<div class="relative z-10 text-left">
+<h3 class="text-2xl font-bold mb-6">Prêt pour l'examen ?</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div>
+<h4 class="text-blue-400 font-bold text-xs uppercase mb-4 tracking-widest">Citation à retenir</h4>
+<p class="text-slate-300 italic mb-4">"L'enfant conçu ou né pendant le mariage a pour père le mari."</p>
+<p class="text-xs text-slate-500">— Art. 312 du Code civil (présomption de paternité)</p>
+</div>
+<div class="space-y-4">
+<button onclick="copyCitation()" class="w-full py-3 px-6 bg-white/10 hover:bg-white/20 rounded-xl border border-white/10 text-sm font-bold transition flex justify-between items-center">
+Citer cette leçon (APA) <span>📋</span>
+</button>
+<button onclick="window.print()" class="w-full py-3 px-6 bg-blue-600 hover:bg-blue-700 rounded-xl text-sm font-bold transition flex justify-between items-center">
+Version PDF / Imprimer <span>🖨️</span>
+</button>
+</div>
+</div>
+</div>
+<div class="absolute right-[-30px] bottom-[-30px] text-[12rem] opacity-5">⚖️</div>
+</section>
+<script>
+function copyCitation(){
+const c = `ROLANDO C., « La filiation (légitime, naturelle, adoptive) », JurisMaster, ${new Date().getFullYear()}. URL : ${location.href}`;
+navigator.clipboard.writeText(c);
+alert("Citation copiée.");
+}
+</script>
+
+<p class="text-xs text-slate-400 mt-8 text-center">
+Contenu à visée pédagogique. Ne constitue pas un conseil juridique personnalisé.
+</p>
+</article>
+</main>
+</div>
+
+<script>
+document.addEventListener('click', e => {
+if(e.target.closest('#dark-toggle')){
+document.documentElement.classList.toggle('dark');
+localStorage.setItem('jm.theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+}
+});
+
+const JM = {
+get(){ return JSON.parse(localStorage.getItem('jurismaster.v1') || '{"xp":0,"streak":{"count":0,"lastVisit":""},"lessonsCompleted":[],"badges":[],"quizScores":{}}'); },
+set(s){ localStorage.setItem('jurismaster.v1', JSON.stringify(s)); },
+addXP(n){ const s=JM.get(); s.xp=(s.xp||0)+n; JM.set(s); window.dispatchEvent(new CustomEvent('jm:xp',{detail:n})); },
+completeLesson(slug, xp=50){ const s=JM.get(); s.lessonsCompleted=[...new Set([...(s.lessonsCompleted||[]),slug])]; s.xp=(s.xp||0)+xp; JM.set(s); },
+touchStreak(){ const s=JM.get(); const today=new Date().toISOString().slice(0,10); const last=s.streak?.lastVisit; if(last&&last!==today){const d=new Date(today)-new Date(last); if(d===86400000){s.streak.count=(s.streak.count||0)+1;} else if(d>86400000){s.streak.count=1;} s.streak.lastVisit=today;} else if(!last){s.streak={count:1,lastVisit:today};} JM.set(s); }
+};
+JM.touchStreak();
+JM.completeLesson('droit-personnes/filiation', 50);
+
+const s = JM.get();
+const progress = Math.min(100, Math.round(((s.lessonsCompleted||[]).length / 32) * 100));
+document.querySelectorAll('[data-progress]').forEach(el => el.textContent = progress);
+document.querySelectorAll('[data-progress-bar]').forEach(el => el.style.width = progress + '%');
+
+document.querySelectorAll('.quiz-question').forEach((q, qi) => {
+const correct = parseInt(q.dataset.correct);
+const feedback = q.querySelector('.quiz-feedback');
+const explanations = [
+["Avant 1972, la distinction existait et créait une inégalité entre les enfants.", "Exact ! La loi n° 72-3 du 3 janvier 1972 a aboli la distinction entre filiation légitime et naturelle, instaurant l'égalité entre tous les enfants.", "La distinction n'est pas réservée aux enfants adoptifs."],
+["Exact ! L'adoption plénière (art. 345 et s.) rompt le lien de filiation avec la famille d'origine et crée un lien complet avec la famille adoptive.", "L'adoption simple conserve le lien avec la famille d'origine.", "L'adoption est ouverte aux couples mariés et pacsés, pas réservée aux couples mariés."],
+["L'autorité parentale n'est plus exercée par le père seul depuis l'abolition de la puissance paternelle (1970).", "L'autorité parentale n'est plus exercée par la mère seule.", "Exact ! L'art. 372 du Code civil dispose que l'autorité parentale est exercée conjointement par le père et la mère."]
+];
+q.querySelectorAll('.quiz-btn').forEach((btn, bi) => {
+btn.addEventListener('click', () => {
+if(q.classList.contains('answered')) return;
+q.classList.add('answered');
+if(bi === correct){
+btn.classList.add('bg-green-100', 'border-green-500', 'text-green-800');
+feedback.textContent = explanations[qi][bi];
+feedback.className = 'quiz-feedback mt-2 text-sm text-green-700';
+} else {
+btn.classList.add('bg-red-100', 'border-red-500', 'text-red-800');
+q.querySelectorAll('.quiz-btn')[correct].classList.add('bg-green-100', 'border-green-500');
+feedback.textContent = explanations[qi][bi];
+feedback.className = 'quiz-feedback mt-2 text-sm text-red-700';
+}
+feedback.classList.remove('hidden');
+});
+});
+});
+</script>
+</body>
+</html>

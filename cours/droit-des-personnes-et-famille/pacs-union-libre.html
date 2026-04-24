@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Le PACS et l'union libre - Droit des personnes et de la famille</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', sans-serif; line-height: 1.8; }
+h1, h2, h3 { font-family: 'Playfair Display', serif; }
+.prose h2 { font-size: 2rem; font-weight: 700; margin-top: 3rem; margin-bottom: 1.5rem; color: #1e3a8a; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; }
+.prose h3 { font-size: 1.5rem; font-weight: 600; margin-top: 2rem; margin-bottom: 1rem; color: #1e40af; }
+.prose p { margin-bottom: 1.5rem; color: #334155; text-align: justify; }
+.sidebar-link.active { color: #1d4ed8; font-weight: 600; border-left: 3px solid #1d4ed8; }
+.focus-box { background-color: #f8fafc; border-left: 4px solid #3b82f6; padding: 1.5rem; border-radius: 0.5rem; margin: 2rem 0; }
+.citation { font-style: italic; color: #475569; border-left: 2px solid #cbd5e1; padding-left: 1.5rem; margin: 2rem 0; }
+</style>
+</head>
+<body class="bg-white dark:bg-slate-900">
+<script>tailwind.config={darkMode:'class'}</script>
+<script>
+(function(){
+const stored = localStorage.getItem('jm.theme');
+if(stored === 'dark' || (!stored && matchMedia('(prefers-color-scheme: dark)').matches)){
+document.documentElement.classList.add('dark');
+}
+})();
+</script>
+
+<nav class="sticky top-0 z-50 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-6 py-3 flex justify-between items-center">
+<a href="../../index.html" class="text-xl font-bold tracking-tight">JURIS<span class="text-blue-700">MASTER</span></a>
+<div class="flex items-center space-x-4">
+<button id="dark-toggle" aria-label="Basculer mode sombre" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800">🌓</button>
+<span class="text-sm text-slate-500">Progression : <span data-progress>0</span>%</span>
+<div class="w-32 h-2 bg-slate-100 rounded-full overflow-hidden">
+<div class="bg-blue-600 h-full" data-progress-bar style="width:0%"></div>
+</div>
+</div>
+</nav>
+
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row">
+<aside class="w-full md:w-80 border-r border-slate-100 dark:border-slate-800 p-8 h-screen sticky top-14 overflow-y-auto bg-slate-50/50 dark:bg-slate-900/50">
+<h4 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-6">Droit des personnes et de la famille</h4>
+<div class="space-y-8 text-sm text-left">
+<div>
+<p class="font-bold text-slate-900 mb-4">I. La personne et le couple</p>
+<ul class="space-y-3 pl-2 border-l border-slate-200">
+<li><a href="personne-humaine-capacite.html" class="sidebar-link pl-4 block text-slate-500">B1. La personne humaine</a></li>
+<li><a href="mariage-conditions-celebration.html" class="sidebar-link pl-4 block text-slate-500">B2. Le mariage</a></li>
+<li><a href="divorce-procedure-consequences.html" class="sidebar-link pl-4 block text-slate-500">B3. Le divorce</a></li>
+<li><a href="pacs-union-libre.html" class="sidebar-link active pl-4 block">B4. Le PACS et l'union libre</a></li>
+</ul>
+</div>
+<div>
+<p class="font-bold text-slate-900 mb-4">II. Filiation et autorité parentale</p>
+<ul class="space-y-3 pl-2 border-l border-slate-200">
+<li><a href="filiation-legitime-naturelle-adoptive.html" class="sidebar-link pl-4 block text-slate-500">B5. La filiation</a></li>
+<li><a href="autorite-parentale-garde-education.html" class="sidebar-link pl-4 block text-slate-500">B6. L'autorité parentale</a></li>
+<li><a href="regimes-matrimoniaux.html" class="sidebar-link pl-4 block text-slate-500">B7. Régimes matrimoniaux</a></li>
+</ul>
+</div>
+<div>
+<p class="font-bold text-slate-900 mb-4">III. Successions et obligations</p>
+<ul class="space-y-3 pl-2 border-l border-slate-200">
+<li><a href="successions-ordre-heritiers-testament.html" class="sidebar-link pl-4 block text-slate-500">B8. Les successions</a></li>
+<li><a href="obligations-alimentaires.html" class="sidebar-link pl-4 block text-slate-500">B9. Obligations alimentaires</a></li>
+</ul>
+</div>
+<div>
+<p class="font-bold text-slate-900 mb-4">IV. Protection des personnes</p>
+<ul class="space-y-3 pl-2 border-l border-slate-200">
+<li><a href="protection-majeurs-mineurs-tutelle-curatelle.html" class="sidebar-link pl-4 block text-slate-500">B10. Protection majeurs/mineurs</a></li>
+</ul>
+</div>
+</div>
+</aside>
+
+<main class="flex-1 py-16 px-6 md:px-20 max-w-5xl">
+<article class="prose prose-slate lg:prose-lg mx-auto text-left">
+<nav class="text-sm text-blue-600 font-semibold mb-8 uppercase tracking-wide">Chapitre I — La personne et le couple</nav>
+<h1 class="text-4xl md:text-6xl font-bold mb-10 leading-tight">Le PACS et l'union libre</h1>
+
+<p class="text-xl text-slate-500 italic mb-12 border-l-4 border-blue-100 pl-6 py-2">
+"Le pacte civil de solidarité est un contrat conclu par deux personnes majeures."
+</p>
+<p class="text-sm text-slate-400 mb-8">— Art. 515-1 du Code civil</p>
+
+<h2 id="exorde">Exorde — Du concubinage au PACS</h2>
+<p>
+L'union libre (concubinage) est une union de fait, non réglementée par le Code civil, qui ne produit pas d'effets juridiques de plein droit. Le PACS (pacte civil de solidarité), institué par la loi n° 99-944 du 15 novembre 1999 (loi Chevènement-Marie), a créé un statut intermédiaire entre le concubinage et le mariage. La loi n° 2017-75 du 27 janvier 2017 a aligné le PACS sur le mariage en matière fiscale et sociale.
+</p>
+
+<h2 id="partie1">Partie I — Le PACS</h2>
+
+<h3>A. Conditions et célébration</h3>
+<p>
+Le PACS est régi par les arts. 515-1 et s. du Code civil. Il peut être conclu par deux personnes majeures de sexe différent ou de même sexe (depuis 2013). Les conditions sont : la majorité, le consentement, l'absence de lien de parenté, et le non-mariage (on ne peut être pacsé et marié simultanément). Le PACS se conclut par acte devant l'officier d'état civil (mairie) ou par acte authentique devant notaire (art. 515-3).
+</p>
+
+<h3>B. Effets et dissolution</h3>
+<p>
+Le PACS produit des effets patrimoniaux : les partenaires sont soumis à un régime de séparation de biens, mais peuvent opter pour un régime de communauté par convention. Ils sont tenus d'un devoir de secours mutuel (art. 515-4). En matière fiscale, les partenaires pacsés sont imposés comme des époux mariés (quotient familial). Le PACS se dissout par décision commune (dépôt au greffe), par mariage des partenaires, par décision unilatérale (notification par huissier), ou par décès. En cas de dissolution, il n'y a pas de prestation compensatoire, mais un partage des biens selon les règles du régime choisi.
+</p>
+
+<h2 id="partie2">Partie II — L'union libre (concubinage)</h2>
+
+<h3>A. Définition et effets</h3>
+<p>
+Le concubinage est défini par la jurisprudence comme "une union de fait, caractérisée par une vie commune présentant une certaine stabilité, entre deux personnes de sexe différent ou de même sexe, qui vivent en couple" (Cass. 1re civ., 13 janvier 2009). Il ne produit pas d'effets de plein droit : pas de devoir de fidélité, pas de solidarité patrimoniale, pas d'obligations alimentaires (sauf exceptions jurisprudentielles). Cependant, le concubin notoire bénéficie de certaines protections : droit au logement (loi n° 2006-872 du 13 juillet 2006), droit au bail (art. 14-1 de la loi n° 89-462 du 6 juillet 1989), et droit à la succession (art. 515-8 du Code civil : part successoriale limitée à 1/4 de la succession, dans la limite du vivant, si le concubin est dans le besoin).
+</p>
+
+<div class="focus-box">
+<h4 class="font-bold text-blue-900 dark:text-blue-300 mb-2">Focus : L'évolution du PACS</h4>
+<p class="text-sm mb-0">
+Le PACS, initialement conçu comme un outil pour les couples homosexuels (impossibilité de se marier avant 2013), est devenu une alternative au mariage pour tous les couples. En 2022, 60% des PACS étaient conclus par des couples hétérosexuels. La loi de 2017 a aligné le PACS sur le mariage en matière de déclaration d'impôt sur le revenu, de fiscalité successorale, et de droits sociaux (congé de deuil, congé parental). Cependant, le PACS ne permet pas l'adoption conjointe (réservée au mariage avant 2013, désormais ouverte aux couples mariés et pacsés).
+</p>
+</div>
+
+<section class="mt-16 p-8 bg-slate-50 dark:bg-slate-800 rounded-2xl">
+<h3 class="text-2xl font-bold mb-6">Quiz — Le PACS et l'union libre</h3>
+<div id="quiz-container" class="space-y-6">
+<div class="quiz-question" data-correct="1">
+<p class="font-semibold mb-3">1. Le PACS peut être conclu par :</p>
+<div class="space-y-2">
+<button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. Uniquement un couple hétérosexuel</button>
+<button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. Deux personnes majeures de sexe différent ou de même sexe</button>
+<button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. Uniquement un couple homosexuel</button>
+</div>
+<p class="quiz-feedback hidden mt-2 text-sm"></p>
+</div>
+<div class="quiz-question" data-correct="0">
+<p class="font-semibold mb-3">2. En cas de dissolution du PACS, il n'y a pas :</p>
+<div class="space-y-2">
+<button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="0">A. De prestation compensatoire</button>
+<button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="1">B. De partage des biens</button>
+<button class="quiz-btn w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-slate-100 transition" data-idx="2">C. De formalité de dissolution</button>
+</div>
+<p class="quiz-feedback hidden mt-2 text-sm"></p>
+</div>
+</div>
+<div id="quiz-result" class="mt-6 hidden p-4 rounded-xl font-bold text-center"></div>
+</section>
+
+<section class="mt-24 p-12 bg-slate-900 text-white rounded-[3rem] overflow-hidden relative">
+<div class="relative z-10 text-left">
+<h3 class="text-2xl font-bold mb-6">Prêt pour l'examen ?</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div>
+<h4 class="text-blue-400 font-bold text-xs uppercase mb-4 tracking-widest">Citation à retenir</h4>
+<p class="text-slate-300 italic mb-4">"Le pacte civil de solidarité est un contrat conclu par deux personnes majeures."</p>
+<p class="text-xs text-slate-500">— Art. 515-1 du Code civil</p>
+</div>
+<div class="space-y-4">
+<button onclick="copyCitation()" class="w-full py-3 px-6 bg-white/10 hover:bg-white/20 rounded-xl border border-white/10 text-sm font-bold transition flex justify-between items-center">
+Citer cette leçon (APA) <span>📋</span>
+</button>
+<button onclick="window.print()" class="w-full py-3 px-6 bg-blue-600 hover:bg-blue-700 rounded-xl text-sm font-bold transition flex justify-between items-center">
+Version PDF / Imprimer <span>🖨️</span>
+</button>
+</div>
+</div>
+</div>
+<div class="absolute right-[-30px] bottom-[-30px] text-[12rem] opacity-5">⚖️</div>
+</section>
+<script>
+function copyCitation(){
+const c = `ROLANDO C., « Le PACS et l'union libre », JurisMaster, ${new Date().getFullYear()}. URL : ${location.href}`;
+navigator.clipboard.writeText(c);
+alert("Citation copiée.");
+}
+</script>
+
+<p class="text-xs text-slate-400 mt-8 text-center">
+Contenu à visée pédagogique. Ne constitue pas un conseil juridique personnalisé.
+</p>
+</article>
+</main>
+</div>
+
+<script>
+document.addEventListener('click', e => {
+if(e.target.closest('#dark-toggle')){
+document.documentElement.classList.toggle('dark');
+localStorage.setItem('jm.theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+}
+});
+
+const JM = {
+get(){ return JSON.parse(localStorage.getItem('jurismaster.v1') || '{"xp":0,"streak":{"count":0,"lastVisit":""},"lessonsCompleted":[],"badges":[],"quizScores":{}}'); },
+set(s){ localStorage.setItem('jurismaster.v1', JSON.stringify(s)); },
+addXP(n){ const s=JM.get(); s.xp=(s.xp||0)+n; JM.set(s); window.dispatchEvent(new CustomEvent('jm:xp',{detail:n})); },
+completeLesson(slug, xp=50){ const s=JM.get(); s.lessonsCompleted=[...new Set([...(s.lessonsCompleted||[]),slug])]; s.xp=(s.xp||0)+xp; JM.set(s); },
+touchStreak(){ const s=JM.get(); const today=new Date().toISOString().slice(0,10); const last=s.streak?.lastVisit; if(last&&last!==today){const d=new Date(today)-new Date(last); if(d===86400000){s.streak.count=(s.streak.count||0)+1;} else if(d>86400000){s.streak.count=1;} s.streak.lastVisit=today;} else if(!last){s.streak={count:1,lastVisit:today};} JM.set(s); }
+};
+JM.touchStreak();
+JM.completeLesson('droit-personnes/pacs-union-libre', 50);
+
+const s = JM.get();
+const progress = Math.min(100, Math.round(((s.lessonsCompleted||[]).length / 32) * 100));
+document.querySelectorAll('[data-progress]').forEach(el => el.textContent = progress);
+document.querySelectorAll('[data-progress-bar]').forEach(el => el.style.width = progress + '%');
+
+document.querySelectorAll('.quiz-question').forEach((q, qi) => {
+const correct = parseInt(q.dataset.correct);
+const feedback = q.querySelector('.quiz-feedback');
+const explanations = [
+["Avant 2013, le PACS était principalement utilisé par les couples homosexuels, mais il n'était pas réservé aux hétérosexuels.", "Exact ! L'art. 515-1 du Code civil permet à deux personnes majeures de sexe différent ou de même sexe de conclure un PACS.", "Le PACS n'est pas réservé aux couples homosexuels."],
+["Exact ! Contrairement au divorce, la dissolution du PACS n'ouvre pas droit à prestation compensatoire.", "Il y a bien un partage des biens selon le régime choisi.", "Il y a une formalité de dissolution (dépôt au greffe ou notification)."]
+];
+q.querySelectorAll('.quiz-btn').forEach((btn, bi) => {
+btn.addEventListener('click', () => {
+if(q.classList.contains('answered')) return;
+q.classList.add('answered');
+if(bi === correct){
+btn.classList.add('bg-green-100', 'border-green-500', 'text-green-800');
+feedback.textContent = explanations[qi][bi];
+feedback.className = 'quiz-feedback mt-2 text-sm text-green-700';
+} else {
+btn.classList.add('bg-red-100', 'border-red-500', 'text-red-800');
+q.querySelectorAll('.quiz-btn')[correct].classList.add('bg-green-100', 'border-green-500');
+feedback.textContent = explanations[qi][bi];
+feedback.className = 'quiz-feedback mt-2 text-sm text-red-700';
+}
+feedback.classList.remove('hidden');
+});
+});
+});
+</script>
+</body>
+</html>

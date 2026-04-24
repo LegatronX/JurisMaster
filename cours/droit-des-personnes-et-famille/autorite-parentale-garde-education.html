@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>L'autorite parentale (droit de visite, garde, education) - Droit des personnes et de la famille</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', sans-serif; line-height: 1.8; }
+h1, h2, h3 { font-family: 'Playfair Display', serif; }
+.prose h2 { font-size: 2rem; font-weight: 700; margin-top: 3rem; margin-bottom: 1.5rem; color: #1e3a8a; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; }
+.prose h3 { font-size: 1.5rem; font-weight: 600; margin-top: 2rem; margin-bottom: 1rem; color: #1e40af; }
+.prose p { margin-bottom: 1.5rem; color: #334155; text-align: justify; }
+.sidebar-link.active { color: #1d4ed8; font-weight: 600; border-left: 3px solid #1d4ed8; }
+.focus-box { background-color: #f8fafc; border-left: 4px solid #3b82f6; padding: 1.5rem; border-radius: 0.5rem; margin: 2rem 0; }
+.citation { font-style: italic; color: #475569; border-left: 2px solid #cbd5e1; padding-left: 1.5rem; margin: 2rem 0; }
+</style>
+</head>
+<body class="bg-white dark:bg-slate-900">
+<script>tailwind.config={darkMode:'class'}</script>
+<script>
+(function(){
+const stored = localStorage.getItem('jm.theme');
+if(stored === 'dark' || (!stored && matchMedia('(prefers-color-scheme: dark)').matches)){
+document.documentElement.classList.add('dark');
+}
+})();
+</script>
+
+<nav class="sticky top-0 z-50 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-6 py-3 flex justify-between items-center">
+<a href="../../index.html" class="text-xl font-bold tracking-tight">JURIS<span class="text-blue-700">MASTER</span></a>
+<div class="flex items-center space-x-4">
+<button id="dark-toggle" aria-label="Basculer mode sombre" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800">🌓</button>
+<span class="text-sm text-slate-500">Progression : <span data-progress>0</span>%</span>
+<div class="w-32 h-2 bg-slate-100 rounded-full overflow-hidden">
+<div class="bg-blue-600 h-full" data-progress-bar style="width:0%"></div>
+</div>
+</div>
+</nav>
+
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row">
+<aside class="w-full lg:w-72 bg-slate-50 dark:bg-slate-800 border-r border-slate-200 dark:border-slate-700 p-6 lg:sticky lg:top-14 lg:h-[calc(100vh-3.5rem)] lg:overflow-y-auto">
+<div class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-3">Droit des personnes et de la famille</div>
+<a href="../droit-des-personnes-et-famille.html" class="block text-sm text-blue-700 hover:underline mb-6">← Sommaire</a>
+<ul class="space-y-2 text-sm">
+<li><a href="personne-humaine-capacite.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">B1. La personne humaine</a></li>
+<li><a href="mariage-conditions-celebration.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">B2. Le mariage</a></li>
+<li><a href="divorce-procedure-consequences.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">B3. Le divorce</a></li>
+<li><a href="pacs-union-libre.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">B4. Le PACS et l'union libre</a></li>
+<li><a href="filiation-legitime-naturelle-adoptive.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">B5. La filiation</a></li>
+<li><a href="autorite-parentale-garde-education.html" class="sidebar-link active block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">B6. L'autorité parentale</a></li>
+<li><a href="regimes-matrimoniaux.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">B7. Les régimes matrimoniaux</a></li>
+<li><a href="successions-liberalites.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">B8. Successions et libéralités</a></li>
+<li><a href="obligations-alimentaires.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">B9. Obligations alimentaires</a></li>
+<li><a href="protection-majeurs-mineurs.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">B10. Protection majeurs et mineurs</a></li>
+</ul>
+</aside>
+
+<main class="flex-1 p-6 lg:p-12 prose dark:prose-invert max-w-none">
+<article>
+<div class="flex items-center space-x-2 text-sm text-slate-500 mb-4">
+<a href="../../index.html" class="hover:underline">Accueil</a>
+<span>/</span>
+<a href="../droit-des-personnes-et-famille.html" class="hover:underline">Droit des personnes et de la famille</a>
+<span>/</span>
+<span class="text-slate-800 dark:text-slate-200">B6</span>
+</div>
+<h1 class="text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white mb-4">L'autorité parentale (droit de visite, garde, éducation)</h1>
+<p class="text-lg text-slate-600 dark:text-slate-300 mb-8">L'exercice du pouvoir parental dans l'intérêt de l'enfant : de la puissance paternelle à l'autorité parentale conjointe.</p>
+
+<h2>1. Définition et fondement de l'autorité parentale</h2>
+<p>L'autorité parentale, aujourd'hui régie par les articles 371-1 et suivants du Code civil, constitue l'ensemble des droits et devoirs conférés aux parents sur la personne et sur les biens de leurs enfants mineurs. Elle s'inscrit dans une évolution historique majeure : l'abolition progressive de la "puissance paternelle" au profit d'un exercice égalitaire entre les deux parents. L'ordonnance n° 2012-92 du 26 janvier 2012 a notamment consacré l'exercice conjoint de l'autorité parentale comme principe de droit commun.</p>
+
+<div class="focus-box">
+<strong>À retenir :</strong> L'autorité parentale est un ensemble de droits et de devoirs, non un pouvoir discrétionnaire. Elle doit être exercée « dans l'intérêt de l'enfant », ce qui la distingue fondamentalement de l'ancienne puissance paternelle qui faisait de l'enfant un objet de droit.
+</div>
+
+<p>Le fondement de l'autorité parentale trouve sa source dans la filiation. Tout parent, qu'il soit lié à l'enfant par une filiation légitime, naturelle ou adoptive, détient l'autorité parentale. L'article 371-1 du Code civil dispose que « l'autorité parentale est un ensemble de droits et de devoirs ayant pour finalité l'intérêt de l'enfant ». Cette finalisme marque la rupture avec la conception patrimoniale du lien parental.</p>
+
+<h2>2. Le contenu de l'autorité parentale</h2>
+<h3>2.1 La protection de l'enfant</h3>
+<p>La protection constitue la première mission de l'autorité parentale. Elle recouvre le droit et le devoir d'entretenir et d'élever l'enfant (art. 371-2 CC), de veiller sur sa santé, sa sécurité, son intégrité morale et physique. Les parents sont tenus de représenter leur enfant mineur dans tous les actes de la vie civile et d'administrer ses biens (art. 389 et s. CC).</p>
+
+<h3>2.2 L'éducation de l'enfant</h3>
+<p>L'éducation est une composante essentielle de l'autorité parentale. L'article 371-2 alinéa 2 dispose que « l'enfant doit, en toutes circonstances, respecter ses parents ». Corrélativement, les parents ont le droit et le devoir d'assurer l'éducation de leur enfant, ce qui comprend le choix du mode de garde, de l'école, et l'orientation religieuse ou philosophique. Cependant, ce droit n'est pas absolu : il doit être concilié avec le droit de l'enfant à l'éducation et avec l'interdiction des pratiques dangereuses (art. 373-2 CC).</p>
+
+<h3>2.3 La représentation et l'administration des biens</h3>
+<p>Les parents représentent leur enfant mineur dans tous les actes de la vie civile (art. 389 CC). Ils administrent ses biens et perçoivent les revenus qui en proviennent. Cette administration doit être faite avec prudence et diligence. Les actes de disposition sur les biens de l'enfant sont soumis à des conditions strictes : les actes importants nécessitent une autorisation du juge des tutelles (art. 389-3 et s. CC).</p>
+
+<h2>3. L'exercice de l'autorité parentale</h2>
+<h3>3.1 L'exercice conjoint</h3>
+<p>L'article 372 du Code civil dispose que « l'autorité parentale est exercée conjointement par le père et la mère lorsque la filiation est établie à l'égard de l'un et de l'autre ». Cet exercice conjoint constitue la règle de droit commun depuis la réforme de 1970 et son renforcement par l'ordonnance de 2012. Les parents doivent agir ensemble pour les décisions importantes concernant la vie de l'enfant : choix de l'établissement scolaire, soins médicaux majeurs, orientation religieuse, etc.</p>
+
+<p>Les actes quotidiens peuvent être accomplis par l'un des parents seul. En cas de désaccord sur une décision importante, le parent le plus diligent peut saisir le juge aux affaires familiales qui tranchera dans l'intérêt de l'enfant (art. 373 CC).</p>
+
+<h3>3.2 L'exercice exclusif ou délégué</h3>
+<p>L'exercice exclusif de l'autorité parentale peut résulter d'une décision judiciaire (déchéance pour un parent) ou de la situation familiale (décès, absence d'un parent). L'article 373-1 du Code civil prévoit également la délégation volontaire de l'autorité parentale à un tiers de confiance, sous réserve d'une décision homologative du juge des tutelles.</p>
+
+<h2>4. Le droit de garde et la résidence de l'enfant</h2>
+<p>Le droit de garde, distinct de l'autorité parentale, désigne le fait d'héberger l'enfant au quotidien. L'ordonnance n° 2021-1458 du 9 novembre 2021 a introduit la résidence alternée comme modalité d'exercice de l'autorité parentale, consacrant une évolution jurisprudentielle et sociologique majeure.</p>
+
+<h3>4.1 La résidence principale chez l'un des parents</h3>
+<p>C'est la solution la plus fréquente, notamment après un divorce ou une séparation. L'enfant réside principalement chez l'un des parents, l'autre bénéficiant d'un droit de visite et d'hébergement. La décision est prise par les parents d'un commun accord ou, à défaut, par le juge aux affaires familiales.</p>
+
+<h3>4.2 La résidence alternée</h3>
+<p>L'article 373-2-9 du Code civil, issu de l'ordonnance de 2021, dispose que « l'enfant a le droit d'entretenir des relations personnelles directes et régulières avec ses ascendants et avec tout membre de la famille au sens de l'article 321-2, sauf si l'intérêt de l'enfant commande de limiter, de suspendre ou d'interdire ces relations ». La résidence alternée est désormais expressément reconnue comme un mode d'exercice de l'autorité parentale lorsque les conditions matérielles, affectives et psychologiques le permettent.</p>
+
+<div class="focus-box">
+<strong>Précision :</strong> La résidence alternée n'est pas une présomption légale. Elle doit être choisie par les parents ou décidée par le juge en fonction de l'intérêt de l'enfant. La proximité géographique des parents, leurs capacités à coopérer et la volonté de l'enfant (s'il est capable de discernement) sont des critères déterminants.
+</div>
+
+<h2>5. Le droit de visite et d'hébergement</h2>
+<p>Le droit de visite et d'hébergement est le corollaire du droit de garde. Il appartient au parent qui n'héberge pas l'enfant au quotidien. Son fondement réside dans le maintien du lien affectif entre l'enfant et ce parent. Le droit de visite est un droit de l'enfant autant que du parent : l'enfant a le droit de maintenir des relations personnelles avec ses deux parents.</p>
+
+<p>Le juge fixe la fréquence et la durée des visites et des hébergements en fonction de l'âge de l'enfant, de ses besoins, et des capacités du parent. En cas de risque pour l'enfant, le juge peut organiser un droit de visite accompagné ou le suspendre temporairement. L'article 373-2-10 du Code civil prévoit que le juge peut désigner une personne qualifiée pour accompagner les échanges.</p>
+
+<h2>6. La modification et la fin de l'autorité parentale</h2>
+<h3>6.1 La modification des conditions d'exercice</h3>
+<p>Le juge aux affaires familiales peut modifier à tout moment les conditions d'exercice de l'autorité parentale si l'intérêt de l'enfant l'exige. Cette modification peut être demandée par un parent, par le ministère public, ou par l'enfant lui-même s'il est capable de discernement. Les changements de situation professionnelle, géographique, ou la survenance d'un événement affectant la capacité d'un parent à élever l'enfant peuvent justifier une révision.</p>
+
+<h3>6.2 La déchéance et la privation de l'autorité parentale</h3>
+<p>La déchéance de l'autorité parentale constitue la sanction la plus lourde. Elle peut être prononcée par le tribunal judiciaire à la demande du ministère public ou d'un parent, en cas de condamnation pour certains crimes ou délits (art. 378 et 379 CC), ou lorsque le parent a commis des faits de nature à porter un préjudice grave à l'enfant. La déchéance prive le parent de tous les droits conférés par l'autorité parentale à l'égard de l'enfant et de ses biens.</p>
+
+<p>La privation de l'autorité parentale, moins lourde que la déchéance, peut être prononcée par le juge aux affaires familiales pour des motifs liés à l'intérêt de l'enfant (art. 373-3 CC). Elle peut être totale ou partielle, temporaire ou définitive.</p>
+
+<h3>6.3 La fin naturelle de l'autorité parentale</h3>
+<p>L'autorité parentale prend fin naturellement par la majorité de l'enfant (18 ans), son émancipation (art. 476 et s. CC), ou son décès. L'émancipation, qui peut être conventionnelle (consentement des parents devant le juge des tutelles) ou judiciaire, confère au mineur la capacité juridique d'un majeur, tout en conservant certains liens de protection.</p>
+
+<div class="citation">
+"L'autorité parentale est un ensemble de droits et de devoirs ayant pour finalité l'intérêt de l'enfant. Elle appartient à chacun des parents, séparément ou conjointement selon les cas." — Article 371-1 du Code civil
+</div>
+
+<h2>7. Quiz</h2>
+<div class="quiz-question" data-correct="1">
+<p class="font-semibold mb-2">1. Depuis quelle réforme l'autorité parentale est-elle exercée conjointement par le père et la mère ?</p>
+<div class="space-y-2">
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">La loi du 11 juillet 1975</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">La loi du 18 janvier 1970, renforcée par l'ordonnance de 2012</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">La loi n° 2004-439 du 26 mai 2004</button>
+</div>
+<p class="quiz-feedback hidden mt-2 text-sm"></p>
+</div>
+
+<div class="quiz-question mt-6" data-correct="0">
+<p class="font-semibold mb-2">2. La résidence alternée de l'enfant est-elle une présomption légale ?</p>
+<div class="space-y-2">
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Non, elle doit être choisie par les parents ou décidée par le juge selon l'intérêt de l'enfant</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Oui, c'est la règle depuis l'ordonnance de 2021</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Oui, mais seulement si les parents sont d'accord</button>
+</div>
+<p class="quiz-feedback hidden mt-2 text-sm"></p>
+</div>
+
+<div class="quiz-question mt-6" data-correct="2">
+<p class="font-semibold mb-2">3. Quelle est la différence entre la déchéance et la privation de l'autorité parentale ?</p>
+<div class="space-y-2">
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Il n'y a pas de différence, ce sont deux termes pour la même sanction</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">La privation est plus lourde et définitive, la déchéance peut être temporaire</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">La déchéance est une sanction pénale prononcée par le tribunal judiciaire, la privation est une mesure civile du juge aux affaires familiales</button>
+</div>
+<p class="quiz-feedback hidden mt-2 text-sm"></p>
+</div>
+
+<h2>Boîte à outils</h2>
+<div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg space-y-4">
+<div>
+<h4 class="font-semibold mb-1">Citation à retenir</h4>
+<p id="citation-box" class="text-sm text-slate-600 dark:text-slate-300">L'article 371-1 du Code civil définit l'autorité parentale comme un ensemble de droits et de devoirs ayant pour finalité l'intérêt de l'enfant, marquant la rupture avec l'ancienne puissance paternelle.</p>
+</div>
+<div class="flex space-x-3">
+<button onclick="navigator.clipboard.writeText(document.getElementById('citation-box').textContent)" class="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm hover:bg-blue-700">Copier la citation</button>
+<button onclick="window.print()" class="px-4 py-2 bg-slate-200 text-slate-800 rounded-lg text-sm hover:bg-slate-300">Imprimer la leçon</button>
+</div>
+</div>
+</article>
+</main>
+</div>
+
+<footer class="border-t border-slate-200 dark:border-slate-800 mt-12 bg-slate-50 dark:bg-slate-900">
+<div class="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center">
+<div class="text-sm text-slate-500 mb-4 md:mb-0">JurisMaster 2025 — Formation au droit français</div>
+<div class="flex space-x-6 text-sm text-slate-500">
+<a href="#" class="hover:text-blue-700">Mentions légales</a>
+<a href="#" class="hover:text-blue-700">Contact</a>
+</div>
+</div>
+</footer>
+
+<script>
+document.getElementById('dark-toggle').addEventListener('click', () => {
+document.documentElement.classList.toggle('dark');
+localStorage.setItem('jm.theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+});
+
+const JM = {
+get(){ try { return JSON.parse(localStorage.getItem('jurismaster.v1')) || {}; } catch { return {}; } },
+set(s){ localStorage.setItem('jurismaster.v1', JSON.stringify(s)); },
+addXP(n){ const s=JM.get(); s.xp=(s.xp||0)+n; JM.set(s); window.dispatchEvent(new CustomEvent('jm:xp',{detail:n})); },
+completeLesson(slug, xp=50){ const s=JM.get(); s.lessonsCompleted=[...new Set([...(s.lessonsCompleted||[]),slug])]; s.xp=(s.xp||0)+xp; JM.set(s); },
+touchStreak(){ const s=JM.get(); const today=new Date().toISOString().slice(0,10); const last=s.streak?.lastVisit; if(last&&last!==today){const d=new Date(today)-new Date(last); if(d===86400000){s.streak.count=(s.streak.count||0)+1;} else if(d>86400000){s.streak.count=1;} s.streak.lastVisit=today;} else if(!last){s.streak={count:1,lastVisit:today};} JM.set(s); }
+};
+JM.touchStreak();
+JM.completeLesson('droit-personnes/autorite-parentale', 50);
+
+const s = JM.get();
+const progress = Math.min(100, Math.round(((s.lessonsCompleted||[]).length / 32) * 100));
+document.querySelectorAll('[data-progress]').forEach(el => el.textContent = progress);
+document.querySelectorAll('[data-progress-bar]').forEach(el => el.style.width = progress + '%');
+
+document.querySelectorAll('.quiz-question').forEach((q, qi) => {
+const correct = parseInt(q.dataset.correct);
+const feedback = q.querySelector('.quiz-feedback');
+const explanations = [
+["La loi du 11 juillet 1975 concerne l'IVG, pas l'autorité parentale.","Exact ! La loi du 18 janvier 1970 a aboli la puissance paternelle et instauré l'autorité parentale conjointe, renforcée par l'ordonnance n° 2012-92 du 26 janvier 2012.","La loi du 26 mai 2004 concerne le divorce par consentement mutuel."],
+["Exact ! La résidence alternée n'est pas une présomption légale. Elle doit être choisie par les parents ou décidée par le juge en fonction de l'intérêt de l'enfant (art. 373-2-9 CC).","Non, l'ordonnance de 2021 ne crée pas de présomption de résidence alternée.","La résidence alternée n'est pas automatique même avec l'accord des parents ; le juge vérifie toujours l'intérêt de l'enfant."],
+["La déchéance et la privation sont deux sanctions distinctes.","La déchéance est plus lourde que la privation, pas l'inverse.","Exact ! La déchéance est une sanction pénale prononcée par le tribunal judiciaire (art. 378-379 CC), tandis que la privation est une mesure civile prononcée par le juge aux affaires familiales (art. 373-3 CC)."]
+];
+q.querySelectorAll('.quiz-btn').forEach((btn, bi) => {
+btn.addEventListener('click', () => {
+if(q.classList.contains('answered')) return;
+q.classList.add('answered');
+if(bi === correct){
+btn.classList.add('bg-green-100', 'border-green-500', 'text-green-800');
+feedback.textContent = explanations[qi][bi];
+feedback.className = 'quiz-feedback mt-2 text-sm text-green-700';
+} else {
+btn.classList.add('bg-red-100', 'border-red-500', 'text-red-800');
+q.querySelectorAll('.quiz-btn')[correct].classList.add('bg-green-100', 'border-green-500');
+feedback.textContent = explanations[qi][bi];
+feedback.className = 'quiz-feedback mt-2 text-sm text-red-700';
+}
+feedback.classList.remove('hidden');
+});
+});
+});
+</script>
+</body>
+</html>

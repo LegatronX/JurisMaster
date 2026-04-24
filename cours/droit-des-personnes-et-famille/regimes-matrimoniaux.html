@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Les regimes matrimoniaux - Droit des personnes et de la famille</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', sans-serif; line-height: 1.8; }
+h1, h2, h3 { font-family: 'Playfair Display', serif; }
+.prose h2 { font-size: 2rem; font-weight: 700; margin-top: 3rem; margin-bottom: 1.5rem; color: #1e3a8a; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; }
+.prose h3 { font-size: 1.5rem; font-weight: 600; margin-top: 2rem; margin-bottom: 1rem; color: #1e40af; }
+.prose p { margin-bottom: 1.5rem; color: #334155; text-align: justify; }
+.sidebar-link.active { color: #1d4ed8; font-weight: 600; border-left: 3px solid #1d4ed8; }
+.focus-box { background-color: #f8fafc; border-left: 4px solid #3b82f6; padding: 1.5rem; border-radius: 0.5rem; margin: 2rem 0; }
+.citation { font-style: italic; color: #475569; border-left: 2px solid #cbd5e1; padding-left: 1.5rem; margin: 2rem 0; }
+</style>
+</head>
+<body class="bg-white dark:bg-slate-900">
+<script>tailwind.config={darkMode:'class'}</script>
+<script>
+(function(){
+const stored = localStorage.getItem('jm.theme');
+if(stored === 'dark' || (!stored && matchMedia('(prefers-color-scheme: dark)').matches)){
+document.documentElement.classList.add('dark');
+}
+})();
+</script>
+
+<nav class="sticky top-0 z-50 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-6 py-3 flex justify-between items-center">
+<a href="../../index.html" class="text-xl font-bold tracking-tight">JURIS<span class="text-blue-700">MASTER</span></a>
+<div class="flex items-center space-x-4">
+<button id="dark-toggle" aria-label="Basculer mode sombre" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800">🌓</button>
+<span class="text-sm text-slate-500">Progression : <span data-progress>0</span>%</span>
+<div class="w-32 h-2 bg-slate-100 rounded-full overflow-hidden">
+<div class="bg-blue-600 h-full" data-progress-bar style="width:0%"></div>
+</div>
+</div>
+</nav>
+
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row">
+<aside class="w-full lg:w-72 bg-slate-50 dark:bg-slate-800 border-r border-slate-200 dark:border-slate-700 p-6 lg:sticky lg:top-14 lg:h-[calc(100vh-3.5rem)] lg:overflow-y-auto">
+<div class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-3">Droit des personnes et de la famille</div>
+<a href="../droit-des-personnes-et-famille.html" class="block text-sm text-blue-700 hover:underline mb-6">← Sommaire</a>
+<ul class="space-y-2 text-sm">
+<li><a href="personne-humaine-capacite.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">B1. La personne humaine</a></li>
+<li><a href="mariage-conditions-celebration.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">B2. Le mariage</a></li>
+<li><a href="divorce-procedure-consequences.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">B3. Le divorce</a></li>
+<li><a href="pacs-union-libre.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">B4. Le PACS et l'union libre</a></li>
+<li><a href="filiation-legitime-naturelle-adoptive.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">B5. La filiation</a></li>
+<li><a href="autorite-parentale-garde-education.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">B6. L'autorité parentale</a></li>
+<li><a href="regimes-matrimoniaux.html" class="sidebar-link active block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">B7. Les régimes matrimoniaux</a></li>
+<li><a href="successions-liberalites.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">B8. Successions et libéralités</a></li>
+<li><a href="obligations-alimentaires.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">B9. Obligations alimentaires</a></li>
+<li><a href="protection-majeurs-mineurs.html" class="sidebar-link block pl-3 py-1 text-slate-600 dark:text-slate-300 hover:text-blue-700">B10. Protection majeurs et mineurs</a></li>
+</ul>
+</aside>
+
+<main class="flex-1 p-6 lg:p-12 prose dark:prose-invert max-w-none">
+<article>
+<div class="flex items-center space-x-2 text-sm text-slate-500 mb-4">
+<a href="../../index.html" class="hover:underline">Accueil</a>
+<span>/</span>
+<a href="../droit-des-personnes-et-famille.html" class="hover:underline">Droit des personnes et de la famille</a>
+<span>/</span>
+<span class="text-slate-800 dark:text-slate-200">B7</span>
+</div>
+<h1 class="text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white mb-4">Les régimes matrimoniaux</h1>
+<p class="text-lg text-slate-600 dark:text-slate-300 mb-8">De la liberté contractuelle à la protection du conjoint : l'organisation patrimoniale du mariage sous l'empire du Code civil.</p>
+
+<h2>1. Principe d'autonomie et limites impératives</h2>
+<p>Les régimes matrimoniaux sont régis par les articles 1387 et suivants du Code civil. Le principe fondamental est celui de la liberté contractuelle : les époux peuvent, par contrat de mariage, modifier le régime légal et choisir un régime conventionnel adapté à leur situation. Cette liberté n'est cependant pas absolue : elle est encadrée par des règles impératives qui préservent l'équilibre patrimonial entre les époux et protègent les tiers.</p>
+
+<div class="focus-box">
+<strong>À retenir :</strong> Les conventions matrimoniales ne peuvent déroger aux droits et devoirs résultant du mariage, notamment à l'obligation alimentaire, à l'égalité des droits entre époux, et aux règles relatives à l'autorité parentale. Toute clause contraire à ces principes est réputée non écrite (art. 1388 CC).
+</div>
+
+<p>L'article 1387 du Code civil dispose que « les époux peuvent, par contrat de mariage, modifier le régime matrimonial légal ». Cette modification peut porter sur le choix d'un régime conventionnel existant (séparation de biens, communauté universelle) ou sur la rédaction de clauses spécifiques personnalisant le régime légal. Le contrat de mariage doit être établi par acte notarié et peut être modifié en cours de mariage (changement de régime).</p>
+
+<h2>2. Le régime légal : la communauté réduite aux acquêts</h2>
+<p>En l'absence de contrat de mariage, les époux sont soumis au régime légal de la communauté réduite aux acquêts (art. 1400 et s. CC). Ce régime, réformé par la loi n° 85-1406 du 23 décembre 1985, constitue une forme de compromis entre la communauté universelle (tout est commun) et la séparation de biens (tout est séparé).</p>
+
+<h3>2.1 Les biens propres</h3>
+<p>Chaque époux conserve la propriété exclusive des biens qu'il possédait avant le mariage ou qu'il a reçus par succession ou donation durant le mariage (art. 1404 et 1405 CC). Les biens propres comprennent également les vêtements et objets d'usage personnel, les droits d'auteur et les rémunérations du travail personnel, sauf lorsqu'ils sont épargnés (art. 1406 CC).</p>
+
+<h3>2.2 Les biens communs (acquêts)</h3>
+<p>La communauté se compose des biens acquis durant le mariage, qu'ils proviennent de l'industrie commune ou de celle d'un seul des époux (art. 1401 CC). Les revenus du travail, les fruits des biens propres consommables, et les plus-values sur les biens propres (sous conditions) entrent dans la masse commune. Les dettes contractées pour l'entretien du ménage et l'éducation des enfants sont des dettes de la communauté (art. 1411 CC).</p>
+
+<h3>2.3 La liquidation de la communauté</h3>
+<p>La communauté se dissout par le décès d'un époux, la déclaration de décès absent, le divorce, la séparation de corps, ou le changement de régime matrimonial (art. 1441 CC). La liquidation consiste à répartir les actifs et les passifs entre les époux ou leurs héritiers. L'article 1475 du Code civil prévoit une présomption d'indivision post-communautaire lorsque les biens n'ont pas été liquidés.</p>
+
+<h2>3. Les régimes conventionnels</h2>
+<h3>3.1 La séparation de biens</h3>
+<p>La séparation de biens, régie par les articles 1536 et suivants du Code civil, consiste en l'absence totale de communauté entre les époux. Chaque conjoint conserve la propriété exclusive des biens qu'il possède et de ceux qu'il acquiert durant le mariage. Ce régime présente l'avantage de la clarté patrimoniale et protège chaque époux des dettes de l'autre. Il est souvent choisi par des professionnels soumis à des risques entrepreneuriaux importants.</p>
+
+<p>La séparation de biens pure ne supprime pas l'obligation alimentaire entre époux. De plus, l'article 1538 CC prévoit une participation aux acquêts qui peut être adjointe à la séparation de biens : en cas de dissolution du mariage, l'époux le moins fortuné peut prétendre à une indemnité calculée sur les acquêts réalisés par l'autre.</p>
+
+<h3>3.2 La communauté universelle</h3>
+<p>La communauté universelle, régie par les articles 1520 et suivants du Code civil, consiste en la mise en commun de tous les biens présents et à venir des époux, à l'exclusion des biens donnés ou légués expressément à l'un d'eux sous la condition de les rapporter à la communauté. Ce régime, autrefois très répandu, est devenu marginal car il expose chaque époux à l'insolvabilité de l'autre et complique la transmission aux enfants d'un précédent lit.</p>
+
+<h3>3.3 La communauté d'acquêts avec clause d'attribution intégrale</h3>
+<p>Cette variante de la communauté légale prévoit que, en cas de dissolution, la masse commune sera attribuée intégralement à l'un des époux, sous réserve d'une compensations aux héritiers ou au conjoint survivant. Elle est utilisée dans des situations patrimoniales très spécifiques et doit être établie avec la plus grande précision notariale.</p>
+
+<h2>4. Le changement de régime matrimonial</h2>
+<p>Les époux peuvent modifier leur régime matrimonial en cours de mariage. Cette modification est soumise à des conditions strictes : elle doit être autorisée par le tribunal judiciaire (homologation) et être notifiée aux créanciers pour leur permettre de s'y opposer (art. 1397 et s. CC). La publicité du changement de régime est essentielle pour la sécurité juridique des tiers.</p>
+
+<div class="focus-box">
+<strong>Formalités :</strong> Le changement de régime requiert un contrat notarié, une homologation judiciaire, et une publicité par mentions au répertoire civil et, le cas échéant, au fichier immobilier. Les créanciers peuvent s'opposer au changement dans un délai de trois mois à compter de la notification.
+</div>
+
+<h2>5. La protection du conjoint et l'information</h2>
+<h3>5.1 L'information du conjoint</h3>
+<p>La loi n° 2013-404 du 17 mai 2013 ouvrant le mariage aux couples de personnes de même sexe a également renforcé l'information réciproque des époux sur leur situation patrimoniale. Chaque conjoint a le droit d'obtenir de l'autre les informations nécessaires à l'exercice de ses droits. Le refus d'information peut être sanctionné par le juge.</p>
+
+<h3>5.2 Les suretés et garanties</h3>
+<p>Le Code civil prévoit plusieurs mécanismes de protection du conjoint : la récompense (indemnité due à la communauté ou à un époux qui a utilisé ses biens propres pour l'avantage commun), l'obligation alimentaire qui prime sur les dettes, et la possibilité pour le juge d'ordonner des mesures conservatoires en cas de dissipation patrimoniale par un époux.</p>
+
+<h2>6. Le régime matrimonial et le PACS</h2>
+<p>Les partenaires d'un PACS sont soumis à un régime de séparation de biens par défaut (art. 515-4 CC). Ils peuvent toutefois, dans la convention de PACS, prévoir des clauses de participation aux acquêts ou d'autres stipulations patrimoniales, sous réserve de ne pas méconnaître les règles impératives de protection. Ce régime est plus simple et plus souple que les régimes matrimoniaux, mais offre moins de sécurité juridique en cas de décès ou de rupture.</p>
+
+<div class="citation">
+"Les conventions matrimoniales ne peuvent déroger aux droits et devoirs résultant du mariage, notamment à l'obligation alimentaire, à l'égalité des droits entre époux et aux règles relatives à l'autorité parentale." — Article 1388 du Code civil
+</div>
+
+<h2>7. Quiz</h2>
+<div class="quiz-question" data-correct="1">
+<p class="font-semibold mb-2">1. Quel est le régime matrimonial légal en l'absence de contrat de mariage ?</p>
+<div class="space-y-2">
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">La séparation de biens</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">La communauté réduite aux acquêts</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">La communauté universelle</button>
+</div>
+<p class="quiz-feedback hidden mt-2 text-sm"></p>
+</div>
+
+<div class="quiz-question mt-6" data-correct="2">
+<p class="font-semibold mb-2">2. Dans la communauté réduite aux acquêts, les dettes contractées pour l'éducation des enfants sont :</p>
+<div class="space-y-2">
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Des dettes personnelles de l'époux qui les a contractées</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Des dettes solidaires des deux époux</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Des dettes de la communauté (art. 1411 CC)</button>
+</div>
+<p class="quiz-feedback hidden mt-2 text-sm"></p>
+</div>
+
+<div class="quiz-question mt-6" data-correct="0">
+<p class="font-semibold mb-2">3. Le changement de régime matrimonial en cours de mariage nécessite-t-il une homologation judiciaire ?</p>
+<div class="space-y-2">
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Oui, il faut une autorisation du tribunal judiciaire et une notification aux créanciers</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Non, un simple contrat notarié suffit sans autre formalité</button>
+<button class="quiz-btn w-full text-left px-4 py-3 border border-slate-300 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">Non, les époux peuvent changer de régime par simple accord oral devant témoins</button>
+</div>
+<p class="quiz-feedback hidden mt-2 text-sm"></p>
+</div>
+
+<h2>Boîte à outils</h2>
+<div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg space-y-4">
+<div>
+<h4 class="font-semibold mb-1">Citation à retenir</h4>
+<p id="citation-box" class="text-sm text-slate-600 dark:text-slate-300">L'article 1387 du Code civil consacre la liberté des époux de modifier le régime matrimonial légal par contrat de mariage, sous réserve des règles impératives de protection du conjoint et des tiers.</p>
+</div>
+<div class="flex space-x-3">
+<button onclick="navigator.clipboard.writeText(document.getElementById('citation-box').textContent)" class="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm hover:bg-blue-700">Copier la citation</button>
+<button onclick="window.print()" class="px-4 py-2 bg-slate-200 text-slate-800 rounded-lg text-sm hover:bg-slate-300">Imprimer la leçon</button>
+</div>
+</div>
+</article>
+</main>
+</div>
+
+<footer class="border-t border-slate-200 dark:border-slate-800 mt-12 bg-slate-50 dark:bg-slate-900">
+<div class="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center">
+<div class="text-sm text-slate-500 mb-4 md:mb-0">JurisMaster 2025 — Formation au droit français</div>
+<div class="flex space-x-6 text-sm text-slate-500">
+<a href="#" class="hover:text-blue-700">Mentions légales</a>
+<a href="#" class="hover:text-blue-700">Contact</a>
+</div>
+</div>
+</footer>
+
+<script>
+document.getElementById('dark-toggle').addEventListener('click', () => {
+document.documentElement.classList.toggle('dark');
+localStorage.setItem('jm.theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+});
+
+const JM = {
+get(){ try { return JSON.parse(localStorage.getItem('jurismaster.v1')) || {}; } catch { return {}; } },
+set(s){ localStorage.setItem('jurismaster.v1', JSON.stringify(s)); },
+addXP(n){ const s=JM.get(); s.xp=(s.xp||0)+n; JM.set(s); window.dispatchEvent(new CustomEvent('jm:xp',{detail:n})); },
+completeLesson(slug, xp=50){ const s=JM.get(); s.lessonsCompleted=[...new Set([...(s.lessonsCompleted||[]),slug])]; s.xp=(s.xp||0)+xp; JM.set(s); },
+touchStreak(){ const s=JM.get(); const today=new Date().toISOString().slice(0,10); const last=s.streak?.lastVisit; if(last&&last!==today){const d=new Date(today)-new Date(last); if(d===86400000){s.streak.count=(s.streak.count||0)+1;} else if(d>86400000){s.streak.count=1;} s.streak.lastVisit=today;} else if(!last){s.streak={count:1,lastVisit:today};} JM.set(s); }
+};
+JM.touchStreak();
+JM.completeLesson('droit-personnes/regimes-matrimoniaux', 50);
+
+const s = JM.get();
+const progress = Math.min(100, Math.round(((s.lessonsCompleted||[]).length / 32) * 100));
+document.querySelectorAll('[data-progress]').forEach(el => el.textContent = progress);
+document.querySelectorAll('[data-progress-bar]').forEach(el => el.style.width = progress + '%');
+
+document.querySelectorAll('.quiz-question').forEach((q, qi) => {
+const correct = parseInt(q.dataset.correct);
+const feedback = q.querySelector('.quiz-feedback');
+const explanations = [
+["La séparation de biens est un régime conventionnel, pas légal.","Exact ! Le régime légal est la communauté réduite aux acquêts (art. 1400 et s. CC), instauré par la loi du 23 décembre 1985.","La communauté universelle est un régime conventionnel, non légal."],
+["Les dettes d'éducation ne sont pas personnelles, car elles relèvent de la mission commune des époux.","Les dettes de la communauté ne sont pas solidaires par nature ; c'est la communauté qui en est redevable.","Exact ! L'article 1411 du Code civil dispose que les dettes contractées par l'un des époux pour l'entretien du ménage et l'éducation des enfants sont des dettes de la communauté."],
+["Exact ! Le changement de régime nécessite une homologation judiciaire et une notification aux créanciers pour leur permettre de s'y opposer (art. 1397 et s. CC).","Un contrat notarié seul est insuffisant ; l'homologation et la publicité sont obligatoires.","L'accord oral est dépourvu de tout effet juridique pour le changement de régime matrimonial."]
+];
+q.querySelectorAll('.quiz-btn').forEach((btn, bi) => {
+btn.addEventListener('click', () => {
+if(q.classList.contains('answered')) return;
+q.classList.add('answered');
+if(bi === correct){
+btn.classList.add('bg-green-100', 'border-green-500', 'text-green-800');
+feedback.textContent = explanations[qi][bi];
+feedback.className = 'quiz-feedback mt-2 text-sm text-green-700';
+} else {
+btn.classList.add('bg-red-100', 'border-red-500', 'text-red-800');
+q.querySelectorAll('.quiz-btn')[correct].classList.add('bg-green-100', 'border-green-500');
+feedback.textContent = explanations[qi][bi];
+feedback.className = 'quiz-feedback mt-2 text-sm text-red-700';
+}
+feedback.classList.remove('hidden');
+});
+});
+});
+</script>
+</body>
+</html>
