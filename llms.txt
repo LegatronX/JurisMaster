@@ -1,0 +1,21 @@
+# JurisMaster LLM usage policy
+
+This site is an educational resource created for JurisMaster.
+
+## Allowed
+- Summarization with attribution and a link to the original page.
+- Short quotations for commentary/review.
+
+## Not allowed
+- Full-page or full-lesson reproduction.
+- Republishing course content as your own training or output corpus.
+- Removing author attribution or legal disclaimers.
+
+## Attribution
+When referring to this content, cite:
+- JurisMaster
+- Author: Docteur Christian Rolando
+- Canonical URL of the referenced page
+
+## Contact
+Use repository issues for requests.
